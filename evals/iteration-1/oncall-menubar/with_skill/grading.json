@@ -1,0 +1,59 @@
+{
+  "expectations": [
+    {
+      "text": "States users, their moment and ordered priorities before choosing a direction",
+      "passed": true,
+      "evidence": "DESIGN.md \u00a7Users, moment, priorities: 5 ordered priorities (am I on call \u2192 trust)"
+    },
+    {
+      "text": "Names one deliberate novelty moment tied to the product's differentiator",
+      "passed": true,
+      "evidence": "Novelty moment: the shift strip that recolours hours to the recipient while composing"
+    },
+    {
+      "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+      "passed": true,
+      "evidence": "macOS system-colour palette proposed; no Recall hex values (script)"
+    },
+    {
+      "text": "All colours come from tokens; no literal colours in component styles",
+      "passed": true,
+      "evidence": "0 literal colours outside token blocks (script); guard test 6/6"
+    },
+    {
+      "text": "Dark mode is designed",
+      "passed": true,
+      "evidence": "prefers-color-scheme dark + theme switch; 12 dark screenshots"
+    },
+    {
+      "text": "Verified in a rendered build (screenshots saved)",
+      "passed": true,
+      "evidence": "24 screenshots, 9 issues fixed after review"
+    },
+    {
+      "text": "Writes down a project design system with reasons for its values",
+      "passed": true,
+      "evidence": "design/SYSTEM.md with colour meanings and reasons"
+    },
+    {
+      "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+      "passed": true,
+      "evidence": "12 states incl. offline, first sync, not connected, send failed, gap"
+    },
+    {
+      "text": "Faithful to macOS menu-bar conventions and a realistic popover size",
+      "passed": true,
+      "evidence": "Real menu-bar sizes researched (Bjango); 22pt item, dial + time; standard macOS controls"
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 899.4,
+    "total_duration_seconds": 899.4
+  }
+}

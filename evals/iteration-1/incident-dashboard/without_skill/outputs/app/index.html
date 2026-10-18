@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-GB" data-display="laptop" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident status · Northwind Ops</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="screen" id="screen">
+  <header class="topbar">
+    <div class="brand">
+      <!-- Placeholder for the official compass-N symbol; swap in the brand SVG. -->
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+        <rect width="24" height="24" rx="5" fill="var(--nw-harbor-navy)"/>
+        <path d="M12 3.5 15 12l-3 8.5L9 12z" fill="none" stroke="#fff" stroke-width="1.4"/>
+        <path d="M12 3.5 15 12H9z" fill="#fff"/>
+      </svg>
+      <span class="wordmark">Northwind</span>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <h1>Incident status</h1>
+    </div>
+    <div class="freshness" id="freshness" aria-live="polite"></div>
+    <div class="clock" id="clock"></div>
+  </header>
+
+  <div class="feedbar" id="feedbar" role="alert" hidden></div>
+  <section class="banner" id="banner" role="status" aria-live="polite"></section>
+
+  <main class="grid" id="content">
+    <section class="panel panel-open" aria-labelledby="open-h">
+      <div class="panel-head">
+        <h2 id="open-h">Open incidents</h2>
+        <p class="panel-meta" id="open-meta"></p>
+      </div>
+      <ol class="incidents" id="incidents"></ol>
+    </section>
+
+    <section class="panel panel-kpis" aria-labelledby="kpi-h">
+      <div class="panel-head"><h2 id="kpi-h">Health</h2><p class="panel-meta">Colour shows better or worse, not up or down</p></div>
+      <div class="kpis" id="kpis"></div>
+    </section>
+
+    <section class="panel panel-oncall" aria-labelledby="oncall-h">
+      <div class="panel-head"><h2 id="oncall-h">On call now</h2><p class="panel-meta" id="oncall-meta"></p></div>
+      <ul class="oncall" id="oncall"></ul>
+    </section>
+
+    <section class="panel panel-services" aria-labelledby="svc-h">
+      <div class="panel-head"><h2 id="svc-h">Incidents by service</h2><p class="panel-meta">Last 30 days · all severities</p></div>
+      <div class="services" id="services"></div>
+    </section>
+
+    <section class="panel panel-resolved" aria-labelledby="res-h">
+      <div class="panel-head"><h2 id="res-h">Recently resolved</h2><p class="panel-meta">Last 48 hours</p></div>
+      <div class="table-wrap"><table class="resolved" id="resolved"></table></div>
+    </section>
+  </main>
+</div>
+
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+<aside class="demo" id="demo" aria-label="Demo controls">
+  <button class="demo-toggle" id="demo-toggle" aria-expanded="false" aria-controls="demo-body">Demo states</button>
+  <div class="demo-body" id="demo-body" hidden>
+    <p class="demo-note">Sample data · simulated clock from 11:00 Tue 13 Oct. Press <kbd>D</kbd> to toggle.</p>
+    <fieldset><legend>State</legend><div class="demo-row" data-group="state"></div></fieldset>
+    <fieldset><legend>Display</legend><div class="demo-row" data-group="display"></div></fieldset>
+    <fieldset><legend>Theme</legend><div class="demo-row" data-group="theme"></div></fieldset>
+  </div>
+</aside>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

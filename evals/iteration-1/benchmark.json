@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "skill_name": "design-philosophy",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-10-18T14:17:59Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 1315.2,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States users, their moment and ordered priorities before choosing a direction",
+          "passed": true,
+          "evidence": "Ordered priorities: never lost; readable; safe and seen to be safe; a person one tap away; mistakes cost nothing"
+        },
+        {
+          "text": "Names one deliberate novelty moment tied to the product's differentiator",
+          "passed": true,
+          "evidence": "Novelty moment: the text message shown before it arrives, with the scam rule"
+        },
+        {
+          "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+          "passed": true,
+          "evidence": "Own placeholder palette (Harbour), warm paper + ink blue; explicitly avoids case-study density"
+        },
+        {
+          "text": "All colours come from tokens; no literal colours in component styles",
+          "passed": true,
+          "evidence": "0 literal colours outside tokens (script); guard test 6/6"
+        },
+        {
+          "text": "Dark mode is designed",
+          "passed": true,
+          "evidence": "Dark mode designed; 390 dark screenshots"
+        },
+        {
+          "text": "Verified in a rendered build (screenshots saved)",
+          "passed": true,
+          "evidence": "63 screenshots at 320/390/430, 200% text; 5 issues fixed"
+        },
+        {
+          "text": "Writes down a project design system with reasons for its values",
+          "passed": true,
+          "evidence": "design/SYSTEM.md + AGENTS.md pointer"
+        },
+        {
+          "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+          "passed": true,
+          "evidence": "Errors, not found, wrong/expired/resent code, locked, slow/failed setup, help sheet"
+        },
+        {
+          "text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human",
+          "passed": true,
+          "evidence": "Nothing under 17px, 56px buttons, 48px min targets, plain errors, call/branch help on every screen"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 1219.6,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States users, their moment and ordered priorities before choosing a direction",
+          "passed": true,
+          "evidence": "DESIGN.md: ordered priorities (open & severity, owner, freshness, trend\u2026)"
+        },
+        {
+          "text": "Names one deliberate novelty moment tied to the product's differentiator",
+          "passed": true,
+          "evidence": "Novelty moment: 24-hour lane per incident on a shared now-axis"
+        },
+        {
+          "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+          "passed": true,
+          "evidence": "Brand palette from guide (5 brand hex values); no Recall values"
+        },
+        {
+          "text": "All colours come from tokens; no literal colours in component styles",
+          "passed": true,
+          "evidence": "0 literal colours outside tokens (script); guard test 7/7"
+        },
+        {
+          "text": "Dark mode is designed",
+          "passed": true,
+          "evidence": "Wall display dark, laptop light/dark"
+        },
+        {
+          "text": "Verified in a rendered build (screenshots saved)",
+          "passed": true,
+          "evidence": "20 screenshots incl. before/after and 4 TV resolutions; 4 critique rounds"
+        },
+        {
+          "text": "Writes down a project design system with reasons for its values",
+          "passed": true,
+          "evidence": "design/SYSTEM.md + AGENTS.md pointer"
+        },
+        {
+          "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+          "passed": true,
+          "evidence": "Loading, all clear, connection lost, source failed, 12-incident surge"
+        },
+        {
+          "text": "Palette taken from the brand guide",
+          "passed": true,
+          "evidence": "Palette from brand guide (navy, Fog, Slate, Tide Teal; deeper orange for text)"
+        },
+        {
+          "text": "Designs for both TV-at-distance and laptop viewing",
+          "passed": true,
+          "evidence": "?display=wall for TV (1366\u00d7768, 1080p, 4K) and laptop at 1280/1440/390"
+        },
+        {
+          "text": "Removes decoration (emoji, gradients) without losing data",
+          "passed": true,
+          "evidence": "0 emoji, 0 gradients (script); all original data kept"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 899.4,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States users, their moment and ordered priorities before choosing a direction",
+          "passed": true,
+          "evidence": "DESIGN.md \u00a7Users, moment, priorities: 5 ordered priorities (am I on call \u2192 trust)"
+        },
+        {
+          "text": "Names one deliberate novelty moment tied to the product's differentiator",
+          "passed": true,
+          "evidence": "Novelty moment: the shift strip that recolours hours to the recipient while composing"
+        },
+        {
+          "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+          "passed": true,
+          "evidence": "macOS system-colour palette proposed; no Recall hex values (script)"
+        },
+        {
+          "text": "All colours come from tokens; no literal colours in component styles",
+          "passed": true,
+          "evidence": "0 literal colours outside token blocks (script); guard test 6/6"
+        },
+        {
+          "text": "Dark mode is designed",
+          "passed": true,
+          "evidence": "prefers-color-scheme dark + theme switch; 12 dark screenshots"
+        },
+        {
+          "text": "Verified in a rendered build (screenshots saved)",
+          "passed": true,
+          "evidence": "24 screenshots, 9 issues fixed after review"
+        },
+        {
+          "text": "Writes down a project design system with reasons for its values",
+          "passed": true,
+          "evidence": "design/SYSTEM.md with colour meanings and reasons"
+        },
+        {
+          "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+          "passed": true,
+          "evidence": "12 states incl. offline, first sync, not connected, send failed, gap"
+        },
+        {
+          "text": "Faithful to macOS menu-bar conventions and a realistic popover size",
+          "passed": true,
+          "evidence": "Real menu-bar sizes researched (Bjango); 22pt item, dial + time; standard macOS controls"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 857.2,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States users, their moment and ordered priorities before choosing a direction",
+          "passed": true,
+          "evidence": "Assumptions and priorities stated, following the Recall SYSTEM.md it adopted"
+        },
+        {
+          "text": "Names one deliberate novelty moment tied to the product's differentiator",
+          "passed": true,
+          "evidence": "Motion only on the checking screen, citing 'novelty where it pays'"
+        },
+        {
+          "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+          "passed": true,
+          "evidence": "Own placeholder palette (Larch); Recall principles reused, palette not"
+        },
+        {
+          "text": "All colours come from tokens; no literal colours in component styles",
+          "passed": true,
+          "evidence": "0 literal colours outside tokens (script); token test passes"
+        },
+        {
+          "text": "Dark mode is designed",
+          "passed": true,
+          "evidence": "Dark mode designed separately"
+        },
+        {
+          "text": "Verified in a rendered build (screenshots saved)",
+          "passed": true,
+          "evidence": "29 screenshots incl. 320px and 200% text"
+        },
+        {
+          "text": "Writes down a project design system with reasons for its values",
+          "passed": true,
+          "evidence": "design-system/SYSTEM.md modelled on Recall"
+        },
+        {
+          "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+          "passed": true,
+          "evidence": "Slow, very slow, failed, no match, wrong code, timeout"
+        },
+        {
+          "text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human",
+          "passed": true,
+          "evidence": "19px body, 56px controls, 48px min targets, words not icons; but SMS preview shows a sample code (482 913) a user could type"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.73,
+        "passed": 8,
+        "failed": 3,
+        "total": 11,
+        "time_seconds": 676.9,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States users, their moment and ordered priorities before choosing a direction",
+          "passed": false,
+          "evidence": "Names two readers (ops room at 3\u20134 m, laptop engineer) but no ordered priorities; went straight to principles from the brand voice"
+        },
+        {
+          "text": "Names one deliberate novelty moment tied to the product's differentiator",
+          "passed": false,
+          "evidence": "No deliberate novelty moment named; a situation headline banner duplicates the SEV1 row"
+        },
+        {
+          "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+          "passed": true,
+          "evidence": "Brand palette used (5 brand hex values); never saw Recall"
+        },
+        {
+          "text": "All colours come from tokens; no literal colours in component styles",
+          "passed": false,
+          "evidence": "1 literal colour outside tokens: box-shadow rgb(0 0 0 / 0.18) on the demo panel; no guard test"
+        },
+        {
+          "text": "Dark mode is designed",
+          "passed": true,
+          "evidence": "Dark TV theme, light laptop default + dark"
+        },
+        {
+          "text": "Verified in a rendered build (screenshots saved)",
+          "passed": true,
+          "evidence": "14 screenshots incl. original and 4K"
+        },
+        {
+          "text": "Writes down a project design system with reasons for its values",
+          "passed": true,
+          "evidence": "design-system/README.md: where the brand guide stops, colour checks, layout rules"
+        },
+        {
+          "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+          "passed": true,
+          "evidence": "Stale, feed down, loading, all clear, SEV2-only"
+        },
+        {
+          "text": "Palette taken from the brand guide",
+          "passed": true,
+          "evidence": "Navy, Fog, Slate, Tide Teal; Signal Orange deliberately unused"
+        },
+        {
+          "text": "Designs for both TV-at-distance and laptop viewing",
+          "passed": true,
+          "evidence": "TV mode (1080p/4K, never scrolls) and laptop mode"
+        },
+        {
+          "text": "Removes decoration (emoji, gradients) without losing data",
+          "passed": true,
+          "evidence": "0 emoji, 0 gradients (script)"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 939.8,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States users, their moment and ordered priorities before choosing a direction",
+          "passed": true,
+          "evidence": "Priorities stated, derived from the Recall SYSTEM.md it adopted as a stand-in"
+        },
+        {
+          "text": "Names one deliberate novelty moment tied to the product's differentiator",
+          "passed": true,
+          "evidence": "One novel element: the shift bar (outlined \u2192 striped \u2192 solid)"
+        },
+        {
+          "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+          "passed": true,
+          "evidence": "No Recall hex values; deepened macOS blue"
+        },
+        {
+          "text": "All colours come from tokens; no literal colours in component styles",
+          "passed": true,
+          "evidence": "0 literal colours outside tokens (script); token test 6/6"
+        },
+        {
+          "text": "Dark mode is designed",
+          "passed": true,
+          "evidence": "Light and dark for all 9 states"
+        },
+        {
+          "text": "Verified in a rendered build (screenshots saved)",
+          "passed": true,
+          "evidence": "21 screenshots; 7 bugs found by click-through"
+        },
+        {
+          "text": "Writes down a project design system with reasons for its values",
+          "passed": true,
+          "evidence": "design-system/SYSTEM.md modelled on Recall"
+        },
+        {
+          "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+          "passed": true,
+          "evidence": "Offline (PagerDuty unreachable), declined, incoming; no first-run/loading state"
+        },
+        {
+          "text": "Faithful to macOS menu-bar conventions and a realistic popover size",
+          "passed": true,
+          "evidence": "360pt panel under mock menu bar, pager icon states"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 1144.7333,
+        "stddev": 217.7755,
+        "min": 899.4,
+        "max": 1315.2
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.91,
+        "stddev": 0.1559,
+        "min": 0.73,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 824.6333,
+        "stddev": 134.4416,
+        "min": 676.9,
+        "max": 939.8
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.09",
+      "time_seconds": "+320.1",
+      "tokens": "+0"
+    }
+  },
+  "notes": []
+}

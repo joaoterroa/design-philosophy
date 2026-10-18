@@ -1,0 +1,59 @@
+{
+  "expectations": [
+    {
+      "text": "States users, their moment and ordered priorities before choosing a direction",
+      "passed": true,
+      "evidence": "Ordered priorities: never lost; readable; safe and seen to be safe; a person one tap away; mistakes cost nothing"
+    },
+    {
+      "text": "Names one deliberate novelty moment tied to the product's differentiator",
+      "passed": true,
+      "evidence": "Novelty moment: the text message shown before it arrives, with the scam rule"
+    },
+    {
+      "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+      "passed": true,
+      "evidence": "Own placeholder palette (Harbour), warm paper + ink blue; explicitly avoids case-study density"
+    },
+    {
+      "text": "All colours come from tokens; no literal colours in component styles",
+      "passed": true,
+      "evidence": "0 literal colours outside tokens (script); guard test 6/6"
+    },
+    {
+      "text": "Dark mode is designed",
+      "passed": true,
+      "evidence": "Dark mode designed; 390 dark screenshots"
+    },
+    {
+      "text": "Verified in a rendered build (screenshots saved)",
+      "passed": true,
+      "evidence": "63 screenshots at 320/390/430, 200% text; 5 issues fixed"
+    },
+    {
+      "text": "Writes down a project design system with reasons for its values",
+      "passed": true,
+      "evidence": "design/SYSTEM.md + AGENTS.md pointer"
+    },
+    {
+      "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+      "passed": true,
+      "evidence": "Errors, not found, wrong/expired/resent code, locked, slow/failed setup, help sheet"
+    },
+    {
+      "text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human",
+      "passed": true,
+      "evidence": "Nothing under 17px, 56px buttons, 48px min targets, plain errors, call/branch help on every screen"
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 1315.2,
+    "total_duration_seconds": 1315.2
+  }
+}

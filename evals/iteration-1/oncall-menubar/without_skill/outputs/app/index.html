@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handover prototype</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <!-- The desktop: context for the app at real size (1 CSS px = 1 macOS point). -->
+  <div class="desk" id="desk">
+    <div class="menubar" role="menubar" aria-label="Menu bar">
+      <button class="mb-item app" id="mb-app" aria-haspopup="dialog"></button>
+      <span class="mb-item" id="mb-wifi" aria-hidden="true"></span>
+      <span class="mb-item" id="mb-batt" aria-hidden="true"></span>
+      <span class="mb-item" id="mb-cc" aria-hidden="true"></span>
+      <span class="mb-item mb-clock" id="mb-clock"></span>
+    </div>
+    <div class="pop" id="pop" role="dialog" aria-label="On-call schedule"></div>
+  </div>
+
+  <!-- Prototype controls: not part of the app. -->
+  <aside class="proto" aria-label="Prototype controls">
+    <h2>STATES</h2>
+    <ol id="presets"></ol>
+    <div id="sim" hidden>
+      <h2>WHILE WAITING</h2>
+      <p>Pretend Priya answers.</p>
+      <p><button class="btn" data-act="sim-accept">Priya accepts</button> <button class="btn" data-act="sim-decline">Priya declines</button></p>
+    </div>
+    <h2>APPEARANCE</h2>
+    <div class="seg" role="tablist" aria-label="Appearance">
+      <button role="tab" data-theme="light" aria-selected="true">Light</button>
+      <button role="tab" data-theme="dark" aria-selected="false">Dark</button>
+    </div>
+    <p>The panel is drawn at its real size: 360 pt wide, under a 24 pt menu bar. Hover a row to see its action. Esc goes back or closes.</p>
+    <p>Sample data, invented. “Now” is Sunday 18 October 2026, 18:47 London.</p>
+  </aside>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

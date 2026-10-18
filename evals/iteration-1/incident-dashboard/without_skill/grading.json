@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "States users, their moment and ordered priorities before choosing a direction",
+      "passed": false,
+      "evidence": "Names two readers (ops room at 3\u20134 m, laptop engineer) but no ordered priorities; went straight to principles from the brand voice"
+    },
+    {
+      "text": "Names one deliberate novelty moment tied to the product's differentiator",
+      "passed": false,
+      "evidence": "No deliberate novelty moment named; a situation headline banner duplicates the SEV1 row"
+    },
+    {
+      "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+      "passed": true,
+      "evidence": "Brand palette used (5 brand hex values); never saw Recall"
+    },
+    {
+      "text": "All colours come from tokens; no literal colours in component styles",
+      "passed": false,
+      "evidence": "1 literal colour outside tokens: box-shadow rgb(0 0 0 / 0.18) on the demo panel; no guard test"
+    },
+    {
+      "text": "Dark mode is designed",
+      "passed": true,
+      "evidence": "Dark TV theme, light laptop default + dark"
+    },
+    {
+      "text": "Verified in a rendered build (screenshots saved)",
+      "passed": true,
+      "evidence": "14 screenshots incl. original and 4K"
+    },
+    {
+      "text": "Writes down a project design system with reasons for its values",
+      "passed": true,
+      "evidence": "design-system/README.md: where the brand guide stops, colour checks, layout rules"
+    },
+    {
+      "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+      "passed": true,
+      "evidence": "Stale, feed down, loading, all clear, SEV2-only"
+    },
+    {
+      "text": "Palette taken from the brand guide",
+      "passed": true,
+      "evidence": "Navy, Fog, Slate, Tide Teal; Signal Orange deliberately unused"
+    },
+    {
+      "text": "Designs for both TV-at-distance and laptop viewing",
+      "passed": true,
+      "evidence": "TV mode (1080p/4K, never scrolls) and laptop mode"
+    },
+    {
+      "text": "Removes decoration (emoji, gradients) without losing data",
+      "passed": true,
+      "evidence": "0 emoji, 0 gradients (script)"
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 3,
+    "total": 11,
+    "pass_rate": 0.73
+  },
+  "timing": {
+    "executor_duration_seconds": 676.9,
+    "total_duration_seconds": 676.9
+  }
+}

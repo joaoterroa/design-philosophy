@@ -1,0 +1,59 @@
+{
+  "expectations": [
+    {
+      "text": "States users, their moment and ordered priorities before choosing a direction",
+      "passed": true,
+      "evidence": "Assumptions and priorities stated, following the Recall SYSTEM.md it adopted"
+    },
+    {
+      "text": "Names one deliberate novelty moment tied to the product's differentiator",
+      "passed": true,
+      "evidence": "Motion only on the checking screen, citing 'novelty where it pays'"
+    },
+    {
+      "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+      "passed": true,
+      "evidence": "Own placeholder palette (Larch); Recall principles reused, palette not"
+    },
+    {
+      "text": "All colours come from tokens; no literal colours in component styles",
+      "passed": true,
+      "evidence": "0 literal colours outside tokens (script); token test passes"
+    },
+    {
+      "text": "Dark mode is designed",
+      "passed": true,
+      "evidence": "Dark mode designed separately"
+    },
+    {
+      "text": "Verified in a rendered build (screenshots saved)",
+      "passed": true,
+      "evidence": "29 screenshots incl. 320px and 200% text"
+    },
+    {
+      "text": "Writes down a project design system with reasons for its values",
+      "passed": true,
+      "evidence": "design-system/SYSTEM.md modelled on Recall"
+    },
+    {
+      "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+      "passed": true,
+      "evidence": "Slow, very slow, failed, no match, wrong code, timeout"
+    },
+    {
+      "text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human",
+      "passed": true,
+      "evidence": "19px body, 56px controls, 48px min targets, words not icons; but SMS preview shows a sample code (482 913) a user could type"
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 857.2,
+    "total_duration_seconds": 857.2
+  }
+}

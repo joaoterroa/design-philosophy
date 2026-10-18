@@ -1,0 +1,16 @@
+{
+  "eval_id": 3,
+  "eval_name": "banking-onboarding",
+  "prompt": "can you apply my design philosophy to the onboarding flow of our mobile banking app? users are older customers switching from branches. keep it accessible",
+  "assertions": [
+    "States users, their moment and ordered priorities before choosing a direction",
+    "Names one deliberate novelty moment tied to the product's differentiator",
+    "Identity derived from this product's context (no reuse of the Recall extension palette)",
+    "All colours come from tokens; no literal colours in component styles",
+    "Dark mode is designed",
+    "Verified in a rendered build (screenshots saved)",
+    "Writes down a project design system with reasons for its values",
+    "Designs the non-happy states (empty, loading, error/offline as relevant)",
+    "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human"
+  ]
+}

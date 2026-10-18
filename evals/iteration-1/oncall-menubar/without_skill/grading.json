@@ -1,0 +1,59 @@
+{
+  "expectations": [
+    {
+      "text": "States users, their moment and ordered priorities before choosing a direction",
+      "passed": true,
+      "evidence": "Priorities stated, derived from the Recall SYSTEM.md it adopted as a stand-in"
+    },
+    {
+      "text": "Names one deliberate novelty moment tied to the product's differentiator",
+      "passed": true,
+      "evidence": "One novel element: the shift bar (outlined \u2192 striped \u2192 solid)"
+    },
+    {
+      "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+      "passed": true,
+      "evidence": "No Recall hex values; deepened macOS blue"
+    },
+    {
+      "text": "All colours come from tokens; no literal colours in component styles",
+      "passed": true,
+      "evidence": "0 literal colours outside tokens (script); token test 6/6"
+    },
+    {
+      "text": "Dark mode is designed",
+      "passed": true,
+      "evidence": "Light and dark for all 9 states"
+    },
+    {
+      "text": "Verified in a rendered build (screenshots saved)",
+      "passed": true,
+      "evidence": "21 screenshots; 7 bugs found by click-through"
+    },
+    {
+      "text": "Writes down a project design system with reasons for its values",
+      "passed": true,
+      "evidence": "design-system/SYSTEM.md modelled on Recall"
+    },
+    {
+      "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+      "passed": true,
+      "evidence": "Offline (PagerDuty unreachable), declined, incoming; no first-run/loading state"
+    },
+    {
+      "text": "Faithful to macOS menu-bar conventions and a realistic popover size",
+      "passed": true,
+      "evidence": "360pt panel under mock menu bar, pager icon states"
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 939.8,
+    "total_duration_seconds": 939.8
+  }
+}

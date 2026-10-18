@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "States users, their moment and ordered priorities before choosing a direction",
+      "passed": true,
+      "evidence": "DESIGN.md: ordered priorities (open & severity, owner, freshness, trend\u2026)"
+    },
+    {
+      "text": "Names one deliberate novelty moment tied to the product's differentiator",
+      "passed": true,
+      "evidence": "Novelty moment: 24-hour lane per incident on a shared now-axis"
+    },
+    {
+      "text": "Identity derived from this product's context (no reuse of the Recall extension palette)",
+      "passed": true,
+      "evidence": "Brand palette from guide (5 brand hex values); no Recall values"
+    },
+    {
+      "text": "All colours come from tokens; no literal colours in component styles",
+      "passed": true,
+      "evidence": "0 literal colours outside tokens (script); guard test 7/7"
+    },
+    {
+      "text": "Dark mode is designed",
+      "passed": true,
+      "evidence": "Wall display dark, laptop light/dark"
+    },
+    {
+      "text": "Verified in a rendered build (screenshots saved)",
+      "passed": true,
+      "evidence": "20 screenshots incl. before/after and 4 TV resolutions; 4 critique rounds"
+    },
+    {
+      "text": "Writes down a project design system with reasons for its values",
+      "passed": true,
+      "evidence": "design/SYSTEM.md + AGENTS.md pointer"
+    },
+    {
+      "text": "Designs the non-happy states (empty, loading, error/offline as relevant)",
+      "passed": true,
+      "evidence": "Loading, all clear, connection lost, source failed, 12-incident surge"
+    },
+    {
+      "text": "Palette taken from the brand guide",
+      "passed": true,
+      "evidence": "Palette from brand guide (navy, Fog, Slate, Tide Teal; deeper orange for text)"
+    },
+    {
+      "text": "Designs for both TV-at-distance and laptop viewing",
+      "passed": true,
+      "evidence": "?display=wall for TV (1366\u00d7768, 1080p, 4K) and laptop at 1280/1440/390"
+    },
+    {
+      "text": "Removes decoration (emoji, gradients) without losing data",
+      "passed": true,
+      "evidence": "0 emoji, 0 gradients (script); all original data kept"
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 0,
+    "total": 11,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 1219.6,
+    "total_duration_seconds": 1219.6
+  }
+}

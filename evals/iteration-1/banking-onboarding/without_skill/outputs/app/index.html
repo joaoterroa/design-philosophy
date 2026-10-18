@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <!-- Zoom is never disabled -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Set up the app</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <button class="topbar-btn" id="back" type="button">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back
+      </button>
+      <span class="topbar-spacer" id="back-spacer" hidden></span>
+      <button class="topbar-btn" id="help" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7.8 7.6a2.3 2.3 0 1 1 3.2 2.1c-.6.3-1 .8-1 1.5v.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.6" r="1.1" fill="currentColor"/></svg>
+        Help
+      </button>
+    </header>
+    <main id="screen" tabindex="-1"></main>
+  </div>
+
+  <!-- Polite announcements for things that change without a new screen -->
+  <div class="visually-hidden" aria-live="polite" id="announce"></div>
+
+  <dialog class="sheet" id="help-sheet" aria-labelledby="help-title">
+    <div class="sheet-head">
+      <h2 id="help-title" tabindex="-1" autofocus>Help</h2>
+      <button class="topbar-btn" type="button" data-close>Close</button>
+    </div>
+    <div class="sheet-body" id="help-body"></div>
+  </dialog>
+
+  <dialog class="sheet center" id="timeout-sheet" aria-labelledby="timeout-title" aria-describedby="timeout-desc">
+    <div class="sheet-body">
+      <h2 id="timeout-title" class="sheet-title">Do you need more time?</h2>
+      <p id="timeout-desc">To keep your account safe, we will stop setting up in <strong id="timeout-left">2 minutes</strong> if nothing happens. What you have typed so far will be kept.</p>
+      <div class="actions inline">
+        <button class="btn" type="button" id="more-time">Yes, I need more time</button>
+        <button class="btn secondary" type="button" id="stop-now">Stop and finish later</button>
+      </div>
+    </div>
+  </dialog>
+
+  <details class="proto">
+    <summary>Prototype only: jump to a screen or state</summary>
+    <p>Not part of the design. Test values: sort code <b>00-00-00</b> finds no account; text code <b>000000</b> is wrong; passcode <b>123456</b> is too easy to guess.</p>
+    <ul id="proto-links"></ul>
+  </details>
+
+  <script src="app.js"></script>
+</body>
+</html>

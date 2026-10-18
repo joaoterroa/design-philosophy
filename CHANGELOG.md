@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Evals iteration 1: three prompts run with and without the skill; results, screenshots, grades and findings in `evals/iteration-1/`. Seven proposed skill edits recorded in its FINDINGS, not yet applied. Dashboard fixture added under `evals/fixtures/`.
+
 ## 0.1.0 (2026-10-18)
 
 - First version, extracted from the "Recall" redesign of a browser side panel for technical knowledge (influences: The Browser Company / Dia).

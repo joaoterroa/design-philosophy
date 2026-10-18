@@ -1,0 +1,112 @@
+/* Larch onboarding tokens. Every colour, size, radius and duration used by
+   styles.css lives here. See ../design-system/SYSTEM.md for what each means.
+   Sizes are in rem so the phone's own text-size setting scales everything. */
+
+:root {
+  /* Neutrals: warm greys carry almost everything */
+  --bg: #FBFAF7;
+  --surface: #FFFFFF;
+  --soft: #F0EEE9;
+  --text: #1B1A18;        /* 16.7:1 on --bg */
+  --text-2: #45423D;      /* 9.6:1 on --bg  */
+  --line: #7D786F;        /* input borders, 4.4:1 on --surface (needs 3:1) */
+  --line-soft: #DEDAD2;   /* separators only, never the edge of a control */
+
+  /* One accent: act and follow (buttons, links) */
+  --accent: #0F4C75;      /* 8.7:1 on --bg, white on it 9.1:1 */
+  --accent-press: #0A3756;
+  --on-accent: #FFFFFF;
+  --accent-soft: #E4EDF4;
+
+  /* Meanings with words attached */
+  --err: #A0131E;         /* 7.1:1 on --err-bg */
+  --err-bg: #FBEDEE;
+  --ok: #1D6A39;          /* done, nothing else */
+  --ok-bg: #E8F3EC;
+
+  --focus: #1B1A18;       /* focus ring, outside the control */
+  --focus-fill: #FFD84D;  /* behind focused links, like GOV.UK */
+  --on-focus-fill: #1B1A18;
+  --scrim: rgba(27, 26, 24, 0.55);
+
+  /* Type. Body never goes below 1.0625rem (17px at default). */
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-display: 1.875rem;   /* 30 */
+  --lh-display: 2.25rem;
+  --fs-title: 1.5rem;       /* 24 */
+  --lh-title: 1.875rem;
+  --fs-body: 1.1875rem;     /* 19 */
+  --lh-body: 1.75rem;
+  --fs-small: 1.0625rem;    /* 17, the floor */
+  --lh-small: 1.5rem;
+  --fs-code: 1.75rem;       /* code and passcode digits */
+
+  /* Space, 4px base */
+  --s1: 0.25rem; --s2: 0.5rem; --s3: 0.75rem; --s4: 1rem;
+  --s5: 1.25rem; --s6: 1.5rem; --s8: 2rem; --s10: 2.5rem; --s12: 3rem;
+  --gutter: 1.25rem;
+
+  /* Targets */
+  --target: 3.5rem;         /* 56px buttons and inputs */
+  --target-min: 3rem;       /* 48px for text links in the top bar */
+
+  /* Shape */
+  --r-s: 0.375rem;
+  --r-m: 0.625rem;
+  --r-l: 1rem;
+  --border: 2px;
+
+  --shadow-sheet: 0 -8px 32px rgba(27, 26, 24, 0.18);
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 150ms;
+  --t-mid: 240ms;
+  --t-pulse: 1600ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131311;
+    --surface: #1D1C1A;
+    --soft: #272623;
+    --text: #F4F2ED;
+    --text-2: #CBC7BF;
+    --line: #8E897F;
+    --line-soft: #3A3834;
+    --accent: #8CC2EB;
+    --accent-press: #B3D7F2;
+    --on-accent: #0A1B28;
+    --accent-soft: #1C2B37;
+    --err: #FFA3A3;
+    --err-bg: #3A1C1E;
+    --ok: #86D6A0;
+    --ok-bg: #18301F;
+    --focus: #FFFFFF;
+    --focus-fill: #FFD84D;
+    --scrim: rgba(0, 0, 0, 0.7);
+    --shadow-sheet: 0 -8px 32px rgba(0, 0, 0, 0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #131311;
+  --surface: #1D1C1A;
+  --soft: #272623;
+  --text: #F4F2ED;
+  --text-2: #CBC7BF;
+  --line: #8E897F;
+  --line-soft: #3A3834;
+  --accent: #8CC2EB;
+  --accent-press: #B3D7F2;
+  --on-accent: #0A1B28;
+  --accent-soft: #1C2B37;
+  --err: #FFA3A3;
+  --err-bg: #3A1C1E;
+  --ok: #86D6A0;
+  --ok-bg: #18301F;
+  --focus: #FFFFFF;
+  --focus-fill: #FFD84D;
+  --scrim: rgba(0, 0, 0, 0.7);
+  --shadow-sheet: 0 -8px 32px rgba(0, 0, 0, 0.6);
+}

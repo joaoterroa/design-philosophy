@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --surface: #ffffff;
+      --border: #e8e6dc;
+      --text: #141413;
+      --text-muted: #b0aea5;
+      --accent: #d97757;
+      --accent-hover: #c4613f;
+      --green: #788c5d;
+      --green-bg: #eef2e8;
+      --red: #c44;
+      --red-bg: #fceaea;
+      --header-bg: #141413;
+      --header-text: #faf9f5;
+      --radius: 6px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .header .instructions {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+    }
+    .header .progress {
+      font-size: 0.875rem;
+      opacity: 0.8;
+      text-align: right;
+    }
+
+    /* ---- Main content ---- */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      flex-shrink: 0;
+    }
+    .section-header {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .section-body {
+      padding: 1rem;
+    }
+
+    /* ---- Config badge ---- */
+    .config-badge {
+      display: inline-block;
+      padding: 0.2rem 0.625rem;
+      border-radius: 9999px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+    .config-badge.config-primary {
+      background: rgba(33, 150, 243, 0.12);
+      color: #1976d2;
+    }
+    .config-badge.config-baseline {
+      background: rgba(255, 193, 7, 0.15);
+      color: #f57f17;
+    }
+
+    /* ---- Prompt ---- */
+    .prompt-text {
+      white-space: pre-wrap;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* ---- Outputs ---- */
+    .output-file {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .output-file + .output-file {
+      margin-top: 1rem;
+    }
+    .output-file-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .output-file-header .dl-btn {
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    .output-file-header .dl-btn:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .output-file-content {
+      padding: 0.75rem;
+      overflow-x: auto;
+    }
+    .output-file-content pre {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    }
+    .output-file-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .output-file-content iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .output-file-content table {
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      width: 100%;
+    }
+    .output-file-content table td,
+    .output-file-content table th {
+      border: 1px solid var(--border);
+      padding: 0.375rem 0.5rem;
+      text-align: left;
+    }
+    .output-file-content table th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+    .output-file-content .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .output-file-content .download-link:hover {
+      background: var(--border);
+    }
+    .empty-state {
+      color: var(--text-muted);
+      font-style: italic;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* ---- Feedback ---- */
+    .prev-feedback {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.625rem 0.75rem;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .prev-feedback-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+      color: var(--text-muted);
+    }
+    .feedback-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      resize: vertical;
+      color: var(--text);
+    }
+    .feedback-textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    .feedback-status {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      min-height: 1.1em;
+    }
+
+    /* ---- Grades (collapsible) ---- */
+    .grades-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .grades-toggle:hover {
+      color: var(--accent);
+    }
+    .grades-toggle .arrow {
+      margin-right: 0.5rem;
+      transition: transform 0.15s;
+      font-size: 0.75rem;
+    }
+    .grades-toggle .arrow.open {
+      transform: rotate(90deg);
+    }
+    .grades-content {
+      display: none;
+      margin-top: 0.75rem;
+    }
+    .grades-content.open {
+      display: block;
+    }
+    .grades-summary {
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .grade-badge {
+      display: inline-block;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .grade-pass { background: var(--green-bg); color: var(--green); }
+    .grade-fail { background: var(--red-bg); color: var(--red); }
+    .assertion-list {
+      list-style: none;
+    }
+    .assertion-item {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8125rem;
+    }
+    .assertion-item:last-child { border-bottom: none; }
+    .assertion-status {
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .assertion-status.pass { color: var(--green); }
+    .assertion-status.fail { color: var(--red); }
+    .assertion-evidence {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      padding-left: 1.5rem;
+    }
+
+    /* ---- View tabs ---- */
+    .view-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 2rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .view-tab {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); }
+    .view-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .view-panel { display: none; }
+    .view-panel.active { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+    /* ---- Benchmark view ---- */
+    .benchmark-view {
+      padding: 1.5rem 2rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .benchmark-table {
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.625rem 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .benchmark-table th {
+      font-family: 'Poppins', sans-serif;
+      background: var(--header-bg);
+      color: var(--header-text);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .benchmark-table tr:hover { background: var(--bg); }
+    .benchmark-table tr.benchmark-row-with { background: rgba(33, 150, 243, 0.06); }
+    .benchmark-table tr.benchmark-row-without { background: rgba(255, 193, 7, 0.06); }
+    .benchmark-table tr.benchmark-row-with:hover { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-without:hover { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-table tr.benchmark-row-avg { font-weight: 600; border-top: 2px solid var(--border); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-with { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-without { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-delta-positive { color: var(--green); font-weight: 600; }
+    .benchmark-delta-negative { color: var(--red); font-weight: 600; }
+    .benchmark-notes {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+    .benchmark-notes h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .benchmark-notes ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .benchmark-notes li {
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 0.375rem;
+    }
+    .benchmark-empty {
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    /* ---- Navigation ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.15s;
+    }
+    .nav-btn:hover:not(:disabled) {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .done-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .done-btn:hover {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .done-btn.ready {
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+    .done-btn.ready:hover {
+      background: var(--accent-hover);
+    }
+    /* ---- Done overlay ---- */
+    .done-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+    }
+    .done-overlay.visible {
+      display: flex;
+    }
+    .done-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+    .done-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .done-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .done-card .btn-row {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .done-card button {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .done-card button:hover {
+      background: var(--bg);
+    }
+    /* ---- Toast ---- */
+    .toast {
+      position: fixed;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 200;
+    }
+    .toast.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="height:100vh; display:flex; flex-direction:column;">
+    <div class="header">
+      <div>
+        <h1>Eval Review: <span id="skill-name"></span></h1>
+        <div class="instructions">Review each output and leave feedback below. Navigate with arrow keys or buttons. When done, copy feedback and paste into Claude Code.</div>
+      </div>
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- View tabs (only shown when benchmark data exists) -->
+    <div class="view-tabs" id="view-tabs" style="display:none;">
+      <button class="view-tab active" onclick="switchView('outputs')">Outputs</button>
+      <button class="view-tab" onclick="switchView('benchmark')">Benchmark</button>
+    </div>
+
+    <!-- Outputs panel (qualitative review) -->
+    <div class="view-panel active" id="panel-outputs">
+    <div class="main">
+      <!-- Prompt -->
+      <div class="section">
+        <div class="section-header">Prompt <span class="config-badge" id="config-badge" style="display:none;"></span></div>
+        <div class="section-body">
+          <div class="prompt-text" id="prompt-text"></div>
+        </div>
+      </div>
+
+      <!-- Outputs -->
+      <div class="section">
+        <div class="section-header">Output</div>
+        <div class="section-body" id="outputs-body">
+          <div class="empty-state">No output files found</div>
+        </div>
+      </div>
+
+      <!-- Previous Output (collapsible) -->
+      <div class="section" id="prev-outputs-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="togglePrevOutputs()">
+            <span class="arrow" id="prev-outputs-arrow">&#9654;</span>
+            Previous Output
+          </div>
+        </div>
+        <div class="grades-content" id="prev-outputs-content"></div>
+      </div>
+
+      <!-- Grades (collapsible) -->
+      <div class="section" id="grades-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="toggleGrades()">
+            <span class="arrow" id="grades-arrow">&#9654;</span>
+            Formal Grades
+          </div>
+        </div>
+        <div class="grades-content" id="grades-content"></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="section">
+        <div class="section-header">Your Feedback</div>
+        <div class="section-body">
+          <textarea
+            class="feedback-textarea"
+            id="feedback"
+            placeholder="What do you think of this output? Any issues, suggestions, or things that look great?"
+          ></textarea>
+          <div class="feedback-status" id="feedback-status"></div>
+          <div class="prev-feedback" id="prev-feedback" style="display:none;">
+            <div class="prev-feedback-label">Previous feedback</div>
+            <div id="prev-feedback-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="outputs-nav">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">&#8592; Previous</button>
+      <button class="done-btn" id="done-btn" onclick="showDoneDialog()">Submit All Reviews</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Next &#8594;</button>
+    </div>
+    </div><!-- end panel-outputs -->
+
+    <!-- Benchmark panel (quantitative stats) -->
+    <div class="view-panel" id="panel-benchmark">
+      <div class="benchmark-view" id="benchmark-content">
+        <div class="benchmark-empty">No benchmark data available. Run a benchmark to see quantitative results here.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Done overlay -->
+  <div class="done-overlay" id="done-overlay">
+    <div class="done-card">
+      <h2>Review Complete</h2>
+      <p>Your feedback has been saved. Go back to your Claude Code session and tell Claude you're done reviewing.</p>
+      <div class="btn-row">
+        <button onclick="closeDoneDialog()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ---- Embedded data (injected by generate_review.py) ----
+    const EMBEDDED_DATA = {"skill_name": "design-philosophy", "runs": [{"id": "eval-banking-onboarding-with_skill-run-1", "prompt": "(No prompt found)", "eval_id": null, "outputs": [{"name": "AGENTS.md", "type": "text", "content": "## UI and design\n- Any change to the onboarding interface follows `design/SYSTEM.md` (this project's own design system, \"Counter Service\"). Read it first.\n- New values go in `app/tokens.css`, never inline. `node --test tests/*.test.js` runs the design guard test.\n- `python tools/verify.py` renders every state (320/390/430px, light/dark, 200% text, help sheet) into `screenshots/` and runs overflow, target-size and keyboard checks.\n- For new UI work, use the `design-philosophy` skill's method (understand, references, audit, direction, system, implement, verify, record), but this project's SYSTEM.md decides its look.\n- Record verified design changes and open items in `DESIGN.md` (section \"Open items\").\n"}, {"name": "DESIGN.md", "type": "text", "content": "# Onboarding for branch customers: design notes\n\nApplying the user's \"considered design\" philosophy to the onboarding flow of a mobile banking app for older customers moving from branches. Direction name: **Counter Service**.\n\n- Prototype: `app/index.html` (open at phone width; every state reachable by URL, listed at the end)\n- Design system: `design/SYSTEM.md`, tokens in `app/tokens.css`, guard test `tests/design.test.js`\n- Verification: `tools/verify.py` (screenshots, layout and keyboard checks), output in `screenshots/` (63 PNGs) and `tools/verify-report.json`\n- Agent pointer: `AGENTS.md`\n\n## 1. How I approached it\n\nI followed the skill's eight phases: understand, study references, audit, choose a direction, write the system, implement, verify and refine, record. Two things changed the shape of the work:\n\n- **No existing app, flow, code or brand was available, and I couldn't ask.** So phase 3 (audit the current state) could not be a measured audit of *their* flow. I audited the prototype itself across rounds instead, and recorded the numbers (section 6).\n- **The network blocked every reference site** (w3.org and design-system.service.gov.uk both returned a proxy 403). Everything in section 2 comes from prior knowledge, not sources fetched in this session. A human should check it against the current documents.\n\n### What I would have asked, and what I assumed instead\n\n| Would have asked | Assumed | Why that assumption |\n| --- | --- | --- |\n| Brand guide, logo, palette, typefaces | None. Placeholder name \"Harbour\", proposed palette (SYSTEM.md section 3), system fonts | The skill says a brand beats invented taste. The palette is labelled a proposal, and the system says how to bring the brand colour in. |\n| The existing onboarding flow and its constraints | A fresh flow for **existing** customers activating the app, not new account opening | \"Switching from branches\" means they already bank with you, which makes their card the natural bridge. |\n| Market and regulation | UK: sort codes, \u00a3, free 0808 helpline, UK scam patterns (safe-account and code-sharing scams) | The repo context and the fraud patterns these users face. Swapping the market changes the copy and identifiers, not the structure. |\n| How identity is checked | Card number + date of birth (or sort code + account number), then an SMS code to the mobile on file | The common UK pattern. Real KYC/SCA rules may add steps, which would fit the same one-question-per-screen structure. |\n| Native iOS/Android or web | Native app. The prototype is HTML that simulates it at phone size | The brief says \"mobile banking app\". |\n| How long progress is kept | 7 days on this phone, non-secret fields only | Needs a security owner's decision (see open items). |\n| Helpline number | 0808 157 0192, from Ofcom's range reserved for drama and fiction | So the prototype never dials a real number. |\n\n## 2. Understanding and research\n\n**Users.** Existing customers, mostly 65+, who have banked at the counter for decades. They are moving because branches are cutting hours or closing, so some don't want to be here at all. They set up once, at home, sometimes with a relative, often with the phone's text size turned up. They make fewer taps and more careful reads than younger users, they are put off by gestures, hidden controls and jargon, and they are the main target of authorised push-payment and code-sharing scams.\n\n**Moment.** A deliberate, unhurried sitting. Attention is high, confidence is low. That's the opposite of the case study's engineer mid-investigation, so density goes **down**, explanation of the *unusual* goes **up**, and targets get bigger.\n\n**Priorities (tie-breakers, in order):** never lost; readable and reachable; safe, and seen to be safe; a person one tap away; mistakes cost nothing. The reasoning is in SYSTEM.md section 1.\n\n**Constraints and standards I designed to** (from knowledge, not fetched):\n- WCAG 2.2 AA as the floor, plus three AAA-level choices: text at **7:1** contrast, targets of **56px** for primary controls (2.5.8 asks for 24px; Apple and Google ask for 44pt and 48dp), and no timeouts.\n- WCAG 2.2's newer criteria that fit this flow closely: **3.2.6 Consistent Help** (Help sits in the same place on every screen), **3.3.7 Redundant Entry** (details survive Back and errors), **3.3.8 Accessible Authentication** (the code field accepts paste and OS autofill, with no memory or puzzle test), and **2.2.1 Timing Adjustable** (no screen times out; the code's 10-minute life is stated, and a new one is one tap away).\n- The OS text-size setting (iOS Dynamic Type, Android font scale) must reflow the layout up to 200% without clipping. That's why everything uses rem, and why the prototype has a `?scale=200` hook.\n- Zoom is never blocked.\n\n**References, for their thinking:**\n- *The Browser Company / Dia* (the skill's root influence): \"familiar, but elevated\". Borrowed: no new mechanics. These users pay for every unfamiliar pattern, so the craft goes into wording, spacing and states. Not copied: any visual.\n- *GOV.UK Design System* (built for everyone, including people with low digital confidence): one thing per page, the question as the heading, error summaries that link to fields, a separate day/month/year date input. Borrowed: those patterns, because they are tested on exactly this audience. Not copied: GOV.UK's typeface, colours, or its yellow focus style.\n- *UK fraud-prevention messaging* (the Take Five style \"we will never ask you to\u2026\"). Borrowed: one specific rule, given at the moment it applies. Not copied: blanket warning screens, which these users learn to tap past.\n\n## 3. Direction\n\n**Counter Service:** the app should feel like being served at the counter by someone patient. One question at a time, in plain words; the thing you already hold (your card) is the way in; a person is always one tap away.\n\n**Structure.**\n1. Welcome: what the app is for, how long setup takes (10 minutes), what you'll need, and that you can stop. Plus the offer to do it with a person.\n2. Step 1, Your details: the long card number (with an illustration of where it is) and date of birth. \"I don't have my card with me\" switches to sort code and account number.\n3. Step 2, Check it's you: the SMS code, with the message preview.\n4. Step 3, Your passcode.\n5. Step 4, How you log in: fingerprint or face, or passcode only.\n6. Setting up: named steps that tick in place.\n7. Done: their account with its balance and last payment in, and the line \"Your branch is still here\".\n\n**The one novelty moment: the text message, shown before it arrives.** On the code step the app shows exactly what Harbour's text will look like: the sender, the wording, the code as blanks. The status line changes from \"Sending your text\u2026\" to \"Sent at 2:14pm. Check your messages.\" as the bubble slides in. Right under it is the single scam rule that matters at that moment: *never read this code out to anyone, even someone who says they're from Harbour*.\nWhy this spot: the code step is where scams actually happen (fraudsters phone and ask for exactly this code). It is also where these users leave the app for Messages and have to come back. The preview does two jobs. It tells them what to look for, and it teaches them to recognise a genuine message by showing one. Everything else in the flow is plain.\n\n**Identity, each with a reason specific to this product:**\n- *Palette:* warm paper and ink, because the reference is a bank letter, not a dashboard, and because a warm off-white glares less than pure white for older eyes. White is kept for \"write here\" (fields, the bubble). Deep ink blue is the single action colour: it gives 10.8:1 with white labels, and it never has to be told apart from another blue or from green, which matters because the ageing lens weakens blue/green and blue/violet discrimination.\n- *Type:* system faces at 19px body and 28px titles. They follow the phone's text setting and match what users read in Messages; a brand face adds nothing they need.\n- *Shape:* soft but firm (10\u201316px radii), with a **visible 2px edge on every control**, including Back and Help. Borderless text buttons and 1px field outlines are common in banking apps and are exactly what older users miss.\n- *Layout:* buttons follow the content instead of docking to the bottom. At 200% text a docked bar would eat a third of the screen and cover fields.\n- *Voice:* patient, plain, specific. \"The card number is 16 numbers. You've entered 12.\" Limits are stated before they bite (\"You can try 2 more times\").\n\nSwap test against the case study (Recall): it used a red and maroon brand on a cool UI, a docked bottom composer, chips, a skeleton sheen, dense metadata and system UI at small sizes. This flow shares none of those. Its warm paper ground, large scale, bordered bar buttons and message preview would make no sense in Recall, which is the point.\n\n## 4. Key decisions and their reasons\n\n| Decision | Reason | Road not taken |\n| --- | --- | --- |\n| The card is the way in | Users hold it already and have used it at the counter for years; \"the long number on your card\" plus a picture answers \"which number?\" | Customer ID or username, which branch customers often don't know |\n| One code field with `one-time-code` autofill, not six boxes | Six boxes break paste, OS autofill and screen readers, and older users mis-tap into the wrong box | Segmented boxes, which look neat and fail this audience |\n| Scam advice only at the code step, as one sentence | Advice lands when it's relevant; an up-front warnings screen gets tapped past | A safety-tips screen before setup |\n| Help is a labelled, bordered button in the same place on every screen; it opens help for **this step** first, then \"Talk to a person\" | WCAG 3.2.6, and priority 4. Context first, because most questions are about the current screen | A help tab or menu, or a chat bot |\n| A phone number and branch on the welcome screen | Some users would rather do this with a person, and should be told up front that they can | Burying assisted setup in FAQs |\n| Biometrics: equal-weight yes and no, plus the honest line \"anyone whose fingerprint or face is saved on this phone could also open the app\" | Family members often have fingerprints on a shared phone. It's true, specific and protective | Pushing biometrics as the default |\n| Passcode masked by default, one \"Show numbers\" toggle for both fields | Platform convention, and people set up with others nearby; the toggle reduces typing errors | Unmasked by default |\n| Passcode rules explained in words, including a check against the date of birth they just entered | Specific beats \"weak passcode\" | A strength meter (a widget to learn) |\n| Setting-up screen has named steps, and a calm, honest note when slow | No anxious spinner on its own; the user knows nothing is required of them | Spinner and \"Please wait\" |\n| Failure says \"Nothing has changed on your account\" | The fear is losing money, not losing a form | Generic \"Something went wrong\" |\n| Done shows the balance and the last money in | This is what they came for, and it looks like the statement they know | A feature tour carousel |\n| \"Your branch is still here\" on the done screen | Quiet personality that answers the real worry (\"am I losing my branch?\") | A celebration animation |\n| Error summary at the top **and** inline errors | A screen-reader or zoomed user lands on the summary; a sighted user sees the error at the field | Inline only, which isn't found when zoomed |\n\n## 5. The system\n\n`design/SYSTEM.md` records the purpose, priorities, principles, every colour's meaning and misuse, the type scale, space and shape rules, layout, components, motion, writing, accessibility and a pre-ship checklist. `app/tokens.css` holds every value. `tests/design.test.js` (6 tests) fails on:\n- literal colours, font sizes, radii, durations or shadows in `styles.css`;\n- inline colours or styles in `app.js` or `index.html`;\n- a colour missing from, or different between, the two dark blocks;\n- any type size below 17px;\n- **26 contrast pairs per theme**: text at 7:1 on paper, surface and sunk; button labels; error, caution and ok text on their tints; control edges and focus at 3:1;\n- a viewport that blocks zoom, or tokens loaded after styles.\n\n## 6. Verification and refinement\n\n**Automated, final run** (`python tools/verify.py`, Chromium headless):\n- 17 states at 390px light and dark and at 320px; 3 states at 430px; 6 states at 200% text; the help sheet in light and dark.\n- **No horizontal overflow, no clipped text or controls, no target under 48px** (inline links in sentences excepted, as WCAG allows), **no console errors**, in every rendering.\n- The guard test passes: 6/6.\n- **Keyboard-only walkthrough, completed with reduced motion on:** Start \u2192 details (focus lands on the question) \u2192 Help opens with focus on its title and the app behind inert, Escape closes it and focus returns to Help \u2192 an empty submit focuses the error summary (2 items) \u2192 the card number groups itself as \"4921 3388 0154 7712\" \u2192 code step (progress reads \"Step 2 of 4: Check it's you\") \u2192 message status updates \u2192 a wrong code gives \"You can try 2 more times\" with focus kept in the field \u2192 a passcode matching the birthday is rejected \u2192 a mismatch focuses the second field \u2192 \"Show numbers\" unmasks both fields \u2192 biometrics \u2192 setting up (Back hidden) \u2192 done, with focus on \"You're set up, Margaret\".\n\n**Bugs found by looking, and fixed:**\n1. **Code input below the fold.** With the preview above the field, Continue sat at y=997 on an 844px screen and y=1165 at 320px. Users would have to scroll to do the one thing the screen asks. I moved the field and Continue above the preview: Continue is now at **y=452 (390px) and y=480 (320px)**. The preview still starts on the first screen, just after the action.\n2. **200% text squeezed the column to about 240px** because rem gutters and panel padding doubled too. The balance (\u00a32,481.36) overflowed its panel, and the message bubble's text overflowed. I made horizontal insets fixed px (`--gutter` 20px, `--inset` 16px) while vertical rhythm still scales. Both overflows are gone.\n3. **Masked passcode clipped at 320px:** the first dot was cut off because the Show button shared the row. I moved the toggle below both fields as one control for both. Its label was then shortened to \"Show numbers\" so it fits on one line at 320px.\n4. **Card illustration:** the cardholder name touched the highlighted number. I re-spaced it.\n5. **Prototype routing bug:** the `#code` review route matched the input `id=\"code\"`, so the browser focused and scrolled to it. I renamed the input to `otp`, and recorded the rule in SYSTEM.md.\n6. The guard test's first contrast model checked the focus ring against the button fill. The ring actually sits on a paper gap, so I corrected the pair to gap against fill. The test also caught error text (6.66:1) and confirmation text (6.31:1) under the 7:1 bar; I deepened both.\n\n**Critique (`references/critique.md`), the three weakest things left:**\n- The details screen at 390px puts Continue at y=779 (the card illustration costs about 100px). I kept it because the picture answers the most common question on this step, but it should be tested with users. An alternative is to show the picture only in Help.\n- When both appear, the code step's \"new code sent\" note and the preview are two filled surfaces on one screen. The note is situational and temporary, but it is louder in dark mode than I'd like.\n- The palette is invented. Until the brand arrives, the ink-blue action colour is safe rather than distinctive; the identity currently rests on scale, warmth, edges and the message preview.\n\n## 7. What I could not verify\n\n- **Real devices**, VoiceOver and TalkBack (only DOM semantics and keyboard were checked), real Dynamic Type (simulated with root font scaling), real SMS autofill, and real biometric prompts.\n- **System fonts:** the screenshots render in Inter as a stand-in, because SF Pro and Roboto aren't installed here. Line breaks will differ slightly.\n- **Research sources:** WCAG 2.2, GOV.UK patterns and the fraud messaging are from prior knowledge, because the network blocked them.\n- **Users:** no testing with older customers. Before build, a moderated test with 5\u20138 branch customers (ideally including some with low vision and tremor) on the code step and the details step is the most valuable next step.\n- **Compliance, fraud and legal review** of the copy, the 7-day saved-progress claim, the 3-try and 30-minute lockout, and the 10-minute code life. These are plausible values, not the bank's.\n\n## 8. Open items\n\n- Swap in the brand: wordmark, logo, act colour (re-run the guard test; adjust the shade for 7:1 if needed and record it in SYSTEM.md).\n- Decide with security whether the \"I don't have my card\" route needs another factor.\n- Assisted setup: if the bank offers \"a colleague sets it up with you\" by phone or in branch, the welcome screen should link a booking flow, not just a number.\n- Native build: map the tokens to SwiftUI and Compose, and use real Dynamic Type styles rather than fixed rem steps.\n\n## 9. Proposed lessons for the skill (not applied; offered for review)\n\n1. **In `decisions.md`, under Accessibility:** \"When users enlarge text (older users, low vision), test at 200% text. Keep horizontal insets fixed (px or pt) while type and vertical rhythm scale, or large text gets squeezed into a narrow column.\" *(From: banking onboarding. Rem gutters cut a 390px screen to about 240px of text at 200%.)*\n2. **In `decisions.md`, under Hierarchy:** \"Measure where the screen's *action* sits, not only where the first content starts. A helpful panel above the input can push the task below the fold.\" *(From: the code step, where Continue moved from y=997 to y=452.)*\n3. **In `method.md`, phase 3:** \"When there is no existing product to audit, say so, and treat the first rendered build as the baseline, with numbers.\" *(This brief had no flow to audit.)*\n\n## Review states (open `app/index.html` with these)\n\n`#welcome` `#details` `#details-errors` `#details-notfound` `#details-nocard` `#code` `#code-wrong` `#code-expired` `#code-help` `#code-locked` `#passcode` `#passcode-errors` `#biometrics` `#working` `#working-slow` `#working-failed` `#done`. Add `?help=1` for the help sheet, `?theme=dark` or `?theme=light`, and `?scale=150` or `?scale=200` for larger text, for example `index.html?scale=200#code`.\n\nPrototype rules for the live flow: a card number ending 0000 is \"not found\"; code 000000 is wrong (three times locks setup); a passcode that repeats, runs in order or matches the date of birth is rejected; anything else valid continues.\n"}], "grading": {"expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "Ordered priorities: never lost; readable; safe and seen to be safe; a person one tap away; mistakes cost nothing"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Novelty moment: the text message shown before it arrives, with the scam rule"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Own placeholder palette (Harbour), warm paper + ink blue; explicitly avoids case-study density"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); guard test 6/6"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Dark mode designed; 390 dark screenshots"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "63 screenshots at 320/390/430, 200% text; 5 issues fixed"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design/SYSTEM.md + AGENTS.md pointer"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Errors, not found, wrong/expired/resent code, locked, slow/failed setup, help sheet"}, {"text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human", "passed": true, "evidence": "Nothing under 17px, 56px buttons, 48px min targets, plain errors, call/branch help on every screen"}], "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0}, "timing": {"executor_duration_seconds": 1315.2, "total_duration_seconds": 1315.2}}}, {"id": "eval-banking-onboarding-without_skill-run-1", "prompt": "(No prompt found)", "eval_id": null, "outputs": [{"name": "DESIGN.md", "type": "text", "content": "# Mobile banking onboarding for branch customers\n\n## The ask and how I read it\n\n\"Apply my design philosophy to the onboarding flow of our mobile banking app. Users are older customers switching from branches. Keep it accessible.\"\n\nThere was no app code, brand or written philosophy for the banking app. I couldn't ask questions, so I made the assumptions below and recorded them.\n\n**Which \"design philosophy\".** The only design writing of yours I could find is the \"Recall\" system for Technical Memory (`/home/user/vfuk-technical-memory/design/SYSTEM.md`). I treated its principles as your philosophy and carried them over: familiar then elevated, one obvious way, novelty only where it pays, minimal is not hidden, words over widgets, stable layout, and its writing rules (plain, calm, say what failed and what to do, no exclamation marks). I left out the Crossjoin red palette and the side-panel layout because they belong to that product's brand and form. If you have a separate philosophy document, this needs checking against it. That's the biggest open assumption.\n\n**Other assumptions**\n- UK retail bank (sort code and account number, UK English, Ofcom drama-range phone numbers so nothing real gets called). \"Larch\" is a placeholder name. The logo is a stand-in.\n- People already have an account and a mobile number on file. Opening a new account is out of scope; it gets one screen that points to a branch or phone.\n- Identification is sort code + account number + date of birth, then a text code to the number already on file. A real bank's fraud and KYC rules will set the exact checks. The screens are built so a step can be swapped without changing the pattern.\n- A 6-number passcode is the login, and fingerprint is optional.\n- Users are mostly 65+. Common needs at that age: lower contrast sensitivity, presbyopia, tremor or less precise touch, larger OS text sizes, some screen-reader or magnifier use, less trust in apps, and real exposure to impersonation scams. Many will set up with a relative beside them or in a branch.\n\n## Research basis\n\nNothing was fetched live; this comes from what I already know.\n- WCAG 2.2 AA as the floor, with AAA contrast (7:1) for text. Also 2.5.8 target size, 3.3.1/3.3.3 error identification and suggestion, 2.2.1 timing adjustable, 1.4.4/1.4.10 resize and reflow, 2.4.3 focus order.\n- GOV.UK Design System patterns that test well with older and less confident users: one question per page, a date of birth as three boxes, an error summary that moves focus to the field, hint text above inputs, and a yellow focus highlight.\n- Known problems with older users in banking apps: they abandon at identity checks, OTP boxes split into six fields break paste and screen readers, timeouts with no warning lose their work, icon-only navigation gets missed, and they fear that a mistake moves money.\n- UK scam patterns: \"safe account\" transfers, courier fraud, and fake bank calls asking for codes.\n\n## Direction\n\n**Make it feel like the branch: someone tells you what's happening, you never feel rushed, and there is always a person to ask.**\n\nThe flow, one question per screen:\n\n1. **Welcome.** What the app does, and that the branch, card and phone banking stay as they are. For branch switchers this is the main worry, so it comes first.\n2. **Before you start.** What you need, about how long it takes, that you can stop, and that branch staff can do it with you.\n3. **Step 1: Your account details.** Date of birth in three boxes, sort code, account number. \"Where do I find these numbers?\" opens a card diagram and lists the statement, chequebook and passbook.\n4. **Checking.** Three named stages with a word beside each. If it's slow: \"This is taking longer than usual\u2026 keep this screen open\". If it's very slow: an option to stop, with the details kept. If it fails: \"Nothing has been changed on your account and no money has moved\u2026 a problem on our side\". If there's no match: what to check, then a phone number.\n5. **Step 2: Text code.** Says which phone it went to, shows what the text will look like (including the \"we never call to ask for it\" line), and uses one input with `autocomplete=\"one-time-code\"`. A wrong code says how many tries are left. \"I have not received a text\" offers to send it again, to **call and read the code out** (works on landlines and helps people with poor signal or eyesight), or explains what to do if the number has changed.\n6. **Step 3: Passcode.** A \"Show the numbers as I type\" option. Easy-to-guess codes and the user's own date of birth are refused with a reason. Then a confirm screen, then an optional fingerprint screen where \"Not now\" is a full-size button, not a faint link.\n7. **Step 4: Three things we will never do.** A scam warning at the moment of highest attention, which takes one tap.\n8. **Done.** The account balance shows straight away so the effort pays off, and it repeats that nothing else has changed.\n\nEvery screen also has **Help**: a sheet with help for that step, then a phone number with hours. There's also a **timeout warning** that offers more time, keeps what was typed, and lets people stop and finish later.\n\n## Key decisions and why\n\n| Decision | Reason |\n| --- | --- |\n| Sort code + account number, not a card number or a scanned ID | People who bank in a branch know these and have them on paper; some passbook customers have no card. One way only, so no either/or choice to work through. |\n| One text-code input, not six boxes | Paste and autofill work, screen readers read it as one field, and there's no focus jumping for people with tremor. |\n| \"Call me and read the code out\" | Covers landlines, poor signal and low vision. Many older users already know this pattern from telephone banking. |\n| Back and Help as words in fixed places | Older users often miss icon-only controls. Your principle: words over widgets. |\n| Primary button at the end of the content, not stuck to the bottom | A sticky bar hides fields at large text sizes and with the keyboard open. The reading order matches the visual order. |\n| 19px body, 17px floor, all in rem | Readable by default, and the phone's text-size setting scales everything (tested at 200%). |\n| 7:1 contrast for all text | Contrast sensitivity drops with age; AA isn't enough for this audience. |\n| 56px buttons and inputs, 48px minimum for anything tappable | Less precise touch. This is above the WCAG 2.2 AA minimum (24px) and the AAA one (44px). |\n| Progress in words (\"Step 2 of 4: Check it's you\") | A bar alone doesn't say how far there is to go or what the step is. |\n| Motion only on the checking screen | Your principle: novelty where it pays. That wait is where people worry, so a calm pulse with words shows the app hasn't frozen. |\n| Failure copy says that no money moved | The biggest fear for this audience. Your principle: failures are said out loud, with the fix. |\n| Scam warning built into the flow | High stakes for this audience, and it costs one tap. |\n| Fingerprint is optional, with equal-weight buttons | Some people share phones or fingerprints with a carer; consent should be real. |\n\n## Files\n\n- `app/index.html`, `app/styles.css`, `app/app.js`, `app/tokens.css`: the prototype. Open `app/index.html`; it works from `file://` with no network. At the very bottom of the page is a \"Prototype only\" list that jumps to every state. Each state also has a URL, e.g. `index.html#checking-slow`.\n  - Test values: sort code `11-11-11` runs the live slow path (normal, then slow, then very slow, then the code screen, about 20 seconds); `00-00-00` gives \"no account found\"; text code `000000` is wrong; passcode `123456` or your date of birth is refused.\n- `design-system/SYSTEM.md`: principles, colour meanings, type scale, components, writing rules and a pre-ship checklist, in the same shape as your Recall doc.\n- `checks/tokens.test.js`: guardrails (`node --test checks/tokens.test.js`). Contrast pairs in light and dark, light/dark token parity, no raw colours or font sizes in the stylesheet, nothing under 17px.\n- `checks/render.py`: renders every state to `screenshots/` and runs behaviour checks; results are in `checks/last-run.json`.\n- `screenshots/`: 20 numbered states at 390\u00d7844 (@2x), 5 dark-mode screens, a 320px error screen, 200%-text screens and a live mid-check frame.\n\n## What I verified\n\n- **Contrast:** 46 of 46 token checks pass. Text is 7:1 or more on every surface in both modes (body text 16.7:1, secondary 9.6:1, accent 8.7:1, white on button 9.1:1, error 7.1:1 on its tint), and control edges are 4.4:1.\n- **Touch targets:** every visible button, link and input in all 20 states (and in open dialogs) is at least 48\u00d748 px. The check found the phone link and the error-summary links too small, and I fixed both.\n- **Reflow:** no horizontal scrolling in any state at 320px wide, or at 390px with text at 200%.\n- **Keyboard and screen reader behaviour (Chromium):**\n  - An empty submit moves focus to the error summary. Enter on a summary link moves focus to the field.\n  - Fields get `aria-invalid` and `aria-describedby` that point to the hint and the error.\n  - A slow check is announced through a live region.\n  - The help sheet opens as a modal, Escape closes it, and focus goes back to Help.\n- **Happy path end to end** with real input, including the wrong-code, date-of-birth-passcode and mismatch errors. No JS or console errors in any state.\n- **Visual review** of the welcome, details error, help, slow check, wrong code, timeout, done, dark-mode and 200% screenshots. This caught three problems, all fixed: a focus ring drawn around headings, a clipped card diagram, and a vague \"enter a real date\" message (it now says \"The month should be a number from 1 to 12\").\n\n## What I could not verify\n\n- **Testing with older users.** Nothing replaces watching five or six branch customers try this, ideally including people who use a screen magnifier, VoiceOver or TalkBack.\n- **Real screen readers.** I checked roles, names, focus and live regions in Chromium. I didn't hear it in VoiceOver or TalkBack, and live-region timing varies between them.\n- **Real devices.** Not tried on iOS Safari or Android Chrome: the numeric keypad, one-time-code autofill, a fingerprint prompt, or how the bottom sheet behaves with the keyboard open.\n- **Automated audits.** No axe or Lighthouse run, since they weren't available offline. My checks are targeted, not exhaustive.\n- **Windows High Contrast.** `forced-colors` is styled for the button edge and status marks but not inspected.\n- **The bank's rules.** Real fraud rules (attempt limits, what happens when someone is locked out, whether a call-out code is allowed) and legal copy need review by risk and compliance.\n- **The timeout.** The 2-minute warning and the \"20 more minutes\" figure are placeholders; the dialog is reached through the prototype menu, not a real timer.\n- **Prototype limits.** The fingerprint screen doesn't call a real sensor, and \"Go to my accounts\" returns to the start.\n"}], "grading": {"expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "Assumptions and priorities stated, following the Recall SYSTEM.md it adopted"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Motion only on the checking screen, citing 'novelty where it pays'"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Own placeholder palette (Larch); Recall principles reused, palette not"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); token test passes"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Dark mode designed separately"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "29 screenshots incl. 320px and 200% text"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design-system/SYSTEM.md modelled on Recall"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Slow, very slow, failed, no match, wrong code, timeout"}, {"text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human", "passed": true, "evidence": "19px body, 56px controls, 48px min targets, words not icons; but SMS preview shows a sample code (482 913) a user could type"}], "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0}, "timing": {"executor_duration_seconds": 857.2, "total_duration_seconds": 857.2}}}, {"id": "eval-incident-dashboard-with_skill-run-1", "prompt": "(No prompt found)", "eval_id": null, "outputs": [{"name": "AGENTS.md", "type": "text", "content": "# Notes for agents working on the incident board\n\n## UI and design\n- Any change to the interface follows `design/SYSTEM.md` (this project's own design system). Read it first.\n- New values go in `app/tokens.css`, never inline. `node --test tests/*.test.js` runs the design guard test.\n- For new UI work, use the `design-philosophy` skill's method (understand \u2192 references \u2192 audit \u2192 direction \u2192 system \u2192 implement \u2192 verify \u2192 record), but this project's SYSTEM.md decides its look.\n- Record verified design changes and open items in `DESIGN.md` (section \"Verification\" and \"Open items\").\n"}, {"name": "DESIGN.md", "type": "text", "content": "# Incident board redesign\n\nThe original is untouched at `dashboard/index.html`. The redesign is in `app/`: open `app/index.html` for laptops, or `app/index.html?display=wall` for the ops-room TV. The design system is in `design/SYSTEM.md`, the tokens in `app/tokens.css`, and the guard test in `tests/design.test.js`. Screenshots are in `screenshots/` (before: `screenshots/before/`).\n\n## 1. How I approached it\n\nI followed the method in the design-philosophy skill. First I worked out who reads the board and when. Then I rendered and measured the original, chose a structure before any styling, wrote the tokens and system, built the page with every state, and then checked it in headless Chromium at real sizes. I did four rounds of looking at screenshots and fixing what I saw (\u00a76). I also followed the dataviz skill for the small charts: the form for each, a single series in one colour, value labels, and a validator run on the chart colour.\n\n### Users, moment, priorities\n\n- **TV in the ops room:** people glance at it from 2\u20134 m while doing something else. It has no mouse, runs all day, and the room is often dim. The question it answers: *is anything on fire, and is someone on it?*\n- **Laptops:** engineers and incident leads check in up close. They can click through to an incident and may want history.\n\nPriorities in order: (1) what is open now and how severe; (2) who owns it, and especially when nobody does; (3) whether the data is fresh; (4) direction of travel (pages, MTTR, error budget); (5) history.\n\n### Constraints kept\n\n- The data model and the 60 s refresh from `/api/metrics` (noted in the original's script). Fixtures in `app/data.js` mirror the original's values, and `#open` still holds the open count.\n- Brand guide v3: Harbor Navy, Signal Orange used sparingly and never for body text or large areas, Tide Teal for charts, Fog and Slate, IBM Plex Sans and Mono, a calm voice, and the symbol only white-on-navy when recoloured.\n- No dependence on the network: Plex is bundled locally (OFL, latin subset), with no CDNs.\n\n### Assumptions (I couldn't ask)\n\n| Assumption | Why | Easy to change |\n| --- | --- | --- |\n| The TV is a 1080p or 4K landscape screen, opened with `?display=wall` | You set up a wall display once, as a bookmark. Detecting it from the screen size would also catch large desktop monitors | The wall root size scales to any height |\n| The TV runs dark; laptops follow the system theme | A dim ops room means glare and burn-in concerns. Laptops sit in lit offices | `?theme=light` |\n| \"Open\" = Investigating, Identified, Mitigated or Monitoring | Usual incident lifecycle | `data.js` |\n| The original's \"7 open\" was correct and its table showed only part of the list | The table was \"recent incidents\" and only 3 of its rows were unresolved. I added 4 realistic SEV3s so the headline and the list agree | `data.js` |\n| \"Incident commander: unassigned\" belongs to INC-2291 (the SEV1) and to the rota slot | It was the only unowned item, and a SEV1 without an IC is the one thing the room must notice | `lead` per incident |\n| Error budget = a 99.9% availability SLO over 30 days | The original didn't say which SLO | `budgetSlo` |\n| \"\u25b2 5\" pages = 5 more than all of yesterday (18) | The original didn't say what the delta compared against. I chose a reading and wrote it out in words | `pagesYesterday` |\n| Next on-call names (Amara O., Jonas K.), per-incident ICs, 14-day and 8-week history | Needed so the board shows handover and trend. Values are realistic but invented | `data.js` |\n| Incident links go to `#INC-xxxx` | The incident tool's URL is unknown | `incidentRow()` in `app.js` |\n\n### References\n\nThe brief named no product to emulate, so I worked from the skill's own philosophy, which comes from The Browser Company's reasoning: familiar but elevated, novelty only at the differentiator, minimal but never hiding information. I did no web research for this run. For an ops board, the familiar pattern is the departures board or flight-information display: one row per item, the status in words, times aligned, and colour only for exceptions. I borrowed that reasoning. I did not copy its look (no split-flap, no yellow-on-black).\n\n## 2. Audit of the existing dashboard\n\nRendered at 1920\u00d71080 (TV), 1440\u00d7900 and 1280\u00d7720 (laptops). See `screenshots/before/`.\n\n**Measured problems**\n- On a 1280\u00d7720 laptop, the SEV1 incident row starts **707 px** down, below the fold. The page is 948 px tall. The most important fact on the board is in the fifth block.\n- The text is far too small for a TV: table text is **14 px** and labels **14 px uppercase grey**. Viewed from 3 m on a 1080p panel, that is unreadable. Only the four KPI numbers (42 px) can be read from across the room.\n- Contrast failures (WCAG text minimum 4.5:1): labels `#888` on white **3.54:1**; trend text `#2ed573` **1.93:1**; white on the SEV2 pill **1.97:1**, on SEV3 **3.24:1**, on SEV1 and the LIVE badge **3.34:1**.\n- 30% of the 1080p TV screen (the bottom band) is empty purple gradient, while the incident list is squeezed into 14 px text.\n- The page doesn't support dark mode.\n\n**Hierarchy problems**\n- The eye lands first on four equally weighted KPI cards with emoji. The open incidents (what's broken) come last.\n- \"Incident commander: unassigned\" for a running SEV1 is plain body text inside the \"On call\" card, in the same weight as the names around it.\n- \"Open incidents 7\" contradicts the table, which shows 3 unresolved incidents among 5 \"recent\" ones.\n\n**Noise**\n- Purple-to-blue gradient background, 20 px radius cards with heavy shadows, an emoji per card and in the title, gradient bars, and pills for every severity.\n- Every trend is green regardless of direction. \"\u25b2 2\" more open incidents and \"\u25bc 4 pts\" of error budget are both bad, yet both are green, so the colour carries no meaning.\n- A permanent \"LIVE\" badge that stays red even if the feed is dead.\n\n**Missing information**\n- When the data last updated, and whether it is stale.\n- Severity counts. Durations that tick. Which incidents are still open versus resolved, without reading every Status cell.\n- What \"\u25b2 5\" compares against, which SLO the budget belongs to, and when the on-call handover is.\n- States: empty, loading, error and stale are not designed at all.\n\n**Ranked weaknesses:** (1) the open SEV1 and its missing IC are not what the eye finds first; (2) the board is unreadable at TV distance; (3) the board makes no freshness or failure claim at all, so it can't be trusted; (4) colour carries no meaning (green for everything, purple decoration); (5) the headline count contradicts the list.\n\n## 3. Direction: \"What's open, who has it\"\n\n> The list of open incidents *is* the dashboard. It takes the largest column and the top of the page, sorted SEV1 first, with the count as its heading. Ownership sits on one line directly under the header, where the room's eye starts. Everything else is quiet context on the right. Colour appears only when something is wrong, so a calm board looks calm and a bad day is visible from the door.\n\n**The novelty moment: the 24-hour lane.** Each row has a thin bar on a shared axis that ends at \"now\". Open bars all reach the same now-edge and grow as time passes. A new incident is a dot, an overnight one is a long bar, and you can see the overlaps. Resolved incidents keep their bar, ending before now, in grey. It carries information: it answers \"how long, since when, alongside what\" without reading numbers. I chose this spot because time is the thing that matters most in incident response, and the original showed it only as static text.\n\n**Identity, each with a reason specific to this product**\n- *Palette:* the brand's own navy, fog and slate carry the page. Dark mode is a navy-derived palette because the TV lives in a dim room and the brand is navy. Signal Orange (the brand's \"use sparingly\" accent) becomes *needs attention*, which keeps it sparing by construction. Red, which the brand lacks, is reserved for SEV1 and broken sources. Tide Teal is used only for chart marks, as the brand guide says.\n- *Type:* IBM Plex because the brand mandates it. Plex Mono for IDs and durations so the durations column aligns. Proportional Plex Sans for big numbers.\n- *Shape:* 2\u20134 px radii and hairlines instead of cards, to look precise and freight-like rather than soft.\n- *Layout:* rows like a departures board, because that is the familiar pattern for \"what's happening, how long, status\".\n- *Mark:* the brand's compass-N (placeholder drawn; the official asset should replace it).\n\n## 4. Key decisions and why\n\n| Decision | Reason |\n| --- | --- |\n| Removed the 4-card KPI row; the open count became the list heading with \"1 SEV1 \u00b7 2 SEV2 \u00b7 4 SEV3\" | One obvious place for \"what's open\". The count and the list can no longer disagree |\n| Sort by severity, then **newest first** within a severity | A fresh incident appears at the top of its band, where the eye already is. Long-running SEV3s sink |\n| \"No incident commander\" in the SEV1's own row, in orange words | The missing owner is shown where the incident is. Words, not an icon |\n| On call moved from a card to a one-line band under the header | It's the second priority and it's short. A band makes it visible in every state and frees the right column for the charts. When all shifts end together, the handover is said once (\"Handover 18:00 to Amara O. and Jonas K.\") |\n| Freshness sentence in the header replaces the \"LIVE\" badge. In the stale state the header tints orange and says since when and what happens next | Trust needs a claim that can be false. A permanent badge can't be |\n| SEV3 has no colour and a pale bar | Colour is an alarm here, not a scale. A 2-day SEV3 bar must not outweigh a new SEV1 dot (I fixed this in round 2, \u00a76) |\n| Trends written in words (\"12% faster than last week\", \"5 more than all of yesterday\") and drawn without colour | The original's green arrows were wrong half the time. Words carry the direction and whether it's good |\n| Pages: 14-day columns with today in teal; MTTR: 8-week line; budget: a meter | The dataviz form rules: emphasis for \"today against context\", a line for a trend, a meter for a ratio against a limit |\n| By-service bars: one colour, value at the tip | One series needs no legend and no colour per bar (the original's gradient implied a scale) |\n| One page for TV and laptop, with the wall root size = `100vh/48` | The same proportions on any TV resolution, and one design to maintain. Verified at 1366\u00d7768, 1920\u00d71080 and 3840\u00d72160 |\n| On the wall, overflowing rows are hidden with a sentence (\"5 more not shown: INC-2297 (SEV3), \u2026\") | The TV can't scroll. It drops history first, then the least severe rows, and says which are hidden |\n| Plex bundled locally | The TV must not depend on Google Fonts. Network was available here; I downloaded the official Google Fonts files once |\n| Missing owner and rota gap both orange; red only for SEV1 and failure | Fixed in round 4: one meaning had two colours (\u00a76) |\n\n**Trade-offs made on your behalf**\n- Signal Orange is 2.9:1 as text, so orange *words* use a deeper `#A6410C` (light) or `#FF9A5C` (dark). Fills stay exact brand orange, with ink text (white on orange is 2.9:1).\n- Tide Teal on Fog is 2.93:1, just under the 3:1 graphics guideline. I kept the exact brand value because every chart value is also printed as text. The guard test records this as a documented exception.\n- Wall text is 22.5 px at 1080p (meta lines about 20 px). That is the size at which seven open incidents fit without scrolling. It needs checking on the real TV (\u00a77).\n- On the wall, incident titles are clamped to 2 lines (only the longest one truncates in the demo data). The full title is on the laptop view and in the incident tool.\n\n## 5. States implemented\n\nUse the switcher in the laptop footer, or `?state=` in the URL. Add `&display=wall` for the TV and `&frozen` to stop the clock for screenshots.\n\n| State | What it shows |\n| --- | --- |\n| `live` | 7 open (1 SEV1 without IC, 2 SEV2, 4 SEV3), 2 resolved in 24 h. The clock and durations tick; the simulated refresh runs every 60 s |\n| `loading` | Static placeholders in the exact shape of rows and stats, plus \"Connecting to the incident feed\u2026\" and \"Loading the rota\u2026\". No shimmer. **0 px shift** above the list when data arrives (first row at 236 px wall / 185 px desk in both states) |\n| `allclear` | \"0 open incidents\" and \"Nothing open. The last incident closed at 07:48, 3 hours 12 minutes ago: INC-2291 \u2026\", with resolved history and its bars |\n| `stale` | Header tinted orange: \"No new data since 10:54 (6 min). Figures may be out of date; retrying every 60 s.\" The last data is still shown |\n| `partial` | The on-call source failed: a red-tinted band says \"The rota didn't load \u2026 It is missing, not empty: check the paging tool \u2026\". Everything else stays live |\n| `surge` | 12 open, 41 pages. The wall shows 7 and \"5 more not shown: \u2026\"; the laptop shows all 12 |\n\n## 6. Verification\n\n**How:** Playwright with headless Chromium (`tools/shoot.py`, `tools/interact.py`, `tools/shoot_before.py`). I took 19 screenshots: every state on the wall at 1920\u00d71080 dark; live wall in light, at 4K and at 1366\u00d7768; every state on the laptop at 1440\u00d7900 light; live at 1440\u00d7900 dark and 1280\u00d7720; and 390 px light and dark. Each run measured horizontal overflow, elements off-screen, wall overflow, first-row position, whether the font loaded, and console errors.\n\n**Results**\n- 0 console errors, 0 horizontal scroll, 0 elements off-screen, in all 19 captures. IBM Plex loaded from the local files in every capture.\n- First incident row: **185 px** on a 1440\u00d7900 laptop (was 707 px at 1280\u00d7720 and 1440\u00d7900). All 7 open incidents are above the fold at 1440\u00d7900, and the wall fits all 7 at 1366\u00d7768, 1080p and 4K.\n- Layout shift from loading to loaded: 0 px above the list (measured).\n- Guard test: `node --test tests/*.test.js` \u2192 7 pass. A mutation check (appending `.x{color:#fff;font-size:13px}` to `app.css`) made it fail, as intended.\n- Contrast: every text token holds 4.5:1 on every surface and tint it sits on, in both themes (20 pairs \u00d7 2 themes, in the test).\n- dataviz validator on Tide Teal: passes the lightness band and chroma checks in both modes. Contrast is a WARN in light (2.93:1 on Fog); value labels provide the relief.\n- Keyboard: Tab goes through the incident rows SEV1 first, then the resolved rows, the chart columns and the controls. The focus ring is 2px Navy. Focus stays on the same incident after a re-render (checked by re-rendering with INC-2290 focused). Focusing a chart column shows the tooltip (\"11 pages Mon, 5 Oct\"). The state switch updates the URL. Reduced motion sets transition durations to 0s.\n\n**Refinement rounds (what looking found)**\n1. Wall showed only 4 of 7 incidents, and axis labels collided (\"06:00now\"). \"since yesterday 22:10\" wrapped. Long SEV3 bars in dark slate outweighed the SEV1. \u2192 I widened the list column, moved to weekday times (\"since Sat 22:10\"), cut the axis to \"24 h ago \u00b7 00:00 \u00b7 now\", lightened `--minor`, and sorted newest first within each severity.\n2. Still 5 of 7 shown, and the side column overflowed (meter cut off). \u2192 I moved on call to a one-line band, merged the list head into the count row, and shortened the copy.\n3. The on-call band stretched to fill spare height in \"all clear\" (a grid-row bug), and the loading band was 6 px shorter than the loaded one, causing a shift. \u2192 I fixed the grid rows and reserved the band height. I lowered the wall root from /44 to /48 so stale/partial/1366\u00d7768 also fit 7 rows.\n4. Critique pass: the same fact (no IC) was red in the row and orange in the rota. \u2192 One colour: orange = needs attention. At 390 px the mark was squeezed to a sliver and the clock overlapped \"Incidents\". \u2192 The mark no longer shrinks, and the date is hidden on phones.\n\n**Critique verdict, the three weakest things left**\n- On the wall, the 2-line titles make rows uneven in height. A product decision on title length (or a short-title field) would tidy it.\n- With the demo data, the 24-hour lane mostly shows dots and full-width bars. It is most useful on busy days, and that only shows with real history.\n- The right column on the TV is information-light. A future \"deploys today\" or \"customer-impacting\" line could earn that space if the team wants it. I didn't invent one.\n\n## 7. What I could not verify\n\n- **The real TV:** legibility at the room's actual distance, overscan/safe area, panel brightness, and burn-in behaviour of the static header. View `?display=wall` on the TV and read the meta line from the back of the room. If it's too small, raise `--root-wall` to `100vh/44`; seven rows will then need single-line titles.\n- **Live data:** refresh, new incidents arriving (the `.arrived` flash exists but the demo doesn't trigger it), and real SLO and pager numbers. `app.js` marks where the `/api/metrics` fetch goes.\n- **The official compass-N symbol:** the mark is a placeholder.\n- **Brand-owner approval** of the added red (`#CC2F36`) and the deepened orange text.\n- **Screen readers:** I checked labels in the DOM. I did not test with VoiceOver or NVDA.\n- **Browsers other than Chromium,** and fonts on a machine without the bundled files (fallback is system sans).\n\n## 8. Proposed skill improvements (not applied)\n\nFrom this project, for `design-philosophy`:\n1. In `decisions.md` \u203a Platform constraints, add: *\"For wall or TV displays, size type from the viewport height (root = vh/N) so one layout serves every resolution, and set a row budget ('N open items must fit at 1080p') as an explicit, measured exit criterion.\"* That budget drove three of the four refinement rounds here.\n2. In `critique.md` \u203a Restraint, add: *\"Check that visual weight follows importance, not quantity: a long bar or large area for a minor item can outweigh a small mark for a critical one.\"* I found this only by looking.\n3. In `method.md` \u203a Phase 3, add: *\"Check that the existing headline numbers agree with the detail beneath them.\"* The original's \"7 open\" didn't match its own table.\n"}], "grading": {"expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "DESIGN.md: ordered priorities (open & severity, owner, freshness, trend\u2026)"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Novelty moment: 24-hour lane per incident on a shared now-axis"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Brand palette from guide (5 brand hex values); no Recall values"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); guard test 7/7"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Wall display dark, laptop light/dark"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "20 screenshots incl. before/after and 4 TV resolutions; 4 critique rounds"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design/SYSTEM.md + AGENTS.md pointer"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Loading, all clear, connection lost, source failed, 12-incident surge"}, {"text": "Palette taken from the brand guide", "passed": true, "evidence": "Palette from brand guide (navy, Fog, Slate, Tide Teal; deeper orange for text)"}, {"text": "Designs for both TV-at-distance and laptop viewing", "passed": true, "evidence": "?display=wall for TV (1366\u00d7768, 1080p, 4K) and laptop at 1280/1440/390"}, {"text": "Removes decoration (emoji, gradients) without losing data", "passed": true, "evidence": "0 emoji, 0 gradients (script); all original data kept"}], "summary": {"passed": 11, "failed": 0, "total": 11, "pass_rate": 1.0}, "timing": {"executor_duration_seconds": 1219.6, "total_duration_seconds": 1219.6}}}, {"id": "eval-incident-dashboard-without_skill-run-1", "prompt": "(No prompt found)", "eval_id": null, "outputs": [{"name": "DESIGN.md", "type": "text", "content": "# Incident dashboard redesign\n\nOpen `app/index.html` directly; it has no build step and no network dependencies. The original is unchanged at `dashboard/index.html`, and `screenshots/original-1920.png` shows it.\n\nURL parameters: `?state=major|major-ic|elevated|clear|stale|error|loading`, `&display=tv|laptop`, `&theme=dark|light`, and `&kiosk` to hide the demo switcher. You can also press **D** or use the \"Demo states\" button.\n\n## 0. The assumption everything rests on\nYou asked me to use \"my design philosophy\", but I don't have it in this workspace and couldn't ask you. So I worked from the principles below, which I took from the brand voice (\"direct, calm, competent\u2026 we don't do hype\") and from what an ops room needs. **If your philosophy says something different, this is the part to check first.**\n\n1. **Lead with the decision, not the data.** The screen should answer \"is anything on fire, and is someone on it?\" before anything else.\n2. **Calm until it matters.** When nothing is wrong the screen should be quiet, so that alarm stays meaningful when something is.\n3. **Every element earns its place for a named reader.** That reader is the ops room at 3\u20134 m and the engineer at a laptop.\n4. **Honest states.** If the data is old or missing, the screen says so before it shows any numbers.\n5. **System over one-offs.** Tokens and rules, not hand-tuned values.\n\nOther assumptions I made:\n- The TV is a 55\" 1080p panel viewed from about 3 m.\n- Times are UK.\n- The \"SLO budget\" is an aggregate 28-day error budget.\n- Below 25% budget the team freezes risky changes. I invented this threshold to give the meter meaning.\n- I added 4 open incidents and 1 resolved incident. They make the list agree with the original's headline of \"7 open\", which the original table contradicted.\n- I added an 8-week MTTR history and a 7-day pages average.\n\nEvery invented value is marked `added` in `app/data.js`.\n\n## 1. Audit of the existing dashboard\n| # | Problem | Why it matters |\n|---|---|---|\n| 1 | **The most urgent fact is buried.** A SEV1 has been open 1h 18m with *no incident commander*. That shows up only as table row 1 and a plain line of text in another card. | This is the one thing the room must act on, and nothing points to it. |\n| 2 | **Trend colours are wrong.** Every trend is green: \"\u25b2 2\" more open incidents, \"\u25b2 5\" pages, and \"\u25bc 4 pts\" of budget. | Three of the four \"good\" signals are actually bad news. |\n| 3 | **The data contradicts itself.** \"Open incidents 7\", but the table shows 5 *recent* incidents, 2 of them resolved. | Nobody can see which 7 are open. |\n| 4 | **No freshness signal.** \"LIVE\" is a static red badge. There's no timestamp and nothing for stale or failed data. | A frozen TV looks exactly like a quiet day. |\n| 5 | **Not readable from a distance.** Table text is 14px, pills 12px, labels `#888` on white (3.5:1). | At 3 m, most of the content is decoration. |\n| 6 | **Off-brand.** Purple gradient, Arial, emoji icons, and a red \"LIVE\" badge in the same red as SEV1. | Nothing comes from the Northwind guide, and the badge competes with real severity. |\n| 7 | **Severity is colour-only pills** (red, orange, blue). | Fails colour-vision accessibility, and blue suggests \"info\", not SEV3. |\n| 8 | **No hierarchy.** Four equal KPI cards, each with an emoji, sit above everything else. | The page leads with averages instead of what's happening now. |\n| 9 | **Fixed 4-column grid, no responsive layout, one display mode.** | It doesn't fit a TV without scrolling and breaks on narrow screens. |\n| 10 | **Bar chart is decorative.** Gradient bars with labels detached above them. | The chart is harder to read than the numbers alone. |\n\n## 2. Direction\n**\"Calm control room.\"** Deep Harbor Navy for the TV and Fog/white for laptops, in IBM Plex. One colour does all the data work (Tide Teal). Severity colours appear only where there's severity. The structure from top to bottom:\n\n1. **Top bar.** Who we are, a freshness indicator that changes when data stops (\"Live \u00b7 updated 10:59:59 \u00b7 every 60 s\"), and the clock. The clock matters because the wall clock tells you how old \"1h 18m\" is.\n2. **Status banner, the one headline.** It changes shape with the situation:\n   - SEV1: the incident title, its age, and an \"Incident commander: Not assigned\" callout.\n   - SEV2 only: the count and the longest-running incident.\n   - All clear: a teal check, \"last resolved 1h 12m ago\", and \"9 days since last SEV1\".\n3. **Open incidents.** Every open incident, most severe first, then oldest first. Each row shows ID, service, status, owner, live age and start time. \"No owner\" is flagged.\n4. **Health.** MTTR with an 8-week sparkline, pages today against the 7-day average, and error budget as a meter. Deltas are coloured by **good or bad**, not by direction.\n5. **On call.** Primary, secondary and incident commander. The commander row turns into an alert when a SEV1 is open with nobody in command.\n6. **Incidents by service (30 days).** Thin single-colour bars with values at the tips. It sits lowest because it's a review metric, not a \"now\" one.\n7. **Recently resolved** (laptop only).\n\n## 3. Key decisions and reasons\n- **I removed the \"Open incidents\" KPI tile.** The count now heads the incident list (\"7 open \u00b7 1 SEV1, 2 SEV2, 4 SEV3 \u00b7 \u25b2 2 more than yesterday\"). That way the number and the list can't disagree, which fixes audit item 3.\n- **The commander gap is called out twice.** It appears in the banner and in the on-call panel. It's the most actionable fact on the screen, and the two panels are read by different people for different reasons.\n- **Severity uses label, shape and colour.** \u25c6 SEV1, \u25b2 SEV2, \u25cb SEV3, plus a coloured row edge. The light-theme red/amber pair only reaches \u0394E 7.0 for deuteranopes, so the shape and label are required, not decoration. The validator numbers are in `design-system/README.md`.\n- **SEV3 is grey.** Low severity shouldn't compete for attention. Most of the time this keeps the screen calm.\n- **Signal Orange is absent.** The brand reserves it for calls to action, and on this screen it would be mistaken for a severity. I'd rather follow the guide's \"use sparingly\" than invent a meaning for it.\n- **Stale or down data is neutral, not red.** A feed problem gets an inverse bar (\"Data is 7 minutes old\u2026 check the paging tool before acting on it\"). The content below is greyed out and ages stop ticking. On TV this bar replaces the status banner, so it becomes the one headline.\n- **Two display modes, one codebase.**\n  - TV is dark, a fixed 16:9 layout that never scrolls, scaled to the viewport (`font-size: 100vw/96`, so 4K is the same physical size), with no tooltips or demo chrome. The incident list trims its least severe rows and names them if it runs out of room.\n  - Laptop follows the OS theme (light by default), scrolls, adds the resolved table, and has hover and keyboard tooltips on the sparkline points and service bars.\n  - Auto-detection picks TV at \u22651800\u00d7900; the URL can override it.\n- **Type sizes from viewing distance.** At 3 m on a 55\" 1080p panel, 27px body text gives roughly 13 arcminutes of x-height, which is comfortable reading. 20px is the floor for anything that must be read. Hence a 20px minimum and 27px body on TV.\n- **Fonts are self-contained.** IBM Plex Mono is bundled (OFL licence included) for IDs. IBM Plex Sans isn't available offline here, so the stack falls back to the system sans. The screenshots show Inter. On the real TV box, install Plex Sans or self-host its woff2 in `app/fonts/`.\n- **The logo is a placeholder.** The \"compass N\" is a stand-in drawn in SVG. Swap in the official asset; the guide's minimum height is 16px, and the mark here renders at 32px or more.\n\n## 4. What I verified\n- **Rendering.** I rendered all states in headless Chromium (`screenshots/`):\n  - TV 1920\u00d71080: SEV1 with no commander, SEV1 with a commander, SEV2 only, all clear, stale, feed down.\n  - TV 3840\u00d72160.\n  - Laptop 1440\u00d7900, light and dark.\n  - Loading state.\n  - Demo panel open.\n  - 390px narrow.\n  - Hover tooltip.\n- **Layout checks (scripted).** I scripted checks on every shot. No horizontal page scroll. On TV, no panel content is clipped (`scrollHeight \u2264 clientHeight` on every panel) and the page is exactly one screen. No JS errors or console errors.\n- **Interaction (scripted).** Hovering a service bar shows \"Tracking Ingest: 9 incidents in 30 days (26% of 35)\". Keyboard focus on a sparkline point shows the same tooltip as hover. Clicking a demo state updates the page and the URL.\n- **Colour.**\n  - I ran the severity palette through the dataviz validator for both themes (results in `design-system/README.md`).\n  - I computed WCAG contrast for all text tokens. Muted ink is \u2265 4.9:1 on Fog and \u2265 7.4:1 on the dark panel.\n  - `styles.css` contains no raw colour values; all come from `tokens.css`.\n- **Data consistency.** The original's numbers are preserved: 7 open, MTTR 48m (\u221212%; shown as \u221213%, because 48 vs 55 rounds that way), 23 pages, 61% budget, the 30-day service counts and on-call. Ages reconcile with the original's opened times and durations at a snapshot of 11:00.\n\n## 5. What I could not verify\n- **Not tested on a real TV, at real viewing distance, or with the real font.** The type sizes come from arithmetic, not from standing in the ops room. That's the first thing to test.\n- **No real feed.** Refresh, stale detection (I'd suggest a threshold of more than 3 missed 60-second polls) and retry are simulated. The stale and down states are shapes of the payload, not tested failure handling.\n- **No screen-reader or forced-colours test.** I added `role=status` / `alert`, aria labels on the charts, and hidden \"(better/worse)\" text on deltas, but didn't test them with assistive technology.\n- **Burn-in on an always-on panel.** Not handled. If the TV is OLED, add a slow pixel shift.\n- **The thresholds and process are my guesses.** The 25% budget freeze, \"SEV2s run by on-call\", and the incident-commander rule all need confirming with the ops team.\n"}], "grading": {"expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": false, "evidence": "Names two readers (ops room at 3\u20134 m, laptop engineer) but no ordered priorities; went straight to principles from the brand voice"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": false, "evidence": "No deliberate novelty moment named; a situation headline banner duplicates the SEV1 row"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Brand palette used (5 brand hex values); never saw Recall"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": false, "evidence": "1 literal colour outside tokens: box-shadow rgb(0 0 0 / 0.18) on the demo panel; no guard test"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Dark TV theme, light laptop default + dark"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "14 screenshots incl. original and 4K"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design-system/README.md: where the brand guide stops, colour checks, layout rules"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Stale, feed down, loading, all clear, SEV2-only"}, {"text": "Palette taken from the brand guide", "passed": true, "evidence": "Navy, Fog, Slate, Tide Teal; Signal Orange deliberately unused"}, {"text": "Designs for both TV-at-distance and laptop viewing", "passed": true, "evidence": "TV mode (1080p/4K, never scrolls) and laptop mode"}, {"text": "Removes decoration (emoji, gradients) without losing data", "passed": true, "evidence": "0 emoji, 0 gradients (script)"}], "summary": {"passed": 8, "failed": 3, "total": 11, "pass_rate": 0.73}, "timing": {"executor_duration_seconds": 676.9, "total_duration_seconds": 676.9}}}, {"id": "eval-oncall-menubar-with_skill-run-1", "prompt": "(No prompt found)", "eval_id": null, "outputs": [{"name": "DESIGN.md", "type": "text", "content": "# Rota: on-call schedule and shift handover in the macOS menu bar\n\n**Deliverables:** `app/index.html` (open it in a browser; prototype controls on the right switch between 12 states and the light, dark and system themes) \u00b7 `design/SYSTEM.md` (the design system) \u00b7 `app/tokens.css` (tokens) \u00b7 `tests/design.test.js` (guardrail test) \u00b7 `tools/shoot.py`, `tools/interact.py` (render and interaction checks) \u00b7 `screenshots/*.png` (24 renders at 2x: 12 states \u00d7 2 themes).\n\n## 1. Approach\n\nI followed the design-philosophy method: understand \u2192 references \u2192 baseline \u2192 direction \u2192 system \u2192 implement \u2192 verify \u2192 record. There was no existing code, so phase 3 (the baseline) became a written list of states to design. I couldn't ask questions, so the assumptions below stand in for the answers.\n\n### Users, moment, priorities\n\n- **Who:** about 40 SREs who share a few rotations (assumed: Platform, Data and Edge, each with Primary and Secondary layers, rotating weekly on Monday at 09:00).\n- **When they look:** in passing, for a few seconds, usually while in another app, sometimes off-hours. On a Saturday, the question is \"am I still on?\". On a Thursday, it's \"who has Data right now?\".\n- **Priorities, in order:** (1) am I on call and until when; (2) who's on call now and how to reach them; (3) hand over all or part of a shift safely; (4) what needs me (requests, gaps); (5) trust: the data source, its freshness and the time zone.\n- **What must not break:** coverage. A handover tool that makes someone think they're off when they're not is worse than none. This became the direction.\n\n### Assumptions (where I'd normally ask)\n\n| Question | Assumption |\n| --- | --- |\n| Schedule source | PagerDuty (schedules, layers, overrides). A handover creates an override **after** the recipient accepts. Out-of-office comes from Google Calendar. |\n| Brand | None supplied. The palette is derived from macOS system colours and is offered as a proposal (SYSTEM.md \u00a73). |\n| Who can take a shift | Only members of the same rotation (11 for Platform), not all 40. One person can't hold Primary and Secondary at once. |\n| Acceptance | The recipient must accept, in Rota or via the macOS notification. The requester stays on call until then. |\n| Time zone | The user is in London (BST). Teammates are spread across Europe, New York and San Francisco. |\n| Name | \"Rota\". |\n| macOS version | Current macOS (26 at the time of writing): 24pt menu bar, menu-bar-extra window popover. Liquid Glass material is approximated with a blur. |\n\n### Platform research\n\n- Apple's HIG \"The menu bar\" page didn't load in this environment (it renders with JavaScript), so I couldn't quote it.\n- Bjango's \"Designing macOS menu bar extras\" (found by search) gives: a 24pt bar since Big Sur, a 22pt working area for items, about 16pt as the right visual weight for a circular item, and template (alpha-only) images so the system tints them for light and dark. I designed to those numbers.\n- A developer write-up notes SwiftUI `MenuBarExtra` is limited for dynamic titles. A live countdown title probably needs `NSStatusItem`. That's an engineering note, not a design change.\n- From platform knowledge (not verified here): 13pt body text, 22pt regular push buttons, system accent colour chosen by the user.\n\n### References: what I borrowed, what I didn't\n\nThere was no named inspiration beyond the philosophy's own origin (The Browser Company / Dia), so I studied the reasoning of two kinds of product that do this job: macOS's own menu-bar extras (Battery, Wi-Fi, Calendar's popover) and paging tools' schedule views.\n- **Borrowed from macOS extras:** the status item answers the question before any click; popovers built from standard controls; quiet when healthy.\n- **Borrowed from paging tools:** layers and overrides as the real data model, so a \"handover\" is an override and stays honest about acceptance.\n- **Not copied:** paging tools' colour-per-person timelines (12 people would mean 12 colours to learn), their dense week grids (wrong for a 340pt popover), and Dia's or the Recall case's visuals. There's no docked composer, no segmented control, no citation chips and no skeleton sheen.\n\n## 2. Direction: \"Still yours until it isn't\"\n\n**Structure.** The menu bar holds the first answer (a dial plus `1d 19h`). The popover reads top-down in priority order: anything that needs you, then your shift (answer, end and who's next, the strip, Hand over\u2026), then who's on call now, then the sync source in the footer. Handover is a sheet inside the same popover (back arrow, fixed footer). It's not a separate window, because the task takes under a minute and shouldn't lose its context.\n\n**Novelty moment: the shift strip.** It's the one distinctive element: a bar from now to Tuesday showing who holds each hour of your shift. In the handover sheet it becomes the preview. When you pick a range and a person, those hours turn from your dark fill to the quiet fill and the person's initials slide in. You see the outcome before you commit. After you send, the segment turns orange-outlined and hatched with `PR?`, still on top of your time, because it's still yours. I put the novelty here because the outcome of a handover is the thing that can go wrong, and this treatment explains it rather than decorates it.\n\n**Identity, each with its reason:**\n- *Palette:* system neutrals plus three meanings: accent = act/selection, orange = waiting (still yours), red = nobody covering or failed. Your time is the darkest fill in light mode and the lightest in dark mode, so it's never a hue. People aren't colour-coded. Each colour answers a coverage question, which is what SREs scan for.\n- *Type:* the system font at macOS sizes (13/11, with one 15pt answer). A utility that lives in the OS chrome should read as part of it.\n- *Layout:* 340pt, top-down by priority. It's narrow enough to feel like a system extra and wide enough for \"Name \u00b7 Rotation Layer \u00b7 until Mon 09:00\" without truncating.\n- *Mark:* a dial whose wedge is the share of your shift still to run. It says \"time on duty\" and works as a template image at 16pt.\n- *Voice:* exact and calm. \"Nothing changed: you're still on call.\" Ranges are absolute, and the time zone is named only when it differs.\n\n**Key decisions and why:**\n1. **The handover is a request, and every surface says so.** The pending note reads \"You're still on call until Priya accepts\", the strip keeps your segment under the pending outline, and the menu-bar time doesn't change. This is the safety rule of the product.\n2. **\"Part of it\" is the default, not \"the rest of my shift\".** The common case is covering a few hours (an evening, a Sunday). The default range is the next sensible block, editable with two popup buttons. A \"rest of shift\" radio sits above it.\n3. **Availability is computed and written out.** \"Already Platform Secondary then\" (disabled), \"Out of office until Wed 22 Oct, per Google Calendar\" (allowed, but the caution is repeated in the summary), \"last on call 3 weeks ago\" (fairness, so the same people aren't always asked), and the range in their own time (\"11:00\u201319:00 in Berlin\") when it differs.\n4. **The outcome is one sentence beside the commit button:** \"Sun 10:00\u201318:00 (8 hours) moves to Priya once accepted. Until then it's still yours.\" The button names the person (\"Ask Priya\").\n5. **What needs you goes first.** A teammate's request (\"Cover it\" / \"Decline\u2026\") or a coverage gap appears at the top. The gap action is \"Ask in #sre-oncall\", not \"Cover it myself\", because the user is Platform Primary at that time and shouldn't double up.\n6. **Accent fills only the committing button.** \"Hand over\u2026\" is a plain push button. The accent appears when you're about to change the schedule (Ask, Cover it, Sign in).\n7. **Declines aren't errors.** They're a normal answer in plain text, quoted, with \"Ask someone else\u2026\", which reopens the sheet with the same range.\n8. **Offline keeps the schedule, but says so** (\"Showing the schedule as of 13:02; it may have changed since\"), dims the dial and disables Hand over with the reason written underneath.\n9. **No global shortcut by default.** The menu-bar and \u2325\u2318 space is crowded on SRE machines. It's user-set, and any UI text reads the live binding.\n\n### States designed (all in the prototype and screenshots)\n\nOn call \u00b7 not on call (next shift in 4 days) \u00b7 handover: choosing \u00b7 handover: send failed \u00b7 waiting for reply \u00b7 accepted \u00b7 declined \u00b7 incoming request \u00b7 coverage gap \u00b7 offline (cached) \u00b7 first sync (loading) \u00b7 not connected (first run, no schedule).\n\n## 3. Design system\n\n- `design/SYSTEM.md`: purpose and priorities, principles, colour roles (with \"never for\" and the native equivalents), type scale, space and shape, layout and platform limits with sources, components, motion, writing samples, brand, keyboard and accessibility, and a pre-ship checklist.\n- `app/tokens.css`: every colour (light, dark via the media query, and a manual `data-theme`), type size and weight, radius, shadow and duration, plus reduced-motion overrides. Desktop-scene colours are separated and labelled prototype-only.\n- `tests/design.test.js`: fails on literal colours, font sizes, weights, radii, durations or shadow colours in `app.css`; on inline styles other than strip geometry; on missing or mismatched dark tokens; on the token file loading after the stylesheet; and on 22 text and graphic contrast pairs per theme.\n- Agent pointer: not added, because there's no project repository yet and the rules forbade writing outside this folder. When the repo exists, add the `AGENTS-snippet.md` lines pointing at `design/SYSTEM.md`.\n\n## 4. Verification\n\nWhat I checked, and how:\n- **Rendered every state in both themes** at 2x, with the popover at its real 340pt width under a 24pt menu bar (`tools/shoot.py`). I looked at each screenshot and fixed what I found (see below). Automated checks: no element overflows the popover, no text is truncated with an ellipsis, no console or page errors.\n- **Guard test:** 6/6 pass. A mutation check (appending a literal `#ff0000`, `12px` and `4px` to `app.css`) makes it fail, as intended.\n- **Keyboard and interaction path** (`tools/interact.py`, 20/20 pass):\n  - Hand over\u2026 opens the sheet with focus on the first choice.\n  - Arrow keys switch the range choice.\n  - Send stays disabled until someone is chosen.\n  - A search with no match says so.\n  - Choosing a person by keyboard keeps focus.\n  - The button names the person.\n  - The preview segment appears.\n  - Sam (already Secondary) can't be chosen.\n  - \u2318\u21a9 sends.\n  - The menu-bar time is unchanged while pending.\n  - Nothing above the reading point moves when the pending note appears (answer and strip at the same y before and after).\n  - Cancel returns focus to Hand over\u2026.\n  - Esc backs out of the sheet, then closes the popover and focuses the status item.\n  - Accepting an incoming request confirms in words and clears the badge.\n  - Sign-in goes from loading to the schedule.\n- **Contrast:** checked automatically in both themes (see the guard test).\n\n**Found and fixed during refinement:**\n1. The strip started at Saturday noon, so the \"now\" line cut through the \"You\" label and the past (not yours to hand over) took space. It now starts at Now.\n2. Day ticks drawn through the segments read as shift boundaries. They moved below the bar.\n3. Person rows truncated the time-zone information. The secondary line now wraps.\n4. The gap headline broke inside \"02:00\u201306:00\". Ranges now never break: non-breaking spaces, and word joiners around the dash.\n5. The gap action \"Cover it myself\" would have put the Platform Primary on Edge as well. It became \"Ask in #sre-oncall\".\n6. Disabled-button text was 4.3:1 on its fill. Disabled buttons now use the window ground.\n7. The dark accent outline was 2.9:1 on others' segments. I added a separate `--accent-line` token (3.3:1 or better).\n8. The summary repeated the name (\"\u2026moves to Priya when Priya accepts\"). It's now \"\u2026once accepted\".\n9. The interaction script first reported a 4px shift. It came from measuring during the popover's appear animation, not from the layout. The script now waits for the animation to finish.\n\n**Could not verify here:**\n- The real macOS rendering: SF Pro (Inter stood in), the real popover material and vibrancy, the menu bar on a notched display (taller bar), a real template image, and VoiceOver. Only the ARIA structure was checked, not a screen reader.\n- The real PagerDuty and Calendar data: how long override creation takes, how acceptance is delivered (notification actions), and rate limits for 40 users polling.\n- Whether a live countdown in the menu bar is acceptable to users (some will want it off; this should be a setting) and how it behaves at under an hour.\n- Drag-to-select on the strip: designed as a natural next step, but not built. The popup buttons are the accessible path and work by keyboard.\n- Reduced motion: the tokens set durations to 0, but I didn't screenshot it separately.\n\n### Three weakest things still (from the critique pass)\n1. The handover sheet is tall (640pt, scrolling) when the person list is long. A shorter list (top 5 free people, then \"Show all 11\") could fit without scrolling. Test with users.\n2. The \"You\" row in On call now repeats information from the shift section. It's kept so the per-rotation list is complete, but it's a candidate for removal.\n3. The pending hatch is subtle at 1x on the 22pt strip. Check it on a real non-Retina display.\n\n## 5. Proposed lesson for the skill\n\nFrom this project: *for tools that change shared responsibility (on-call, approvals, ownership), add a \"never look more resolved than it is\" check to the critique, covering every surface that states the user's status (menu bar, notifications, badges), not just the screen where the action happened.* Suggested home: `references/critique.md` \u203a States, one bullet. It isn't applied; offered for the user to accept.\n"}], "grading": {"expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "DESIGN.md \u00a7Users, moment, priorities: 5 ordered priorities (am I on call \u2192 trust)"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Novelty moment: the shift strip that recolours hours to the recipient while composing"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "macOS system-colour palette proposed; no Recall hex values (script)"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside token blocks (script); guard test 6/6"}, {"text": "Dark mode is designed", "passed": true, "evidence": "prefers-color-scheme dark + theme switch; 12 dark screenshots"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "24 screenshots, 9 issues fixed after review"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design/SYSTEM.md with colour meanings and reasons"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "12 states incl. offline, first sync, not connected, send failed, gap"}, {"text": "Faithful to macOS menu-bar conventions and a realistic popover size", "passed": true, "evidence": "Real menu-bar sizes researched (Bjango); 22pt item, dial + time; standard macOS controls"}], "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0}, "timing": {"executor_duration_seconds": 899.4, "total_duration_seconds": 899.4}}}, {"id": "eval-oncall-menubar-without_skill-run-1", "prompt": "(No prompt found)", "eval_id": null, "outputs": [{"name": "DESIGN.md", "type": "text", "content": "# On-call menu-bar app: design\n\nA macOS menu-bar app (\"Handover\", a working name) for a team of about 40 SREs: it shows who is on call, tells you when you are, and lets you hand over all or part of a shift.\n\nDeliverables, all in this folder:\n\n- `app/index.html`: the prototype. Open it in a browser. The panel is drawn at real size (1 CSS px = 1 pt) under a mock menu bar. The column on the right is prototype chrome: it switches between 9 states and between light and dark.\n- `app/tokens.css`, `design-system/SYSTEM.md`: the design system (tokens, rules).\n- `checks/tokens.test.mjs`: design guardrails (`node --test checks/tokens.test.mjs`).\n- `checks/flow.py`, `checks/shoot.py`: an interaction check and the screenshot script.\n- `screenshots/`: every state in light and dark at 2x (Retina), plus a hover state and the full page.\n\n## 1. How I approached it\n\n**Finding \"my design philosophy\".** I could not use a dedicated design-philosophy document for this run. The best written evidence of your design thinking that I had was the design system you wrote for the Technical Memory side panel (`vfuk-technical-memory/design/SYSTEM.md`, \"Recall\"), plus its directions README. I read both and treated their principles as your philosophy. I did not copy that product's look (red brand, side-panel layout): I carried over the principles and the way they're enforced. **This is the biggest assumption in the work. If you have a separate philosophy document, check the result against it.**\n\nWhat I took from it, and where it shows up here:\n\n| Your principle | How it shaped this app |\n| --- | --- |\n| Familiar, then elevated | A standard macOS menu-bar panel: system font and material, push buttons, segmented control, search field, Esc to close. |\n| One obvious way | \"Hand over\u2026\" lives on the shift it hands over. \"Message\" lives on the person's row. Nothing is duplicated in a menu or toolbar. |\n| Novelty where it pays | One novel element only: the **shift bar**, which draws the part being handed over on the shift itself, through each stage of the handover. |\n| Minimal is not hidden | Time zones, \"would double up\", \"overnight for her\", \"away until Wed\", rota gaps and data age stay visible. Less suitable people sit behind a disclosure that names them: \"4 more: would double up, be up overnight, or away\". |\n| Words over widgets | Status is a sentence, not a badge: \"You're on call until Priya accepts.\" |\n| Never look more certain than it is (\"missing, not empty\") | A requested handover is not shown as done. When offline, the schedule stays on screen marked \"as of 18:31\", and handovers are paused. |\n| Status that is fine stays quiet; status that needs you speaks up | The menu bar shows a glyph, plus hours left only while you're on call. A dot appears only when you need to act (someone asked you, or your request was declined). The footer's sync line is faint. |\n| Colour is for meaning, one colour per meaning | Neutral greys. The accent means act or follow. Amber means look twice. Red means failed, and always comes with a sentence. Green is only the sync dot. People never get colours. |\n| Designed dark mode, tokens only, contrast enforced by a test | `tokens.css` and `checks/tokens.test.mjs` work the same way as your `tokens.css` and `design.test.js`. |\n| Plain, calm writing | No exclamation marks, no \"Oops\". Each message says what happened and what to do. |\n\n**Research** (from what I know; I did no live web research and had no access to your rota tool):\n\n- **Rota tools.** PagerDuty and Opsgenie both model a schedule as layers plus *overrides*. An override is created instantly, and nobody has to accept it. That is the gap this app fills. Most teams swap shifts in Slack and someone then edits the rota by hand, so the rota and the agreement can drift apart.\n- **Menu-bar extras.** Apple's guidance is to keep the menu-bar item small and template-tinted (one colour that adapts to the menu bar), and to avoid text unless it is essential. Recent macOS uses panel-style windows without an arrow (Control Center) for menu-bar extras.\n- **What on-call engineers want at a glance.** Am I on call and until when? Who do I escalate to? What's open that I'm inheriting or handing on? Time zones matter for a team split across countries.\n\n## 2. Assumptions (where I would have asked)\n\n1. **Your philosophy** is the one in the Technical Memory design system (see above).\n2. **The schedule source is PagerDuty.** The app reads schedules and writes overrides. Opsgenie would work the same way.\n3. **The team** is about 40 SREs across London, Lisbon and Bengaluru. They're split into five rotations (Core platform primary and secondary, Network & edge, Databases, Incident commander), about 9 people per rotation. Shifts change at 09:00 London time.\n4. **A handover needs the other person to agree.** The app sends a request (Slack message plus a notification). The override is written only when they accept, and until then the asker stays on call. This is the most important product decision. It is an assumption about your team's norms, and I chose it because silently moving a pager onto someone is the failure that matters most.\n5. **You can hand over part of a shift** (for example one evening), not just whole shifts.\n6. **Who should take a shift** is a suggestion, not a rule. The app sorts and labels people, but lets you pick anyone on the team except people who are away. Order: free people on the rotation first, longest since their last shift first (a simple fairness signal). Then people who would double up or be up overnight. Then people who are away.\n7. **The user** is \"JT\" in the sample data. All people, incidents and times are invented. \"Now\" is Sunday 18 October 2026, 18:47 London.\n8. **Global shortcut \u2303\u2325O.** I have not checked it against your team's other tools.\n9. **Panel size** is 360 \u00d7 at most 680 pt, which fits a 13\" MacBook Air screen under the menu bar.\n\n## 3. Direction and key decisions\n\n**One panel, two tabs, one sheet.**\n\n- **Now** (default) answers the three glance questions in order. First the *you panel*: your state, the shift bar, and the one action. Then *On call now*: one row per rotation in escalation order, with the person's local time when it differs from yours. Then *Your next shifts*.\n- **Schedule** shows the next seven days for a rotation, with gaps named in place (\"Gap. Sat 25 Oct 09:00 \u2192 Sun 09:00. Nobody is scheduled, so pages go straight to the secondary.\"). It links out to PagerDuty instead of rebuilding a calendar. A menu-bar app is the wrong place for a full rota editor.\n- **Hand over** replaces the panel content (back chevron, Esc). It is one screen, not a wizard: which part \u2192 who \u2192 note \u2192 a footer that says what will happen and a button that names it (\"Ask Priya \u00b7 13 h\").\n\nKey decisions and why:\n\n1. **The menu bar carries the most-asked answer.** Off call: outline glyph only. On call: filled glyph and hours left (\"14h\"). Needs you: a dot. Data stale: struck-through glyph. State is carried by shape as well as colour, so it survives the template tinting the menu bar applies.\n2. **The shift bar is the one novel element.** A handover is about *which part of the shift*, and dates in text are easy to misread at 2 a.m. The same bar appears in every stage. While choosing, the range is outlined. While waiting it is striped and labelled \"Priya?\". Once accepted it is solid and labelled \"Priya\". It settles in over 600 ms, the only slow motion in the app.\n3. **The request is not shown as done.** While waiting, the headline still reads \"You're on call for Core platform \u00b7 primary\", and the line under it says \"You're on call until Priya accepts.\" Declined says so in amber, quotes her note, and offers \"Ask someone else\u2026\" as the default button.\n4. **Suitability is said in words next to each person,** not as icons or colours: \"Free then \u00b7 last on call 12 days ago\", \"00:30 \u2192 13:30 his time, overnight\", \"On call as secondary then, so he would be primary and secondary at once\", \"Away until Wed 22 Oct\" (greyed, can't be picked).\n5. **Incoming requests take over the you panel,** because they need you. Tom's request shows his note and a check against your rota (\"You're free then. Your next shift starts Wed 22 Oct 18:00, 9 h after this ends.\"). The buttons are Decline\u2026 and Accept, with the default on the right as macOS does.\n6. **The handover note pre-ticks your open incidents** (INC-4821). Losing context on open incidents is the classic handover failure, and here it costs one checkbox to avoid.\n7. **Offline is missing, not empty.** The schedule stays visible, \"Last synced 18:31\". An error sentence says what is affected. \"Hand over\u2026\" is disabled with the reason next to it, not just greyed.\n8. **The accent follows the system.** I didn't bring the Technical Memory red across. In a native macOS app the accent belongs to the user's System Settings, and red in a pager app reads as \"incident\". The prototype uses a blue stand-in (`#0071E3`), deep enough for white button text to hold 4.5:1.\n\n## 4. What I verified\n\n- **Guardrails** (`node --test checks/tokens.test.mjs`): 6/6 pass. In both modes, every text token holds \u2265 4.5:1 on the panel, the you panel and the controls, and white on the accent fill holds \u2265 4.5:1. Glyphs hold \u2265 3:1. The two dark-mode blocks agree. `app.css` has no raw colours, font sizes, radii or shadows. Two problems the test caught and I fixed: muted text on dark controls was 4.22:1, and white on the stock macOS blue is about 4.0:1 in light mode and 3.65:1 in dark.\n- **Interaction** (`checks/flow.py`, Playwright/Chromium): 17/17 checks pass.\n  - Hand over\u2026 opens the sheet. Search filters people. The disclosure reveals all 8 candidates. An away person can't be picked.\n  - The send button names the person and the length.\n  - Pending and accepted name whoever was actually picked. Handing over the rest of the shift makes you off call and drops the hours from the menu bar.\n  - Esc goes back, then closes. \"Try again\" clears the offline notice. Row actions show on keyboard focus.\n  - Reduced motion stops the pulse. No page errors.\n- **Layout:** in every state the panel is 360 pt wide with no horizontal overflow. Main-view states fit without scrolling (545\u2013666 pt tall). The handover sheet scrolls inside a 680 pt panel, with its footer and button fixed.\n- **Bugs found and fixed while checking:**\n  - The \"now\" label collided with the end label.\n  - The avatar class clashed with the you-panel class.\n  - Date pickers wrapped.\n  - The panel body didn't scroll, so content was clipped.\n  - `[hidden]` didn't hide the panel.\n  - Row actions were `display:none`, so the keyboard couldn't reach them.\n  - Pending text said \"Priya\" even when you picked someone else.\n- **Screenshots:** all 9 states in light and dark, plus hover, at 2x.\n\n## 5. What I could not verify\n\n- **It isn't a Mac.** Screenshots come from Chromium on Linux. SF Pro isn't available, so Inter stands in, and real SF metrics will set slightly narrower. The panel's blur approximates the system material. Real menu-bar spacing, the notch on newer MacBooks (which can hide menu-bar items when the bar is crowded) and the current macOS panel radius should be checked on a device.\n- **No real users.** I don't know whether your team accepts the request \u2192 accept model (assumption 4), or whether \"hours left\" in the menu bar is wanted or is noise. Both are cheap to test with three or four SREs using the prototype.\n- **Things I haven't designed:**\n  - PagerDuty sign-in and first-run.\n  - The settings menu (the gear).\n  - Notification content (incoming request, accepted, \"your shift starts in 1 h\").\n  - The rotation picker's menu.\n  - A handover started from a future shift: the sheet always shows the current shift.\n  - Request expiry (what happens if nobody answers before the shift starts; I would suggest the app reminds the asker 1 h before and never auto-hands-over).\n  - VoiceOver. The labels are written but I haven't tested them with a screen reader.\n- **The guardrail test** reads `app.css`, but not the few inline styles in `app.js`. Those use tokens only, which I checked by eye.\n"}], "grading": {"expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "Priorities stated, derived from the Recall SYSTEM.md it adopted as a stand-in"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "One novel element: the shift bar (outlined \u2192 striped \u2192 solid)"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "No Recall hex values; deepened macOS blue"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); token test 6/6"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Light and dark for all 9 states"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "21 screenshots; 7 bugs found by click-through"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design-system/SYSTEM.md modelled on Recall"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Offline (PagerDuty unreachable), declined, incoming; no first-run/loading state"}, {"text": "Faithful to macOS menu-bar conventions and a realistic popover size", "passed": true, "evidence": "360pt panel under mock menu bar, pager icon states"}], "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0}, "timing": {"executor_duration_seconds": 939.8, "total_duration_seconds": 939.8}}}], "previous_feedback": {}, "previous_outputs": {}, "benchmark": {"metadata": {"skill_name": "design-philosophy", "skill_path": "<path/to/skill>", "executor_model": "<model-name>", "analyzer_model": "<model-name>", "timestamp": "2026-10-18T14:17:59Z", "evals_run": [1, 2, 3], "runs_per_configuration": 3}, "runs": [{"eval_id": 3, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 9, "failed": 0, "total": 9, "time_seconds": 1315.2, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "Ordered priorities: never lost; readable; safe and seen to be safe; a person one tap away; mistakes cost nothing"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Novelty moment: the text message shown before it arrives, with the scam rule"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Own placeholder palette (Harbour), warm paper + ink blue; explicitly avoids case-study density"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); guard test 6/6"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Dark mode designed; 390 dark screenshots"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "63 screenshots at 320/390/430, 200% text; 5 issues fixed"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design/SYSTEM.md + AGENTS.md pointer"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Errors, not found, wrong/expired/resent code, locked, slow/failed setup, help sheet"}, {"text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human", "passed": true, "evidence": "Nothing under 17px, 56px buttons, 48px min targets, plain errors, call/branch help on every screen"}], "notes": []}, {"eval_id": 2, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 11, "failed": 0, "total": 11, "time_seconds": 1219.6, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "DESIGN.md: ordered priorities (open & severity, owner, freshness, trend\u2026)"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Novelty moment: 24-hour lane per incident on a shared now-axis"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Brand palette from guide (5 brand hex values); no Recall values"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); guard test 7/7"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Wall display dark, laptop light/dark"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "20 screenshots incl. before/after and 4 TV resolutions; 4 critique rounds"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design/SYSTEM.md + AGENTS.md pointer"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Loading, all clear, connection lost, source failed, 12-incident surge"}, {"text": "Palette taken from the brand guide", "passed": true, "evidence": "Palette from brand guide (navy, Fog, Slate, Tide Teal; deeper orange for text)"}, {"text": "Designs for both TV-at-distance and laptop viewing", "passed": true, "evidence": "?display=wall for TV (1366\u00d7768, 1080p, 4K) and laptop at 1280/1440/390"}, {"text": "Removes decoration (emoji, gradients) without losing data", "passed": true, "evidence": "0 emoji, 0 gradients (script); all original data kept"}], "notes": []}, {"eval_id": 1, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 9, "failed": 0, "total": 9, "time_seconds": 899.4, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "DESIGN.md \u00a7Users, moment, priorities: 5 ordered priorities (am I on call \u2192 trust)"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Novelty moment: the shift strip that recolours hours to the recipient while composing"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "macOS system-colour palette proposed; no Recall hex values (script)"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside token blocks (script); guard test 6/6"}, {"text": "Dark mode is designed", "passed": true, "evidence": "prefers-color-scheme dark + theme switch; 12 dark screenshots"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "24 screenshots, 9 issues fixed after review"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design/SYSTEM.md with colour meanings and reasons"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "12 states incl. offline, first sync, not connected, send failed, gap"}, {"text": "Faithful to macOS menu-bar conventions and a realistic popover size", "passed": true, "evidence": "Real menu-bar sizes researched (Bjango); 22pt item, dial + time; standard macOS controls"}], "notes": []}, {"eval_id": 3, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 9, "failed": 0, "total": 9, "time_seconds": 857.2, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "Assumptions and priorities stated, following the Recall SYSTEM.md it adopted"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "Motion only on the checking screen, citing 'novelty where it pays'"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Own placeholder palette (Larch); Recall principles reused, palette not"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); token test passes"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Dark mode designed separately"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "29 screenshots incl. 320px and 200% text"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design-system/SYSTEM.md modelled on Recall"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Slow, very slow, failed, no match, wrong code, timeout"}, {"text": "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human", "passed": true, "evidence": "19px body, 56px controls, 48px min targets, words not icons; but SMS preview shows a sample code (482 913) a user could type"}], "notes": []}, {"eval_id": 2, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 0.73, "passed": 8, "failed": 3, "total": 11, "time_seconds": 676.9, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": false, "evidence": "Names two readers (ops room at 3\u20134 m, laptop engineer) but no ordered priorities; went straight to principles from the brand voice"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": false, "evidence": "No deliberate novelty moment named; a situation headline banner duplicates the SEV1 row"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "Brand palette used (5 brand hex values); never saw Recall"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": false, "evidence": "1 literal colour outside tokens: box-shadow rgb(0 0 0 / 0.18) on the demo panel; no guard test"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Dark TV theme, light laptop default + dark"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "14 screenshots incl. original and 4K"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design-system/README.md: where the brand guide stops, colour checks, layout rules"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Stale, feed down, loading, all clear, SEV2-only"}, {"text": "Palette taken from the brand guide", "passed": true, "evidence": "Navy, Fog, Slate, Tide Teal; Signal Orange deliberately unused"}, {"text": "Designs for both TV-at-distance and laptop viewing", "passed": true, "evidence": "TV mode (1080p/4K, never scrolls) and laptop mode"}, {"text": "Removes decoration (emoji, gradients) without losing data", "passed": true, "evidence": "0 emoji, 0 gradients (script)"}], "notes": []}, {"eval_id": 1, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 9, "failed": 0, "total": 9, "time_seconds": 939.8, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "States users, their moment and ordered priorities before choosing a direction", "passed": true, "evidence": "Priorities stated, derived from the Recall SYSTEM.md it adopted as a stand-in"}, {"text": "Names one deliberate novelty moment tied to the product's differentiator", "passed": true, "evidence": "One novel element: the shift bar (outlined \u2192 striped \u2192 solid)"}, {"text": "Identity derived from this product's context (no reuse of the Recall extension palette)", "passed": true, "evidence": "No Recall hex values; deepened macOS blue"}, {"text": "All colours come from tokens; no literal colours in component styles", "passed": true, "evidence": "0 literal colours outside tokens (script); token test 6/6"}, {"text": "Dark mode is designed", "passed": true, "evidence": "Light and dark for all 9 states"}, {"text": "Verified in a rendered build (screenshots saved)", "passed": true, "evidence": "21 screenshots; 7 bugs found by click-through"}, {"text": "Writes down a project design system with reasons for its values", "passed": true, "evidence": "design-system/SYSTEM.md modelled on Recall"}, {"text": "Designs the non-happy states (empty, loading, error/offline as relevant)", "passed": true, "evidence": "Offline (PagerDuty unreachable), declined, incoming; no first-run/loading state"}, {"text": "Faithful to macOS menu-bar conventions and a realistic popover size", "passed": true, "evidence": "360pt panel under mock menu bar, pager icon states"}], "notes": []}], "run_summary": {"with_skill": {"pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0}, "time_seconds": {"mean": 1144.7333, "stddev": 217.7755, "min": 899.4, "max": 1315.2}, "tokens": {"mean": 0.0, "stddev": 0.0, "min": 0, "max": 0}}, "without_skill": {"pass_rate": {"mean": 0.91, "stddev": 0.1559, "min": 0.73, "max": 1.0}, "time_seconds": {"mean": 824.6333, "stddev": 134.4416, "min": 676.9, "max": 939.8}, "tokens": {"mean": 0.0, "stddev": 0.0, "min": 0, "max": 0}}, "delta": {"pass_rate": "+0.09", "time_seconds": "+320.1", "tokens": "+0"}}, "notes": []}};
+
+    // ---- State ----
+    let feedbackMap = {};  // run_id -> feedback text
+    let currentIndex = 0;
+    let visitedRuns = new Set();
+
+    // ---- Init ----
+    async function init() {
+      // Load saved feedback from server — but only if this isn't a fresh
+      // iteration (indicated by previous_feedback being present). When
+      // previous feedback exists, the feedback.json on disk is stale from
+      // the prior iteration and should not pre-fill the textareas.
+      const hasPrevious = Object.keys(EMBEDDED_DATA.previous_feedback || {}).length > 0
+        || Object.keys(EMBEDDED_DATA.previous_outputs || {}).length > 0;
+      if (!hasPrevious) {
+        try {
+          const resp = await fetch("/api/feedback");
+          const data = await resp.json();
+          if (data.reviews) {
+            for (const r of data.reviews) feedbackMap[r.run_id] = r.feedback;
+          }
+        } catch { /* first run, no feedback yet */ }
+      }
+
+      document.getElementById("skill-name").textContent = EMBEDDED_DATA.skill_name;
+      showRun(0);
+
+      // Wire up feedback auto-save
+      const textarea = document.getElementById("feedback");
+      let saveTimeout = null;
+      textarea.addEventListener("input", () => {
+        clearTimeout(saveTimeout);
+        document.getElementById("feedback-status").textContent = "";
+        saveTimeout = setTimeout(() => saveCurrentFeedback(), 800);
+      });
+    }
+
+    // ---- Navigation ----
+    function navigate(delta) {
+      const newIndex = currentIndex + delta;
+      if (newIndex >= 0 && newIndex < EMBEDDED_DATA.runs.length) {
+        saveCurrentFeedback();
+        showRun(newIndex);
+      }
+    }
+
+    function updateNavButtons() {
+      document.getElementById("prev-btn").disabled = currentIndex === 0;
+      document.getElementById("next-btn").disabled =
+        currentIndex === EMBEDDED_DATA.runs.length - 1;
+    }
+
+    // ---- Show a run ----
+    function showRun(index) {
+      currentIndex = index;
+      const run = EMBEDDED_DATA.runs[index];
+
+      // Progress
+      document.getElementById("progress").textContent =
+        `${index + 1} of ${EMBEDDED_DATA.runs.length}`;
+
+      // Prompt
+      document.getElementById("prompt-text").textContent = run.prompt;
+
+      // Config badge
+      const badge = document.getElementById("config-badge");
+      const configMatch = run.id.match(/(with_skill|without_skill|new_skill|old_skill)/);
+      if (configMatch) {
+        const config = configMatch[1];
+        const isBaseline = config === "without_skill" || config === "old_skill";
+        badge.textContent = config.replace(/_/g, " ");
+        badge.className = "config-badge " + (isBaseline ? "config-baseline" : "config-primary");
+        badge.style.display = "inline-block";
+      } else {
+        badge.style.display = "none";
+      }
+
+      // Outputs
+      renderOutputs(run);
+
+      // Previous outputs
+      renderPrevOutputs(run);
+
+      // Grades
+      renderGrades(run);
+
+      // Previous feedback
+      const prevFb = (EMBEDDED_DATA.previous_feedback || {})[run.id];
+      const prevEl = document.getElementById("prev-feedback");
+      if (prevFb) {
+        document.getElementById("prev-feedback-text").textContent = prevFb;
+        prevEl.style.display = "block";
+      } else {
+        prevEl.style.display = "none";
+      }
+
+      // Feedback
+      document.getElementById("feedback").value = feedbackMap[run.id] || "";
+      document.getElementById("feedback-status").textContent = "";
+
+      updateNavButtons();
+
+      // Track visited runs and promote done button when all visited
+      visitedRuns.add(index);
+      const doneBtn = document.getElementById("done-btn");
+      if (visitedRuns.size >= EMBEDDED_DATA.runs.length) {
+        doneBtn.classList.add("ready");
+      }
+
+      // Scroll main content to top
+      document.querySelector(".main").scrollTop = 0;
+    }
+
+    // ---- Render outputs ----
+    function renderOutputs(run) {
+      const container = document.getElementById("outputs-body");
+      container.innerHTML = "";
+
+      const outputs = run.outputs || [];
+      if (outputs.length === 0) {
+        container.innerHTML = '<div class="empty-state">No output files</div>';
+        return;
+      }
+
+      for (const file of outputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        // Always show file header with download link
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const content = document.createElement("div");
+        content.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          content.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          content.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          content.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(content, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          content.appendChild(a);
+        } else if (file.type === "error") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          pre.style.color = "var(--red)";
+          content.appendChild(pre);
+        }
+
+        fileDiv.appendChild(content);
+        container.appendChild(fileDiv);
+      }
+    }
+
+    // ---- XLSX rendering via SheetJS ----
+    function renderXlsx(container, b64Data) {
+      try {
+        const raw = Uint8Array.from(atob(b64Data), c => c.charCodeAt(0));
+        const wb = XLSX.read(raw, { type: "array" });
+
+        for (let i = 0; i < wb.SheetNames.length; i++) {
+          const sheetName = wb.SheetNames[i];
+          const ws = wb.Sheets[sheetName];
+
+          if (wb.SheetNames.length > 1) {
+            const sheetLabel = document.createElement("div");
+            sheetLabel.style.cssText =
+              "font-weight:600; font-size:0.8rem; color:#b0aea5; margin-top:0.5rem; margin-bottom:0.25rem;";
+            sheetLabel.textContent = "Sheet: " + sheetName;
+            container.appendChild(sheetLabel);
+          }
+
+          const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false });
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = htmlStr;
+          container.appendChild(wrapper);
+        }
+      } catch (err) {
+        container.textContent = "Error rendering spreadsheet: " + err.message;
+      }
+    }
+
+    // ---- Grades ----
+    function renderGrades(run) {
+      const section = document.getElementById("grades-section");
+      const content = document.getElementById("grades-content");
+
+      if (!run.grading) {
+        section.style.display = "none";
+        return;
+      }
+
+      const grading = run.grading;
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("grades-arrow").classList.remove("open");
+
+      const summary = grading.summary || {};
+      const expectations = grading.expectations || [];
+
+      let html = '<div style="padding: 1rem;">';
+
+      // Summary line
+      const passRate = summary.pass_rate != null
+        ? Math.round(summary.pass_rate * 100) + "%"
+        : "?";
+      const badgeClass = summary.pass_rate >= 0.8 ? "grade-pass" : summary.pass_rate >= 0.5 ? "" : "grade-fail";
+      html += '<div class="grades-summary">';
+      html += '<span class="grade-badge ' + badgeClass + '">' + passRate + '</span>';
+      html += '<span>' + (summary.passed || 0) + ' passed, ' + (summary.failed || 0) + ' failed of ' + (summary.total || 0) + '</span>';
+      html += '</div>';
+
+      // Assertions list
+      html += '<ul class="assertion-list">';
+      for (const exp of expectations) {
+        const statusClass = exp.passed ? "pass" : "fail";
+        const statusIcon = exp.passed ? "\u2713" : "\u2717";
+        html += '<li class="assertion-item">';
+        html += '<span class="assertion-status ' + statusClass + '">' + statusIcon + '</span>';
+        html += '<span>' + escapeHtml(exp.text) + '</span>';
+        if (exp.evidence) {
+          html += '<div class="assertion-evidence">' + escapeHtml(exp.evidence) + '</div>';
+        }
+        html += '</li>';
+      }
+      html += '</ul>';
+
+      html += '</div>';
+      content.innerHTML = html;
+    }
+
+    function toggleGrades() {
+      const content = document.getElementById("grades-content");
+      const arrow = document.getElementById("grades-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Previous outputs (collapsible) ----
+    function renderPrevOutputs(run) {
+      const section = document.getElementById("prev-outputs-section");
+      const content = document.getElementById("prev-outputs-content");
+      const prevOutputs = (EMBEDDED_DATA.previous_outputs || {})[run.id];
+
+      if (!prevOutputs || prevOutputs.length === 0) {
+        section.style.display = "none";
+        return;
+      }
+
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("prev-outputs-arrow").classList.remove("open");
+
+      // Render the files into the content area
+      content.innerHTML = "";
+      const wrapper = document.createElement("div");
+      wrapper.style.padding = "1rem";
+
+      for (const file of prevOutputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const fc = document.createElement("div");
+        fc.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          fc.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          fc.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          fc.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(fc, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          fc.appendChild(a);
+        }
+
+        fileDiv.appendChild(fc);
+        wrapper.appendChild(fileDiv);
+      }
+
+      content.appendChild(wrapper);
+    }
+
+    function togglePrevOutputs() {
+      const content = document.getElementById("prev-outputs-content");
+      const arrow = document.getElementById("prev-outputs-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Feedback (saved to server -> feedback.json) ----
+    function saveCurrentFeedback() {
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // Build reviews array from map
+      const reviews = [];
+      for (const [run_id, feedback] of Object.entries(feedbackMap)) {
+        if (feedback.trim()) {
+          reviews.push({ run_id, feedback, timestamp: new Date().toISOString() });
+        }
+      }
+
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reviews, status: "in_progress" }),
+      }).then(() => {
+        document.getElementById("feedback-status").textContent = "Saved";
+      }).catch(() => {
+        // Static mode or server unavailable — no-op on auto-save,
+        // feedback will be downloaded on final submit
+        document.getElementById("feedback-status").textContent = "Will download on submit";
+      });
+    }
+
+    // ---- Done ----
+    function showDoneDialog() {
+      // Save current textarea to feedbackMap (but don't POST yet)
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // POST once with status: complete — include ALL runs so the model
+      // can distinguish "no feedback" (looks good) from "not reviewed"
+      const reviews = [];
+      const ts = new Date().toISOString();
+      for (const r of EMBEDDED_DATA.runs) {
+        reviews.push({ run_id: r.id, feedback: feedbackMap[r.id] || "", timestamp: ts });
+      }
+      const payload = JSON.stringify({ reviews, status: "complete" }, null, 2);
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: payload,
+      }).then(() => {
+        document.getElementById("done-overlay").classList.add("visible");
+      }).catch(() => {
+        // Server not available (static mode) — download as file
+        const blob = new Blob([payload], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "feedback.json";
+        a.click();
+        URL.revokeObjectURL(url);
+        document.getElementById("done-overlay").classList.add("visible");
+      });
+    }
+
+    function closeDoneDialog() {
+      // Reset status back to in_progress
+      saveCurrentFeedback();
+      document.getElementById("done-overlay").classList.remove("visible");
+    }
+
+    // ---- Toast ----
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("visible");
+      setTimeout(() => toast.classList.remove("visible"), 2000);
+    }
+
+    // ---- Keyboard nav ----
+    document.addEventListener("keydown", (e) => {
+      // Don't capture when typing in textarea
+      if (e.target.tagName === "TEXTAREA") return;
+
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        navigate(-1);
+      } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        navigate(1);
+      }
+    });
+
+    // ---- Util ----
+    function getDownloadUri(file) {
+      if (file.data_uri) return file.data_uri;
+      if (file.data_b64) return "data:application/octet-stream;base64," + file.data_b64;
+      if (file.type === "text") return "data:text/plain;charset=utf-8," + encodeURIComponent(file.content);
+      return "#";
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // ---- View switching ----
+    function switchView(view) {
+      document.querySelectorAll(".view-tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".view-panel").forEach(p => p.classList.remove("active"));
+      document.querySelector(`[onclick="switchView('${view}')"]`).classList.add("active");
+      document.getElementById("panel-" + view).classList.add("active");
+    }
+
+    // ---- Benchmark rendering ----
+    function renderBenchmark() {
+      const data = EMBEDDED_DATA.benchmark;
+      if (!data) return;
+
+      // Show the tabs
+      document.getElementById("view-tabs").style.display = "flex";
+
+      const container = document.getElementById("benchmark-content");
+      const summary = data.run_summary || {};
+      const metadata = data.metadata || {};
+      const notes = data.notes || [];
+
+      let html = "";
+
+      // Header
+      html += "<h2 style='font-family: Poppins, sans-serif; margin-bottom: 0.5rem;'>Benchmark Results</h2>";
+      html += "<p style='color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;'>";
+      if (metadata.skill_name) html += "<strong>" + escapeHtml(metadata.skill_name) + "</strong> &mdash; ";
+      if (metadata.timestamp) html += metadata.timestamp + " &mdash; ";
+      if (metadata.evals_run) html += "Evals: " + metadata.evals_run.join(", ") + " &mdash; ";
+      html += (metadata.runs_per_configuration || "?") + " runs per configuration";
+      html += "</p>";
+
+      // Summary table
+      html += '<table class="benchmark-table">';
+
+      function fmtStat(stat, pct) {
+        if (!stat) return "—";
+        const suffix = pct ? "%" : "";
+        const m = pct ? (stat.mean * 100).toFixed(0) : stat.mean.toFixed(1);
+        const s = pct ? (stat.stddev * 100).toFixed(0) : stat.stddev.toFixed(1);
+        return m + suffix + " ± " + s + suffix;
+      }
+
+      function deltaClass(val) {
+        if (!val) return "";
+        const n = parseFloat(val);
+        if (n > 0) return "benchmark-delta-positive";
+        if (n < 0) return "benchmark-delta-negative";
+        return "";
+      }
+
+      // Discover config names dynamically (everything except "delta")
+      const configs = Object.keys(summary).filter(k => k !== "delta");
+      const configA = configs[0] || "config_a";
+      const configB = configs[1] || "config_b";
+      const labelA = configA.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const labelB = configB.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const a = summary[configA] || {};
+      const b = summary[configB] || {};
+      const delta = summary.delta || {};
+
+      html += "<thead><tr><th>Metric</th><th>" + escapeHtml(labelA) + "</th><th>" + escapeHtml(labelB) + "</th><th>Delta</th></tr></thead>";
+      html += "<tbody>";
+
+      html += "<tr><td><strong>Pass Rate</strong></td>";
+      html += "<td>" + fmtStat(a.pass_rate, true) + "</td>";
+      html += "<td>" + fmtStat(b.pass_rate, true) + "</td>";
+      html += '<td class="' + deltaClass(delta.pass_rate) + '">' + (delta.pass_rate || "—") + "</td></tr>";
+
+      // Time (only show row if data exists)
+      if (a.time_seconds || b.time_seconds) {
+        html += "<tr><td><strong>Time (s)</strong></td>";
+        html += "<td>" + fmtStat(a.time_seconds, false) + "</td>";
+        html += "<td>" + fmtStat(b.time_seconds, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.time_seconds) + '">' + (delta.time_seconds ? delta.time_seconds + "s" : "—") + "</td></tr>";
+      }
+
+      // Tokens (only show row if data exists)
+      if (a.tokens || b.tokens) {
+        html += "<tr><td><strong>Tokens</strong></td>";
+        html += "<td>" + fmtStat(a.tokens, false) + "</td>";
+        html += "<td>" + fmtStat(b.tokens, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.tokens) + '">' + (delta.tokens || "—") + "</td></tr>";
+      }
+
+      html += "</tbody></table>";
+
+      // Per-eval breakdown (if runs data available)
+      const runs = data.runs || [];
+      if (runs.length > 0) {
+        const evalIds = [...new Set(runs.map(r => r.eval_id))].sort((a, b) => a - b);
+
+        html += "<h3 style='font-family: Poppins, sans-serif; margin-bottom: 0.75rem;'>Per-Eval Breakdown</h3>";
+
+        const hasTime = runs.some(r => r.result && r.result.time_seconds != null);
+        const hasErrors = runs.some(r => r.result && r.result.errors > 0);
+
+        for (const evalId of evalIds) {
+          const evalRuns = runs.filter(r => r.eval_id === evalId);
+          const evalName = evalRuns[0] && evalRuns[0].eval_name ? evalRuns[0].eval_name : "Eval " + evalId;
+
+          html += "<h4 style='font-family: Poppins, sans-serif; margin: 1rem 0 0.5rem; color: var(--text);'>" + escapeHtml(evalName) + "</h4>";
+          html += '<table class="benchmark-table">';
+          html += "<thead><tr><th>Config</th><th>Run</th><th>Pass Rate</th>";
+          if (hasTime) html += "<th>Time (s)</th>";
+          if (hasErrors) html += "<th>Crashes During Execution</th>";
+          html += "</tr></thead>";
+          html += "<tbody>";
+
+          // Group by config and render with average rows
+          const configGroups = [...new Set(evalRuns.map(r => r.configuration))];
+          for (let ci = 0; ci < configGroups.length; ci++) {
+            const config = configGroups[ci];
+            const configRuns = evalRuns.filter(r => r.configuration === config);
+            if (configRuns.length === 0) continue;
+
+            const rowClass = ci === 0 ? "benchmark-row-with" : "benchmark-row-without";
+            const configLabel = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+            for (const run of configRuns) {
+              const r = run.result || {};
+              const prClass = r.pass_rate >= 0.8 ? "benchmark-delta-positive" : r.pass_rate < 0.5 ? "benchmark-delta-negative" : "";
+              html += '<tr class="' + rowClass + '">';
+              html += "<td>" + configLabel + "</td>";
+              html += "<td>" + run.run_number + "</td>";
+              html += '<td class="' + prClass + '">' + ((r.pass_rate || 0) * 100).toFixed(0) + "% (" + (r.passed || 0) + "/" + (r.total || 0) + ")</td>";
+              if (hasTime) html += "<td>" + (r.time_seconds != null ? r.time_seconds.toFixed(1) : "—") + "</td>";
+              if (hasErrors) html += "<td>" + (r.errors || 0) + "</td>";
+              html += "</tr>";
+            }
+
+            // Average row
+            const rates = configRuns.map(r => (r.result || {}).pass_rate || 0);
+            const avgRate = rates.reduce((a, b) => a + b, 0) / rates.length;
+            const avgPrClass = avgRate >= 0.8 ? "benchmark-delta-positive" : avgRate < 0.5 ? "benchmark-delta-negative" : "";
+            html += '<tr class="benchmark-row-avg ' + rowClass + '">';
+            html += "<td>" + configLabel + "</td>";
+            html += "<td>Avg</td>";
+            html += '<td class="' + avgPrClass + '">' + (avgRate * 100).toFixed(0) + "%</td>";
+            if (hasTime) {
+              const times = configRuns.map(r => (r.result || {}).time_seconds).filter(t => t != null);
+              html += "<td>" + (times.length ? (times.reduce((a, b) => a + b, 0) / times.length).toFixed(1) : "—") + "</td>";
+            }
+            if (hasErrors) html += "<td></td>";
+            html += "</tr>";
+          }
+          html += "</tbody></table>";
+
+          // Per-assertion detail for this eval
+          const runsWithExpectations = {};
+          for (const config of configGroups) {
+            runsWithExpectations[config] = evalRuns.filter(r => r.configuration === config && r.expectations && r.expectations.length > 0);
+          }
+          const hasAnyExpectations = Object.values(runsWithExpectations).some(runs => runs.length > 0);
+          if (hasAnyExpectations) {
+            // Collect all unique assertion texts across all configs
+            const allAssertions = [];
+            const seen = new Set();
+            for (const config of configGroups) {
+              for (const run of runsWithExpectations[config]) {
+                for (const exp of (run.expectations || [])) {
+                  if (!seen.has(exp.text)) {
+                    seen.add(exp.text);
+                    allAssertions.push(exp.text);
+                  }
+                }
+              }
+            }
+
+            html += '<table class="benchmark-table" style="margin-top: 0.5rem;">';
+            html += "<thead><tr><th>Assertion</th>";
+            for (const config of configGroups) {
+              const label = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+              html += "<th>" + escapeHtml(label) + "</th>";
+            }
+            html += "</tr></thead><tbody>";
+
+            for (const assertionText of allAssertions) {
+              html += "<tr><td>" + escapeHtml(assertionText) + "</td>";
+
+              for (const config of configGroups) {
+                html += "<td>";
+                for (const run of runsWithExpectations[config]) {
+                  const exp = (run.expectations || []).find(e => e.text === assertionText);
+                  if (exp) {
+                    const cls = exp.passed ? "benchmark-delta-positive" : "benchmark-delta-negative";
+                    const icon = exp.passed ? "\u2713" : "\u2717";
+                    html += '<span class="' + cls + '" title="Run ' + run.run_number + ': ' + escapeHtml(exp.evidence || "") + '">' + icon + "</span> ";
+                  } else {
+                    html += "— ";
+                  }
+                }
+                html += "</td>";
+              }
+              html += "</tr>";
+            }
+            html += "</tbody></table>";
+          }
+        }
+      }
+
+      // Notes
+      if (notes.length > 0) {
+        html += '<div class="benchmark-notes">';
+        html += "<h3>Analysis Notes</h3>";
+        html += "<ul>";
+        for (const note of notes) {
+          html += "<li>" + escapeHtml(note) + "</li>";
+        }
+        html += "</ul></div>";
+      }
+
+      container.innerHTML = html;
+    }
+
+    // ---- Start ----
+    init();
+    renderBenchmark();
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident Metrics</title>
+<style>
+  body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #222; }
+  header { padding: 24px 32px; color: white; display: flex; justify-content: space-between; align-items: center; }
+  header h1 { margin: 0; font-size: 28px; }
+  .badge { background: #ff4757; color: white; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: bold; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 0 32px 32px; }
+  .card { background: white; border-radius: 20px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,.15); }
+  .card h3 { margin: 0 0 8px; font-size: 14px; color: #888; text-transform: uppercase; }
+  .card .big { font-size: 42px; font-weight: bold; color: #764ba2; }
+  .card .trend { font-size: 13px; color: #2ed573; }
+  .wide { grid-column: span 2; }
+  .full { grid-column: span 4; }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { padding: 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+  .sev { border-radius: 999px; padding: 2px 10px; color: white; font-size: 12px; }
+  .s1 { background: #ff4757; } .s2 { background: #ffa502; } .s3 { background: #1e90ff; }
+  .bar { height: 14px; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 7px; margin: 6px 0 14px; }
+  .icon { font-size: 22px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🚨 Incident Metrics Dashboard</h1>
+  <span class="badge">LIVE</span>
+</header>
+<div class="grid">
+  <div class="card"><div class="icon">🔥</div><h3>Open incidents</h3><div class="big" id="open">7</div><div class="trend">▲ 2 vs yesterday</div></div>
+  <div class="card"><div class="icon">⏱️</div><h3>MTTR (7d)</h3><div class="big">48m</div><div class="trend">▼ 12% vs last week</div></div>
+  <div class="card"><div class="icon">📟</div><h3>Pages today</h3><div class="big">23</div><div class="trend">▲ 5</div></div>
+  <div class="card"><div class="icon">✅</div><h3>SLO budget left</h3><div class="big">61%</div><div class="trend">▼ 4 pts</div></div>
+  <div class="card wide"><h3>Incidents by service (30d)</h3>
+    <div>Routing API — 14<div class="bar" style="width:100%"></div></div>
+    <div>Tracking Ingest — 9<div class="bar" style="width:64%"></div></div>
+    <div>Billing — 6<div class="bar" style="width:43%"></div></div>
+    <div>Driver App Backend — 4<div class="bar" style="width:29%"></div></div>
+    <div>Warehouse Sync — 2<div class="bar" style="width:14%"></div></div>
+  </div>
+  <div class="card wide"><h3>On call now</h3>
+    <p><b>Primary:</b> Priya N. (Platform) — until 18:00</p>
+    <p><b>Secondary:</b> Tomás R. (Routing) — until 18:00</p>
+    <p><b>Incident commander:</b> unassigned</p>
+  </div>
+  <div class="card full"><h3>Recent incidents</h3>
+    <table>
+      <tr><th>ID</th><th>Title</th><th>Service</th><th>Severity</th><th>Status</th><th>Opened</th><th>Duration</th></tr>
+      <tr><td>INC-2291</td><td>Route optimiser timeouts for EU-West depots</td><td>Routing API</td><td><span class="sev s1">SEV1</span></td><td>Investigating</td><td>09:42</td><td>1h 18m</td></tr>
+      <tr><td>INC-2290</td><td>Delayed tracking events from scanner fleet B</td><td>Tracking Ingest</td><td><span class="sev s2">SEV2</span></td><td>Mitigated</td><td>08:05</td><td>2h 55m</td></tr>
+      <tr><td>INC-2289</td><td>Invoice PDF generation failing for 3% of accounts</td><td>Billing</td><td><span class="sev s2">SEV2</span></td><td>Monitoring</td><td>Yesterday 22:10</td><td>12h 50m</td></tr>
+      <tr><td>INC-2288</td><td>Driver app login slow on Android 14</td><td>Driver App Backend</td><td><span class="sev s3">SEV3</span></td><td>Resolved</td><td>Yesterday 15:30</td><td>2h 05m</td></tr>
+      <tr><td>INC-2287</td><td>Warehouse sync duplicate SKUs</td><td>Warehouse Sync</td><td><span class="sev s3">SEV3</span></td><td>Resolved</td><td>Yesterday 11:02</td><td>45m</td></tr>
+    </table>
+  </div>
+</div>
+<script>
+  // Data refreshes every 60 s from /api/metrics in production; static here.
+</script>
+</body>
+</html>

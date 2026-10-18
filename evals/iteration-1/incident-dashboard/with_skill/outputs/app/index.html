@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident Board · Northwind</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="app.css">
+<script>
+  /* Display and theme are decided before first paint so nothing flips after load.
+     ?display=wall is the TV bookmark (dark by default); ?theme=light|dark overrides. */
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var d = q.get("display") === "wall" ? "wall" : "desk";
+    document.documentElement.dataset.display = d;
+    var t = q.get("theme");
+    try { if (!t && d === "desk") t = localStorage.getItem("nw-theme"); } catch (e) {}
+    if (!t && d === "wall") t = "dark";
+    if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+  })();
+</script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="brand">
+    <!-- Placeholder for the official "compass N" symbol: replace with the brand asset. -->
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+        <path class="mark-n" d="M12 2 L16 12 L12 10.2 L8 12 Z"/>
+        <path class="mark-s" d="M12 22 L8 12 L12 13.8 L16 12 Z"/>
+      </svg>
+    </span>
+    <span class="wordmark">Northwind</span>
+    <span class="product">Incidents</span>
+  </div>
+  <p class="freshness" id="freshness" role="status" aria-live="polite"></p>
+  <div class="clock" aria-label="Local time">
+    <time id="clock" class="clock-time"></time>
+    <span id="date" class="clock-date"></span>
+  </div>
+</header>
+
+<section class="oncall" id="oncall" aria-labelledby="oncall-h">
+  <h2 id="oncall-h" class="oncall-label">On call</h2>
+  <div class="oncall-body" id="oncall-body"></div>
+</section>
+
+<main class="board" id="board">
+  <section class="open" id="open-section" aria-labelledby="open-h">
+    <div class="open-head list-head">
+      <div class="open-what">
+        <h1 id="open-h" class="open-title">
+          <span class="count" id="open"></span>
+          <span class="count-label" id="open-label">open incidents</span>
+        </h1>
+        <p class="sev-summary" id="sev-summary"></p>
+      </div>
+      <span class="axis" id="axis" aria-hidden="true"></span>
+      <span class="lh-dur" id="lh-dur" aria-hidden="true">Running</span>
+    </div>
+    <p class="calm" id="calm" hidden></p>
+    <ol class="incidents" id="open-list" aria-label="Open incidents, most severe first"></ol>
+    <p class="more" id="more" hidden></p>
+
+    <h2 class="sub" id="resolved-h">Resolved in the last 24 hours</h2>
+    <ol class="incidents is-resolved" id="resolved-list" aria-labelledby="resolved-h"></ol>
+  </section>
+
+  <aside class="side">
+    <section class="health" aria-label="Paging, recovery time and error budget">
+      <div class="stat" id="stat-pages"></div>
+      <div class="stat" id="stat-mttr"></div>
+      <div class="stat" id="stat-budget"></div>
+    </section>
+
+    <section class="services" aria-labelledby="services-h">
+      <h2 id="services-h" class="label">Incidents by service, last 30 days</h2>
+      <ol class="hbars" id="services"></ol>
+    </section>
+  </aside>
+</main>
+
+<footer class="demo" id="demo">
+  <span class="demo-note">Demo data, no backend. Production refreshes from /api/metrics every 60 s.</span>
+  <label>State
+    <select id="state-select">
+      <option value="live">Live</option>
+      <option value="loading">Loading</option>
+      <option value="allclear">All clear</option>
+      <option value="stale">Connection lost</option>
+      <option value="partial">On-call source failed</option>
+      <option value="surge">Many incidents</option>
+    </select>
+  </label>
+  <label>Theme
+    <select id="theme-select">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </label>
+  <a id="wall-link" href="?display=wall">Open wall display</a>
+</footer>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Set up the Harbour app</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="bar">
+    <div class="bar-start">
+      <button type="button" class="barbtn" id="back"><svg class="barbtn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back</button>
+      <span class="wordmark" id="wordmark">Harbour</span>
+    </div>
+    <button type="button" class="barbtn" id="help-open" aria-haspopup="dialog">Help</button>
+  </header>
+
+  <div class="progress" id="progress">
+    <p class="progress-text" id="progress-text">Step 1 of 4: Your details</p>
+    <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+
+  <main id="main">
+
+    <!-- Welcome -->
+    <section class="screen" data-screen="welcome" aria-labelledby="t-welcome">
+      <h1 tabindex="-1" id="t-welcome">Set up the Harbour app</h1>
+      <p>You can check your balance, see your payments and pay people you know, from your phone. Setting it up takes about 10 minutes.</p>
+      <h2>You'll need</h2>
+      <ul class="needs">
+        <li><strong>Your Harbour bank card.</strong> The one you use at the cash machine.</li>
+        <li><strong>This phone,</strong> with the mobile number we have for you. We'll send it a text.</li>
+      </ul>
+      <p>You can stop at any point. We'll keep what you've entered on this phone for 7 days.</p>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" data-go="details">Start setting up</button>
+      </div>
+      <p class="aside">Would you rather do this with someone from Harbour? Call us free on <a href="tel:08081570192">0808 157 0192</a>, or ask at your branch. We'll go through it with you.</p>
+    </section>
+
+    <!-- Step 1: details -->
+    <section class="screen" data-screen="details" aria-labelledby="t-details">
+      <div class="panel panel-danger" id="details-summary" tabindex="-1" hidden>
+        <h2 class="panel-title">Check these and try again</h2>
+        <ul class="summary-list" id="details-summary-list"></ul>
+      </div>
+      <div class="panel panel-danger" id="details-notfound" tabindex="-1" hidden>
+        <h2 class="panel-title">We couldn't find an account with these details</h2>
+        <p>Check the number matches the card you're holding, and that your date of birth is right. If your card arrived in the last few days, it may not be ready yet.</p>
+        <p>You can try <strong>2 more times</strong>. After that, please call us free on <a href="tel:08081570192">0808 157 0192</a>.</p>
+      </div>
+
+      <h1 tabindex="-1" id="t-details">Tell us who you are</h1>
+      <p>We'll use this to find your account. It's the same as showing your card at the counter.</p>
+
+      <form id="details-form" novalidate>
+        <div class="card-fields" id="card-fields">
+          <div class="field" id="f-card">
+            <label for="card">Long number on your card</label>
+            <p class="hint" id="card-hint">The 16 numbers across the front of your Harbour card.</p>
+            <figure class="card-figure" aria-hidden="true">
+              <svg viewBox="0 0 280 120" class="card-svg">
+                <rect class="card-body" x="1" y="1" width="278" height="118" rx="12"/>
+                <rect class="card-chip" x="22" y="16" width="34" height="26" rx="5"/>
+                <text class="card-brand" x="258" y="34" text-anchor="end">Harbour</text>
+                <rect class="card-highlight" x="14" y="52" width="252" height="32" rx="6"/>
+                <text class="card-number" x="140" y="74" text-anchor="middle">1234 5678 9012 3456</text>
+                <text class="card-name" x="22" y="108">MRS M ELLIS</text>
+              </svg>
+            </figure>
+            <p class="error" id="card-error" hidden></p>
+            <input id="card" name="card" type="text" inputmode="numeric" autocomplete="cc-number" aria-describedby="card-hint card-error" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="account-fields" id="account-fields" hidden>
+          <div class="field" id="f-sort">
+            <label for="sort">Sort code</label>
+            <p class="hint" id="sort-hint">6 numbers, on your statement or chequebook. For example, 30 12 45.</p>
+            <p class="error" id="sort-error" hidden></p>
+            <input id="sort" name="sort" type="text" inputmode="numeric" class="input-short" aria-describedby="sort-hint sort-error">
+          </div>
+          <div class="field" id="f-acc">
+            <label for="acc">Account number</label>
+            <p class="hint" id="acc-hint">8 numbers.</p>
+            <p class="error" id="acc-error" hidden></p>
+            <input id="acc" name="acc" type="text" inputmode="numeric" class="input-medium" aria-describedby="acc-hint acc-error">
+          </div>
+        </div>
+
+        <fieldset class="field" id="f-dob" aria-describedby="dob-hint dob-error">
+          <legend>Date of birth</legend>
+          <p class="hint" id="dob-hint">For example, 27 3 1951.</p>
+          <p class="error" id="dob-error" hidden></p>
+          <div class="dob">
+            <div class="dob-part"><label for="dob-d">Day</label><input id="dob-d" inputmode="numeric" autocomplete="bday-day" maxlength="2" class="input-2"></div>
+            <div class="dob-part"><label for="dob-m">Month</label><input id="dob-m" inputmode="numeric" autocomplete="bday-month" maxlength="2" class="input-2"></div>
+            <div class="dob-part"><label for="dob-y">Year</label><input id="dob-y" inputmode="numeric" autocomplete="bday-year" maxlength="4" class="input-4"></div>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+      </form>
+      <p class="aside"><button type="button" class="linkbtn" id="swap-id">I don't have my card with me</button></p>
+    </section>
+
+    <!-- Step 2: code -->
+    <section class="screen" data-screen="code" aria-labelledby="t-code">
+      <div class="panel panel-danger" id="code-locked" tabindex="-1" hidden>
+        <h2 class="panel-title">We've paused setup for 30 minutes</h2>
+        <p>The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone.</p>
+        <p>You can try again after <strong id="locked-until">2:45pm</strong>, or call us free now on <a href="tel:08081570192">0808 157 0192</a>.</p>
+      </div>
+
+      <h1 tabindex="-1" id="t-code">Enter the code we've texted you</h1>
+      <p>We've sent a 6-number code to your mobile ending <strong>482</strong>. It can take up to 2 minutes to arrive.</p>
+
+      <form id="code-form" novalidate>
+        <div class="field" id="f-code">
+          <label for="otp">Code from the text</label>
+          <p class="error" id="code-error" hidden></p>
+          <input id="otp" name="otp" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="7" class="input-code" aria-describedby="code-error" spellcheck="false">
+        </div>
+        <p class="resent" id="code-resent" role="status" hidden></p>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+      </form>
+
+      <div class="preview" id="preview">
+        <h2 class="preview-title">The text will look like this</h2>
+        <div class="message" id="message">
+          <p class="message-from">From: <strong>Harbour</strong></p>
+          <p class="message-body">Harbour: <span class="blank" aria-label="six numbers">&#9644;&#9644;&#9644; &#9644;&#9644;&#9644;</span> is your code to set up the app. We will never call you to ask for it. Don't share it with anyone.</p>
+        </div>
+        <p class="message-status" id="message-status" aria-live="polite">Sending&hellip;</p>
+        <p class="preview-safety"><strong>Never read this code out to anyone.</strong> If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card.</p>
+      </div>
+
+
+      <div class="disclosure">
+        <button type="button" class="linkbtn" id="nocode-toggle" aria-expanded="false" aria-controls="nocode">I haven't had a text</button>
+        <div id="nocode" class="disclosure-body" hidden>
+          <p>Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window.</p>
+          <button type="button" class="btn btn-secondary" id="resend">Send a new code</button>
+          <button type="button" class="btn btn-secondary" id="callme">Phone me with the code instead</button>
+          <p class="aside"><strong>Has your mobile number changed?</strong> For your safety we can't change it in the app. Call us free on <a href="tel:08081570192">0808 157 0192</a> or visit a branch with photo ID.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3: passcode -->
+    <section class="screen" data-screen="passcode" aria-labelledby="t-pass">
+      <h1 tabindex="-1" id="t-pass">Choose a 6-number passcode</h1>
+      <p>You'll type this each time you open the app. Pick numbers you'll remember but other people couldn't guess.</p>
+      <form id="pass-form" novalidate>
+        <div class="field" id="f-pass">
+          <label for="pass">Passcode</label>
+          <p class="hint" id="pass-hint">Avoid your birthday, your card PIN, or numbers in a row like 123456.</p>
+          <p class="error" id="pass-error" hidden></p>
+          <input id="pass" type="password" inputmode="numeric" autocomplete="new-password" maxlength="6" class="input-code" aria-describedby="pass-hint pass-error">
+        </div>
+        <div class="field" id="f-pass2">
+          <label for="pass2">Type it again</label>
+          <p class="error" id="pass2-error" hidden></p>
+          <input id="pass2" type="password" inputmode="numeric" autocomplete="new-password" maxlength="6" class="input-code" aria-describedby="pass2-error">
+        </div>
+        <button type="button" class="togglebtn" id="pass-show" aria-pressed="false" aria-controls="pass pass2">Show numbers</button>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Step 4: biometrics -->
+    <section class="screen" data-screen="biometrics" aria-labelledby="t-bio">
+      <h1 tabindex="-1" id="t-bio">Log in with your fingerprint or face?</h1>
+      <p>Instead of typing your passcode, you can touch the sensor or look at your phone.</p>
+      <p>Your fingerprint and face stay on this phone. Harbour never sees them.</p>
+      <p><strong>Anyone whose fingerprint or face is saved on this phone could also open the app.</strong> If someone else's is saved, choose the passcode.</p>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" data-bio="yes">Yes, use fingerprint or face</button>
+        <button type="button" class="btn btn-secondary" data-bio="no">No, I'll use my passcode</button>
+      </div>
+      <p class="aside">You can change this later in Settings.</p>
+    </section>
+
+    <!-- Working -->
+    <section class="screen" data-screen="working" aria-labelledby="t-work">
+      <h1 tabindex="-1" id="t-work">Setting up your app</h1>
+      <p id="work-lead">This usually takes less than a minute. Please keep the app open.</p>
+      <ol class="tasks" id="tasks">
+        <li data-task="0"><span class="task-mark" aria-hidden="true"></span><span class="task-text">Checking your details</span><span class="vh task-state"></span></li>
+        <li data-task="1"><span class="task-mark" aria-hidden="true"></span><span class="task-text">Linking this phone to your account</span><span class="vh task-state"></span></li>
+        <li data-task="2"><span class="task-mark" aria-hidden="true"></span><span class="task-text">Switching on your security</span><span class="vh task-state"></span></li>
+      </ol>
+      <div class="panel" id="work-slow" hidden>
+        <h2 class="panel-title">This is taking longer than usual</h2>
+        <p>You don't need to do anything. It can take up to 2 minutes when lots of people are setting up. Your details are saved, so nothing is lost if the screen turns off.</p>
+      </div>
+      <div class="panel panel-danger" id="work-failed" tabindex="-1" hidden>
+        <h2 class="panel-title">We couldn't finish setting up</h2>
+        <p>Nothing has changed on your account, and your details are saved on this phone. This is usually a problem with the connection.</p>
+        <div class="actions">
+          <button type="button" class="btn btn-primary" id="retry">Try again</button>
+          <a class="btn btn-secondary" href="tel:08081570192">Call us free</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Done -->
+    <section class="screen" data-screen="done" aria-labelledby="t-done">
+      <h1 tabindex="-1" id="t-done">You're set up, Margaret</h1>
+      <p>From now on, open the app and type your passcode to see your money.</p>
+      <div class="panel account">
+        <h2 class="account-name">Current account</h2>
+        <p class="account-number">Sort code 30 12 45 &middot; Account ending 7731</p>
+        <p class="account-balance-label">Balance</p>
+        <p class="account-balance">&pound;2,481.36</p>
+        <p class="account-last">Last money in: State Pension, &pound;921.20, on 6 October</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="to-account">Go to my account</button>
+      </div>
+      <h2>Your branch is still here</h2>
+      <p>Market Street is open Monday to Saturday, 9am to 5pm. You can still do everything there that you did before.</p>
+    </section>
+
+  </main>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="help" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden>
+  <div class="sheet-head">
+    <h2 id="help-title" tabindex="-1">Help with this step</h2>
+    <button type="button" class="barbtn" id="help-close">Close</button>
+  </div>
+  <div id="help-context"></div>
+  <hr class="rule">
+  <h3>Talk to a person</h3>
+  <a class="btn btn-primary" href="tel:08081570192">Call us free on 0808 157 0192</a>
+  <p class="hint">Lines are open 8am to 8pm, every day. You'll speak to someone in the UK.</p>
+  <p>Or visit any Harbour branch with your card and photo ID. We'll set the app up with you.</p>
+</div>
+
+<p class="vh" id="announce" aria-live="polite"></p>
+<script src="app.js"></script>
+</body>
+</html>

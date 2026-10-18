@@ -1,0 +1,11 @@
+{
+ "problems": [],
+ "notes": [
+  "error summary first link: 'Enter your date of birth'",
+  "aria-invalid after empty submit: ['day', 'month', 'year', 'sort', 'acct']",
+  "live region during slow check: 'This is taking longer than usual. We are still checking.'",
+  "wrong code message: 'That code does not match the one we sent. Check the text and try again. You can try 2 more times.'",
+  "DOB passcode message: 'That is your date of birth, which other people may know. Choose different numbers.'",
+  "focus after closing help: help"
+ ]
+}

@@ -1,0 +1,140 @@
+/* Handover design tokens.
+   Every colour, type size, radius, shadow and duration used by app.css lives here.
+   checks/tokens.test.mjs fails if app.css uses a raw value, if light and dark
+   disagree on which tokens exist, or if a text colour drops below 4.5:1.
+
+   Values are in macOS points (1 CSS px = 1 pt). The native build maps these to
+   system colours (NSColor.labelColor etc.) and the system material; the hex
+   values below are the prototype's stand-ins for those. */
+
+:root {
+  /* Surfaces. --pop is the panel material; --pop-solid is what text is
+     checked against (the material over a mid-grey wallpaper). */
+  --desk-a: #c9ccd3;
+  --desk-b: #9aa3b2;
+  --menubar: rgba(246, 246, 248, 0.72);
+  --menubar-fg: #1d1d1f;
+  --pop: rgba(242, 242, 244, 0.86);
+  --pop-solid: #eeeef0;
+  --soft: #e3e3e6;          /* the one grouped fact per screen */
+  --raised: #ffffff;        /* push buttons, text fields */
+  --hover: rgba(0, 0, 0, 0.055);
+  --line: rgba(0, 0, 0, 0.12);
+  --line-soft: rgba(0, 0, 0, 0.07);
+  --avatar: #d4d4d8;
+
+  /* Text. All hold 4.5:1 on --pop-solid, --soft and --raised. */
+  --fg: #1d1d1f;
+  --muted: #5c5c61;
+  --glyph: #75757a;         /* icons only; 3:1 */
+
+  /* Meaning. One colour each. */
+  --accent: #0071e3;        /* act or follow: default button, selected range, links (fill) */
+  --accent-text: #0062cc;   /* the same, as text */
+  --on-accent: #ffffff;
+  --accent-soft: rgba(0, 113, 227, 0.14);
+  --warn: #9a4a00;          /* look twice: double-up, overnight, gap, declined */
+  --warn-line: #e0a660;
+  --err: #b3121a;           /* failed or missing: always a sentence */
+  --err-bg: #fbe3e2;
+  --ok: #2ea043;            /* sync health dot only */
+
+  /* Type: SF Pro on macOS; Inter is the closest stand-in elsewhere. */
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+  --fs-head: 600 15px/20px var(--sans);   /* the you-panel sentence */
+  --fs: 400 13px/17px var(--sans);        /* body: macOS default */
+  --fs-strong: 600 13px/17px var(--sans); /* names, section titles */
+  --fs-meta: 400 12px/16px var(--sans);   /* times, rotation names */
+  --fs-small: 400 11px/14px var(--sans);  /* captions, footer */
+  --fs-label: 600 11px/14px var(--sans);  /* section labels */
+  --fs-menubar: 500 13px/24px var(--sans);
+  --fs-avatar: 600 10px/1 var(--sans);
+
+  /* Space. Gutter 14; steps 2 4 6 8 10 12 14 18 24. */
+  --g: 14px;
+  --row: 34px;
+  --menubar-h: 24px;
+  --pop-w: 360px;
+
+  /* Shape. Nested shapes get smaller radii. */
+  --r-xs: 3px;
+  --r-s: 5px;     /* buttons, fields */
+  --r-m: 7px;     /* rows, segmented */
+  --r-l: 10px;    /* the you panel */
+  --r-xl: 14px;   /* the panel itself */
+
+  --shadow-pop: 0 0 0 0.5px rgba(0, 0, 0, 0.18), 0 10px 32px rgba(0, 0, 0, 0.22);
+  --shadow-btn: 0 0 0 0.5px rgba(0, 0, 0, 0.16), 0 0.5px 1.5px rgba(0, 0, 0, 0.12);
+  --shadow-thumb: 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.14);
+  --focus: 0 0 0 3px rgba(0, 113, 227, 0.45);
+
+  /* Motion. */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 150ms;
+  --t-mid: 220ms;
+  --t-slow: 600ms;  /* the handover range settling; the one novel moment */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --desk-a: #2a2f3a;
+    --desk-b: #12151c;
+    --menubar: rgba(30, 30, 32, 0.6);
+    --menubar-fg: #f5f5f7;
+    --pop: rgba(38, 38, 40, 0.84);
+    --pop-solid: #29292c;
+    --soft: #38383c;
+    --raised: #414145;
+    --hover: rgba(255, 255, 255, 0.07);
+    --line: rgba(255, 255, 255, 0.14);
+    --line-soft: rgba(255, 255, 255, 0.08);
+    --avatar: #4a4a4f;
+    --fg: #f5f5f7;
+    --muted: #b6b6bc;
+    --glyph: #8e8e93;
+    --accent: #0071e3;
+    --accent-text: #6cb4ff;
+    --on-accent: #ffffff;
+    --accent-soft: rgba(40, 140, 255, 0.26);
+    --warn: #ffb35c;
+    --warn-line: #8a5a24;
+    --err: #ff8a84;
+    --err-bg: #3d2120;
+    --ok: #3fb950;
+    --shadow-pop: 0 0 0 0.5px rgba(255, 255, 255, 0.16), 0 10px 32px rgba(0, 0, 0, 0.5);
+    --shadow-btn: 0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 0.5px 1.5px rgba(0, 0, 0, 0.3);
+    --shadow-thumb: 0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.4);
+    --focus: 0 0 0 3px rgba(40, 140, 255, 0.55);
+  }
+}
+
+:root[data-theme="dark"] {
+  --desk-a: #2a2f3a;
+  --desk-b: #12151c;
+  --menubar: rgba(30, 30, 32, 0.6);
+  --menubar-fg: #f5f5f7;
+  --pop: rgba(38, 38, 40, 0.84);
+  --pop-solid: #29292c;
+  --soft: #38383c;
+  --raised: #414145;
+  --hover: rgba(255, 255, 255, 0.07);
+  --line: rgba(255, 255, 255, 0.14);
+  --line-soft: rgba(255, 255, 255, 0.08);
+  --avatar: #4a4a4f;
+  --fg: #f5f5f7;
+  --muted: #b6b6bc;
+  --glyph: #8e8e93;
+  --accent: #0071e3;
+  --accent-text: #6cb4ff;
+  --on-accent: #ffffff;
+  --accent-soft: rgba(40, 140, 255, 0.26);
+  --warn: #ffb35c;
+  --warn-line: #8a5a24;
+  --err: #ff8a84;
+  --err-bg: #3d2120;
+  --ok: #3fb950;
+  --shadow-pop: 0 0 0 0.5px rgba(255, 255, 255, 0.16), 0 10px 32px rgba(0, 0, 0, 0.5);
+  --shadow-btn: 0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 0.5px 1.5px rgba(0, 0, 0, 0.3);
+  --shadow-thumb: 0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.4);
+  --focus: 0 0 0 3px rgba(40, 140, 255, 0.55);
+}

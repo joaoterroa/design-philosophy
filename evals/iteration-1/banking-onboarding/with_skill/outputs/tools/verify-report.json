@@ -1,0 +1,758 @@
+{
+ "390-light/welcome": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Set up the Harbour app"
+  ],
+  "firstActionY": 584,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/details": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 779,
+  "active": "BODY",
+  "pageHeight": 971,
+  "console": []
+ },
+ "390-light/details-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 1123,
+  "active": "details-summary",
+  "pageHeight": 1315,
+  "console": []
+ },
+ "390-light/details-notfound": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 1152,
+  "active": "details-notfound",
+  "pageHeight": 1344,
+  "console": []
+ },
+ "390-light/details-nocard": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 793,
+  "active": "sort",
+  "pageHeight": 985,
+  "console": []
+ },
+ "390-light/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 452,
+  "active": "BODY",
+  "pageHeight": 1181,
+  "console": []
+ },
+ "390-light/code-wrong": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 547,
+  "active": "otp",
+  "pageHeight": 1277,
+  "console": []
+ },
+ "390-light/code-expired": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 547,
+  "active": "BODY",
+  "pageHeight": 1277,
+  "console": []
+ },
+ "390-light/code-help": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 585,
+  "active": "otp",
+  "pageHeight": 1694,
+  "console": []
+ },
+ "390-light/code-locked": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setup is paused"
+  ],
+  "firstActionY": 0,
+  "active": "code-locked",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/passcode": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 696,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/passcode-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 792,
+  "active": "pass",
+  "pageHeight": 920,
+  "console": []
+ },
+ "390-light/biometrics": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Log in with your fingerprint or face?"
+  ],
+  "firstActionY": 541,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/working": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 0,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/working-slow": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 0,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/working-failed": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 528,
+  "active": "work-failed",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-light/done": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "You're set up, Margaret"
+  ],
+  "firstActionY": 468,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/welcome": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Set up the Harbour app"
+  ],
+  "firstActionY": 584,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/details": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 779,
+  "active": "BODY",
+  "pageHeight": 971,
+  "console": []
+ },
+ "390-dark/details-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 1123,
+  "active": "details-summary",
+  "pageHeight": 1315,
+  "console": []
+ },
+ "390-dark/details-notfound": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 1152,
+  "active": "details-notfound",
+  "pageHeight": 1344,
+  "console": []
+ },
+ "390-dark/details-nocard": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 793,
+  "active": "sort",
+  "pageHeight": 985,
+  "console": []
+ },
+ "390-dark/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 452,
+  "active": "BODY",
+  "pageHeight": 1181,
+  "console": []
+ },
+ "390-dark/code-wrong": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 547,
+  "active": "otp",
+  "pageHeight": 1277,
+  "console": []
+ },
+ "390-dark/code-expired": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 547,
+  "active": "BODY",
+  "pageHeight": 1277,
+  "console": []
+ },
+ "390-dark/code-help": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 585,
+  "active": "otp",
+  "pageHeight": 1694,
+  "console": []
+ },
+ "390-dark/code-locked": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setup is paused"
+  ],
+  "firstActionY": 0,
+  "active": "code-locked",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/passcode": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 696,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/passcode-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 792,
+  "active": "pass",
+  "pageHeight": 920,
+  "console": []
+ },
+ "390-dark/biometrics": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Log in with your fingerprint or face?"
+  ],
+  "firstActionY": 541,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/working": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 0,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/working-slow": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 0,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/working-failed": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 528,
+  "active": "work-failed",
+  "pageHeight": 844,
+  "console": []
+ },
+ "390-dark/done": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "You're set up, Margaret"
+  ],
+  "firstActionY": 468,
+  "active": "BODY",
+  "pageHeight": 844,
+  "console": []
+ },
+ "320-light/welcome": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Set up the Harbour app"
+  ],
+  "firstActionY": 703,
+  "active": "BODY",
+  "pageHeight": 975,
+  "console": []
+ },
+ "320-light/details": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 807,
+  "active": "BODY",
+  "pageHeight": 999,
+  "console": []
+ },
+ "320-light/details-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 1209,
+  "active": "details-summary",
+  "pageHeight": 1401,
+  "console": []
+ },
+ "320-light/details-notfound": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 1237,
+  "active": "details-notfound",
+  "pageHeight": 1429,
+  "console": []
+ },
+ "320-light/details-nocard": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 847,
+  "active": "sort",
+  "pageHeight": 1039,
+  "console": []
+ },
+ "320-light/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 480,
+  "active": "BODY",
+  "pageHeight": 1292,
+  "console": []
+ },
+ "320-light/code-wrong": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 604,
+  "active": "otp",
+  "pageHeight": 1416,
+  "console": []
+ },
+ "320-light/code-expired": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 604,
+  "active": "BODY",
+  "pageHeight": 1416,
+  "console": []
+ },
+ "320-light/code-help": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 642,
+  "active": "otp",
+  "pageHeight": 1905,
+  "console": []
+ },
+ "320-light/code-locked": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setup is paused"
+  ],
+  "firstActionY": 48,
+  "active": "code-locked",
+  "pageHeight": 616,
+  "console": []
+ },
+ "320-light/passcode": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 725,
+  "active": "BODY",
+  "pageHeight": 853,
+  "console": []
+ },
+ "320-light/passcode-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 849,
+  "active": "pass",
+  "pageHeight": 977,
+  "console": []
+ },
+ "320-light/biometrics": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Log in with your fingerprint or face?"
+  ],
+  "firstActionY": 598,
+  "active": "BODY",
+  "pageHeight": 879,
+  "console": []
+ },
+ "320-light/working": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 0,
+  "active": "BODY",
+  "pageHeight": 568,
+  "console": []
+ },
+ "320-light/working-slow": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 0,
+  "active": "BODY",
+  "pageHeight": 818,
+  "console": []
+ },
+ "320-light/working-failed": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Setting up your app"
+  ],
+  "firstActionY": 614,
+  "active": "work-failed",
+  "pageHeight": 832,
+  "console": []
+ },
+ "320-light/done": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "You're set up, Margaret"
+  ],
+  "firstActionY": 530,
+  "active": "BODY",
+  "pageHeight": 833,
+  "console": []
+ },
+ "430-light/welcome": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Set up the Harbour app"
+  ],
+  "firstActionY": 527,
+  "active": "BODY",
+  "pageHeight": 932,
+  "console": []
+ },
+ "430-light/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 452,
+  "active": "BODY",
+  "pageHeight": 1096,
+  "console": []
+ },
+ "430-light/done": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "You're set up, Margaret"
+  ],
+  "firstActionY": 443,
+  "active": "BODY",
+  "pageHeight": 932,
+  "console": []
+ },
+ "390-text200/details": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 2067,
+  "active": "BODY",
+  "pageHeight": 2469,
+  "console": []
+ },
+ "390-text200/details-errors": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 3208,
+  "active": "details-summary",
+  "pageHeight": 3610,
+  "console": []
+ },
+ "390-text200/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 1189,
+  "active": "BODY",
+  "pageHeight": 3373,
+  "console": []
+ },
+ "390-text200/passcode": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Choose a 6-number passcode"
+  ],
+  "firstActionY": 1833,
+  "active": "BODY",
+  "pageHeight": 2089,
+  "console": []
+ },
+ "390-text200/biometrics": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Log in with your fingerprint or face?"
+  ],
+  "firstActionY": 1781,
+  "active": "BODY",
+  "pageHeight": 2415,
+  "console": []
+ },
+ "390-text200/done": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "You're set up, Margaret"
+  ],
+  "firstActionY": 1271,
+  "active": "BODY",
+  "pageHeight": 2135,
+  "console": []
+ },
+ "390-help/details": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Tell us who you are"
+  ],
+  "firstActionY": 779,
+  "active": "help-title",
+  "pageHeight": 971,
+  "console": []
+ },
+ "390-help/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 452,
+  "active": "help-title",
+  "pageHeight": 1181,
+  "console": []
+ },
+ "390-help-dark/code": {
+  "overflow": 0,
+  "small": [],
+  "clipped": [],
+  "h1": [
+   "Enter the code we've texted you"
+  ],
+  "firstActionY": 452,
+  "active": "help-title",
+  "pageHeight": 1181,
+  "console": []
+ }
+}

@@ -5,19 +5,61 @@
       "id": 1,
       "prompt": "Use my design philosophy to design the UI for a small macOS menu-bar app that shows our team's on-call schedule and lets me hand over a shift. There's no existing code yet; it's for about 40 SREs.",
       "expected_output": "Works through understanding (users, moment, priorities, platform limits of macOS menu-bar apps) before choosing a direction; derives an identity that fits a native macOS utility (not the Recall palette or bottom composer); names one novelty moment (likely the handover); produces a SYSTEM.md, tokens and a guard test alongside the implementation; verifies states including no schedule and offline.",
-      "files": []
+      "files": [],
+      "name": "oncall-menubar",
+      "assertions": [
+        "States users, their moment and ordered priorities before choosing a direction",
+        "Names one deliberate novelty moment tied to the product's differentiator",
+        "Identity derived from this product's context (no reuse of the Recall extension palette)",
+        "All colours come from tokens; no literal colours in component styles",
+        "Dark mode is designed",
+        "Verified in a rendered build (screenshots saved)",
+        "Writes down a project design system with reasons for its values",
+        "Designs the non-happy states (empty, loading, error/offline as relevant)",
+        "Faithful to macOS menu-bar conventions and a realistic popover size"
+      ]
     },
     {
       "id": 2,
-      "prompt": "Redesign our internal incident metrics dashboard (React, in ./dashboard) using my design philosophy. It's shown on a TV in the ops room and on laptops. Brand guide is in ./brand/guide.pdf.",
+      "prompt": "Redesign our internal incident metrics dashboard (in ./dashboard) using my design philosophy. It's shown on a TV in the ops room and on laptops. Brand guide is in ./brand/guide.md.",
       "expected_output": "Reads the existing code and the brand guide first and takes the palette from the brand; designs for two contexts (wall display at distance, laptop) with density decided per context; uses a dataviz skill for chart encoding if available rather than duplicating it; audits the current dashboard with measured weaknesses; verifies at TV and laptop sizes in both themes.",
-      "files": []
+      "files": [
+        "evals/fixtures/incident-dashboard/dashboard/index.html",
+        "evals/fixtures/incident-dashboard/brand/guide.md"
+      ],
+      "name": "incident-dashboard",
+      "assertions": [
+        "States users, their moment and ordered priorities before choosing a direction",
+        "Names one deliberate novelty moment tied to the product's differentiator",
+        "Identity derived from this product's context (no reuse of the Recall extension palette)",
+        "All colours come from tokens; no literal colours in component styles",
+        "Dark mode is designed",
+        "Verified in a rendered build (screenshots saved)",
+        "Writes down a project design system with reasons for its values",
+        "Designs the non-happy states (empty, loading, error/offline as relevant)",
+        "Palette taken from the brand guide",
+        "Designs for both TV-at-distance and laptop viewing",
+        "Removes decoration (emoji, gradients) without losing data"
+      ],
+      "note": "Copy the fixture folders into the run's working directory so ./dashboard and ./brand resolve."
     },
     {
       "id": 3,
       "prompt": "can you apply my design philosophy to the onboarding flow of our mobile banking app? users are older customers switching from branches. keep it accessible",
       "expected_output": "Asks for or looks for brand material and the existing flow; prioritises guidance and legibility for occasional, older users (lower density, more explanation of unusual steps, large targets) rather than the expert density of the case study; identity distinct from earlier projects; critique covers accessibility, copy tone and error states.",
-      "files": []
+      "files": [],
+      "name": "banking-onboarding",
+      "assertions": [
+        "States users, their moment and ordered priorities before choosing a direction",
+        "Names one deliberate novelty moment tied to the product's differentiator",
+        "Identity derived from this product's context (no reuse of the Recall extension palette)",
+        "All colours come from tokens; no literal colours in component styles",
+        "Dark mode is designed",
+        "Verified in a rendered build (screenshots saved)",
+        "Writes down a project design system with reasons for its values",
+        "Designs the non-happy states (empty, loading, error/offline as relevant)",
+        "Accessible for older users: body text >= 16px, targets >= 44px, plain-language errors, a route to a human"
+      ]
     }
   ]
 }

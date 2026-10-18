@@ -1,0 +1,16 @@
+{
+  "eval_id": 1,
+  "eval_name": "oncall-menubar",
+  "prompt": "Use my design philosophy to design the UI for a small macOS menu-bar app that shows our team's on-call schedule and lets me hand over a shift. There's no existing code yet; it's for about 40 SREs.",
+  "assertions": [
+    "States users, their moment and ordered priorities before choosing a direction",
+    "Names one deliberate novelty moment tied to the product's differentiator",
+    "Identity derived from this product's context (no reuse of the Recall extension palette)",
+    "All colours come from tokens; no literal colours in component styles",
+    "Dark mode is designed",
+    "Verified in a rendered build (screenshots saved)",
+    "Writes down a project design system with reasons for its values",
+    "Designs the non-happy states (empty, loading, error/offline as relevant)",
+    "Faithful to macOS menu-bar conventions and a realistic popover size"
+  ]
+}

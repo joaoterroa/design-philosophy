@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rota prototype</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main class="lab">
+    <!-- The macOS desktop, rendered 1 CSS px = 1 pt. Only the status item and the popover are the product. -->
+    <div class="scene" id="scene">
+      <div class="menubar" role="presentation">
+        <span class="mb-app">Finder</span>
+        <span class="mb-menu">File</span><span class="mb-menu">Edit</span><span class="mb-menu">View</span><span class="mb-menu">Go</span><span class="mb-menu">Window</span><span class="mb-menu">Help</span>
+        <span class="mb-spacer"></span>
+        <span class="mb-glyph" aria-hidden="true"></span>
+        <span class="mb-glyph" aria-hidden="true"></span>
+        <button class="status-item" id="status-item" aria-haspopup="dialog" aria-expanded="true" aria-controls="popover"></button>
+        <span class="mb-glyph" aria-hidden="true"></span>
+        <span class="mb-clock">Sat 18 Oct&nbsp; 13:48</span>
+      </div>
+      <div class="popover" id="popover" role="dialog" aria-label="Rota: on-call schedule"></div>
+    </div>
+
+    <aside class="controls" aria-label="Prototype controls">
+      <h1 class="controls-title">Rota prototype</h1>
+      <p class="controls-note">States to review. Not part of the app.</p>
+      <div class="controls-group" role="radiogroup" aria-label="State" id="state-list"></div>
+      <div class="controls-group" role="radiogroup" aria-label="Appearance" id="theme-list"></div>
+    </aside>
+  </main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

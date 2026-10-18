@@ -1,0 +1,125 @@
+/* Northwind Ops — design tokens for the incident dashboard.
+   Every colour, size and radius used in styles.css comes from here.
+   Brand source: brand/guide.md (v3). Values that are NOT in the brand guide
+   are marked [ext] and justified in design-system/README.md. */
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  /* ---- Brand primitives (from guide) ---- */
+  --nw-harbor-navy: #12355B;
+  --nw-signal-orange: #F26B21;   /* deliberately unused on this screen, see README */
+  --nw-tide-teal: #2A9D8F;
+  --nw-fog: #EEF1F4;
+  --nw-slate: #3D4852;
+  --nw-white: #FFFFFF;
+
+  /* ---- Type ---- */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Type scale in rem. The root size changes per display mode (see
+     [data-display]) so the same scale works at 3 m on a TV and 50 cm on a laptop. */
+  --text-hero: 3.6rem;     /* one per view: the status headline count */
+  --text-figure: 2.6rem;   /* KPI values */
+  --text-title: 1.35rem;   /* status banner title */
+  --text-body: 1rem;       /* incident titles, on-call names */
+  --text-label: 0.8rem;    /* section labels, metadata. Never smaller. */
+
+  /* ---- Space (4-based, in rem at 16px root = 4/8/12/16/24/32/48) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --hairline: 1px;
+  --edge: 0.3rem;          /* severity edge on rows and banner */
+
+  /* ---- Light theme (laptop default) ---- */
+  --surface-page: var(--nw-fog);
+  --surface-panel: var(--nw-white);
+  --surface-sunken: #F6F8FA;           /* [ext] one step between fog and white */
+  --surface-inverse: var(--nw-slate);
+  --line: #D9DFE5;                     /* [ext] hairline, one step off fog */
+  --ink-strong: var(--nw-harbor-navy); /* headings, figures   12.5:1 on white */
+  --ink: var(--nw-slate);              /* body                 9.3:1 on white */
+  --ink-muted: #5E6A76;                /* [ext] labels/meta    5.5:1 white, 4.9:1 fog */
+  --ink-inverse: var(--nw-white);
+
+  /* Severity — reserved for incident severity only. Validated with the
+     dataviz palette checker (light: CVD dE 7.0 deutan, normal-vision 18.7;
+     always paired with the text label + shape, so the 6–8 band is legal). */
+  --sev1: #C0262D;          /* [ext] 5.9:1 on white */
+  --sev2: #9E7A00;          /* [ext] 4.0:1 on white, used for marks only */
+  --sev3: #5E6A76;          /* neutral on purpose: SEV3 should not shout */
+  --sev1-wash: #FBEAEA;
+  --sev2-wash: #F8F1DC;
+  --sev3-wash: #EEF1F4;
+
+  /* Direction of a change: is it good or bad for us? Text-safe. */
+  --delta-good: #1F7A70;    /* [ext] teal-dark, 5.2:1 on white */
+  --delta-bad: #B0252B;     /* [ext] */
+
+  /* Data (charts) — single series uses the brand chart colour */
+  --data-1: var(--nw-tide-teal);  /* 3.3:1 on white: mark contrast, never text */
+  --data-track: #DCE9E7;          /* [ext] lighter step of teal for meter track */
+  --data-quiet: #B8C2CC;          /* [ext] de-emphasised history in sparklines */
+
+  --stale-veil: 0.42;
+}
+
+/* ---- Dark theme (TV default). Its own steps, not an inversion. ---- */
+:root[data-theme="dark"] {
+  --surface-page: #0A1A2E;      /* [ext] Harbor Navy, deepened for a dim room */
+  --surface-panel: #10263F;     /* [ext] */
+  --surface-sunken: #0D2036;    /* [ext] */
+  --surface-inverse: #E8EDF2;
+  --line: #1F3B5C;              /* [ext] */
+  --ink-strong: #F3F6F9;
+  --ink: #E8EDF2;               /* 13:1 on panel */
+  --ink-muted: #A9B6C4;         /* 7.4:1 on panel: TV needs more than 4.5 */
+  --ink-inverse: #0A1A2E;
+
+  /* dark validation: CVD dE 10.0, normal-vision 18.3, contrast >= 4.5 on panel.
+     SEV2 sits above the checker's dark lightness band on purpose (status, not
+     a categorical series, and it must read across a room). */
+  --sev1: #F25757;
+  --sev2: #E0A228;
+  --sev3: #8A9AAB;
+  --sev1-wash: #3A1E2C;
+  --sev2-wash: #33301F;
+  --sev3-wash: #16304D;
+
+  --delta-good: #5CCFC0;
+  --delta-bad: #FF8A8A;
+
+  --data-1: #3DBFAE;            /* teal lifted for dark: 6.8:1 on panel */
+  --data-track: #1B4049;
+  --data-quiet: #3A5878;
+}
+
+/* ---- Display modes ---- */
+/* TV: the layout is designed on a 1920x1080 canvas at 20px root and scales
+   with the viewport width, so a 4K panel gets the same physical sizes. */
+:root[data-display="tv"] {
+  font-size: calc(100vw / 96);
+  --text-hero: 4.4rem;    /* 88px */
+  --text-figure: 3rem;    /* 60px */
+  --text-title: 1.8rem;   /* 36px */
+  --text-body: 1.35rem;   /* 27px: ~13 arcmin x-height at 3 m on a 55in panel */
+  --text-label: 1rem;     /* 20px: the floor for anything that must be read */
+}
+:root[data-display="laptop"] { font-size: 16px; }

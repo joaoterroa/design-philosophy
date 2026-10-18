@@ -38,6 +38,22 @@ Screenshot names differ between runs. These pairs show the same screen and state
 | banking-onboarding | Enter the texted code | `390-light--code.png` | `11-code.png` |
 | banking-onboarding | Done | `390-light--done.png` | `20-done.png` |
 
+## Side-by-side comparison
+
+Open [`iteration-1/compare/index.html`](iteration-1/compare/index.html) directly from disk. It has matched-scale screenshots, light/dark switching, blind left/right randomisation, per-pair reveal, live prototype links, and browser-saved choices with JSON export. There are 89 screen/size combinations and 262 PNGs, including one-sided states and the shared original dashboard. The [capture inventory](iteration-1/compare/README.md) lists all mappings and limitations.
+
+To recapture or verify from the repo root (Python 3.10+):
+
+```sh
+python3 -m venv /tmp/design-compare-venv
+/tmp/design-compare-venv/bin/pip install -r evals/scripts/requirements-compare.txt
+/tmp/design-compare-venv/bin/python -m playwright install chromium
+/tmp/design-compare-venv/bin/python evals/scripts/capture_pairs.py
+/tmp/design-compare-venv/bin/python evals/scripts/verify_compare.py
+```
+
+Capture blocks network requests and reads the original run outputs without modifying them. Phone/dashboard shots use the fixed viewport, not full-page height; popovers retain their native widths. Fonts and fixture data are preserved, so different invented content and the baseline font fallback remain comparison limits. Two baselines used the Recall design system (see `iteration-1/FINDINGS.md`).
+
 ## Running a new iteration
 
 - Keep baseline runs away from any of the user's own design documents (iteration 1's baselines found one and used it; see its FINDINGS).

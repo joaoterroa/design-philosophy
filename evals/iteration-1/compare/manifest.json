@@ -1,0 +1,4368 @@
+{
+  "version": 1,
+  "deviceScaleFactor": 1,
+  "locale": "en-GB",
+  "timezone": "Europe/London",
+  "clock": "2026-10-18T10:00:00Z + 1500ms",
+  "viewportOnly": true,
+  "evals": [
+    {
+      "id": "oncall-menubar",
+      "prompt": "Use my design philosophy to design the UI for a small macOS menu-bar app that shows our team's on-call schedule and lets me hand over a shift. There's no existing code yet; it's for about 40 SREs."
+    },
+    {
+      "id": "incident-dashboard",
+      "prompt": "Redesign our internal incident metrics dashboard (in ./dashboard) using my design philosophy. It's shown on a TV in the ops room and on laptops. Brand guide is in ./brand/guide.md."
+    },
+    {
+      "id": "banking-onboarding",
+      "prompt": "can you apply my design philosophy to the onboarding flow of our mobile banking app? users are older customers switching from branches. keep it accessible"
+    }
+  ],
+  "pairs": [
+    {
+      "eval": "oncall-menubar",
+      "screen": "oncall",
+      "title": "On call · main panel",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=oncall&theme={theme}",
+        "without": "?theme={theme}#on"
+      },
+      "caption": "With: a shift strip above the rotation list. Without: a Now/Schedule tab bar and a next-shifts section.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/oncall__light__with.png",
+            "width": 340,
+            "height": 388
+          },
+          "without": {
+            "src": "shots/oncall-menubar/oncall__light__without.png",
+            "width": 360,
+            "height": 590
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/oncall__dark__with.png",
+            "width": 340,
+            "height": 388
+          },
+          "without": {
+            "src": "shots/oncall-menubar/oncall__dark__without.png",
+            "width": 360,
+            "height": 590
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=oncall&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#on"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=oncall&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#on"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "compose",
+      "title": "Composing a handover",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=compose&theme={theme}",
+        "without": "?theme={theme}#choose"
+      },
+      "caption": "With: an eight-hour range and availability on each candidate. Without: a thirteen-hour range and a disclosure for less suitable candidates.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/compose__light__with.png",
+            "width": 340,
+            "height": 640
+          },
+          "without": {
+            "src": "shots/oncall-menubar/compose__light__without.png",
+            "width": 360,
+            "height": 680
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/compose__dark__with.png",
+            "width": 340,
+            "height": 640
+          },
+          "without": {
+            "src": "shots/oncall-menubar/compose__dark__without.png",
+            "width": 360,
+            "height": 680
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=compose&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#choose"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=compose&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#choose"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "pending",
+      "title": "Waiting for acceptance",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=pending&theme={theme}",
+        "without": "?theme={theme}#pending"
+      },
+      "caption": "With: an outlined, hatched segment marked PR?. Without: a striped segment labelled Priya?. Both say the shift remains yours.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/pending__light__with.png",
+            "width": 340,
+            "height": 484
+          },
+          "without": {
+            "src": "shots/oncall-menubar/pending__light__without.png",
+            "width": 360,
+            "height": 650
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/pending__dark__with.png",
+            "width": 340,
+            "height": 484
+          },
+          "without": {
+            "src": "shots/oncall-menubar/pending__dark__without.png",
+            "width": 360,
+            "height": 650
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=pending&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#pending"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=pending&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#pending"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "offline",
+      "title": "Offline · cached schedule",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=offline&theme={theme}",
+        "without": "?theme={theme}#offline"
+      },
+      "caption": "With: cached-data age sits in the footer, with a connection explanation below Hand over. Without: an offline notice follows the next-shifts section. Both disable handover.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/offline__light__with.png",
+            "width": 340,
+            "height": 408
+          },
+          "without": {
+            "src": "shots/oncall-menubar/offline__light__without.png",
+            "width": 360,
+            "height": 666
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/offline__dark__with.png",
+            "width": 340,
+            "height": 408
+          },
+          "without": {
+            "src": "shots/oncall-menubar/offline__dark__without.png",
+            "width": 360,
+            "height": 666
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=offline&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#offline"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=offline&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#offline"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "offcall",
+      "title": "Not on call",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=offcall&theme={theme}",
+        "without": "?theme={theme}#off"
+      },
+      "caption": "With: the next shift appears in the main answer. Without: a separate next-shifts section follows the rotation list.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/offcall__light__with.png",
+            "width": 340,
+            "height": 338
+          },
+          "without": {
+            "src": "shots/oncall-menubar/offcall__light__without.png",
+            "width": 360,
+            "height": 545
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/offcall__dark__with.png",
+            "width": 340,
+            "height": 338
+          },
+          "without": {
+            "src": "shots/oncall-menubar/offcall__dark__without.png",
+            "width": 360,
+            "height": 545
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=offcall&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#off"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=offcall&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#off"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "accepted",
+      "title": "Handover accepted",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=accepted&theme={theme}",
+        "without": "?theme={theme}#accepted"
+      },
+      "caption": "With: the accepted interval remains on the multi-day strip. Without: the remainder is labelled with Priya's name on the shift bar.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/accepted__light__with.png",
+            "width": 340,
+            "height": 428
+          },
+          "without": {
+            "src": "shots/oncall-menubar/accepted__light__without.png",
+            "width": 360,
+            "height": 580
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/accepted__dark__with.png",
+            "width": 340,
+            "height": 428
+          },
+          "without": {
+            "src": "shots/oncall-menubar/accepted__dark__without.png",
+            "width": 360,
+            "height": 580
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=accepted&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#accepted"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=accepted&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#accepted"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "declined",
+      "title": "Handover declined",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=declined&theme={theme}",
+        "without": "?theme={theme}#declined"
+      },
+      "caption": "With: the reply appears below the shift strip as plain text. Without: the reply has a tinted notice inside the current-shift panel.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/declined__light__with.png",
+            "width": 340,
+            "height": 440
+          },
+          "without": {
+            "src": "shots/oncall-menubar/declined__light__without.png",
+            "width": 360,
+            "height": 656
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/declined__dark__with.png",
+            "width": 340,
+            "height": 440
+          },
+          "without": {
+            "src": "shots/oncall-menubar/declined__dark__without.png",
+            "width": 360,
+            "height": 656
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=declined&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#declined"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=declined&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#declined"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "incoming",
+      "title": "Incoming handover request",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=incoming&theme={theme}",
+        "without": "?theme={theme}#incoming"
+      },
+      "caption": "With: the request appears before your own shift. Without: the request replaces the main you-panel and includes a rota check.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/incoming__light__with.png",
+            "width": 340,
+            "height": 537
+          },
+          "without": {
+            "src": "shots/oncall-menubar/incoming__light__without.png",
+            "width": 360,
+            "height": 609
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/incoming__dark__with.png",
+            "width": 340,
+            "height": 537
+          },
+          "without": {
+            "src": "shots/oncall-menubar/incoming__dark__without.png",
+            "width": 360,
+            "height": 609
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=incoming&theme=light",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#incoming"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=incoming&theme=dark",
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#incoming"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "send-failed",
+      "title": "Handover could not be sent",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=sendfail&theme={theme}",
+        "without": null
+      },
+      "caption": "Only in with: an in-place send failure keeps the handover form and states that nothing changed.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/send-failed__light__with.png",
+            "width": 340,
+            "height": 640
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/send-failed__dark__with.png",
+            "width": 340,
+            "height": 640
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=sendfail&theme=light"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=sendfail&theme=dark"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "coverage-gap",
+      "title": "Coverage gap · main panel",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=gap&theme={theme}",
+        "without": null
+      },
+      "caption": "Only in with: a gap warning appears in the main panel. Without has gap information in its separate Schedule view.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/coverage-gap__light__with.png",
+            "width": 340,
+            "height": 509
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/coverage-gap__dark__with.png",
+            "width": 340,
+            "height": 509
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=gap&theme=light"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=gap&theme=dark"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "loading",
+      "title": "First sync",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=loading&theme={theme}",
+        "without": null
+      },
+      "caption": "Only in with: a first-sync spinner and a connecting message in an otherwise empty panel.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/loading__light__with.png",
+            "width": 340,
+            "height": 300
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/loading__dark__with.png",
+            "width": 340,
+            "height": 300
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=loading&theme=light"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=loading&theme=dark"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "connect",
+      "title": "Not connected · first run",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": "?state=connect&theme={theme}",
+        "without": null
+      },
+      "caption": "Only in with: a first-run sign-in state before a schedule is connected.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/oncall-menubar/connect__light__with.png",
+            "width": 340,
+            "height": 188
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/oncall-menubar/connect__dark__with.png",
+            "width": 340,
+            "height": 188
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=connect&theme=light"
+        },
+        "dark": {
+          "with": "../oncall-menubar/with_skill/outputs/app/index.html?state=connect&theme=dark"
+        }
+      }
+    },
+    {
+      "eval": "oncall-menubar",
+      "screen": "schedule",
+      "title": "Weekly schedule",
+      "viewport": [
+        1100,
+        800
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#schedule"
+      },
+      "caption": "Only in without: a dedicated Schedule tab with a seven-day rotation view and a named gap.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "crop": {
+        "with": "#popover",
+        "without": "#pop"
+      },
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/oncall-menubar/schedule__light__without.png",
+            "width": 360,
+            "height": 603
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/oncall-menubar/schedule__dark__without.png",
+            "width": 360,
+            "height": 603
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=light#schedule"
+        },
+        "dark": {
+          "without": "../oncall-menubar/without_skill/outputs/app/index.html?theme=dark#schedule"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-live",
+      "title": "TV · Live · SEV1, no commander",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "?display=wall&state=live&theme={theme}&frozen",
+        "without": "?display=tv&state=major&theme={theme}&kiosk"
+      },
+      "caption": "With: the missing commander sits in the SEV1 row and the on-call band. Without: it is called out in a banner and an on-call card; the SEV1 is repeated in the list.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-live__light__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-live__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-live__dark__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-live__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=live&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=major&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=live&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=major&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-stale",
+      "title": "TV · Data stale",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "?display=wall&state=stale&theme={theme}&frozen",
+        "without": "?display=tv&state=stale&theme={theme}&kiosk"
+      },
+      "caption": "With: an amber freshness header retains the incident list. Without: an inverse warning replaces the status banner and dims the data. Fixture ages differ (about six versus seven minutes).",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-stale__light__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-stale__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-stale__dark__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-stale__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=stale&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=stale&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=stale&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=stale&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-all-clear",
+      "title": "TV · All clear",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "?display=wall&state=allclear&theme={theme}&frozen",
+        "without": "?display=tv&state=clear&theme={theme}&kiosk"
+      },
+      "caption": "With: zero-open wording leads into resolved history. Without: an all-clear banner includes days since the last SEV1. The runs invented different history and budget values.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-all-clear__light__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-all-clear__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-all-clear__dark__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-all-clear__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=allclear&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=clear&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=allclear&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=clear&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-loading",
+      "title": "TV · Loading",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "?display=wall&state=loading&theme={theme}&frozen",
+        "without": "?display=tv&state=loading&theme={theme}&kiosk"
+      },
+      "caption": "With: row-shaped placeholders reserve the list and chart areas. Without: loading messages occupy the dashboard's existing panels.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-loading__light__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-loading__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-loading__dark__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-loading__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=loading&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=loading&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=loading&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=loading&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-rota-failed",
+      "title": "TV · Rota source failed",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "?display=wall&state=partial&theme={theme}&frozen",
+        "without": null
+      },
+      "caption": "Only in with: the rota source fails while incident and metric data remain live; this is not the whole-feed failure on the other run.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-rota-failed__light__with.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-rota-failed__dark__with.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=partial&theme=light&frozen"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=partial&theme=dark&frozen"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-surge",
+      "title": "TV · Surge · twelve open incidents",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "?display=wall&state=surge&theme={theme}&frozen",
+        "without": null
+      },
+      "caption": "Only in with: twelve open incidents; TV names the rows that cannot fit, while laptop can scroll.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-surge__light__with.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-surge__dark__with.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=surge&theme=light&frozen"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=wall&state=surge&theme=dark&frozen"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-commander-set",
+      "title": "TV · SEV1 · commander assigned",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": null,
+        "without": "?display=tv&state=major-ic&theme={theme}&kiosk"
+      },
+      "caption": "Only in without: Ana L. is assigned as incident commander in the live SEV1 state.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/incident-dashboard/tv-commander-set__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/incident-dashboard/tv-commander-set__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=major-ic&theme=light&kiosk"
+        },
+        "dark": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=major-ic&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-sev2-only",
+      "title": "TV · SEV2 only",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": null,
+        "without": "?display=tv&state=elevated&theme={theme}&kiosk"
+      },
+      "caption": "Only in without: the SEV1 has resolved and the headline changes to the remaining SEV2 incidents.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/incident-dashboard/tv-sev2-only__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/incident-dashboard/tv-sev2-only__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=elevated&theme=light&kiosk"
+        },
+        "dark": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=elevated&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-feed-down",
+      "title": "TV · Entire feed down",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": null,
+        "without": "?display=tv&state=error&theme={theme}&kiosk"
+      },
+      "caption": "Only in without: the entire incident feed is unavailable; this differs from losing just the rota source.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/incident-dashboard/tv-feed-down__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/incident-dashboard/tv-feed-down__dark__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=error&theme=light&kiosk"
+        },
+        "dark": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=tv&state=error&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "tv-original",
+      "title": "TV · original (before)",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "routes": {
+        "with": "",
+        "without": ""
+      },
+      "caption": "Both: the same unmodified original dashboard. This is shared context, not a with/without design result. The original has no dark theme.",
+      "themes": [
+        "light"
+      ],
+      "source": "dashboard/index.html",
+      "reference": true,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/tv-original__light__with.png",
+            "width": 1920,
+            "height": 1080
+          },
+          "without": {
+            "src": "shots/incident-dashboard/tv-original__light__without.png",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/dashboard/index.html",
+          "without": "../incident-dashboard/without_skill/outputs/dashboard/index.html"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-live",
+      "title": "Laptop · Live · SEV1, no commander",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "?display=desk&state=live&theme={theme}&frozen",
+        "without": "?display=laptop&state=major&theme={theme}&kiosk"
+      },
+      "caption": "With: the missing commander sits in the SEV1 row and the on-call band. Without: it is called out in a banner and an on-call card; the SEV1 is repeated in the list.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-live__light__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-live__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-live__dark__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-live__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=live&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=major&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=live&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=major&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-stale",
+      "title": "Laptop · Data stale",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "?display=desk&state=stale&theme={theme}&frozen",
+        "without": "?display=laptop&state=stale&theme={theme}&kiosk"
+      },
+      "caption": "With: an amber freshness header retains the incident list. Without: an inverse warning replaces the status banner and dims the data. Fixture ages differ (about six versus seven minutes).",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-stale__light__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-stale__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-stale__dark__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-stale__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=stale&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=stale&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=stale&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=stale&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-all-clear",
+      "title": "Laptop · All clear",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "?display=desk&state=allclear&theme={theme}&frozen",
+        "without": "?display=laptop&state=clear&theme={theme}&kiosk"
+      },
+      "caption": "With: zero-open wording leads into resolved history. Without: an all-clear banner includes days since the last SEV1. The runs invented different history and budget values.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-all-clear__light__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-all-clear__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-all-clear__dark__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-all-clear__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=allclear&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=clear&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=allclear&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=clear&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-loading",
+      "title": "Laptop · Loading",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "?display=desk&state=loading&theme={theme}&frozen",
+        "without": "?display=laptop&state=loading&theme={theme}&kiosk"
+      },
+      "caption": "With: row-shaped placeholders reserve the list and chart areas. Without: loading messages occupy the dashboard's existing panels.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-loading__light__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-loading__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-loading__dark__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-loading__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=loading&theme=light&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=loading&theme=light&kiosk"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=loading&theme=dark&frozen",
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=loading&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-rota-failed",
+      "title": "Laptop · Rota source failed",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "?display=desk&state=partial&theme={theme}&frozen",
+        "without": null
+      },
+      "caption": "Only in with: the rota source fails while incident and metric data remain live; this is not the whole-feed failure on the other run.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-rota-failed__light__with.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-rota-failed__dark__with.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=partial&theme=light&frozen"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=partial&theme=dark&frozen"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-surge",
+      "title": "Laptop · Surge · twelve open incidents",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "?display=desk&state=surge&theme={theme}&frozen",
+        "without": null
+      },
+      "caption": "Only in with: twelve open incidents; TV names the rows that cannot fit, while laptop can scroll.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-surge__light__with.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-surge__dark__with.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=surge&theme=light&frozen"
+        },
+        "dark": {
+          "with": "../incident-dashboard/with_skill/outputs/app/index.html?display=desk&state=surge&theme=dark&frozen"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-commander-set",
+      "title": "Laptop · SEV1 · commander assigned",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": null,
+        "without": "?display=laptop&state=major-ic&theme={theme}&kiosk"
+      },
+      "caption": "Only in without: Ana L. is assigned as incident commander in the live SEV1 state.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/incident-dashboard/laptop-commander-set__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/incident-dashboard/laptop-commander-set__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=major-ic&theme=light&kiosk"
+        },
+        "dark": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=major-ic&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-sev2-only",
+      "title": "Laptop · SEV2 only",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": null,
+        "without": "?display=laptop&state=elevated&theme={theme}&kiosk"
+      },
+      "caption": "Only in without: the SEV1 has resolved and the headline changes to the remaining SEV2 incidents.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/incident-dashboard/laptop-sev2-only__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/incident-dashboard/laptop-sev2-only__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=elevated&theme=light&kiosk"
+        },
+        "dark": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=elevated&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-feed-down",
+      "title": "Laptop · Entire feed down",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": null,
+        "without": "?display=laptop&state=error&theme={theme}&kiosk"
+      },
+      "caption": "Only in without: the entire incident feed is unavailable; this differs from losing just the rota source.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/incident-dashboard/laptop-feed-down__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/incident-dashboard/laptop-feed-down__dark__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=error&theme=light&kiosk"
+        },
+        "dark": {
+          "without": "../incident-dashboard/without_skill/outputs/app/index.html?display=laptop&state=error&theme=dark&kiosk"
+        }
+      }
+    },
+    {
+      "eval": "incident-dashboard",
+      "screen": "laptop-original",
+      "title": "Laptop · original (before)",
+      "viewport": [
+        1440,
+        900
+      ],
+      "routes": {
+        "with": "",
+        "without": ""
+      },
+      "caption": "Both: the same unmodified original dashboard. This is shared context, not a with/without design result. The original has no dark theme.",
+      "themes": [
+        "light"
+      ],
+      "source": "dashboard/index.html",
+      "reference": true,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/incident-dashboard/laptop-original__light__with.png",
+            "width": 1440,
+            "height": 900
+          },
+          "without": {
+            "src": "shots/incident-dashboard/laptop-original__light__without.png",
+            "width": 1440,
+            "height": 900
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../incident-dashboard/with_skill/outputs/dashboard/index.html",
+          "without": "../incident-dashboard/without_skill/outputs/dashboard/index.html"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-welcome",
+      "title": "Welcome · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#welcome",
+        "without": "?theme={theme}#welcome"
+      },
+      "caption": "With: setup requirements and a Start button share the welcome screen. Without: two account-status choices lead to a separate preparation screen.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-welcome__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-welcome__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-welcome__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-welcome__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#welcome",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#welcome"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#welcome",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#welcome"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-details-errors",
+      "title": "Account details · errors · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#details-errors",
+        "without": "?theme={theme}#details-errors"
+      },
+      "caption": "With: errors concern the long card number and date of birth. Without: errors concern date of birth, sort code and account number. Both use a summary plus field errors.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-details-errors__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-details-errors__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-details-errors__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-details-errors__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#details-errors"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#details-errors"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-code",
+      "title": "Enter the texted code · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#code",
+        "without": "?theme={theme}#code"
+      },
+      "caption": "With: the code input and Continue come before a preview with blank code digits. Without: a preview containing 482 913 comes before the input.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-code__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-code__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#code"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#code"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-done",
+      "title": "Done · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#done",
+        "without": "?theme={theme}#done"
+      },
+      "caption": "With: balance and last money in follow the setup confirmation. Without: a balance panel precedes reminders that card and branch banking remain available.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-done__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-done__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-done__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-done__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#done",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#done"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#done",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#done"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-details",
+      "title": "Account details · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#details",
+        "without": "?theme={theme}#details"
+      },
+      "caption": "With: long card number and date of birth, plus an alternate account-number route. Without: date of birth, sort code and account number are the default route.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-details__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-details__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-details__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-details__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#details"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#details"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-not-found",
+      "title": "Account not found · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#details-notfound",
+        "without": "?theme={theme}#checking-nomatch"
+      },
+      "caption": "With: the no-match message stays on the details form. Without: no match has its own result screen. Both represent the same failed account lookup.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-not-found__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-not-found__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-not-found__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-not-found__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details-notfound",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-nomatch"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details-notfound",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-nomatch"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-code-wrong",
+      "title": "Text code · wrong · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-wrong",
+        "without": "?theme={theme}#code-wrong"
+      },
+      "caption": "With: an inline wrong-code message leaves the field high on the page. Without: a summary precedes the preview and code field. Both name the remaining tries.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-wrong__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-code-wrong__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-wrong__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-code-wrong__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-wrong",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#code-wrong"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-wrong",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#code-wrong"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-code-help",
+      "title": "Text code · delivery help · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-help",
+        "without": "?theme={theme}#code-help"
+      },
+      "caption": "With: delivery help expands within the code screen, with a new-code notice. Without: a separate help screen offers resend, a voice call and changed-number guidance.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-help__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-code-help__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-help__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-code-help__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-help",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#code-help"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-help",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#code-help"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-passcode",
+      "title": "Choose a passcode · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#passcode",
+        "without": "?theme={theme}#passcode"
+      },
+      "caption": "With: passcode and confirmation are on one screen. Without: confirmation is a separate step.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-passcode__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-passcode__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-passcode-errors",
+      "title": "Passcode · easy to guess · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#passcode-errors",
+        "without": "?theme={theme}#passcode-easy"
+      },
+      "caption": "With: the two-field form rejects a sequential passcode. Without: an error summary and message appear on the first passcode screen.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-passcode-errors__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode-errors__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-passcode-errors__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode-errors__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#passcode-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode-easy"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#passcode-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode-easy"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-biometrics",
+      "title": "Optional biometrics · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#biometrics",
+        "without": "?theme={theme}#fingerprint"
+      },
+      "caption": "With: face or fingerprint includes a warning about other people enrolled on the phone. Without: fingerprint is offered alongside a full-size passcode-only option.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-biometrics__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-biometrics__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-biometrics__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-biometrics__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#biometrics",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#fingerprint"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#biometrics",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#fingerprint"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-help",
+      "title": "Account details · help sheet · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}&help=1#details",
+        "without": "?theme={theme}#help"
+      },
+      "caption": "With: help explains the card-number route and its alternative. Without: help explains where to find sort code and account number, with a card illustration.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-help__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-help__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-help__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-help__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light&help=1#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#help"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark&help=1#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#help"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-details-nocard",
+      "title": "Alternative · no card · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#details-nocard",
+        "without": null
+      },
+      "caption": "Only in with: an explicit alternate identification route. Without already uses sort code and account number by default (see Account details).",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-details-nocard__light__with.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-details-nocard__dark__with.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details-nocard"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details-nocard"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-code-expired",
+      "title": "Text code expired · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-expired",
+        "without": null
+      },
+      "caption": "Only in with: an expired-code message and a new-code action; this differs from the other run's session-timeout dialog.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-expired__light__with.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-expired__dark__with.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-expired"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-expired"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-code-locked",
+      "title": "Text code · attempt limit · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-locked",
+        "without": null
+      },
+      "caption": "Only in with: a dedicated attempt-limit state replaces the code form.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-locked__light__with.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-code-locked__dark__with.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-locked"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-locked"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-working",
+      "title": "Final setup · working · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#working",
+        "without": null
+      },
+      "caption": "Only in with: named connection tasks after biometrics. Without's checking states happen earlier, before text-code verification.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-working__light__with.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-working__dark__with.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#working"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#working"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-working-slow",
+      "title": "Final setup · slow · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#working-slow",
+        "without": null
+      },
+      "caption": "Only in with: a delayed final-setup state keeps the connection tasks and adds reassurance.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-working-slow__light__with.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-working-slow__dark__with.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#working-slow"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#working-slow"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-working-failed",
+      "title": "Final setup · failed · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#working-failed",
+        "without": null
+      },
+      "caption": "Only in with: a final-setup failure explains that the account has not changed and offers retry.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-working-failed__light__with.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-working-failed__dark__with.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#working-failed"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#working-failed"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-prepare",
+      "title": "Before you start · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#prepare"
+      },
+      "caption": "Only in without: a dedicated preparation screen. With puts requirements on its welcome screen.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-prepare__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-prepare__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#prepare"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#prepare"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-new",
+      "title": "New customer guidance · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#new"
+      },
+      "caption": "Only in without: people without an existing account are directed to assisted account opening.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-new__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-new__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#new"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#new"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-checking",
+      "title": "Identity check · working · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking"
+      },
+      "caption": "Only in without: named identity-check tasks before the text-code step; with moves directly from valid details to code.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-checking-slow",
+      "title": "Identity check · slow · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking-slow"
+      },
+      "caption": "Only in without: the identity check explains a longer-than-usual wait.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking-slow__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking-slow__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-slow"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-slow"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-checking-veryslow",
+      "title": "Identity check · very slow · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking-veryslow"
+      },
+      "caption": "Only in without: an extended identity-check delay offers a way to stop and keep the entered details.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking-veryslow__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking-veryslow__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-veryslow"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-veryslow"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-checking-failed",
+      "title": "Identity check · failed · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking-failed"
+      },
+      "caption": "Only in without: a failure before text verification says no money moved and offers retry.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking-failed__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-checking-failed__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-failed"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-failed"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-timeout",
+      "title": "Session timeout warning · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#timeout"
+      },
+      "caption": "Only in without: a modal offers more time or stopping. With deliberately has no screen timeout.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-timeout__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-timeout__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#timeout"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#timeout"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-passcode-confirm",
+      "title": "Confirm passcode · separate step · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#passcode-confirm"
+      },
+      "caption": "Only in without: passcode confirmation has its own screen. With combines both fields (see Choose a passcode).",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode-confirm__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode-confirm__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode-confirm"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode-confirm"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-passcode-mismatch",
+      "title": "Confirm passcode · mismatch · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": "?theme={theme}#passcode",
+        "without": "?theme={theme}#passcode-mismatch"
+      },
+      "caption": "Without: mismatch is on the separate confirmation step. With also validates mismatches, on its combined form; captured via that form here.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": "passcode-mismatch",
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/390-passcode-mismatch__light__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode-mismatch__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/390-passcode-mismatch__dark__with.png",
+            "width": 390,
+            "height": 844
+          },
+          "without": {
+            "src": "shots/banking-onboarding/390-passcode-mismatch__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode-mismatch"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode-mismatch"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "390-safety",
+      "title": "Standalone safety advice · 390 px",
+      "viewport": [
+        390,
+        844
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#safety"
+      },
+      "caption": "Only in without: a separate scam-advice acknowledgement. With places scam advice alongside text-code verification.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/390-safety__light__without.png",
+            "width": 390,
+            "height": 844
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/390-safety__dark__without.png",
+            "width": 390,
+            "height": 844
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#safety"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#safety"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-welcome",
+      "title": "Welcome · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#welcome",
+        "without": "?theme={theme}#welcome"
+      },
+      "caption": "With: setup requirements and a Start button share the welcome screen. Without: two account-status choices lead to a separate preparation screen.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-welcome__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-welcome__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-welcome__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-welcome__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#welcome",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#welcome"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#welcome",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#welcome"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-details-errors",
+      "title": "Account details · errors · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#details-errors",
+        "without": "?theme={theme}#details-errors"
+      },
+      "caption": "With: errors concern the long card number and date of birth. Without: errors concern date of birth, sort code and account number. Both use a summary plus field errors.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-details-errors__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-details-errors__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-details-errors__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-details-errors__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#details-errors"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#details-errors"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-code",
+      "title": "Enter the texted code · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#code",
+        "without": "?theme={theme}#code"
+      },
+      "caption": "With: the code input and Continue come before a preview with blank code digits. Without: a preview containing 482 913 comes before the input.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-code__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-code__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#code"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#code"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-done",
+      "title": "Done · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#done",
+        "without": "?theme={theme}#done"
+      },
+      "caption": "With: balance and last money in follow the setup confirmation. Without: a balance panel precedes reminders that card and branch banking remain available.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-done__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-done__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-done__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-done__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#done",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#done"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#done",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#done"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-details",
+      "title": "Account details · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#details",
+        "without": "?theme={theme}#details"
+      },
+      "caption": "With: long card number and date of birth, plus an alternate account-number route. Without: date of birth, sort code and account number are the default route.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-details__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-details__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-details__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-details__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#details"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#details"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-not-found",
+      "title": "Account not found · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#details-notfound",
+        "without": "?theme={theme}#checking-nomatch"
+      },
+      "caption": "With: the no-match message stays on the details form. Without: no match has its own result screen. Both represent the same failed account lookup.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-not-found__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-not-found__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-not-found__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-not-found__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details-notfound",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-nomatch"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details-notfound",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-nomatch"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-code-wrong",
+      "title": "Text code · wrong · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-wrong",
+        "without": "?theme={theme}#code-wrong"
+      },
+      "caption": "With: an inline wrong-code message leaves the field high on the page. Without: a summary precedes the preview and code field. Both name the remaining tries.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-wrong__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-code-wrong__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-wrong__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-code-wrong__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-wrong",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#code-wrong"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-wrong",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#code-wrong"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-code-help",
+      "title": "Text code · delivery help · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-help",
+        "without": "?theme={theme}#code-help"
+      },
+      "caption": "With: delivery help expands within the code screen, with a new-code notice. Without: a separate help screen offers resend, a voice call and changed-number guidance.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-help__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-code-help__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-help__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-code-help__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-help",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#code-help"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-help",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#code-help"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-passcode",
+      "title": "Choose a passcode · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#passcode",
+        "without": "?theme={theme}#passcode"
+      },
+      "caption": "With: passcode and confirmation are on one screen. Without: confirmation is a separate step.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-passcode__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-passcode__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-passcode-errors",
+      "title": "Passcode · easy to guess · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#passcode-errors",
+        "without": "?theme={theme}#passcode-easy"
+      },
+      "caption": "With: the two-field form rejects a sequential passcode. Without: an error summary and message appear on the first passcode screen.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-passcode-errors__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode-errors__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-passcode-errors__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode-errors__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#passcode-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode-easy"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#passcode-errors",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode-easy"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-biometrics",
+      "title": "Optional biometrics · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#biometrics",
+        "without": "?theme={theme}#fingerprint"
+      },
+      "caption": "With: face or fingerprint includes a warning about other people enrolled on the phone. Without: fingerprint is offered alongside a full-size passcode-only option.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-biometrics__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-biometrics__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-biometrics__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-biometrics__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#biometrics",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#fingerprint"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#biometrics",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#fingerprint"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-help",
+      "title": "Account details · help sheet · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}&help=1#details",
+        "without": "?theme={theme}#help"
+      },
+      "caption": "With: help explains the card-number route and its alternative. Without: help explains where to find sort code and account number, with a card illustration.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-help__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-help__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-help__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-help__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light&help=1#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#help"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark&help=1#details",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#help"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-details-nocard",
+      "title": "Alternative · no card · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#details-nocard",
+        "without": null
+      },
+      "caption": "Only in with: an explicit alternate identification route. Without already uses sort code and account number by default (see Account details).",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-details-nocard__light__with.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-details-nocard__dark__with.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#details-nocard"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#details-nocard"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-code-expired",
+      "title": "Text code expired · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-expired",
+        "without": null
+      },
+      "caption": "Only in with: an expired-code message and a new-code action; this differs from the other run's session-timeout dialog.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-expired__light__with.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-expired__dark__with.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-expired"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-expired"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-code-locked",
+      "title": "Text code · attempt limit · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#code-locked",
+        "without": null
+      },
+      "caption": "Only in with: a dedicated attempt-limit state replaces the code form.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-locked__light__with.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-code-locked__dark__with.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#code-locked"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#code-locked"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-working",
+      "title": "Final setup · working · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#working",
+        "without": null
+      },
+      "caption": "Only in with: named connection tasks after biometrics. Without's checking states happen earlier, before text-code verification.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-working__light__with.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-working__dark__with.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#working"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#working"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-working-slow",
+      "title": "Final setup · slow · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#working-slow",
+        "without": null
+      },
+      "caption": "Only in with: a delayed final-setup state keeps the connection tasks and adds reassurance.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-working-slow__light__with.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-working-slow__dark__with.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#working-slow"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#working-slow"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-working-failed",
+      "title": "Final setup · failed · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#working-failed",
+        "without": null
+      },
+      "caption": "Only in with: a final-setup failure explains that the account has not changed and offers retry.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-working-failed__light__with.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-working-failed__dark__with.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#working-failed"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#working-failed"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-prepare",
+      "title": "Before you start · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#prepare"
+      },
+      "caption": "Only in without: a dedicated preparation screen. With puts requirements on its welcome screen.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-prepare__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-prepare__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#prepare"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#prepare"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-new",
+      "title": "New customer guidance · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#new"
+      },
+      "caption": "Only in without: people without an existing account are directed to assisted account opening.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-new__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-new__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#new"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#new"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-checking",
+      "title": "Identity check · working · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking"
+      },
+      "caption": "Only in without: named identity-check tasks before the text-code step; with moves directly from valid details to code.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-checking-slow",
+      "title": "Identity check · slow · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking-slow"
+      },
+      "caption": "Only in without: the identity check explains a longer-than-usual wait.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking-slow__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking-slow__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-slow"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-slow"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-checking-veryslow",
+      "title": "Identity check · very slow · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking-veryslow"
+      },
+      "caption": "Only in without: an extended identity-check delay offers a way to stop and keep the entered details.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking-veryslow__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking-veryslow__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-veryslow"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-veryslow"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-checking-failed",
+      "title": "Identity check · failed · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#checking-failed"
+      },
+      "caption": "Only in without: a failure before text verification says no money moved and offers retry.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking-failed__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-checking-failed__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#checking-failed"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#checking-failed"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-timeout",
+      "title": "Session timeout warning · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#timeout"
+      },
+      "caption": "Only in without: a modal offers more time or stopping. With deliberately has no screen timeout.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-timeout__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-timeout__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#timeout"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#timeout"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-passcode-confirm",
+      "title": "Confirm passcode · separate step · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#passcode-confirm"
+      },
+      "caption": "Only in without: passcode confirmation has its own screen. With combines both fields (see Choose a passcode).",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode-confirm__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode-confirm__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode-confirm"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode-confirm"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-passcode-mismatch",
+      "title": "Confirm passcode · mismatch · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": "?theme={theme}#passcode",
+        "without": "?theme={theme}#passcode-mismatch"
+      },
+      "caption": "Without: mismatch is on the separate confirmation step. With also validates mismatches, on its combined form; captured via that form here.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": "passcode-mismatch",
+      "shots": {
+        "light": {
+          "with": {
+            "src": "shots/banking-onboarding/320-passcode-mismatch__light__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode-mismatch__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "with": {
+            "src": "shots/banking-onboarding/320-passcode-mismatch__dark__with.png",
+            "width": 320,
+            "height": 568
+          },
+          "without": {
+            "src": "shots/banking-onboarding/320-passcode-mismatch__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=light#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#passcode-mismatch"
+        },
+        "dark": {
+          "with": "../banking-onboarding/with_skill/outputs/app/index.html?theme=dark#passcode",
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#passcode-mismatch"
+        }
+      }
+    },
+    {
+      "eval": "banking-onboarding",
+      "screen": "320-safety",
+      "title": "Standalone safety advice · 320 px",
+      "viewport": [
+        320,
+        568
+      ],
+      "routes": {
+        "with": null,
+        "without": "?theme={theme}#safety"
+      },
+      "caption": "Only in without: a separate scam-advice acknowledgement. With places scam advice alongside text-code verification.",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "action": null,
+      "shots": {
+        "light": {
+          "without": {
+            "src": "shots/banking-onboarding/320-safety__light__without.png",
+            "width": 320,
+            "height": 568
+          }
+        },
+        "dark": {
+          "without": {
+            "src": "shots/banking-onboarding/320-safety__dark__without.png",
+            "width": 320,
+            "height": 568
+          }
+        }
+      },
+      "sources": {
+        "light": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=light#safety"
+        },
+        "dark": {
+          "without": "../banking-onboarding/without_skill/outputs/app/index.html?theme=dark#safety"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1933 @@
+[
+  {
+    "runId": "oncall-menubar__baseline__1",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes accepted",
+        "status": "pass",
+        "evidence": {
+          "light": "0c5c61334b10d623a3f7216c8e8419d84c4255a8f8fdd59871e6dea3895e38dd",
+          "dark": "d364d145067f7615f12350e0bf3a9fda73a140ba5ae4354464ca4f229e17006a"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes compose",
+        "status": "pass",
+        "evidence": {
+          "light": "a4d7d0fe5f2fe6fba02a6b2c33b17411155eee9fba99310d07c901c8e87ccaba",
+          "dark": "a941bfdb339762931503d9610cfb1790ba871e2c9fde718232117add96177da6"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes empty",
+        "status": "pass",
+        "evidence": {
+          "light": "4439554d315103352aa345bf71c49ffa3f2a9f3a37a810fdef16daa3fdf52065",
+          "dark": "2e0da3ffeb4f600a56ae12eafbcb4a39180af82d96ecae69494f0251ae660b74"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes main",
+        "status": "pass",
+        "evidence": {
+          "light": "ef5e493b518268bb88b919e3298c2e53d673edd7fde14434520a86e896893072",
+          "dark": "d6482d3b6e1c9708c0b7d770d7ac062ff33428dfef75488fa705f908de465558"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes offline",
+        "status": "pass",
+        "evidence": {
+          "light": "ec8732d5edd9c1a05bbe49eef08d062c1d615c063503eadf9987165dab4efd01",
+          "dark": "7091d7bf0196e7cea1395553d57620258a343441be052a260eb342eef6c83784"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes pending",
+        "status": "pass",
+        "evidence": {
+          "light": "89e081104b921e4b835b2c3160b042225062b3fa16ddd133f06a35903d9f82fa",
+          "dark": "26cd218671431b0754198eca23c6c3099892a95f460ff016628869071d7d11a2"
+        },
+        "severity": "functional"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "open handover",
+        "status": "pass",
+        "evidence": "Rota\nOn call\n\u2039 Schedule\n\nPLATFORM PRIMARY\n\nHand over your shift\n\nRequest cover for the rest of today\u2019s shift.\n\nHand over to\nPR\nPriya Raman\n\nCoverage ends at 18:00 UTC.\n\nHandover note (optional)\n\nYou stay on call until your teammate accepts.\n\nCancel\nReview handover\nJamie Ellis\nAll times UTC"
+      },
+      {
+        "check": "send and retain responsibility while pending",
+        "status": "pass",
+        "evidence": {
+          "chosen": true,
+          "sent": true,
+          "text": "Rota\nOn call\n\u2039 Schedule\n\nHANDOVER REQUESTED\n\nWaiting for Priya\n\nThe shift stays with you for now.\n\nJamie\nResponsible now\n\u2192\nPriya\nAwaiting acceptance\nRotation\nPlatform Primary\nCoverage\nOn acceptance \u2013 18:00 UTC\nDate\nSun 18 Oct\n\nYou\u2019re still on call. Keep responding until Priya accepts.\n\nCancel request\n\nRequested from Priya Raman.\n\nJamie Ellis\nAll times UTC\nHandover requested. You remain responsible until Priya accepts."
+        }
+      },
+      {
+        "check": "no automatic acceptance",
+        "status": "pass",
+        "evidence": "Rota\nOn call\n\u2039 Schedule\n\nHANDOVER REQUESTED\n\nWaiting for Priya\n\nThe shift stays with you for now.\n\nJamie\nResponsible now\n\u2192\nPriya\nAwaiting acceptance\nRotation\nPlatform Primary\nCoverage\nOn acceptance \u2013 18:00 UTC\nDate\nSun 18 Oct\n\nYou\u2019re still on call. Keep responding until Priya accepts.\n\nCancel request\n\nRequested from Priya Raman.\n\nJamie Ellis\nAll times UTC\nHandover requested. You remain responsible until Priya accepts."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "incident-dashboard__revision__1",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes live",
+        "status": "pass",
+        "evidence": {
+          "light": "468eedbcb45fae3ef84f30665d19d61d4fb348c5e628f30d25342574619a2362",
+          "dark": "be78e3cdc0a52f6cab11b258ef7549016a74fefbb5ef64be8fc4fa1508b23f0a"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes stale",
+        "status": "pass",
+        "evidence": {
+          "light": "29038ca8c3efa814906d048b4fea5c64edd3afffceb50572cbd19e2ce97e7cc1",
+          "dark": "fef7d9108796d4f5a3994c193bc9ed5dc7c566c5cbe3887667874c5346bd93e4"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes surge",
+        "status": "pass",
+        "evidence": {
+          "light": "52966867b66869ca1aedd60175def43a8cc06d43fa5724f77d20a64cb61887c3",
+          "dark": "4fc7ffd72aedc304c9edf79aeb7fa20db2a2785ea22a0611a1fa3b4d91cce678"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "SEV1 incident retained",
+        "status": "pass",
+        "evidence": "INC-2291 in rendered text",
+        "severity": "critical"
+      },
+      {
+        "check": "stale status explicit",
+        "status": "pass",
+        "evidence": "Skip to incidents\nNorthwind\nOperations\n18 October 2026\n11:00\nIncident overview\nUpdates interrupted\nLast received 09:42\nData is stale \u00b7 last received 09:42\nUpdates are unavailable. Counts, statuses and durations may have changed; confirm with the on-call team.\nLast known open incidents\n7\n1 SEV1 \u00b7 2 SEV2 \u00b7 4 SEV3\u2191 2 vs yesterday\nMean time to resolve \u00b7 7d\n48m\n\u2193 12% lower vs last week\nPages today\n23\n\u2191 5 vs yesterday\nSLO budget left\n61%\n\u2193 4 points lower\nOpen incidents 7\nResolved 2\nOpen incidents. Durations and opened times are supplied snapshot values, data is stale.\nSeverity\tIncident / service\tStatus\tCommander\tDuration\nSEV1\t\nRoute optimiser timeouts for EU-West depots\nINC-2291 \u00b7 Routing API\n\t\nInvestigating\n\tUnassigned\t1h 18m\n09:42\n\nSEV2\t\nDelayed tracking events from scanner fleet B\nINC-2290 \u00b7 ",
+        "severity": "critical"
+      }
+    ],
+    "observations": [
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "live",
+        "count": 7,
+        "openCount": 7,
+        "resolvedCount": 0,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "stale",
+        "count": 7,
+        "openCount": 7,
+        "resolvedCount": 0,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "surge",
+        "count": 7,
+        "openCount": 7,
+        "resolvedCount": 0,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 12,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      }
+    ],
+    "interaction": [
+      {
+        "check": "dashboard interaction scope",
+        "status": "not applicable",
+        "evidence": "Read-only display; inspect data, freshness, overflow and laptop access separately."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "banking-onboarding__baseline__1",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "24/24",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "fail",
+        "evidence": 24,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code",
+        "status": "pass",
+        "evidence": {
+          "light": "0742c05d529f28d82a9f44635cbbe18aad1a9048e96e39c1583417b7c3142f35",
+          "dark": "53376a00dad9ec81dee54b2d2641330bf9dc4a2639864a20758ad3318e404766"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code-error",
+        "status": "pass",
+        "evidence": {
+          "light": "e825db0488dcb8c93e6a5e05908a497283ebd5e8283fc853a14f91d5eb70e58a",
+          "dark": "582fb0f45db703742fbb1ee03552263dcad82ccf307102816ece5e64bd95f24e"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes details-error",
+        "status": "pass",
+        "evidence": {
+          "light": "269f3382cd8a169d7fab83cd48a8fa83e3a8a2d0b7b012fb2b3f1d488e273739",
+          "dark": "cc551b520b83e7600b45482c482c75d9f341cd4f1309a977bbf5f9bc6f73de18"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes done",
+        "status": "pass",
+        "evidence": {
+          "light": "9c947c30137527b3f1a13f51a7d37c55b7c61475ded669a13898aa7439e18d0d",
+          "dark": "4cc3b87a18bae58ca0da0138c4a644f703ab96ffa701f32b03bf2c1438d0751e"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes help",
+        "status": "pass",
+        "evidence": {
+          "light": "2ec129d44a6c0d68c677c1928db73ef7fa1f167094ddb4781ac87c68961acec9",
+          "dark": "9ff1822200b0434f2d8cdcfb9bff59018e6c41c72d39d5ad07d33cc5e794c186"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes welcome",
+        "status": "pass",
+        "evidence": {
+          "light": "c546327dd0f0bf5ad38baaa495f5d9e64754e28de01eb4fc1424f84d61d3c337",
+          "dark": "15c8c6a6496b8727ca26503b87e064d5575b8e94d7237ddad2ff0ea9ce3cf55e"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "code preview has no usable test code",
+        "status": "pass",
+        "evidence": "Visible body text excludes482913",
+        "severity": "critical"
+      },
+      {
+        "check": "programmatic field labels",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "visible interactive targets at least44px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "code screen visible text at least16px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "welcome advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 1 of 2\nYour account details\n\nUse the name and mobile number you have with Harbour.\n\nFull name\n\nAs it appears on your bank account.\n\nMobile number\n\nYour UK mobile number, starting with 07.\n\nContinue\nStaying safe\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "valid details advance",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 2\nCheck your mobile\n\nEnter the 6-digit code from the text message for your mobile ending 482.\n\nText message code\n\n6 numbers, with no spaces.\n\nWe will never call you to ask for this code. Do not share it.\n\nConfirm code\nI haven\u2019t received a code\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "wrong code rejected",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 2\nCheck your mobile\n\nEnter the 6-digit code from the text message for your mobile ending 482.\n\nText message code\n\n6 numbers, with no spaces.\n\nThat code doesn\u2019t match. Check the text message and try again.\n\nWe will never call you to ask for this code. Do not share it.\n\nConfirm code\nI haven\u2019t received a code\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "correct code advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\n\nSETUP COMPLETE\n\nYou\u2019ve taken the\nfirst step, Alex.\n\nBanking on your phone can feel new. You\u2019ve now practised getting started.\n\nYour details added\n\nYour mobile code checked\n\nThis was a practice setup. Your Harbour account hasn\u2019t changed.\n\nFinish\nStaying safe\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "help provides human route",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 2\nCheck your mobile\n\nEnter the 6-digit code from the text message for your mobile ending 482.\n\nText message code\n\n6 numbers, with no spaces.\n\nWe will never call you to ask for this code. Do not share it.\n\nConfirm code\nI haven\u2019t received a code\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 no account changes\n\nA person can help.\n\nIf you\u2019re unsure, call the Harbour team. You can ask for help with mobile banking.\n\n0808 157 0192\n\nYou can also ask for help at your branch.\n\nHave your phone with you. Never share your text message code.\n\nBack to setup"
+      },
+      {
+        "check": "Escape restores Help focus",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Help",
+          "outline": "solid"
+        }
+      },
+      {
+        "check": "keyboard focus indicator",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Confirm code",
+          "outline": "solid",
+          "shadow": "none"
+        }
+      }
+    ],
+    "failures": 1,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "oncall-menubar__revision__1",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes accepted",
+        "status": "pass",
+        "evidence": {
+          "light": "51926db36ac4b40d7666fce36ce715671bb2ec9fd8983fffa883d22b6422e57f",
+          "dark": "6d64f9f7994943845eb7ebd2bfe5dc96a7ee0c5ef278d8d02216b70e0d5c6ea6"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes compose",
+        "status": "pass",
+        "evidence": {
+          "light": "077475190821ce2fa07736c8d2f735e04274385e41af1723f69303b2efd46391",
+          "dark": "1c6de8450da9edfa979c47e4cf95748f72c4f77a45eea62a196756e8c66a9936"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes empty",
+        "status": "pass",
+        "evidence": {
+          "light": "6938d10a790946351e2b7bbb88545d2853c7dd009c94eca85fd90fcdabdc3478",
+          "dark": "666f8952a35a0af8e4cafa481251d2d2f77bbb48759224230c2f66cd3462b7ed"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes main",
+        "status": "pass",
+        "evidence": {
+          "light": "2d2567733f8ec45c7ff0c5066f39baedb47e335300e07eea65d33c584997da2b",
+          "dark": "67ac15518884dcbe1bb4a6c427dbc6846f3c298e776c3f0fcb62e6fef581681f"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes offline",
+        "status": "pass",
+        "evidence": {
+          "light": "c1294ad1d2315b91277e26d717e03cd4acf1dc20ea524e4dcb7be61fe0eb4954",
+          "dark": "7da7c957884946bb0f9f0fcf17b974abded07a348d01ed7c9ddafcf824a3bf48"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes pending",
+        "status": "pass",
+        "evidence": {
+          "light": "cad2d175f240445d2a60fd4c1b733150a150356af7b583bd015f66468cfa4bc4",
+          "dark": "a3b12bdf3f47dbbb48622b7e0d0aaa1f7e1d57ab1591df96782a1a8b50d466d1"
+        },
+        "severity": "functional"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "open handover",
+        "status": "pass",
+        "evidence": "Rota\nSun 18 Oct\nYour current shift\nHand over shift\n\nChoose who should take the rest of your shift.\n\nRotation\nPlatform Primary\nShift\n06:00\u201318:00 UTC\nHandover\nOn acceptance \u2192 18:00\nHand over to\nChoose a teammate\u2026\nPriya Raman\n\nPriya Raman is the handover contact for this shift.\n\nYou remain responsible until your teammate accepts.\n\nCancel\nReview handover\nAll times UTC\nAs of 10:00"
+      },
+      {
+        "check": "send and retain responsibility while pending",
+        "status": "pass",
+        "evidence": {
+          "chosen": true,
+          "sent": true,
+          "text": "Rota\nSun 18 Oct\nHandover request\nWaiting for Priya\n\nPriya Raman hasn\u2019t accepted yet.\n\nPlatform Primary \u00b7 until 18:00 UTC\nJE\nJamie Ellis\nYou\nResponsible now\nPR\nPriya Raman\nAcceptance required\nWaiting\n\nYou\u2019re still on call.\nKeep covering Platform Primary until Priya accepts. Sending a request does not transfer responsibility.\n\nCancel request\nBack to schedule\nAll times UTC\nAs of 10:00\nHandover request sent. You remain responsible until Priya accepts."
+        }
+      },
+      {
+        "check": "no automatic acceptance",
+        "status": "pass",
+        "evidence": "Rota\nSun 18 Oct\nHandover request\nWaiting for Priya\n\nPriya Raman hasn\u2019t accepted yet.\n\nPlatform Primary \u00b7 until 18:00 UTC\nJE\nJamie Ellis\nYou\nResponsible now\nPR\nPriya Raman\nAcceptance required\nWaiting\n\nYou\u2019re still on call.\nKeep covering Platform Primary until Priya accepts. Sending a request does not transfer responsibility.\n\nCancel request\nBack to schedule\nAll times UTC\nAs of 10:00\nHandover request sent. You remain responsible until Priya accepts."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "incident-dashboard__baseline__1",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes live",
+        "status": "pass",
+        "evidence": {
+          "light": "74c3f822f9803c5b109df5d150d7384a980322c4328f9f5c7ebe09bfe2488ff7",
+          "dark": "38e3d3722eb506ff950c178a4810cfabd0f193d78e171092792091041009a640"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes stale",
+        "status": "pass",
+        "evidence": {
+          "light": "a69cc2d28b75879e3576486f260a9c09f30f90e3623e0763c097a5149708712b",
+          "dark": "ddc4dae08cbe63f599f09e89dbd2140d17f4af18c7f24d0882273c7c69ad741a"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes surge",
+        "status": "pass",
+        "evidence": {
+          "light": "6f5117ed16f70c0c0e5899e1a915f572b42d530fd0d03b08205d3953d11a3bc5",
+          "dark": "54381ba0c07ab30fd8bea5b65e9fa8e676a73b067af719e669260a4f26e59d5c"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "SEV1 incident retained",
+        "status": "pass",
+        "evidence": "INC-2291 in rendered text",
+        "severity": "critical"
+      },
+      {
+        "check": "stale status explicit",
+        "status": "pass",
+        "evidence": "Skip to incidents\nnorthwind\nOperations / Incidents\nTV view\nLight\nIncident overview\nUpdates paused\nLast received 09:42 \u00b7 18 October 2026\n\nData is out of date. Status, counts and durations may have changed.\n\nOpen incidents\n7\n1 SEV1\n\u00b7 2 SEV2 \u00b7 4 SEV3\nMean time to resolve \u00b7 7d\n48m\n\n\u2193 12% lower vs last week\n\nPages today\n23\n\n\u2191 5\n\nSLO budget left\n61%\n\n\u2193 4 points lower\n\nOpen incidents\n7\nSearch incidents by title, ID or service\nFilter by severity\nAll severities\nSEV1\nSEV2\nSEV3\nSeverity\tIncident / service\tStatus\tCommander\tDuration / opened\nSEV1\t\nRoute optimiser timeouts for EU-West depots\nINC-2291\nRouting API\n\tInvestigating\tUnassigned\t1h 18m\n09:42\n\nSEV2\t\nDelayed tracking events from scanner fleet B\nINC-2290\nTracking Ingest\n\tMitigated\tPriya N.\t2h 55m\n08:05\n\nSEV2\t\nInvoice PDF generation failing for 3% ",
+        "severity": "critical"
+      }
+    ],
+    "observations": [
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "live",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "stale",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "surge",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 12,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      }
+    ],
+    "interaction": [
+      {
+        "check": "dashboard interaction scope",
+        "status": "not applicable",
+        "evidence": "Read-only display; inspect data, freshness, overflow and laptop access separately."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "banking-onboarding__revision__1",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "24/24",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code",
+        "status": "pass",
+        "evidence": {
+          "light": "b08e8e27b91add9a85d92d2b9e2470b16aff67d8f7b566ba0f246e454627cfbd",
+          "dark": "ffd846eb38f1f096f8d7ba30252376a8d2dc36d53d2d1d19b5721a211d82bd29"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code-error",
+        "status": "pass",
+        "evidence": {
+          "light": "b3a1521dc09144034ff816a497c169965cc77e3dec869ad621e3a61ae95edfff",
+          "dark": "408517f4eb840a49c055ffb5d723ee782971e027a57f16cb180273974a53b3ba"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes details-error",
+        "status": "pass",
+        "evidence": {
+          "light": "113e4b9a8dcaa067cb78d9cc340f81e81e262e34047ea439c6514326f3e83b31",
+          "dark": "5fcea74eb03d84d9cb4625ec450b9f449324cf9ff70a977512231d264034eb39"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes done",
+        "status": "pass",
+        "evidence": {
+          "light": "71be4e61309c06f8cc5eef15fa0a5667bdd84cdf6a46f4b00d71ab6fcb82cfee",
+          "dark": "837876f4a5c9a0945d7a71e2b8cf5dafd61663057e0439032d0f7ef4afae6557"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes help",
+        "status": "pass",
+        "evidence": {
+          "light": "c8c7933582d803590ad254d9673790848f3c2447eda90e3064d3e64abd2f89e9",
+          "dark": "4589dc2ca2643479aa6ab6eb23056a0ca2a92ca1c580fd5c50b07c0c475942bf"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes welcome",
+        "status": "pass",
+        "evidence": {
+          "light": "871f69a3273be9712e3c00b22016b11be1f8c3dac3e7c41e2d8528e5c9b4d7d6",
+          "dark": "1973628c8a0e048ab4d426a61b6f094a120670ede71a7ba71d6bc896043370e2"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "code preview has no usable test code",
+        "status": "pass",
+        "evidence": "Visible body text excludes482913",
+        "severity": "critical"
+      },
+      {
+        "check": "programmatic field labels",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "visible interactive targets at least44px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "code screen visible text at least16px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "welcome advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 1 of 3\nFirst, your details\n\nUse the name and mobile number you gave the bank.\n\nFull name\nMobile number\n\nUK number, starting with 07 or +44.\n\nContinue\n\nNext: confirm your mobile number with a security code.\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "valid details advance",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter your 6-digit security code.\nMobile number ending 482.\n\nSecurity code\n\n6 numbers, with no spaces.\n\nConfirm code\nHaven\u2019t received a code?\nKeep your code safe\n\nWe will never call you to ask for this code. Do not share it.\n\nIn this practice setup, no text is sent.\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "wrong code rejected",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter your 6-digit security code.\nMobile number ending 482.\n\nSecurity code\n\n6 numbers, with no spaces.\n\nThat code doesn\u2019t match. Check all 6 numbers and try again.\n\nConfirm code\nHaven\u2019t received a code?\nKeep your code safe\n\nWe will never call you to ask for this code. Do not share it.\n\nIn this practice setup, no text is sent.\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "correct code advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nStep 3 of 3\nYou\u2019re all set.\n\nA new way to bank.\nThe same support behind you.\n\nYou\u2019ve completed this practice setup. Your account has not changed.\n\nWhenever you need a hand, use Help or visit your branch.\n\nFinish\n\nPractice setup \u00b7 no account changes"
+      },
+      {
+        "check": "help provides human route",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter your 6-digit security code.\nMobile number ending 482.\n\nSecurity code\n\n6 numbers, with no spaces.\n\nConfirm code\nHaven\u2019t received a code?\nKeep your code safe\n\nWe will never call you to ask for this code. Do not share it.\n\nIn this practice setup, no text is sent.\n\nPractice setup \u00b7 no account changes\n\nTalk to a person\n\nOur team can help you set up mobile banking, one step at a time.\n\nCall 0808 157 0192\n\nOpens your phone\u2019s calling app. You can also visit your usual branch.\n\nKeep your code safe\n\nWe will never call you to ask for this code. Do not share it.\n\nBack to setup"
+      },
+      {
+        "check": "Escape restores Help focus",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Help",
+          "outline": "solid"
+        }
+      },
+      {
+        "check": "keyboard focus indicator",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Back",
+          "outline": "solid",
+          "shadow": "none"
+        }
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "oncall-menubar__revision__2",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes accepted",
+        "status": "pass",
+        "evidence": {
+          "light": "e73dd880c67262d4f589df35141c193e13e9e637191a3c653c75d1361eebc250",
+          "dark": "40b4ead3f20ead416be8bffec267d39b10b2f14d6388192cbff2ca8bf10731bd"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes compose",
+        "status": "pass",
+        "evidence": {
+          "light": "43f0b6646e422628da043a71ed3240268c35ffc01f05437f5814f700dc445443",
+          "dark": "9d942ecc3116737e91e782cf3e7333364fe66fb99280a97844dca74aac398976"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes empty",
+        "status": "pass",
+        "evidence": {
+          "light": "b1e0d6f1ace395dbaf96396674b9e1deec75e8ae4729f97bca2d4490cd16a902",
+          "dark": "ec0e2b33410e2bc74edcaa9a89ae54b3e68b2db2181fdf6423209aa23114451f"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes main",
+        "status": "pass",
+        "evidence": {
+          "light": "7b15aea973cebda8883cc9ac9c46f773eac12cbfad9636fd7bceca769a33c4cb",
+          "dark": "62ab70acf01dacb6a59475c8551ced2d57de883f62bfb52c62b21a014bc49662"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes offline",
+        "status": "pass",
+        "evidence": {
+          "light": "b7e1371aea65cdaea2aee28b78150ae3530e6ad7389087a052ab915a6e062881",
+          "dark": "d67c3115a9d73dfde892b3ad21004740a837168f984061a42a774c647c6e1d42"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes pending",
+        "status": "pass",
+        "evidence": {
+          "light": "930cc56523940ff33096520bbf495d9d7d2ae5b85099426f0c64703b60fe52f1",
+          "dark": "6023845245a7c8f1680a8ea533b04e874251190f0d86b8de6a8635ea300f886c"
+        },
+        "severity": "functional"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "open handover",
+        "status": "pass",
+        "evidence": "Back\nHand over shift\nWho\u2019s taking over?\n\nHand over the rest of your current shift.\n\nPlatform Primary\nToday \u00b7 06:00\u201318:00 UTC\nHand over to\nChoose a teammate\u2026\nPriya Raman\nHandover note (optional)\n\nCover from now until 18:00 UTC.\n\nReview handover\n\u2192\nAll times in UTC\nLocal preview"
+      },
+      {
+        "check": "send and retain responsibility while pending",
+        "status": "pass",
+        "evidence": {
+          "chosen": true,
+          "sent": true,
+          "text": "Rota\nSun 18 Oct\nWaiting for Priya\n\nYour handover request is pending.\n\nJamie Ellis\nYou \u00b7 on call\n\u2192\nPriya Raman\nAwaiting acceptance\nRotation\nPlatform Primary\nRequested cover\n10:00\u201318:00 UTC\nYou\u2019re still responsible.\nStay on call until Priya accepts the handover.\nBack to schedule\nCancel request\nAll times in UTC\nLocal preview\nRequest pending. You are still responsible until Priya accepts."
+        }
+      },
+      {
+        "check": "no automatic acceptance",
+        "status": "pass",
+        "evidence": "Rota\nSun 18 Oct\nWaiting for Priya\n\nYour handover request is pending.\n\nJamie Ellis\nYou \u00b7 on call\n\u2192\nPriya Raman\nAwaiting acceptance\nRotation\nPlatform Primary\nRequested cover\n10:00\u201318:00 UTC\nYou\u2019re still responsible.\nStay on call until Priya accepts the handover.\nBack to schedule\nCancel request\nAll times in UTC\nLocal preview\nRequest pending. You are still responsible until Priya accepts."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "incident-dashboard__baseline__2",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes live",
+        "status": "pass",
+        "evidence": {
+          "light": "1415b0aec34fe6411b07800e5c63007a286af76593943479f5223c338fd3928f",
+          "dark": "1bf9c643f8df9088a245be804b79d5c43ef26efe34e6591e0f596b92ec659129"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes stale",
+        "status": "pass",
+        "evidence": {
+          "light": "00b57ed76155e3b9fc89692ff1776c823b709d9d9080c840a61823de6f72f896",
+          "dark": "0594267ebd75b42a05597640a9d0142b996a2d064db4b30431ec0c799b257605"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes surge",
+        "status": "pass",
+        "evidence": {
+          "light": "e461938591af07e1221d6d77671372d175f2c17a1042c635b5bca4f3e4dc25f8",
+          "dark": "6eee7dfae0fafcb2cfba40922d846f83215cf42c4fade3113382abe2b2e1113d"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "SEV1 incident retained",
+        "status": "pass",
+        "evidence": "INC-2291 in rendered text",
+        "severity": "critical"
+      },
+      {
+        "check": "stale status explicit",
+        "status": "pass",
+        "evidence": "Skip to open incidents\nNorthwind\nLOGISTICS\nIncident operations\n11:00\nlocal display time\n18 October 2026\nUpdates interrupted\nLast received 09:42 \u00b7 1h 18m old. Values may have changed.\nSnapshot retained\nOpen incidents\n7\n1 SEV1 \u00b7 2 SEV2 \u00b7 4 SEV3\nMean time to resolve \u00b7 7d\n48m\n\u2193 12% lower vs last week\nPages today\n23\n\u2191 5\nSLO budget left\n61%\n\u2193 4 points lower\nOpen incidents 7\nOrdered by severity\nOpen incidents. Mitigated and monitoring incidents remain open.\nSeverity\tIncident / service\tStatus\tCommander\tDuration / opened\nSEV1\t\nRoute optimiser timeouts for EU-West depots\nINC-2291 \u00b7 Routing API\n\tInvestigating\tUnassigned\t1h 18m\n09:42\n\nSEV2\t\nDelayed tracking events from scanner fleet B\nINC-2290 \u00b7 Tracking Ingest\n\tMitigated\tPriya N.\t2h 55m\n08:05\n\nSEV2\t\nInvoice PDF generation failing for 3% of accounts\nI",
+        "severity": "critical"
+      }
+    ],
+    "observations": [
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "live",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "stale",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "surge",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 12,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      }
+    ],
+    "interaction": [
+      {
+        "check": "dashboard interaction scope",
+        "status": "not applicable",
+        "evidence": "Read-only display; inspect data, freshness, overflow and laptop access separately."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "banking-onboarding__revision__2",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "24/24",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code",
+        "status": "pass",
+        "evidence": {
+          "light": "fe60b42c559fcb44f34df50a62f12516c0923fb55b08cb31b0c1389bfdd85d6e",
+          "dark": "15faf9f2a128c30324059a9453dc3763e1d018e6057546d40af06208724ee2e5"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code-error",
+        "status": "pass",
+        "evidence": {
+          "light": "341efdc3602721ebe99197d98c4131f0c453a439fa108c8fb3879f1f0bb9dc83",
+          "dark": "fcdd7c567ea9d3ff524caeec2c30d66d8a30014370284f17e9326cf832aab945"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes details-error",
+        "status": "pass",
+        "evidence": {
+          "light": "2a3116451108d3f86577e991b35981561bf44d2d4db41ca5a2d1b184c92636dd",
+          "dark": "0328d7114fc16ebae6b19d2899eaf470ce6dfc806ef9f936670b7b18ea97df8a"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes done",
+        "status": "pass",
+        "evidence": {
+          "light": "f986df699e7f82056e5ba055a7f61cf9673067a475edcf125d13d9af5d96cbac",
+          "dark": "b0240b490f0cf8a3295893f0ade9bf4d3248559c3e407d6bdaf493f85831ae88"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes help",
+        "status": "pass",
+        "evidence": {
+          "light": "d98d32b47946be1e703ce2ea26884f947e23050fbbca0ecc408f7a1f7ea78143",
+          "dark": "c664732758c822a20ec1c9ed2076e61b7d746f9098106cda789af9228e8b03e0"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes welcome",
+        "status": "pass",
+        "evidence": {
+          "light": "2085afd01aadf4143ba1861cdb4b7de60a2831852da252fcbe1a82c27db4380e",
+          "dark": "9e95bf637d1fb4a5b0a7c493303e1b566f65b937c83565cb63f4fbfc3ed08f86"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "code preview has no usable test code",
+        "status": "pass",
+        "evidence": "Visible body text excludes482913",
+        "severity": "critical"
+      },
+      {
+        "check": "programmatic field labels",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "visible interactive targets at least44px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "code screen visible text at least16px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "welcome advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\n\nStep 1 of 2 \u00b7 Your details\n\nLet\u2019s start with you.\n\nUse the details you gave us in branch.\n\nFull name\nMobile phone number\n\nThe UK mobile number registered with us.\n\nContinue\n\nPractice setup \u00b7 No account changes"
+      },
+      {
+        "check": "valid details advance",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\n\nStep 2 of 2 \u00b7 Check your mobile\n\nCheck your text messages.\n\nEnter the 6-digit code for your mobile number ending 482.\n\nThis practice setup does not send a text.\n\n6-digit code\nKeep your code private\nWe will never call you to ask for this code. Do not share it.\nConfirm code\nI haven\u2019t received a code\n\nPractice setup \u00b7 No account changes"
+      },
+      {
+        "check": "wrong code rejected",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\n\nStep 2 of 2 \u00b7 Check your mobile\n\nCheck your text messages.\n\nEnter the 6-digit code for your mobile number ending 482.\n\nThis practice setup does not send a text.\n\n6-digit code\n\nThat code doesn\u2019t match. Check the code and try again.\n\nKeep your code private\nWe will never call you to ask for this code. Do not share it.\nConfirm code\nI haven\u2019t received a code\n\nPractice setup \u00b7 No account changes"
+      },
+      {
+        "check": "correct code advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\n\nSetup complete\n\nYou\u2019re ready, Alex.\n\nThat\u2019s the end of your practice setup. You haven\u2019t opened or changed a bank account.\n\nYour branch is still here for you.\n\nWhen you use the real app, you can bank on your mobile and keep visiting us in person.\n\nFinish practice\n\nPractice setup \u00b7 No account changes"
+      },
+      {
+        "check": "help provides human route",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\n\nStep 2 of 2 \u00b7 Check your mobile\n\nCheck your text messages.\n\nEnter the 6-digit code for your mobile number ending 482.\n\nThis practice setup does not send a text.\n\n6-digit code\nKeep your code private\nWe will never call you to ask for this code. Do not share it.\nConfirm code\nI haven\u2019t received a code\n\nPractice setup \u00b7 No account changes\n\nA person can help.\n\nWe\u2019ll help you set up your app.\n\nCall Harbour\n0808 157 0192\n\nOr visit your usual branch.\n\nBack to setup"
+      },
+      {
+        "check": "Escape restores Help focus",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Help",
+          "outline": "solid"
+        }
+      },
+      {
+        "check": "keyboard focus indicator",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Confirm code",
+          "outline": "solid",
+          "shadow": "none"
+        }
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "oncall-menubar__baseline__2",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes accepted",
+        "status": "pass",
+        "evidence": {
+          "light": "6c25ea4ea09e55bc26dda0ed6f4d7edcbf5793a732b464b4dbc18a7c813c9116",
+          "dark": "e6e7094e7ef2001cbb1afc5029d8081d5a82ba35d7e3148c7a49f1b8c1a8a2aa"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes compose",
+        "status": "pass",
+        "evidence": {
+          "light": "2e59384d2ffc644fd837662b85e38ed80fb7d5d2ceff1c796b1ea4228c236acf",
+          "dark": "648ab0f01877c6a75e7fde4e0fcaeacc26d4f6d1c1e7505f4009f45143be6f9f"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes empty",
+        "status": "pass",
+        "evidence": {
+          "light": "dc81eecff6f86f8ea85ceba72c8b972016d30c18b31e236c6531f0589db3b287",
+          "dark": "e2e69139535cde4117a2ec8264e9b3cb9d33dc68c1fb64ee30b44e8c046954b2"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes main",
+        "status": "pass",
+        "evidence": {
+          "light": "24efd17f8a9503731714199b6b9cae75258b1d6966503a8f15e51c969a115b96",
+          "dark": "f473a5544fefcf7b1c804c917b9cf0d84b33461e59bf7189e7626c9bdeeb241e"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes offline",
+        "status": "pass",
+        "evidence": {
+          "light": "7fa27f1044afdc51f2e403f1a3c93c1e3f8102f24a07de95e67a736458a7b00b",
+          "dark": "780d05cc206f1ab1921ea7b211177d86090255386b5be108a75c4c90b70ee3b0"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes pending",
+        "status": "pass",
+        "evidence": {
+          "light": "5167116df319248ddab6c048556db4a092b077f25c8fab8f5720d309afbf0518",
+          "dark": "0b92062be08914616b56606a52b26554e94de431bfd668e0e6d0e83ce8d722ef"
+        },
+        "severity": "functional"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "open handover",
+        "status": "pass",
+        "evidence": "Rota\nSun 18 Oct\n\u2039 \u00a0 On-call schedule\nHand over your shift\nPlatform Primary\nToday, 06:00\u201318:00 UTC\nHand over to\nChoose a teammate\u2026\nPriya Raman\n\nHandover contact for this rotation.\n\nHandover note (optional)\n\nYou stay on call until your teammate accepts.\n\nReview handover\nCancel\nSchedule as of 10:00 UTC\n4 on current roster"
+      },
+      {
+        "check": "send and retain responsibility while pending",
+        "status": "pass",
+        "evidence": {
+          "chosen": true,
+          "sent": true,
+          "text": "Rota\nSun 18 Oct\n\u2039 \u00a0 On-call schedule\nAwaiting Priya\n\nYour handover request is pending.\n\nJamie Ellis (you)\nResponsible now\nPriya Raman\nResponsible after acceptance\n\nYou\u2019re still on call.\nPriya needs to accept before responsibility transfers.\n\nRotation\nPlatform Primary\nShift ends\n18:00 UTC\nCancel request\nSchedule as of 10:00 UTC\n4 on current roster\nRequest pending. You remain responsible until Priya accepts."
+        }
+      },
+      {
+        "check": "no automatic acceptance",
+        "status": "pass",
+        "evidence": "Rota\nSun 18 Oct\n\u2039 \u00a0 On-call schedule\nAwaiting Priya\n\nYour handover request is pending.\n\nJamie Ellis (you)\nResponsible now\nPriya Raman\nResponsible after acceptance\n\nYou\u2019re still on call.\nPriya needs to accept before responsibility transfers.\n\nRotation\nPlatform Primary\nShift ends\n18:00 UTC\nCancel request\nSchedule as of 10:00 UTC\n4 on current roster\nRequest pending. You remain responsible until Priya accepts."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "incident-dashboard__revision__2",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "12/12",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes live",
+        "status": "pass",
+        "evidence": {
+          "light": "1e8fe19f42676d09b348d910583b238e2fcf494e2321f1da6c666fd3777df438",
+          "dark": "296a603d9509a91cf28bb3abfe5c82818d579dd0b484089ded9c1501c814ec1c"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes stale",
+        "status": "pass",
+        "evidence": {
+          "light": "422a004334dab3915b951aa659ef35b12bda9fa2c04b0a8b2654233ee604f66c",
+          "dark": "10e976f8b2bcb960cb1d1cfcd6c014ff16c6575e346b1d5eb4227d6f958bb515"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes surge",
+        "status": "pass",
+        "evidence": {
+          "light": "f6b4b1b21a409aa5675291a97eac91e46e14fbd9327e6552334f8b2d4b8fb7f4",
+          "dark": "bb9400e538b8a14a9f13409302415e5db01d3bd1e0a981ca3e9491be9f5d4cd8"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "SEV1 incident retained",
+        "status": "pass",
+        "evidence": "INC-2291 in rendered text",
+        "severity": "critical"
+      },
+      {
+        "check": "stale status explicit",
+        "status": "pass",
+        "evidence": "Skip to incidents\nNorthwind\nOPERATIONS / INCIDENTS\n11:00\n18 October 2026\nOperations snapshot\nIncident overview\nData is stale\nLast snapshot at 09:42. Incident status, counts and durations may have changed.\nOpen incidents\n7\n1 SEV1\n2 SEV2\n4 SEV3\n\n\u2191 2 vs yesterday \u00b7 all unresolved statuses\n\nMean time to resolve \u00b7 7d\n48m\n\n\u2193 12% lower vs last week\n\nPages today\n23\n\n\u2191 5 vs yesterday\n\nSLO budget left\n61%\n\n\u2193 4 points lower\n\nOpen incidents\n7\nSearch open incidents\nOpen incidents, ordered by severity. Mitigated and monitoring incidents remain open.\nSeverity\tIncident / service\tStatus\tCommander\tOpened\tDuration\nSEV1\tRoute optimiser timeouts for EU-West depots\nINC-2291 \u00b7 Routing API\n\tInvestigating\tUnassigned\t09:42\t1h 18m\nSEV2\tDelayed tracking events from scanner fleet B\nINC-2290 \u00b7 Tracking Ingest\n\tMitigate",
+        "severity": "critical"
+      }
+    ],
+    "observations": [
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "live",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "stale",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 7,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      },
+      {
+        "check": "TV visible incident identifiers",
+        "screen": "surge",
+        "count": 9,
+        "openCount": 7,
+        "resolvedCount": 2,
+        "ids": [
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ],
+        "expectedOpen": 12,
+        "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+      }
+    ],
+    "interaction": [
+      {
+        "check": "dashboard interaction scope",
+        "status": "not applicable",
+        "evidence": "Read-only display; inspect data, freshness, overflow and laptop access separately."
+      }
+    ],
+    "failures": 0,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  },
+  {
+    "runId": "banking-onboarding__baseline__2",
+    "checks": [
+      {
+        "check": "complete run",
+        "status": "pass",
+        "evidence": "completed",
+        "severity": "critical"
+      },
+      {
+        "check": "all final states captured",
+        "status": "pass",
+        "evidence": "24/24",
+        "severity": "critical"
+      },
+      {
+        "check": "supplied inputs unchanged",
+        "status": "pass",
+        "evidence": [],
+        "severity": "integrity"
+      },
+      {
+        "check": "no console errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no runtime errors",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no network dependence",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no horizontal overflow",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "no menu clipping",
+        "status": "pass",
+        "evidence": 0,
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code",
+        "status": "pass",
+        "evidence": {
+          "light": "5334b06262fae6163bafba8504b552a8e19f6be5a151aa9ea15851b2f1f43cf1",
+          "dark": "eafb92faf3010a5d5b3ee82a16ec5c044bb7e6afa154caf0a2e190734d809bcd"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes code-error",
+        "status": "pass",
+        "evidence": {
+          "light": "23d1f19288a284774eccc546a72c6bbea6d83997505bc889e5c46d96703a7a9b",
+          "dark": "d6f9f528df5d9d2aa3ef4dc70c3f68352a45055f22cc2470694661789c19a28e"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes details-error",
+        "status": "pass",
+        "evidence": {
+          "light": "a35584e661f80300c15199115fd3f7b060a6ae09524281d1f2511440f1ce6961",
+          "dark": "e26c2a3f0ecec231a86a5ea1dd616a010f94ce799d1b95908ec15e0c42a40c3d"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes done",
+        "status": "pass",
+        "evidence": {
+          "light": "c87bb50f7c4ad28166f0ec6fece0b4eb966a2700ec6ed7527369f3c4f8d0d838",
+          "dark": "832b8ec609d707b93aa5e8f284ccab12bbf16ede7afeab51fc9098fe33aee32e"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes help",
+        "status": "pass",
+        "evidence": {
+          "light": "7fb702865060491fa17ea31b00b2c6b89eb0bb6badacffc231deb05579225835",
+          "dark": "32a75f7dafc25a269d4ba0aafcadf54364f827a374a8f3e738493dfed627931a"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "theme changes welcome",
+        "status": "pass",
+        "evidence": {
+          "light": "11d06b3c170205cb3c3a2a72df799a75c470712d9a127edb1affb8f97c5a9778",
+          "dark": "6040394374766ac68721071b3703331bd56a8d57d6a4b4ba055d3aaa9b81417d"
+        },
+        "severity": "functional"
+      },
+      {
+        "check": "code preview has no usable test code",
+        "status": "pass",
+        "evidence": "Visible body text excludes482913",
+        "severity": "critical"
+      },
+      {
+        "check": "programmatic field labels",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "visible interactive targets at least44px",
+        "status": "pass",
+        "evidence": [],
+        "severity": "accessibility"
+      },
+      {
+        "check": "code screen visible text at least16px",
+        "status": "fail",
+        "evidence": [
+          {
+            "text": "Practice setup \u00b7 Your real account is unchanged",
+            "size": 14
+          }
+        ],
+        "severity": "accessibility"
+      }
+    ],
+    "observations": [],
+    "interaction": [
+      {
+        "check": "welcome advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 1 of 3\nFirst, your details\n\nUse the name and mobile number you gave us at the branch.\n\nFull name\nMobile number\n\nA UK mobile number, starting 07 or +44.\n\nContinue\n\nYour details are used only for this setup.\n\nPractice setup \u00b7 Your real account is unchanged"
+      },
+      {
+        "check": "valid details advance",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter the 6-digit code from your text message.\nMobile number ending 482\n\n6-digit code\n\nKeep this code private.\n\nConfirm code\nRequest a new code\n\nWe will never call you to ask for this code. Do not share it.\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 Your real account is unchanged"
+      },
+      {
+        "check": "wrong code rejected",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter the 6-digit code from your text message.\nMobile number ending 482\n\n6-digit code\n\nKeep this code private.\n\nThat code is not right. Check your text message and try again.\n\nConfirm code\nRequest a new code\n\nWe will never call you to ask for this code. Do not share it.\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 Your real account is unchanged"
+      },
+      {
+        "check": "correct code advances",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\n\nSTEP 3 OF 3 \u00b7 COMPLETE\n\nYou\u2019re ready,\nAlex.\n\nYou\u2019ve finished the practice setup for mobile banking.\n\nEveryday account\n\nAlex Morgan\n\nSort code\n04-00-26\nAccount number\n12345678\n\nYour branch is still here for you. So are we, whenever you need a hand.\n\nFinish\nPractice setup \u00b7 Your real account is unchanged"
+      },
+      {
+        "check": "help provides human route",
+        "status": "pass",
+        "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter the 6-digit code from your text message.\nMobile number ending 482\n\n6-digit code\n\nKeep this code private.\n\nConfirm code\nRequest a new code\n\nWe will never call you to ask for this code. Do not share it.\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 Your real account is unchanged\nA person can help\n\nOur team can talk you through each step.\n\nCall Harbour\n\n0808 157 0192\n\nOr visit your usual branch.\n\nWe will never call you to ask for this code. Do not share it.\n\nBack to setup"
+      },
+      {
+        "check": "Escape restores Help focus",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Help",
+          "outline": "solid"
+        }
+      },
+      {
+        "check": "keyboard focus indicator",
+        "status": "pass",
+        "evidence": {
+          "tag": "BUTTON",
+          "text": "Confirm code",
+          "outline": "solid",
+          "shadow": "none"
+        }
+      }
+    ],
+    "failures": 1,
+    "limitations": [
+      "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+      "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+    ]
+  }
+]

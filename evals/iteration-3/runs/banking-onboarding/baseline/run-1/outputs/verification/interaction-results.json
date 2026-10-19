@@ -1,0 +1,60 @@
+{
+  "flows": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "light",
+      "main_flow": "passed",
+      "validation": "passed",
+      "back": "passed",
+      "help_and_focus_trap": "passed",
+      "network_requests": 0,
+      "runtime_errors": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark",
+      "main_flow": "passed",
+      "validation": "passed",
+      "back": "passed",
+      "help_and_focus_trap": "passed",
+      "network_requests": 0,
+      "runtime_errors": []
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "theme": "light",
+      "main_flow": "passed",
+      "validation": "passed",
+      "back": "passed",
+      "help_and_focus_trap": "passed",
+      "network_requests": 0,
+      "runtime_errors": []
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "theme": "dark",
+      "main_flow": "passed",
+      "validation": "passed",
+      "back": "passed",
+      "help_and_focus_trap": "passed",
+      "network_requests": 0,
+      "runtime_errors": []
+    }
+  ],
+  "keyboard_only_main_flow_320_dark": "passed with visible focus",
+  "system_theme_override": "passed",
+  "reduced_motion": "passed; no timed or animated information",
+  "text_reflow_200_percent": "passed at 320px in both system themes"
+}

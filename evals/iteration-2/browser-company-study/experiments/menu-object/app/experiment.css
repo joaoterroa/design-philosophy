@@ -1,0 +1,6 @@
+/* B: add a responsibility object to A. No people-by-color encoding. */
+.you .answer { font-size: 22px; line-height: 28px; letter-spacing: -.45px; font-weight: 600; }
+.you { margin: 10px 10px 8px; padding: 12px; border-radius: 12px;
+  background: var(--window); box-shadow: 0 1px 3px #00000012, inset 0 0 0 1px var(--separator); }
+.you + .now-list { border-top: 0; padding-top: 4px; }
+.you .strip-track { border-radius: 6px; }

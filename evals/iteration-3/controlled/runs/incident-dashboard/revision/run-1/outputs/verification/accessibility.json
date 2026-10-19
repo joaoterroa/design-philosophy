@@ -1,0 +1,13 @@
+{
+  "keyboard": "Skip link, view switch, search, severity, details, native modal focus trap, Escape and return focus passed",
+  "visibleFocus": {
+    "style": "solid",
+    "width": "3px",
+    "color": "rgb(18, 53, 91)"
+  },
+  "layoutShift": 0.0001996205103577246,
+  "reducedMotion": true,
+  "minimumTargetHeight": 44,
+  "fixtureFacts": "All 12 open and 2 resolved incidents match supplied facts in details",
+  "screenReader": "Semantic landmarks, table headers, labeled controls and dialog inspected in DOM; no screen reader software available"
+}

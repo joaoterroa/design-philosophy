@@ -1,0 +1,1 @@
+Read SYSTEM.md and DESIGN.md before editing this prototype. Keep visual values in app/tokens.css. Run node checks/tokens.cjs and the Playwright checks/verify.py script from this directory (or equivalent paths from workspace root). Preserve the supplied fixtures and skill; do not expose the fixture code in product copy.

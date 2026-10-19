@@ -1,0 +1,188 @@
+{
+  "runId": "banking-onboarding__baseline__2",
+  "checks": [
+    {
+      "check": "complete run",
+      "status": "pass",
+      "evidence": "completed",
+      "severity": "critical"
+    },
+    {
+      "check": "all final states captured",
+      "status": "pass",
+      "evidence": "24/24",
+      "severity": "critical"
+    },
+    {
+      "check": "supplied inputs unchanged",
+      "status": "pass",
+      "evidence": [],
+      "severity": "integrity"
+    },
+    {
+      "check": "no console errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no runtime errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no network dependence",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no horizontal overflow",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no menu clipping",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes code",
+      "status": "pass",
+      "evidence": {
+        "light": "5334b06262fae6163bafba8504b552a8e19f6be5a151aa9ea15851b2f1f43cf1",
+        "dark": "eafb92faf3010a5d5b3ee82a16ec5c044bb7e6afa154caf0a2e190734d809bcd"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes code-error",
+      "status": "pass",
+      "evidence": {
+        "light": "23d1f19288a284774eccc546a72c6bbea6d83997505bc889e5c46d96703a7a9b",
+        "dark": "d6f9f528df5d9d2aa3ef4dc70c3f68352a45055f22cc2470694661789c19a28e"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes details-error",
+      "status": "pass",
+      "evidence": {
+        "light": "a35584e661f80300c15199115fd3f7b060a6ae09524281d1f2511440f1ce6961",
+        "dark": "e26c2a3f0ecec231a86a5ea1dd616a010f94ce799d1b95908ec15e0c42a40c3d"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes done",
+      "status": "pass",
+      "evidence": {
+        "light": "c87bb50f7c4ad28166f0ec6fece0b4eb966a2700ec6ed7527369f3c4f8d0d838",
+        "dark": "832b8ec609d707b93aa5e8f284ccab12bbf16ede7afeab51fc9098fe33aee32e"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes help",
+      "status": "pass",
+      "evidence": {
+        "light": "7fb702865060491fa17ea31b00b2c6b89eb0bb6badacffc231deb05579225835",
+        "dark": "32a75f7dafc25a269d4ba0aafcadf54364f827a374a8f3e738493dfed627931a"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes welcome",
+      "status": "pass",
+      "evidence": {
+        "light": "11d06b3c170205cb3c3a2a72df799a75c470712d9a127edb1affb8f97c5a9778",
+        "dark": "6040394374766ac68721071b3703331bd56a8d57d6a4b4ba055d3aaa9b81417d"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "code preview has no usable test code",
+      "status": "pass",
+      "evidence": "Visible body text excludes482913",
+      "severity": "critical"
+    },
+    {
+      "check": "programmatic field labels",
+      "status": "pass",
+      "evidence": [],
+      "severity": "accessibility"
+    },
+    {
+      "check": "visible interactive targets at least44px",
+      "status": "pass",
+      "evidence": [],
+      "severity": "accessibility"
+    },
+    {
+      "check": "code screen visible text at least16px",
+      "status": "fail",
+      "evidence": [
+        {
+          "text": "Practice setup \u00b7 Your real account is unchanged",
+          "size": 14
+        }
+      ],
+      "severity": "accessibility"
+    }
+  ],
+  "observations": [],
+  "interaction": [
+    {
+      "check": "welcome advances",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\nStep 1 of 3\nFirst, your details\n\nUse the name and mobile number you gave us at the branch.\n\nFull name\nMobile number\n\nA UK mobile number, starting 07 or +44.\n\nContinue\n\nYour details are used only for this setup.\n\nPractice setup \u00b7 Your real account is unchanged"
+    },
+    {
+      "check": "valid details advance",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter the 6-digit code from your text message.\nMobile number ending 482\n\n6-digit code\n\nKeep this code private.\n\nConfirm code\nRequest a new code\n\nWe will never call you to ask for this code. Do not share it.\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 Your real account is unchanged"
+    },
+    {
+      "check": "wrong code rejected",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter the 6-digit code from your text message.\nMobile number ending 482\n\n6-digit code\n\nKeep this code private.\n\nThat code is not right. Check your text message and try again.\n\nConfirm code\nRequest a new code\n\nWe will never call you to ask for this code. Do not share it.\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 Your real account is unchanged"
+    },
+    {
+      "check": "correct code advances",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\n\nSTEP 3 OF 3 \u00b7 COMPLETE\n\nYou\u2019re ready,\nAlex.\n\nYou\u2019ve finished the practice setup for mobile banking.\n\nEveryday account\n\nAlex Morgan\n\nSort code\n04-00-26\nAccount number\n12345678\n\nYour branch is still here for you. So are we, whenever you need a hand.\n\nFinish\nPractice setup \u00b7 Your real account is unchanged"
+    },
+    {
+      "check": "help provides human route",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\nStep 2 of 3\nCheck your mobile\n\nEnter the 6-digit code from your text message.\nMobile number ending 482\n\n6-digit code\n\nKeep this code private.\n\nConfirm code\nRequest a new code\n\nWe will never call you to ask for this code. Do not share it.\n\nPractice setup: no text message is sent.\n\nPractice setup \u00b7 Your real account is unchanged\nA person can help\n\nOur team can talk you through each step.\n\nCall Harbour\n\n0808 157 0192\n\nOr visit your usual branch.\n\nWe will never call you to ask for this code. Do not share it.\n\nBack to setup"
+    },
+    {
+      "check": "Escape restores Help focus",
+      "status": "pass",
+      "evidence": {
+        "tag": "BUTTON",
+        "text": "Help",
+        "outline": "solid"
+      }
+    },
+    {
+      "check": "keyboard focus indicator",
+      "status": "pass",
+      "evidence": {
+        "tag": "BUTTON",
+        "text": "Confirm code",
+        "outline": "solid",
+        "shadow": "none"
+      }
+    }
+  ],
+  "failures": 1,
+  "limitations": [
+    "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+    "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+  ]
+}

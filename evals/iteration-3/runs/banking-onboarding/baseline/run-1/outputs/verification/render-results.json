@@ -1,0 +1,1290 @@
+[
+  {
+    "screen": "welcome",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Get started",
+        "width": 342,
+        "height": 60,
+        "top": 652,
+        "bottom": 712
+      }
+    ],
+    "heading": 148,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 342,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 342,
+        "height": 60,
+        "top": 478.796875,
+        "bottom": 538.796875
+      },
+      {
+        "label": "Continue",
+        "width": 342,
+        "height": 60,
+        "top": 720,
+        "bottom": 780
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details-error",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 859,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 342,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 342,
+        "height": 60,
+        "top": 540.796875,
+        "bottom": 600.796875
+      },
+      {
+        "label": "Continue",
+        "width": 342,
+        "height": 60,
+        "top": 734.796875,
+        "bottom": 794.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 342,
+        "height": 74,
+        "top": 324.796875,
+        "bottom": 398.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 406.796875,
+        "bottom": 458.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 342,
+        "height": 60,
+        "top": 760,
+        "bottom": 820
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code-error",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 342,
+        "height": 76,
+        "top": 324.796875,
+        "bottom": 400.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 470.796875,
+        "bottom": 522.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 342,
+        "height": 60,
+        "top": 760,
+        "bottom": 820
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "help",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 342,
+        "height": 74,
+        "top": 324.796875,
+        "bottom": 398.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 406.796875,
+        "bottom": 458.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 342,
+        "height": 60,
+        "top": 760,
+        "bottom": 820
+      },
+      {
+        "label": "Call our team0808 157 0192",
+        "width": 316,
+        "height": 88,
+        "top": 371.390625,
+        "bottom": 459.390625
+      },
+      {
+        "label": "Back to setup",
+        "width": 316,
+        "height": 60,
+        "top": 543.390625,
+        "bottom": 603.390625
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "done",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 912,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      }
+    ],
+    "heading": 192,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "welcome",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Get started",
+        "width": 342,
+        "height": 60,
+        "top": 652,
+        "bottom": 712
+      }
+    ],
+    "heading": 148,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 342,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 342,
+        "height": 60,
+        "top": 478.796875,
+        "bottom": 538.796875
+      },
+      {
+        "label": "Continue",
+        "width": 342,
+        "height": 60,
+        "top": 720,
+        "bottom": 780
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details-error",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 859,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 342,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 342,
+        "height": 60,
+        "top": 540.796875,
+        "bottom": 600.796875
+      },
+      {
+        "label": "Continue",
+        "width": 342,
+        "height": 60,
+        "top": 734.796875,
+        "bottom": 794.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 342,
+        "height": 74,
+        "top": 324.796875,
+        "bottom": 398.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 406.796875,
+        "bottom": 458.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 342,
+        "height": 60,
+        "top": 760,
+        "bottom": 820
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code-error",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 342,
+        "height": 76,
+        "top": 324.796875,
+        "bottom": 400.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 470.796875,
+        "bottom": 522.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 342,
+        "height": 60,
+        "top": 760,
+        "bottom": 820
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "help",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 844,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 342,
+        "height": 74,
+        "top": 324.796875,
+        "bottom": 398.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 406.796875,
+        "bottom": 458.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 342,
+        "height": 60,
+        "top": 760,
+        "bottom": 820
+      },
+      {
+        "label": "Call our team0808 157 0192",
+        "width": 316,
+        "height": 88,
+        "top": 371.390625,
+        "bottom": 459.390625
+      },
+      {
+        "label": "Back to setup",
+        "width": 316,
+        "height": 60,
+        "top": 543.390625,
+        "bottom": 603.390625
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "done",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390,
+    "documentWidth": 390,
+    "height": 912,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      }
+    ],
+    "heading": 192,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "welcome",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 686,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Get started",
+        "width": 280,
+        "height": 60,
+        "top": 494.1875,
+        "bottom": 554.1875
+      }
+    ],
+    "heading": 132,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 783,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 280,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 280,
+        "height": 60,
+        "top": 502.796875,
+        "bottom": 562.796875
+      },
+      {
+        "label": "Continue",
+        "width": 280,
+        "height": 60,
+        "top": 658.796875,
+        "bottom": 718.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details-error",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 907,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 280,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 280,
+        "height": 60,
+        "top": 564.796875,
+        "bottom": 624.796875
+      },
+      {
+        "label": "Continue",
+        "width": 280,
+        "height": 60,
+        "top": 782.796875,
+        "bottom": 842.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 803,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 280,
+        "height": 74,
+        "top": 351.796875,
+        "bottom": 425.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 433.796875,
+        "bottom": 485.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 280,
+        "height": 60,
+        "top": 718.796875,
+        "bottom": 778.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code-error",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 867,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 280,
+        "height": 76,
+        "top": 351.796875,
+        "bottom": 427.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 497.796875,
+        "bottom": 549.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 280,
+        "height": 60,
+        "top": 782.796875,
+        "bottom": 842.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "help",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 803,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 280,
+        "height": 74,
+        "top": 351.796875,
+        "bottom": 425.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 433.796875,
+        "bottom": 485.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 280,
+        "height": 60,
+        "top": 718.796875,
+        "bottom": 778.796875
+      },
+      {
+        "label": "Call our team0808 157 0192",
+        "width": 246,
+        "height": 88,
+        "top": 233.390625,
+        "bottom": 321.390625
+      },
+      {
+        "label": "Back to setup",
+        "width": 246,
+        "height": 60,
+        "top": 405.390625,
+        "bottom": 465.390625
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "done",
+    "theme": "light",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 912,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      }
+    ],
+    "heading": 192,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "welcome",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 686,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Get started",
+        "width": 280,
+        "height": 60,
+        "top": 494.1875,
+        "bottom": 554.1875
+      }
+    ],
+    "heading": 132,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 783,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 280,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 280,
+        "height": 60,
+        "top": 502.796875,
+        "bottom": 562.796875
+      },
+      {
+        "label": "Continue",
+        "width": 280,
+        "height": 60,
+        "top": 658.796875,
+        "bottom": 718.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "details-error",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 907,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "full-name",
+        "width": 280,
+        "height": 60,
+        "top": 324.796875,
+        "bottom": 384.796875
+      },
+      {
+        "label": "mobile",
+        "width": 280,
+        "height": 60,
+        "top": 564.796875,
+        "bottom": 624.796875
+      },
+      {
+        "label": "Continue",
+        "width": 280,
+        "height": 60,
+        "top": 782.796875,
+        "bottom": 842.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 803,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 280,
+        "height": 74,
+        "top": 351.796875,
+        "bottom": 425.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 433.796875,
+        "bottom": 485.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 280,
+        "height": 60,
+        "top": 718.796875,
+        "bottom": 778.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "code-error",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 867,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 280,
+        "height": 76,
+        "top": 351.796875,
+        "bottom": 427.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 497.796875,
+        "bottom": 549.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 280,
+        "height": 60,
+        "top": 782.796875,
+        "bottom": 842.796875
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "help",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 803,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      },
+      {
+        "label": "Back",
+        "width": 78.78125,
+        "height": 52,
+        "top": 84,
+        "bottom": 136
+      },
+      {
+        "label": "code",
+        "width": 280,
+        "height": 74,
+        "top": 351.796875,
+        "bottom": 425.796875
+      },
+      {
+        "label": "I haven\u2019t received a code",
+        "width": 213.4375,
+        "height": 52,
+        "top": 433.796875,
+        "bottom": 485.796875
+      },
+      {
+        "label": "Confirm code",
+        "width": 280,
+        "height": 60,
+        "top": 718.796875,
+        "bottom": 778.796875
+      },
+      {
+        "label": "Call our team0808 157 0192",
+        "width": 246,
+        "height": 88,
+        "top": 233.390625,
+        "bottom": 321.390625
+      },
+      {
+        "label": "Back to setup",
+        "width": 246,
+        "height": 60,
+        "top": 405.390625,
+        "bottom": 465.390625
+      }
+    ],
+    "heading": 156,
+    "layoutShift": 0,
+    "errors": []
+  },
+  {
+    "screen": "done",
+    "theme": "dark",
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320,
+    "documentWidth": 320,
+    "height": 912,
+    "targets": [
+      {
+        "label": "Help with setup",
+        "width": 54.640625,
+        "height": 52,
+        "top": 16,
+        "bottom": 68
+      }
+    ],
+    "heading": 192,
+    "layoutShift": 0,
+    "errors": []
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "theme": "light",
+    "pair": "fg/bg",
+    "ratio": 13.65
+  },
+  {
+    "theme": "light",
+    "pair": "fg/surface",
+    "ratio": 12.52
+  },
+  {
+    "theme": "light",
+    "pair": "fg/field",
+    "ratio": 14.17
+  },
+  {
+    "theme": "light",
+    "pair": "fg/tint",
+    "ratio": 12.19
+  },
+  {
+    "theme": "light",
+    "pair": "fg/avatar-bg",
+    "ratio": 11.26
+  },
+  {
+    "theme": "light",
+    "pair": "muted/bg",
+    "ratio": 5.74
+  },
+  {
+    "theme": "light",
+    "pair": "muted/surface",
+    "ratio": 5.26
+  },
+  {
+    "theme": "light",
+    "pair": "muted/field",
+    "ratio": 5.95
+  },
+  {
+    "theme": "light",
+    "pair": "muted/tint",
+    "ratio": 5.12
+  },
+  {
+    "theme": "light",
+    "pair": "muted/avatar-bg",
+    "ratio": 4.73
+  },
+  {
+    "theme": "light",
+    "pair": "on-accent/accent",
+    "ratio": 7.85
+  },
+  {
+    "theme": "light",
+    "pair": "on-accent/accent-hover",
+    "ratio": 10.15
+  },
+  {
+    "theme": "light",
+    "pair": "caution/caution-bg",
+    "ratio": 6.06
+  },
+  {
+    "theme": "light",
+    "pair": "status/tint",
+    "ratio": 6.76
+  },
+  {
+    "theme": "light",
+    "pair": "focus/bg",
+    "ratio": 5.4
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/bg",
+    "ratio": 12.34
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/surface",
+    "ratio": 10.33
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/field",
+    "ratio": 13.37
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/tint",
+    "ratio": 9.75
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/avatar-bg",
+    "ratio": 8.32
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/bg",
+    "ratio": 7.35
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/surface",
+    "ratio": 6.16
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/field",
+    "ratio": 7.96
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/tint",
+    "ratio": 5.8
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/avatar-bg",
+    "ratio": 4.96
+  },
+  {
+    "theme": "dark",
+    "pair": "on-accent/accent",
+    "ratio": 8.31
+  },
+  {
+    "theme": "dark",
+    "pair": "on-accent/accent-hover",
+    "ratio": 9.67
+  },
+  {
+    "theme": "dark",
+    "pair": "caution/caution-bg",
+    "ratio": 7.2
+  },
+  {
+    "theme": "dark",
+    "pair": "status/tint",
+    "ratio": 7.13
+  },
+  {
+    "theme": "dark",
+    "pair": "focus/bg",
+    "ratio": 7.69
+  },
+  {
+    "theme": "light",
+    "pair": "control-edge/bg",
+    "ratio": 3.24
+  },
+  {
+    "theme": "light",
+    "pair": "control-edge/field",
+    "ratio": 3.36
+  },
+  {
+    "theme": "dark",
+    "pair": "control-edge/bg",
+    "ratio": 4.55
+  },
+  {
+    "theme": "dark",
+    "pair": "control-edge/field",
+    "ratio": 4.94
+  }
+]

@@ -1,0 +1,300 @@
+{
+  "states": [
+    {
+      "state": "main",
+      "theme": "light",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.9375
+      },
+      "overflow": false
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 592.453125
+      },
+      "overflow": false
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 565.03125
+      },
+      "overflow": false
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.53125
+      },
+      "overflow": false
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 387.390625
+      },
+      "overflow": false
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 451.984375
+      },
+      "overflow": false
+    },
+    {
+      "state": "main",
+      "theme": "light",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.9375
+      },
+      "overflow": false
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 592.453125
+      },
+      "overflow": false
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 565.03125
+      },
+      "overflow": false
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.53125
+      },
+      "overflow": false
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 387.390625
+      },
+      "overflow": false
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 451.984375
+      },
+      "overflow": false
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.9375
+      },
+      "overflow": false
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 592.453125
+      },
+      "overflow": false
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 565.03125
+      },
+      "overflow": false
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.53125
+      },
+      "overflow": false
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 387.390625
+      },
+      "overflow": false
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "display": "laptop",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 451.984375
+      },
+      "overflow": false
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.9375
+      },
+      "overflow": false
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 592.453125
+      },
+      "overflow": false
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 565.03125
+      },
+      "overflow": false
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 612.53125
+      },
+      "overflow": false
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 387.390625
+      },
+      "overflow": false
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "display": "tv",
+      "box": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 451.984375
+      },
+      "overflow": false
+    }
+  ],
+  "interactions": [
+    "Keyboard choose/review/send; pending remains; return and cancel request",
+    "Offline retry and empty retry remain honest",
+    "Escape returns from compose",
+    "System dark preference; reduced-motion removes transitions",
+    "Separate explicit simulated acceptance updates owner and return schedule"
+  ],
+  "errors": []
+}

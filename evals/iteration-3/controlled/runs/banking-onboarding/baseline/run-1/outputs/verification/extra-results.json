@@ -1,0 +1,22 @@
+{
+  "welcome_start_bounds_320": {
+    "x": 20,
+    "y": 307.875,
+    "width": 280,
+    "height": 56.5
+  },
+  "small_phone_full_flow": "PASS: Unicode name, +44 mobile, incomplete-code rejection, Help, completion",
+  "enlarged_text": "PASS: 200% text, five states at both 320px and 390px; enlarged Help dismissal reachable",
+  "visible_keyboard_focus": {
+    "id": "help",
+    "outline": "solid",
+    "width": "3px"
+  },
+  "safety_disclosure_keyboard": "PASS",
+  "long_name": "PASS: unbroken 34-character name reflows",
+  "initial_layout_shift": {
+    "welcome": 0,
+    "code": 0,
+    "help": 0
+  }
+}

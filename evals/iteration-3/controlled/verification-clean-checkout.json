@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "method": "Clean git checkout-index export of the staged tree into a different directory; capture all states without network or generation workspaces",
+  "PNGs": 192,
+  "allNonUniform": true,
+  "allDimensionsAndBodyTextMatch": true,
+  "allSourceTreesUnchanged": true,
+  "identicalPixelHashes": 190,
+  "strictByteIdentity": false,
+  "differences": [
+    {
+      "run": "oncall-menubar__baseline__2",
+      "shot": "compose__menu__light",
+      "differenceBounds": [
+        325,
+        270,
+        337,
+        277
+      ],
+      "changedPixels": 59,
+      "observation": "Localized to native select arrow; text and layout match. Cause of paint variation is not established."
+    },
+    {
+      "run": "oncall-menubar__baseline__2",
+      "shot": "compose__menu__dark",
+      "differenceBounds": [
+        325,
+        270,
+        337,
+        277
+      ],
+      "changedPixels": 59,
+      "observation": "Localized to native select arrow; text and layout match. Cause of paint variation is not established."
+    }
+  ],
+  "noOriginalShotsReplaced": true,
+  "noDesignReruns": true
+}

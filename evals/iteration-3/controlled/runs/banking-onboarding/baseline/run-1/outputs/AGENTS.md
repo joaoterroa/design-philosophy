@@ -1,0 +1,1 @@
+Read `SYSTEM.md` before changing this prototype. Tokens are in `app/tokens.css`. Run `node outputs/verification/design-guard.js` from the workspace root, and use `verification/verify.py` for rendered and interaction checks. Preserve the supplied fixture and skill. Do not add network dependencies or product-facing demo controls.

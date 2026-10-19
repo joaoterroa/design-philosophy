@@ -1,0 +1,11 @@
+:root {
+ --bg:#f6f3eb; --surface:#fffdf8; --ink:#182f3b; --muted:#50616a; --primary:#194859; --on-primary:#ffffff; --line:#c6cdc9; --border:#6e7d82; --tint:#e7eeeb; --danger:#a32826; --danger-bg:#fae9e4; --focus:#9c4b03; --overlay:#10273299;
+ --font:'Plex',system-ui,sans-serif; --fs-small:1rem; --fs-body:1.125rem; --fs-lead:1.25rem; --fs-logo:1.625rem; --fs-title:2.125rem; --fs-hero:2.5rem; --fs-code:1.875rem;
+ --lh-body:1.5; --lh-title:1.12; --weight-normal:400; --weight-medium:500; --weight-bold:600;
+ --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:24px; --s7:32px; --s8:40px; --s9:48px; --s10:64px;
+ --radius-control:10px; --radius-panel:18px; --radius-round:50%; --hair:1px; --stroke:2px; --focus-width:3px; --focus-offset:4px;
+ --control:60px; --target:48px; --step:36px; --logo:32px; --icon:24px; --shell:480px; --dialog:440px; --page-min:100svh; --full:100%; --zero:0; --letter:-0.025em; --code-space:0.26em; --fast:120ms; --ease:ease-out; --shadow:0 12px 48px #10273233;
+}
+:root[data-theme="dark"] {
+ --bg:#142832; --surface:#1c3540; --ink:#f5f1e7; --muted:#b9c8cb; --primary:#b8dfdc; --on-primary:#142e39; --line:#47616b; --border:#94a9ae; --tint:#253e46; --danger:#ffb4a6; --danger-bg:#492d2c; --focus:#ffcd83; --overlay:#07151ccc; --shadow:0 12px 48px #00000055;
+}

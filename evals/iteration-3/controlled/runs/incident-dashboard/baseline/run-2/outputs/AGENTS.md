@@ -1,0 +1,1 @@
+Before changing this prototype, read `SYSTEM.md` and `DESIGN.md`. Visual values belong in `app/tokens.css`; run `verification/guard.cjs` and `verification/verify.py`. Keep the supplied fixtures unchanged. The original task restricts design guidance to the supplied `../skill/SKILL.md`.

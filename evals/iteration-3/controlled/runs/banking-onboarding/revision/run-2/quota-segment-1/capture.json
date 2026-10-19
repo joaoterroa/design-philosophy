@@ -1,0 +1,14 @@
+{
+  "runId": "banking-onboarding__revision__2",
+  "task": "banking-onboarding",
+  "fixedTime": "2026-10-18T10:00:00+00:00",
+  "locale": "en-GB",
+  "timezone": "Europe/London",
+  "DPR": 1,
+  "reducedMotion": "reduce",
+  "source": "/Users/joao.terroa/src/design-philosophy/evals/iteration-3/controlled/runs/banking-onboarding/revision/run-2/outputs/app/index.html",
+  "shots": [],
+  "expectedShots": 24,
+  "complete": false,
+  "error": "Missing outputs/app/index.html"
+}

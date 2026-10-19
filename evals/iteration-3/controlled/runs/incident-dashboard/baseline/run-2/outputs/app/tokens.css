@@ -1,0 +1,24 @@
+@font-face{font-family:Plex;src:url('fonts/plex-sans-latin.woff2') format('woff2');font-weight:100 700;font-display:swap}
+@font-face{font-family:PlexMono;src:url('fonts/plex-mono-400-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+:root{
+ color-scheme:light;
+ --bg:#EEF1F4;--surface:#FFFFFF;--fg:#3D4852;--muted:#566675;--brand:#12355B;--line:#C9D2DB;--soft:#E4EAF0;
+ --critical:#A52D38;--critical-bg:#FFF0F0;--caution:#85440E;--caution-bg:#FFF3E6;--healthy:#18685F;--chart:#238D81;--orange:#F26B21;--focus:#12355B;--white:#FFFFFF;
+ --search-width:180px;--select-width:150px;--dialog-max:90vw;--table-min:760px;--col-severity:8%;--col-incident:40%;--col-status:15%;--col-commander:17%;--col-time:20%;
+ --sans:Plex,Arial,sans-serif;--mono:PlexMono,monospace;
+ --fs-xs:12px;--fs-sm:14px;--fs-body:16px;--fs-row:16px;--fs-title:24px;--fs-brand:25px;--fs-number:54px;--fs-clock:26px;--fs-dialog:28px;
+ --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:20px;--s6:24px;--s7:32px;--s8:40px;--s9:48px;--gutter:32px;
+ --radius:4px;--round:50%;--hair:1px;--rule:3px;--focus-width:3px;--zero:0;--full:100%;--touch:44px;--header:80px;--status:52px;--metric:144px;--sidebar:300px;--row:76px;--dialog-width:660px;--shadow:0 16px 64px #00000040;--backdrop:#081727B8;
+ --duration:120ms;--ease:ease-out;--no-motion:0s;--weight:400;--medium:500;--bold:600;--lineheight:1.4;--tight:1.15;--caps:.08em;--wordmark:-.035em;
+}
+:root[data-theme=dark]{
+ color-scheme:dark;
+ --bg:#0E1C2A;--surface:#142637;--fg:#E4EBF1;--muted:#A5B5C4;--brand:#C2D9EE;--line:#3E5264;--soft:#1D3347;
+ --critical:#FFABB2;--critical-bg:#38232F;--caution:#F3BF8C;--caution-bg:#342C25;--healthy:#89D1C4;--chart:#2A9D8F;--orange:#F26B21;--focus:#C2D9EE;--white:#FFFFFF;
+ --shadow:0 16px 64px #00000040;--backdrop:#081727B8;
+}
+:root[data-display=tv]{--fs-xs:14px;--fs-sm:16px;--fs-body:18px;--fs-row:19px;--fs-title:26px;--fs-brand:28px;--fs-number:64px;--fs-clock:30px;--gutter:48px;--header:80px;--status:48px;--metric:156px;--sidebar:350px;--row:64px}
+
+@media(max-width:1000px){:root{--col-commander:18%;--col-incident:37%}}
+@media(max-width:650px){:root{--gutter:16px;--fs-number:40px;--fs-title:22px}}
+:root{--table-head:37px}

@@ -1,0 +1,22 @@
+/* All visual values originate here; semantic roles are shared, identities differ. */
+:root {
+ --bg:#f3f4f6; --surface:#ffffff; --soft:#f0f2f5; --fg:#20252c; --muted:#59616d; --line:#d4d8de;
+ --accent:#2157c4; --on-accent:#ffffff; --accent-soft:#edf2fc; --good:#256044; --good-soft:#ecf5ee; --warn:#7b4b08; --warn-soft:#fff3da; --danger:#ae292b; --danger-soft:#fcedec; --track:#d8dde5; --shadow:0 12px 38px #13213a24,0 1px 4px #13213a20;
+ --system:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif; --plex:"Plex Sans",sans-serif; --mono:"Plex Mono",monospace;
+ --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-base:14px; --fs-body:16px; --fs-lg:18px; --fs-xl:20px; --fs-2xl:24px; --fs-3xl:30px; --fs-4xl:36px; --fs-metric:44px; --fs-code:28px;
+ --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:24px; --s-7:32px; --s-8:40px; --s-9:48px;
+ --r-sm:6px; --r-md:10px; --r-lg:14px; --r-xl:20px; --r-round:50%; --border:1px; --ring:3px; --focus-offset:3px;
+ --duration:120ms; --ease:cubic-bezier(.2,.7,.2,1); --lh:1.45; --lh-tight:1.2;
+ --popover:360px; --popover-max:640px; --scene-pad:20px; --bank-width:480px; --target:48px; --desktop-target:34px; --avatar:32px; --mark:24px; --menu-hero:92px;
+ --dash-max:1920px; --side-width:310px; --table-columns:100px minmax(250px,1fr) 150px 115px 150px; --tv-columns:120px minmax(320px,1fr) 170px 120px 180px; --bar-max:140px;
+}
+:root[data-theme="dark"] {
+ --bg:#15181d; --surface:#23272e; --soft:#2c313a; --fg:#f2f4f7; --muted:#b4bdca; --line:#484f5a;
+ --accent:#94b8ff; --on-accent:#101e37; --accent-soft:#2a3850; --good:#a0d7b5; --good-soft:#293b31; --warn:#f2c67b; --warn-soft:#3d3324; --danger:#ffb2ae; --danger-soft:#452b2c; --track:#4d5664; --shadow:0 12px 38px #00000050,0 1px 4px #00000040;
+}
+@font-face{font-family:"Plex Sans";src:url('fonts/plex-sans-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url('fonts/plex-mono-400-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url('fonts/plex-mono-500-latin.woff2') format('woff2');font-weight:500;font-display:swap}
+/* Bank: a calm harbour green denotes the next safe action. */
+body.bank {--accent:#245747;--on-accent:#ffffff;--accent-soft:#eaf2ed;--bg:#f4f5f0;--surface:#ffffff;--soft:#edf0e9}
+[data-theme="dark"] body.bank {--accent:#acd8c1;--on-accent:#10281e;--accent-soft:#283d32;--bg:#171e1a;--surface:#222c25;--soft:#2a352e}

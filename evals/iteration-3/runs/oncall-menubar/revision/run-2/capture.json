@@ -1,0 +1,6492 @@
+{
+  "runId": "oncall-menubar__revision__2",
+  "task": "oncall-menubar",
+  "fixedTime": "2026-10-18T10:00:00+00:00",
+  "locale": "en-GB",
+  "timezone": "Europe/London",
+  "DPR": 1,
+  "reducedMotion": "reduce",
+  "source": "/Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html",
+  "shots": [
+    {
+      "id": "main__menu__light",
+      "screen": "main",
+      "display": "menu",
+      "theme": "light",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/main__menu__light.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=main&theme=light&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=main&theme=light&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Your shift",
+            "tag": "DIV",
+            "rect": {
+              "x": 58,
+              "y": 115.1875,
+              "width": 78.328125,
+              "height": 13,
+              "bottom": 128.1875,
+              "right": 136.328125
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re on call",
+            "tag": "H1",
+            "rect": {
+              "x": 58,
+              "y": 137.125,
+              "width": 127.125,
+              "height": 26,
+              "bottom": 163.125,
+              "right": 185.125
+            },
+            "fontSize": 22,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "P",
+            "rect": {
+              "x": 58,
+              "y": 173.078125,
+              "width": 108.0625,
+              "height": 17,
+              "bottom": 190.078125,
+              "right": 166.0625
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "06:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 58,
+              "y": 209.375,
+              "width": 33.796875,
+              "height": 15,
+              "bottom": 224.375,
+              "right": 91.796875
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Until 18:00 UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 250.546875,
+              "y": 209.375,
+              "width": 91.453125,
+              "height": 15,
+              "bottom": 224.375,
+              "right": 342
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Hand over shift\u2026",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 143.03125,
+              "y": 263.609375,
+              "width": 113.921875,
+              "height": 17,
+              "bottom": 280.609375,
+              "right": 256.953125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(255, 255, 255)",
+            "inViewport": true
+          },
+          {
+            "text": "On call now",
+            "tag": "H2",
+            "rect": {
+              "x": 41,
+              "y": 329.65625,
+              "width": 69.234375,
+              "height": 15,
+              "bottom": 344.65625,
+              "right": 110.234375
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "4 rotations",
+            "tag": "SPAN",
+            "rect": {
+              "x": 297.734375,
+              "y": 329.765625,
+              "width": 61.265625,
+              "height": 15,
+              "bottom": 344.765625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "JE",
+            "tag": "SPAN",
+            "rect": {
+              "x": 50.28125,
+              "y": 378.03125,
+              "width": 13.4375,
+              "height": 13,
+              "bottom": 391.03125,
+              "right": 63.71875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Jamie Ellis",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 367.15625,
+              "width": 73.796875,
+              "height": 17,
+              "bottom": 384.15625,
+              "right": 158.796875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "\u00b7 You",
+            "tag": "SPAN",
+            "rect": {
+              "x": 158.796875,
+              "y": 367.15625,
+              "width": 31.796875,
+              "height": 17,
+              "bottom": 384.15625,
+              "right": 190.59375
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 387.453125,
+              "width": 94.6875,
+              "height": 15,
+              "bottom": 402.453125,
+              "right": 179.6875
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 377.296875,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 392.296875,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "SO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 48.9375,
+              "y": 440.71875,
+              "width": 16.109375,
+              "height": 13,
+              "bottom": 453.71875,
+              "right": 65.046875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Sam Okafor",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 429.84375,
+              "width": 77.984375,
+              "height": 17,
+              "bottom": 446.84375,
+              "right": 162.984375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Observability",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 450.140625,
+              "width": 74.5,
+              "height": 15,
+              "bottom": 465.140625,
+              "right": 159.5
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 439.984375,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 454.984375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "TO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.15625,
+              "y": 503.40625,
+              "width": 15.6875,
+              "height": 13,
+              "bottom": 516.40625,
+              "right": 64.84375
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Tom\u00e1s Ortega",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 492.53125,
+              "width": 93.53125,
+              "height": 17,
+              "bottom": 509.53125,
+              "right": 178.53125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Routing",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 512.828125,
+              "width": 43.40625,
+              "height": 15,
+              "bottom": 527.828125,
+              "right": 128.40625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 502.671875,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 517.671875,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "AK",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.09375,
+              "y": 566.09375,
+              "width": 15.796875,
+              "height": 13,
+              "bottom": 579.09375,
+              "right": 64.890625
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Aiko Kimura",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 555.21875,
+              "width": 79.859375,
+              "height": 17,
+              "bottom": 572.21875,
+              "right": 164.859375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Data",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 575.515625,
+              "width": 26.328125,
+              "height": 15,
+              "bottom": 590.515625,
+              "right": 111.328125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 565.359375,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 580.359375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 637.90625,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 650.90625,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 637.90625,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 650.90625,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\nYOUR SHIFT\nYou\u2019re on call\n\nPlatform Primary\n\n06:00\nUntil 18:00 UTC\nHand over shift\u2026\nOn call now\n4 rotations\nJE\nJamie Ellis \u00b7 You\nPlatform Primary\nto 18:00\nSO\nSam Okafor\nObservability\nto 18:00\nTO\nTom\u00e1s Ortega\nRouting\nto 18:00\nAK\nAiko Kimura\nData\nto 18:00\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 640,
+          "bottom": 660,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Hand over shift\u2026",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 58,
+              "y": 253.765625,
+              "width": 284,
+              "height": 38,
+              "bottom": 291.765625,
+              "right": 342
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Hand over shift\u2026",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 58,
+              "y": 253.765625,
+              "width": 284,
+              "height": 38,
+              "bottom": 291.765625,
+              "right": 342
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "You\u2019re on call",
+            "rect": {
+              "x": 58,
+              "y": 138.125,
+              "width": 284,
+              "height": 25.953125,
+              "bottom": 164.078125,
+              "right": 342
+            },
+            "fontSize": "22px"
+          },
+          {
+            "text": "On call now",
+            "rect": {
+              "x": 41,
+              "y": 329.65625,
+              "width": 69.234375,
+              "height": 15.59375,
+              "bottom": 345.25,
+              "right": 110.234375
+            },
+            "fontSize": "12px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 52
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 23
+          },
+          {
+            "value": "12px",
+            "count": 15
+          },
+          {
+            "value": "11px",
+            "count": 8
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "22px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 32
+          },
+          {
+            "value": "rgb(96, 97, 107)",
+            "count": 19
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 40
+          },
+          {
+            "value": "rgb(237, 237, 240)",
+            "count": 5
+          },
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 3
+          },
+          {
+            "value": "rgb(24, 91, 197)",
+            "count": 2
+          },
+          {
+            "value": "rgb(245, 245, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 40
+          },
+          {
+            "value": "6px",
+            "count": 6
+          },
+          {
+            "value": "50%",
+            "count": 4
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "9px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 52
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": false
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        640
+      ],
+      "maxChannelVariance": 2810.914645607198,
+      "nonUniform": true,
+      "sha256": "047078533ee68b49c1a72bb506e8b4bc6e300e2501e1dd4568888186dde16a4f",
+      "captureSucceeded": true
+    },
+    {
+      "id": "main__menu__dark",
+      "screen": "main",
+      "display": "menu",
+      "theme": "dark",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/main__menu__dark.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=main&theme=dark&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=main&theme=dark&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Your shift",
+            "tag": "DIV",
+            "rect": {
+              "x": 58,
+              "y": 115.1875,
+              "width": 78.328125,
+              "height": 13,
+              "bottom": 128.1875,
+              "right": 136.328125
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re on call",
+            "tag": "H1",
+            "rect": {
+              "x": 58,
+              "y": 137.125,
+              "width": 127.125,
+              "height": 26,
+              "bottom": 163.125,
+              "right": 185.125
+            },
+            "fontSize": 22,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "P",
+            "rect": {
+              "x": 58,
+              "y": 173.078125,
+              "width": 108.0625,
+              "height": 17,
+              "bottom": 190.078125,
+              "right": 166.0625
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "06:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 58,
+              "y": 209.375,
+              "width": 33.796875,
+              "height": 15,
+              "bottom": 224.375,
+              "right": 91.796875
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Until 18:00 UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 250.546875,
+              "y": 209.375,
+              "width": 91.453125,
+              "height": 15,
+              "bottom": 224.375,
+              "right": 342
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Hand over shift\u2026",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 143.03125,
+              "y": 263.609375,
+              "width": 113.921875,
+              "height": 17,
+              "bottom": 280.609375,
+              "right": 256.953125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(20, 42, 74)",
+            "inViewport": true
+          },
+          {
+            "text": "On call now",
+            "tag": "H2",
+            "rect": {
+              "x": 41,
+              "y": 329.65625,
+              "width": 69.234375,
+              "height": 15,
+              "bottom": 344.65625,
+              "right": 110.234375
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "4 rotations",
+            "tag": "SPAN",
+            "rect": {
+              "x": 297.734375,
+              "y": 329.765625,
+              "width": 61.265625,
+              "height": 15,
+              "bottom": 344.765625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "JE",
+            "tag": "SPAN",
+            "rect": {
+              "x": 50.28125,
+              "y": 378.03125,
+              "width": 13.4375,
+              "height": 13,
+              "bottom": 391.03125,
+              "right": 63.71875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Jamie Ellis",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 367.15625,
+              "width": 73.796875,
+              "height": 17,
+              "bottom": 384.15625,
+              "right": 158.796875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "\u00b7 You",
+            "tag": "SPAN",
+            "rect": {
+              "x": 158.796875,
+              "y": 367.15625,
+              "width": 31.796875,
+              "height": 17,
+              "bottom": 384.15625,
+              "right": 190.59375
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 387.453125,
+              "width": 94.6875,
+              "height": 15,
+              "bottom": 402.453125,
+              "right": 179.6875
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 377.296875,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 392.296875,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "SO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 48.9375,
+              "y": 440.71875,
+              "width": 16.109375,
+              "height": 13,
+              "bottom": 453.71875,
+              "right": 65.046875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Sam Okafor",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 429.84375,
+              "width": 77.984375,
+              "height": 17,
+              "bottom": 446.84375,
+              "right": 162.984375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Observability",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 450.140625,
+              "width": 74.5,
+              "height": 15,
+              "bottom": 465.140625,
+              "right": 159.5
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 439.984375,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 454.984375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "TO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.15625,
+              "y": 503.40625,
+              "width": 15.6875,
+              "height": 13,
+              "bottom": 516.40625,
+              "right": 64.84375
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Tom\u00e1s Ortega",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 492.53125,
+              "width": 93.53125,
+              "height": 17,
+              "bottom": 509.53125,
+              "right": 178.53125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Routing",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 512.828125,
+              "width": 43.40625,
+              "height": 15,
+              "bottom": 527.828125,
+              "right": 128.40625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 502.671875,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 517.671875,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "AK",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.09375,
+              "y": 566.09375,
+              "width": 15.796875,
+              "height": 13,
+              "bottom": 579.09375,
+              "right": 64.890625
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Aiko Kimura",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 555.21875,
+              "width": 79.859375,
+              "height": 17,
+              "bottom": 572.21875,
+              "right": 164.859375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Data",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 575.515625,
+              "width": 26.328125,
+              "height": 15,
+              "bottom": 590.515625,
+              "right": 111.328125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 565.359375,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 580.359375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 637.90625,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 650.90625,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 637.90625,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 650.90625,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\nYOUR SHIFT\nYou\u2019re on call\n\nPlatform Primary\n\n06:00\nUntil 18:00 UTC\nHand over shift\u2026\nOn call now\n4 rotations\nJE\nJamie Ellis \u00b7 You\nPlatform Primary\nto 18:00\nSO\nSam Okafor\nObservability\nto 18:00\nTO\nTom\u00e1s Ortega\nRouting\nto 18:00\nAK\nAiko Kimura\nData\nto 18:00\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 640,
+          "bottom": 660,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Hand over shift\u2026",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 58,
+              "y": 253.765625,
+              "width": 284,
+              "height": 38,
+              "bottom": 291.765625,
+              "right": 342
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Hand over shift\u2026",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 58,
+              "y": 253.765625,
+              "width": 284,
+              "height": 38,
+              "bottom": 291.765625,
+              "right": 342
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "You\u2019re on call",
+            "rect": {
+              "x": 58,
+              "y": 138.125,
+              "width": 284,
+              "height": 25.953125,
+              "bottom": 164.078125,
+              "right": 342
+            },
+            "fontSize": "22px"
+          },
+          {
+            "text": "On call now",
+            "rect": {
+              "x": 41,
+              "y": 329.65625,
+              "width": 69.234375,
+              "height": 15.59375,
+              "bottom": 345.25,
+              "right": 110.234375
+            },
+            "fontSize": "12px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 52
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 23
+          },
+          {
+            "value": "12px",
+            "count": 15
+          },
+          {
+            "value": "11px",
+            "count": 8
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "22px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 32
+          },
+          {
+            "value": "rgb(185, 186, 196)",
+            "count": 19
+          },
+          {
+            "value": "rgb(20, 42, 74)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 40
+          },
+          {
+            "value": "rgb(58, 59, 66)",
+            "count": 5
+          },
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 3
+          },
+          {
+            "value": "rgb(149, 188, 255)",
+            "count": 2
+          },
+          {
+            "value": "rgb(38, 39, 44)",
+            "count": 1
+          },
+          {
+            "value": "rgb(48, 49, 55)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 40
+          },
+          {
+            "value": "6px",
+            "count": 6
+          },
+          {
+            "value": "50%",
+            "count": 4
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "9px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 52
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": true
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        640
+      ],
+      "maxChannelVariance": 2613.1514409609003,
+      "nonUniform": true,
+      "sha256": "d55fa9101224f2cf7ac41630539e3c3e96055c672cb6dc864eb3459959b9f73e",
+      "captureSucceeded": true
+    },
+    {
+      "id": "compose__menu__light",
+      "screen": "compose",
+      "display": "menu",
+      "theme": "light",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/compose__menu__light.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=compose&theme=light&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=compose&theme=light&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2039 Back to schedule",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 41,
+              "y": 98.1875,
+              "width": 120.671875,
+              "height": 17,
+              "bottom": 115.1875,
+              "right": 161.671875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(24, 91, 197)",
+            "inViewport": true
+          },
+          {
+            "text": "Hand over your shift",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 137.484375,
+              "width": 231.40625,
+              "height": 30,
+              "bottom": 167.484375,
+              "right": 272.40625
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary \u00b7 Until 18:00 UTC",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 177.15625,
+              "width": 221.875,
+              "height": 17,
+              "bottom": 194.15625,
+              "right": 262.875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Hand over to",
+            "tag": "LABEL",
+            "rect": {
+              "x": 41,
+              "y": 213.453125,
+              "width": 86.0625,
+              "height": 17,
+              "bottom": 230.453125,
+              "right": 127.0625
+            },
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Available handover recipient",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 290.75,
+              "width": 158.84375,
+              "height": 15,
+              "bottom": 305.75,
+              "right": 199.84375
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Handover note",
+            "tag": "LABEL",
+            "rect": {
+              "x": 41,
+              "y": 324.140625,
+              "width": 102.609375,
+              "height": 17,
+              "bottom": 341.140625,
+              "right": 143.609375
+            },
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "(optional)",
+            "tag": "SPAN",
+            "rect": {
+              "x": 143.609375,
+              "y": 324.140625,
+              "width": 65.90625,
+              "height": 17,
+              "bottom": 341.140625,
+              "right": 209.515625
+            },
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "You stay responsible until Priya accepts.",
+            "tag": "DIV",
+            "rect": {
+              "x": 53,
+              "y": 457.734375,
+              "width": 227.515625,
+              "height": 15,
+              "bottom": 472.734375,
+              "right": 280.515625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "Cancel",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 95.578125,
+              "y": 515.96875,
+              "width": 45.84375,
+              "height": 17,
+              "bottom": 532.96875,
+              "right": 141.421875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Review handover",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 224.78125,
+              "y": 515.96875,
+              "width": 113.4375,
+              "height": 17,
+              "bottom": 532.96875,
+              "right": 338.21875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(255, 255, 255)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 578.125,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 591.125,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 578.125,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 591.125,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2039 Back to schedule\nHand over your shift\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nHand over to\nChoose a teammate\nPriya Raman\n\nAvailable handover recipient\n\nHandover note (optional)\nYou stay responsible until Priya accepts.\nCancel\nReview handover\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 586.0625,
+          "bottom": 606.0625,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "select",
+            "role": null,
+            "label": "Choose a teammate\nPriya Raman",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 240.75,
+              "width": 318,
+              "height": 45,
+              "bottom": 285.75,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "textarea",
+            "role": null,
+            "label": "Anything Priya should know?",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 351.4375,
+              "width": 318,
+              "height": 72,
+              "bottom": 423.4375,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 196
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Review handover",
+            "href": null,
+            "type": "submit",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 204,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 196
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Review handover",
+            "href": null,
+            "type": "submit",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 204,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "Hand over your shift",
+            "rect": {
+              "x": 41,
+              "y": 137.484375,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 168.15625,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 29
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 16
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "12px",
+            "count": 4
+          },
+          {
+            "value": "11px",
+            "count": 3
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 19
+          },
+          {
+            "value": "rgb(96, 97, 107)",
+            "count": 7
+          },
+          {
+            "value": "rgb(24, 91, 197)",
+            "count": 1
+          },
+          {
+            "value": "rgb(134, 80, 6)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 20
+          },
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 3
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          },
+          {
+            "value": "rgb(245, 245, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 242, 216)",
+            "count": 1
+          },
+          {
+            "value": "rgb(237, 237, 240)",
+            "count": 1
+          },
+          {
+            "value": "rgb(24, 91, 197)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 20
+          },
+          {
+            "value": "6px",
+            "count": 7
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "9px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 29
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": false
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 586.0625
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        586
+      ],
+      "maxChannelVariance": 2189.1783113367865,
+      "nonUniform": true,
+      "sha256": "cac7e76862e8c1969b437db466f6263cf495b1892708ddc493f36435d5fcd42c",
+      "captureSucceeded": true
+    },
+    {
+      "id": "compose__menu__dark",
+      "screen": "compose",
+      "display": "menu",
+      "theme": "dark",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/compose__menu__dark.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=compose&theme=dark&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=compose&theme=dark&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2039 Back to schedule",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 41,
+              "y": 98.1875,
+              "width": 120.671875,
+              "height": 17,
+              "bottom": 115.1875,
+              "right": 161.671875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(149, 188, 255)",
+            "inViewport": true
+          },
+          {
+            "text": "Hand over your shift",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 137.484375,
+              "width": 231.40625,
+              "height": 30,
+              "bottom": 167.484375,
+              "right": 272.40625
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary \u00b7 Until 18:00 UTC",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 177.15625,
+              "width": 221.875,
+              "height": 17,
+              "bottom": 194.15625,
+              "right": 262.875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Hand over to",
+            "tag": "LABEL",
+            "rect": {
+              "x": 41,
+              "y": 213.453125,
+              "width": 86.0625,
+              "height": 17,
+              "bottom": 230.453125,
+              "right": 127.0625
+            },
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Available handover recipient",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 290.75,
+              "width": 158.84375,
+              "height": 15,
+              "bottom": 305.75,
+              "right": 199.84375
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Handover note",
+            "tag": "LABEL",
+            "rect": {
+              "x": 41,
+              "y": 324.140625,
+              "width": 102.609375,
+              "height": 17,
+              "bottom": 341.140625,
+              "right": 143.609375
+            },
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "(optional)",
+            "tag": "SPAN",
+            "rect": {
+              "x": 143.609375,
+              "y": 324.140625,
+              "width": 65.90625,
+              "height": 17,
+              "bottom": 341.140625,
+              "right": 209.515625
+            },
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "You stay responsible until Priya accepts.",
+            "tag": "DIV",
+            "rect": {
+              "x": 53,
+              "y": 457.734375,
+              "width": 227.515625,
+              "height": 15,
+              "bottom": 472.734375,
+              "right": 280.515625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "Cancel",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 95.578125,
+              "y": 515.96875,
+              "width": 45.84375,
+              "height": 17,
+              "bottom": 532.96875,
+              "right": 141.421875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Review handover",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 224.78125,
+              "y": 515.96875,
+              "width": 113.4375,
+              "height": 17,
+              "bottom": 532.96875,
+              "right": 338.21875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(20, 42, 74)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 578.125,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 591.125,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 578.125,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 591.125,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2039 Back to schedule\nHand over your shift\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nHand over to\nChoose a teammate\nPriya Raman\n\nAvailable handover recipient\n\nHandover note (optional)\nYou stay responsible until Priya accepts.\nCancel\nReview handover\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 586.0625,
+          "bottom": 606.0625,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "select",
+            "role": null,
+            "label": "Choose a teammate\nPriya Raman",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 240.75,
+              "width": 318,
+              "height": 45,
+              "bottom": 285.75,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "textarea",
+            "role": null,
+            "label": "Anything Priya should know?",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 351.4375,
+              "width": 318,
+              "height": 72,
+              "bottom": 423.4375,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 196
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Review handover",
+            "href": null,
+            "type": "submit",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 204,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 196
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Review handover",
+            "href": null,
+            "type": "submit",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 204,
+              "y": 506.125,
+              "width": 155,
+              "height": 38,
+              "bottom": 544.125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "Hand over your shift",
+            "rect": {
+              "x": 41,
+              "y": 137.484375,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 168.15625,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 29
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 16
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "12px",
+            "count": 4
+          },
+          {
+            "value": "11px",
+            "count": 3
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 19
+          },
+          {
+            "value": "rgb(185, 186, 196)",
+            "count": 7
+          },
+          {
+            "value": "rgb(149, 188, 255)",
+            "count": 1
+          },
+          {
+            "value": "rgb(242, 197, 125)",
+            "count": 1
+          },
+          {
+            "value": "rgb(20, 42, 74)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 20
+          },
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 3
+          },
+          {
+            "value": "rgb(48, 49, 55)",
+            "count": 2
+          },
+          {
+            "value": "rgb(38, 39, 44)",
+            "count": 1
+          },
+          {
+            "value": "rgb(69, 56, 33)",
+            "count": 1
+          },
+          {
+            "value": "rgb(58, 59, 66)",
+            "count": 1
+          },
+          {
+            "value": "rgb(149, 188, 255)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 20
+          },
+          {
+            "value": "6px",
+            "count": 7
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "9px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 29
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": true
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 586.0625
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        586
+      ],
+      "maxChannelVariance": 2076.0124811673845,
+      "nonUniform": true,
+      "sha256": "2218a584d64a32e75dc150bf82802a9203ad3476774c2b3483cbfa47f40235c8",
+      "captureSucceeded": true
+    },
+    {
+      "id": "pending__menu__light",
+      "screen": "pending",
+      "display": "menu",
+      "theme": "light",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/pending__menu__light.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=pending&theme=light&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=pending&theme=light&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2039 Back to schedule",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 41,
+              "y": 98.1875,
+              "width": 120.671875,
+              "height": 17,
+              "bottom": 115.1875,
+              "right": 161.671875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(24, 91, 197)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2197",
+            "tag": "DIV",
+            "rect": {
+              "x": 52.71875,
+              "y": 143.53125,
+              "width": 16.5625,
+              "height": 26,
+              "bottom": 169.53125,
+              "right": 69.28125
+            },
+            "fontSize": 22,
+            "fontWeight": "400",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "Waiting for Priya",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 193.484375,
+              "width": 188.015625,
+              "height": 30,
+              "bottom": 223.484375,
+              "right": 229.015625
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Your handover request is pending.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 233.15625,
+              "width": 220.53125,
+              "height": 17,
+              "bottom": 250.15625,
+              "right": 261.53125
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "STRONG",
+            "rect": {
+              "x": 41,
+              "y": 290.453125,
+              "width": 117.65625,
+              "height": 17,
+              "bottom": 307.453125,
+              "right": 158.65625
+            },
+            "fontSize": 14,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Jamie Ellis \u2192 Priya Raman",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 310.75,
+              "width": 146.765625,
+              "height": 15,
+              "bottom": 325.75,
+              "right": 187.765625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Until 18:00 UTC today",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 336.140625,
+              "width": 124.578125,
+              "height": 15,
+              "bottom": 351.140625,
+              "right": 165.578125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re still on call",
+            "tag": "STRONG",
+            "rect": {
+              "x": 53,
+              "y": 402.53125,
+              "width": 106.484375,
+              "height": 15,
+              "bottom": 417.53125,
+              "right": 159.484375
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "Keep responding to pages until Priya accepts.",
+            "tag": "DIV",
+            "rect": {
+              "x": 53,
+              "y": 423.921875,
+              "width": 258.828125,
+              "height": 15,
+              "bottom": 438.921875,
+              "right": 311.828125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "Cancel request",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 149.6875,
+              "y": 482.15625,
+              "width": 100.625,
+              "height": 17,
+              "bottom": 499.15625,
+              "right": 250.3125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Local prototype request \u00b7 no notification sent.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 523.3125,
+              "width": 257.65625,
+              "height": 15,
+              "bottom": 538.3125,
+              "right": 298.65625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 573.703125,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 586.703125,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 573.703125,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 586.703125,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2039 Back to schedule\n\u2197\nWaiting for Priya\n\nYour handover request is pending.\n\nPlatform Primary\n\nJamie Ellis \u2192 Priya Raman\n\nUntil 18:00 UTC today\n\nYou\u2019re still on call\nKeep responding to pages until Priya accepts.\nCancel request\n\nLocal prototype request \u00b7 no notification sent.\n\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 581.640625,
+          "bottom": 601.640625,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel request",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 472.3125,
+              "width": 318,
+              "height": 38,
+              "bottom": 510.3125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel request",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 472.3125,
+              "width": 318,
+              "height": 38,
+              "bottom": 510.3125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "Waiting for Priya",
+            "rect": {
+              "x": 41,
+              "y": 193.484375,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 224.15625,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 26
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 9
+          },
+          {
+            "value": "12px",
+            "count": 7
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "11px",
+            "count": 3
+          },
+          {
+            "value": "22px",
+            "count": 1
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 15
+          },
+          {
+            "value": "rgb(96, 97, 107)",
+            "count": 7
+          },
+          {
+            "value": "rgb(134, 80, 6)",
+            "count": 3
+          },
+          {
+            "value": "rgb(24, 91, 197)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 19
+          },
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 3
+          },
+          {
+            "value": "rgb(255, 242, 216)",
+            "count": 2
+          },
+          {
+            "value": "rgb(245, 245, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgb(237, 237, 240)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 19
+          },
+          {
+            "value": "6px",
+            "count": 4
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "50%",
+            "count": 1
+          },
+          {
+            "value": "9px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 26
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": false
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 581.640625
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        581
+      ],
+      "maxChannelVariance": 1073.5477035697,
+      "nonUniform": true,
+      "sha256": "fe82095dcf1dcc1fe7cf4f9de66e938c60e2735f72344f3179bf10691a0e32a2",
+      "captureSucceeded": true
+    },
+    {
+      "id": "pending__menu__dark",
+      "screen": "pending",
+      "display": "menu",
+      "theme": "dark",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/pending__menu__dark.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=pending&theme=dark&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=pending&theme=dark&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2039 Back to schedule",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 41,
+              "y": 98.1875,
+              "width": 120.671875,
+              "height": 17,
+              "bottom": 115.1875,
+              "right": 161.671875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(149, 188, 255)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2197",
+            "tag": "DIV",
+            "rect": {
+              "x": 52.71875,
+              "y": 143.53125,
+              "width": 16.5625,
+              "height": 26,
+              "bottom": 169.53125,
+              "right": 69.28125
+            },
+            "fontSize": 22,
+            "fontWeight": "400",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "Waiting for Priya",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 193.484375,
+              "width": 188.015625,
+              "height": 30,
+              "bottom": 223.484375,
+              "right": 229.015625
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Your handover request is pending.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 233.15625,
+              "width": 220.53125,
+              "height": 17,
+              "bottom": 250.15625,
+              "right": 261.53125
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "STRONG",
+            "rect": {
+              "x": 41,
+              "y": 290.453125,
+              "width": 117.65625,
+              "height": 17,
+              "bottom": 307.453125,
+              "right": 158.65625
+            },
+            "fontSize": 14,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Jamie Ellis \u2192 Priya Raman",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 310.75,
+              "width": 146.765625,
+              "height": 15,
+              "bottom": 325.75,
+              "right": 187.765625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Until 18:00 UTC today",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 336.140625,
+              "width": 124.578125,
+              "height": 15,
+              "bottom": 351.140625,
+              "right": 165.578125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re still on call",
+            "tag": "STRONG",
+            "rect": {
+              "x": 53,
+              "y": 402.53125,
+              "width": 106.484375,
+              "height": 15,
+              "bottom": 417.53125,
+              "right": 159.484375
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "Keep responding to pages until Priya accepts.",
+            "tag": "DIV",
+            "rect": {
+              "x": 53,
+              "y": 423.921875,
+              "width": 258.828125,
+              "height": 15,
+              "bottom": 438.921875,
+              "right": 311.828125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "Cancel request",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 149.6875,
+              "y": 482.15625,
+              "width": 100.625,
+              "height": 17,
+              "bottom": 499.15625,
+              "right": 250.3125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Local prototype request \u00b7 no notification sent.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 523.3125,
+              "width": 257.65625,
+              "height": 15,
+              "bottom": 538.3125,
+              "right": 298.65625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 573.703125,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 586.703125,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 573.703125,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 586.703125,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2039 Back to schedule\n\u2197\nWaiting for Priya\n\nYour handover request is pending.\n\nPlatform Primary\n\nJamie Ellis \u2192 Priya Raman\n\nUntil 18:00 UTC today\n\nYou\u2019re still on call\nKeep responding to pages until Priya accepts.\nCancel request\n\nLocal prototype request \u00b7 no notification sent.\n\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 581.640625,
+          "bottom": 601.640625,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel request",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 472.3125,
+              "width": 318,
+              "height": 38,
+              "bottom": 510.3125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "\u2039 Back to schedule",
+            "href": null,
+            "type": null,
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 89.1875,
+              "width": 120.671875,
+              "height": 36.296875,
+              "bottom": 125.484375,
+              "right": 161.671875
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)"
+          },
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Cancel request",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 472.3125,
+              "width": 318,
+              "height": 38,
+              "bottom": 510.3125,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "Waiting for Priya",
+            "rect": {
+              "x": 41,
+              "y": 193.484375,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 224.15625,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 26
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 9
+          },
+          {
+            "value": "12px",
+            "count": 7
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "11px",
+            "count": 3
+          },
+          {
+            "value": "22px",
+            "count": 1
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 15
+          },
+          {
+            "value": "rgb(185, 186, 196)",
+            "count": 7
+          },
+          {
+            "value": "rgb(242, 197, 125)",
+            "count": 3
+          },
+          {
+            "value": "rgb(149, 188, 255)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 19
+          },
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 3
+          },
+          {
+            "value": "rgb(69, 56, 33)",
+            "count": 2
+          },
+          {
+            "value": "rgb(38, 39, 44)",
+            "count": 1
+          },
+          {
+            "value": "rgb(58, 59, 66)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 19
+          },
+          {
+            "value": "6px",
+            "count": 4
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "50%",
+            "count": 1
+          },
+          {
+            "value": "9px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 26
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": true
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 581.640625
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        581
+      ],
+      "maxChannelVariance": 1168.0081702785562,
+      "nonUniform": true,
+      "sha256": "f780f8dfb66e0cf54a0980e12f22ceadb3549d6e438d51cfd2e81023589d516d",
+      "captureSucceeded": true
+    },
+    {
+      "id": "offline__menu__light",
+      "screen": "offline",
+      "display": "menu",
+      "theme": "light",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/offline__menu__light.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=offline&theme=light&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=offline&theme=light&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re offline",
+            "tag": "STRONG",
+            "rect": {
+              "x": 53,
+              "y": 110.1875,
+              "width": 80.890625,
+              "height": 15,
+              "bottom": 125.1875,
+              "right": 133.890625
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "This is the last saved schedule from 10:00 UTC. Changes since then are unknown.",
+            "tag": "DIV",
+            "rect": {
+              "x": 53,
+              "y": 131.578125,
+              "width": 269.34375,
+              "height": 32.390625,
+              "bottom": 163.96875,
+              "right": 322.34375
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "Last known shift",
+            "tag": "DIV",
+            "rect": {
+              "x": 58,
+              "y": 211.359375,
+              "width": 128.734375,
+              "height": 13,
+              "bottom": 224.359375,
+              "right": 186.734375
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "You were on call",
+            "tag": "H1",
+            "rect": {
+              "x": 58,
+              "y": 233.296875,
+              "width": 154.734375,
+              "height": 26,
+              "bottom": 259.296875,
+              "right": 212.734375
+            },
+            "fontSize": 22,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary \u00b7 Until 18:00 UTC",
+            "tag": "P",
+            "rect": {
+              "x": 58,
+              "y": 269.25,
+              "width": 221.875,
+              "height": 17,
+              "bottom": 286.25,
+              "right": 279.875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Reconnect before handing over.",
+            "tag": "P",
+            "rect": {
+              "x": 58,
+              "y": 297.546875,
+              "width": 179.84375,
+              "height": 15,
+              "bottom": 312.546875,
+              "right": 237.84375
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Last known roster",
+            "tag": "H2",
+            "rect": {
+              "x": 41,
+              "y": 351.828125,
+              "width": 108.359375,
+              "height": 15,
+              "bottom": 366.828125,
+              "right": 149.359375
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "4 rotations",
+            "tag": "SPAN",
+            "rect": {
+              "x": 297.734375,
+              "y": 351.9375,
+              "width": 61.265625,
+              "height": 15,
+              "bottom": 366.9375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "JE",
+            "tag": "SPAN",
+            "rect": {
+              "x": 50.28125,
+              "y": 400.203125,
+              "width": 13.4375,
+              "height": 13,
+              "bottom": 413.203125,
+              "right": 63.71875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Jamie Ellis",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 389.328125,
+              "width": 73.796875,
+              "height": 17,
+              "bottom": 406.328125,
+              "right": 158.796875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "\u00b7 You",
+            "tag": "SPAN",
+            "rect": {
+              "x": 158.796875,
+              "y": 389.328125,
+              "width": 31.796875,
+              "height": 17,
+              "bottom": 406.328125,
+              "right": 190.59375
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 409.625,
+              "width": 94.6875,
+              "height": 15,
+              "bottom": 424.625,
+              "right": 179.6875
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 399.46875,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 414.46875,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "SO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 48.9375,
+              "y": 462.890625,
+              "width": 16.109375,
+              "height": 13,
+              "bottom": 475.890625,
+              "right": 65.046875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Sam Okafor",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 452.015625,
+              "width": 77.984375,
+              "height": 17,
+              "bottom": 469.015625,
+              "right": 162.984375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Observability",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 472.3125,
+              "width": 74.5,
+              "height": 15,
+              "bottom": 487.3125,
+              "right": 159.5
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 462.15625,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 477.15625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "TO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.15625,
+              "y": 525.578125,
+              "width": 15.6875,
+              "height": 13,
+              "bottom": 538.578125,
+              "right": 64.84375
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Tom\u00e1s Ortega",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 514.703125,
+              "width": 93.53125,
+              "height": 17,
+              "bottom": 531.703125,
+              "right": 178.53125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Routing",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 535,
+              "width": 43.40625,
+              "height": 15,
+              "bottom": 550,
+              "right": 128.40625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 524.84375,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 539.84375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "AK",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.09375,
+              "y": 588.265625,
+              "width": 15.796875,
+              "height": 13,
+              "bottom": 601.265625,
+              "right": 64.890625
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Aiko Kimura",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 577.390625,
+              "width": 79.859375,
+              "height": 17,
+              "bottom": 594.390625,
+              "right": 164.859375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Data",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 597.6875,
+              "width": 26.328125,
+              "height": 15,
+              "bottom": 612.6875,
+              "right": 111.328125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 587.53125,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 602.53125,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Last saved 10:00 UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 660.078125,
+              "width": 114.78125,
+              "height": 13,
+              "bottom": 673.078125,
+              "right": 155.78125
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Offline",
+            "tag": "SPAN",
+            "rect": {
+              "x": 323.890625,
+              "y": 660.078125,
+              "width": 35.109375,
+              "height": 13,
+              "bottom": 673.078125,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\nYou\u2019re offline\nThis is the last saved schedule from 10:00 UTC. Changes since then are unknown.\nLAST KNOWN SHIFT\nYou were on call\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nReconnect before handing over.\n\nLast known roster\n4 rotations\nJE\nJamie Ellis \u00b7 You\nPlatform Primary\nto 18:00\nSO\nSam Okafor\nObservability\nto 18:00\nTO\nTom\u00e1s Ortega\nRouting\nto 18:00\nAK\nAiko Kimura\nData\nto 18:00\nLast saved 10:00 UTC\nOffline",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 640,
+          "bottom": 660,
+          "right": 380
+        },
+        "controls": [],
+        "links": [],
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "You were on call",
+            "rect": {
+              "x": 58,
+              "y": 234.296875,
+              "width": 284,
+              "height": 25.953125,
+              "bottom": 260.25,
+              "right": 342
+            },
+            "fontSize": "22px"
+          },
+          {
+            "text": "Last known roster",
+            "rect": {
+              "x": 41,
+              "y": 351.828125,
+              "width": 108.359375,
+              "height": 15.59375,
+              "bottom": 367.421875,
+              "right": 149.359375
+            },
+            "fontSize": "12px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 49
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 20
+          },
+          {
+            "value": "12px",
+            "count": 15
+          },
+          {
+            "value": "11px",
+            "count": 8
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "22px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 27
+          },
+          {
+            "value": "rgb(96, 97, 107)",
+            "count": 20
+          },
+          {
+            "value": "rgb(134, 80, 6)",
+            "count": 2
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 39
+          },
+          {
+            "value": "rgb(237, 237, 240)",
+            "count": 4
+          },
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 3
+          },
+          {
+            "value": "rgb(245, 245, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 242, 216)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 39
+          },
+          {
+            "value": "50%",
+            "count": 4
+          },
+          {
+            "value": "6px",
+            "count": 3
+          },
+          {
+            "value": "9px",
+            "count": 2
+          },
+          {
+            "value": "14px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 49
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": false
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        640
+      ],
+      "maxChannelVariance": 1125.5375092266913,
+      "nonUniform": true,
+      "sha256": "132068e3e09302f213f4765c0add180eed108198d3700d1386ec3645439db527",
+      "captureSucceeded": true
+    },
+    {
+      "id": "offline__menu__dark",
+      "screen": "offline",
+      "display": "menu",
+      "theme": "dark",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/offline__menu__dark.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=offline&theme=dark&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=offline&theme=dark&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re offline",
+            "tag": "STRONG",
+            "rect": {
+              "x": 53,
+              "y": 110.1875,
+              "width": 80.890625,
+              "height": 15,
+              "bottom": 125.1875,
+              "right": 133.890625
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "This is the last saved schedule from 10:00 UTC. Changes since then are unknown.",
+            "tag": "DIV",
+            "rect": {
+              "x": 53,
+              "y": 131.578125,
+              "width": 269.34375,
+              "height": 32.390625,
+              "bottom": 163.96875,
+              "right": 322.34375
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "Last known shift",
+            "tag": "DIV",
+            "rect": {
+              "x": 58,
+              "y": 211.359375,
+              "width": 128.734375,
+              "height": 13,
+              "bottom": 224.359375,
+              "right": 186.734375
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "You were on call",
+            "tag": "H1",
+            "rect": {
+              "x": 58,
+              "y": 233.296875,
+              "width": 154.734375,
+              "height": 26,
+              "bottom": 259.296875,
+              "right": 212.734375
+            },
+            "fontSize": 22,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary \u00b7 Until 18:00 UTC",
+            "tag": "P",
+            "rect": {
+              "x": 58,
+              "y": 269.25,
+              "width": 221.875,
+              "height": 17,
+              "bottom": 286.25,
+              "right": 279.875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Reconnect before handing over.",
+            "tag": "P",
+            "rect": {
+              "x": 58,
+              "y": 297.546875,
+              "width": 179.84375,
+              "height": 15,
+              "bottom": 312.546875,
+              "right": 237.84375
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Last known roster",
+            "tag": "H2",
+            "rect": {
+              "x": 41,
+              "y": 351.828125,
+              "width": 108.359375,
+              "height": 15,
+              "bottom": 366.828125,
+              "right": 149.359375
+            },
+            "fontSize": 12,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "4 rotations",
+            "tag": "SPAN",
+            "rect": {
+              "x": 297.734375,
+              "y": 351.9375,
+              "width": 61.265625,
+              "height": 15,
+              "bottom": 366.9375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "JE",
+            "tag": "SPAN",
+            "rect": {
+              "x": 50.28125,
+              "y": 400.203125,
+              "width": 13.4375,
+              "height": 13,
+              "bottom": 413.203125,
+              "right": 63.71875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Jamie Ellis",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 389.328125,
+              "width": 73.796875,
+              "height": 17,
+              "bottom": 406.328125,
+              "right": 158.796875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "\u00b7 You",
+            "tag": "SPAN",
+            "rect": {
+              "x": 158.796875,
+              "y": 389.328125,
+              "width": 31.796875,
+              "height": 17,
+              "bottom": 406.328125,
+              "right": 190.59375
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Platform Primary",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 409.625,
+              "width": 94.6875,
+              "height": 15,
+              "bottom": 424.625,
+              "right": 179.6875
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 399.46875,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 414.46875,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "SO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 48.9375,
+              "y": 462.890625,
+              "width": 16.109375,
+              "height": 13,
+              "bottom": 475.890625,
+              "right": 65.046875
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Sam Okafor",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 452.015625,
+              "width": 77.984375,
+              "height": 17,
+              "bottom": 469.015625,
+              "right": 162.984375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Observability",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 472.3125,
+              "width": 74.5,
+              "height": 15,
+              "bottom": 487.3125,
+              "right": 159.5
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 462.15625,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 477.15625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "TO",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.15625,
+              "y": 525.578125,
+              "width": 15.6875,
+              "height": 13,
+              "bottom": 538.578125,
+              "right": 64.84375
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Tom\u00e1s Ortega",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 514.703125,
+              "width": 93.53125,
+              "height": 17,
+              "bottom": 531.703125,
+              "right": 178.53125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Routing",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 535,
+              "width": 43.40625,
+              "height": 15,
+              "bottom": 550,
+              "right": 128.40625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 524.84375,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 539.84375,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "AK",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.09375,
+              "y": 588.265625,
+              "width": 15.796875,
+              "height": 13,
+              "bottom": 601.265625,
+              "right": 64.890625
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Aiko Kimura",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 577.390625,
+              "width": 79.859375,
+              "height": 17,
+              "bottom": 594.390625,
+              "right": 164.859375
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Data",
+            "tag": "DIV",
+            "rect": {
+              "x": 85,
+              "y": 597.6875,
+              "width": 26.328125,
+              "height": 15,
+              "bottom": 612.6875,
+              "right": 111.328125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "to 18:00",
+            "tag": "SPAN",
+            "rect": {
+              "x": 310.453125,
+              "y": 587.53125,
+              "width": 48.546875,
+              "height": 15,
+              "bottom": 602.53125,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Last saved 10:00 UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 660.078125,
+              "width": 114.78125,
+              "height": 13,
+              "bottom": 673.078125,
+              "right": 155.78125
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Offline",
+            "tag": "SPAN",
+            "rect": {
+              "x": 323.890625,
+              "y": 660.078125,
+              "width": 35.109375,
+              "height": 13,
+              "bottom": 673.078125,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\nYou\u2019re offline\nThis is the last saved schedule from 10:00 UTC. Changes since then are unknown.\nLAST KNOWN SHIFT\nYou were on call\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nReconnect before handing over.\n\nLast known roster\n4 rotations\nJE\nJamie Ellis \u00b7 You\nPlatform Primary\nto 18:00\nSO\nSam Okafor\nObservability\nto 18:00\nTO\nTom\u00e1s Ortega\nRouting\nto 18:00\nAK\nAiko Kimura\nData\nto 18:00\nLast saved 10:00 UTC\nOffline",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 640,
+          "bottom": 660,
+          "right": 380
+        },
+        "controls": [],
+        "links": [],
+        "smallTargets": [],
+        "headings": [
+          {
+            "text": "You were on call",
+            "rect": {
+              "x": 58,
+              "y": 234.296875,
+              "width": 284,
+              "height": 25.953125,
+              "bottom": 260.25,
+              "right": 342
+            },
+            "fontSize": "22px"
+          },
+          {
+            "text": "Last known roster",
+            "rect": {
+              "x": 41,
+              "y": 351.828125,
+              "width": 108.359375,
+              "height": 15.59375,
+              "bottom": 367.421875,
+              "right": 149.359375
+            },
+            "fontSize": "12px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 49
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 20
+          },
+          {
+            "value": "12px",
+            "count": 15
+          },
+          {
+            "value": "11px",
+            "count": 8
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "22px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 27
+          },
+          {
+            "value": "rgb(185, 186, 196)",
+            "count": 20
+          },
+          {
+            "value": "rgb(242, 197, 125)",
+            "count": 2
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 39
+          },
+          {
+            "value": "rgb(58, 59, 66)",
+            "count": 4
+          },
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 3
+          },
+          {
+            "value": "rgb(38, 39, 44)",
+            "count": 1
+          },
+          {
+            "value": "rgb(69, 56, 33)",
+            "count": 1
+          },
+          {
+            "value": "rgb(48, 49, 55)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 39
+          },
+          {
+            "value": "50%",
+            "count": 4
+          },
+          {
+            "value": "6px",
+            "count": 3
+          },
+          {
+            "value": "9px",
+            "count": 2
+          },
+          {
+            "value": "14px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 49
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": true
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        640
+      ],
+      "maxChannelVariance": 1187.6065305957748,
+      "nonUniform": true,
+      "sha256": "ebbb932a99d1a6bfdfa047de3430a5f82d6c3e8759ec79b61969d303ad41af98",
+      "captureSucceeded": true
+    },
+    {
+      "id": "empty__menu__light",
+      "screen": "empty",
+      "display": "menu",
+      "theme": "light",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/empty__menu__light.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=empty&theme=light&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=empty&theme=light&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2014",
+            "tag": "DIV",
+            "rect": {
+              "x": 51.75,
+              "y": 127.234375,
+              "width": 18.484375,
+              "height": 26,
+              "bottom": 153.234375,
+              "right": 70.234375
+            },
+            "fontSize": 22,
+            "fontWeight": "400",
+            "color": "rgb(134, 80, 6)",
+            "inViewport": true
+          },
+          {
+            "text": "No schedule yet",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 177.1875,
+              "width": 185.34375,
+              "height": 30,
+              "bottom": 207.1875,
+              "right": 226.34375
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "There are no on-call shifts in this schedule. No one is shown as responsible.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 220.859375,
+              "width": 300.125,
+              "height": 37.296875,
+              "bottom": 258.15625,
+              "right": 341.125
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Ask your rotation owner to add the schedule.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 273.453125,
+              "width": 253.53125,
+              "height": 15,
+              "bottom": 288.453125,
+              "right": 294.53125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Check again",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 158.953125,
+              "y": 343.6875,
+              "width": 82.09375,
+              "height": 17,
+              "bottom": 360.6875,
+              "right": 241.046875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 405.84375,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 418.84375,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 405.84375,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 418.84375,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2014\nNo schedule yet\n\nThere are no on-call shifts in this schedule. No one is shown as responsible.\n\nAsk your rotation owner to add the schedule.\n\nCheck again\n\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 413.78125,
+          "bottom": 433.78125,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Check again",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 333.84375,
+              "width": 318,
+              "height": 38,
+              "bottom": 371.84375,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Check again",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 333.84375,
+              "width": 318,
+              "height": 38,
+              "bottom": 371.84375,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "No schedule yet",
+            "rect": {
+              "x": 41,
+              "y": 177.1875,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 207.859375,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 20
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 7
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "12px",
+            "count": 3
+          },
+          {
+            "value": "11px",
+            "count": 3
+          },
+          {
+            "value": "22px",
+            "count": 1
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 13
+          },
+          {
+            "value": "rgb(96, 97, 107)",
+            "count": 6
+          },
+          {
+            "value": "rgb(134, 80, 6)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 14
+          },
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 3
+          },
+          {
+            "value": "rgb(245, 245, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 242, 216)",
+            "count": 1
+          },
+          {
+            "value": "rgb(237, 237, 240)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 14
+          },
+          {
+            "value": "6px",
+            "count": 4
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "50%",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 20
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": false
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 413.78125
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        413
+      ],
+      "maxChannelVariance": 933.8948965810338,
+      "nonUniform": true,
+      "sha256": "ee5670db6fb0d28f35ac3acbbb7bcfa80b42f20384e8f42f554388f31d47cfe7",
+      "captureSucceeded": true
+    },
+    {
+      "id": "empty__menu__dark",
+      "screen": "empty",
+      "display": "menu",
+      "theme": "dark",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/empty__menu__dark.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=empty&theme=dark&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=empty&theme=dark&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2014",
+            "tag": "DIV",
+            "rect": {
+              "x": 51.75,
+              "y": 127.234375,
+              "width": 18.484375,
+              "height": 26,
+              "bottom": 153.234375,
+              "right": 70.234375
+            },
+            "fontSize": 22,
+            "fontWeight": "400",
+            "color": "rgb(242, 197, 125)",
+            "inViewport": true
+          },
+          {
+            "text": "No schedule yet",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 177.1875,
+              "width": 185.34375,
+              "height": 30,
+              "bottom": 207.1875,
+              "right": 226.34375
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "There are no on-call shifts in this schedule. No one is shown as responsible.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 220.859375,
+              "width": 300.125,
+              "height": 37.296875,
+              "bottom": 258.15625,
+              "right": 341.125
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Ask your rotation owner to add the schedule.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 273.453125,
+              "width": 253.53125,
+              "height": 15,
+              "bottom": 288.453125,
+              "right": 294.53125
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Check again",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 158.953125,
+              "y": 343.6875,
+              "width": 82.09375,
+              "height": 17,
+              "bottom": 360.6875,
+              "right": 241.046875
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 405.84375,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 418.84375,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 405.84375,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 418.84375,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2014\nNo schedule yet\n\nThere are no on-call shifts in this schedule. No one is shown as responsible.\n\nAsk your rotation owner to add the schedule.\n\nCheck again\n\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 413.78125,
+          "bottom": 433.78125,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Check again",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 333.84375,
+              "width": 318,
+              "height": 38,
+              "bottom": 371.84375,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Check again",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 333.84375,
+              "width": 318,
+              "height": 38,
+              "bottom": 371.84375,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "No schedule yet",
+            "rect": {
+              "x": 41,
+              "y": 177.1875,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 207.859375,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 20
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 7
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "12px",
+            "count": 3
+          },
+          {
+            "value": "11px",
+            "count": 3
+          },
+          {
+            "value": "22px",
+            "count": 1
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 13
+          },
+          {
+            "value": "rgb(185, 186, 196)",
+            "count": 6
+          },
+          {
+            "value": "rgb(242, 197, 125)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 14
+          },
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 3
+          },
+          {
+            "value": "rgb(38, 39, 44)",
+            "count": 1
+          },
+          {
+            "value": "rgb(69, 56, 33)",
+            "count": 1
+          },
+          {
+            "value": "rgb(58, 59, 66)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 14
+          },
+          {
+            "value": "6px",
+            "count": 4
+          },
+          {
+            "value": "14px",
+            "count": 1
+          },
+          {
+            "value": "50%",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 20
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": true
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 413.78125
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        413
+      ],
+      "maxChannelVariance": 1014.9605022323975,
+      "nonUniform": true,
+      "sha256": "a886a4b9ecaae4abd3f02a40f7bbb377d8cff971f1830f8b1e7ab8af147a5c23",
+      "captureSucceeded": true
+    },
+    {
+      "id": "accepted__menu__light",
+      "screen": "accepted",
+      "display": "menu",
+      "theme": "light",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/accepted__menu__light.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=accepted&theme=light&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=accepted&theme=light&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2713",
+            "tag": "DIV",
+            "rect": {
+              "x": 51.59375,
+              "y": 103.234375,
+              "width": 18.8125,
+              "height": 26,
+              "bottom": 129.234375,
+              "right": 70.40625
+            },
+            "fontSize": 22,
+            "fontWeight": "400",
+            "color": "rgb(33, 100, 64)",
+            "inViewport": true
+          },
+          {
+            "text": "Handover accepted",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 153.1875,
+              "width": 226.9375,
+              "height": 30,
+              "bottom": 183.1875,
+              "right": 267.9375
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Priya is now responsible for Platform Primary.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 192.859375,
+              "width": 291.625,
+              "height": 17,
+              "bottom": 209.859375,
+              "right": 332.625
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "PR",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.484375,
+              "y": 261.03125,
+              "width": 15.03125,
+              "height": 13,
+              "bottom": 274.03125,
+              "right": 64.515625
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "Priya Raman",
+            "tag": "STRONG",
+            "rect": {
+              "x": 85,
+              "y": 250.15625,
+              "width": 85.921875,
+              "height": 17,
+              "bottom": 267.15625,
+              "right": 170.921875
+            },
+            "fontSize": 14,
+            "fontWeight": "700",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "On call until 18:00 UTC",
+            "tag": "P",
+            "rect": {
+              "x": 85,
+              "y": 270.453125,
+              "width": 130.140625,
+              "height": 15,
+              "bottom": 285.453125,
+              "right": 215.140625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re off call for this rotation.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 324.84375,
+              "width": 195.1875,
+              "height": 17,
+              "bottom": 341.84375,
+              "right": 236.1875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(32, 33, 39)",
+            "inViewport": true
+          },
+          {
+            "text": "Back to schedule",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 142.875,
+              "y": 373.984375,
+              "width": 114.25,
+              "height": 17,
+              "bottom": 390.984375,
+              "right": 257.125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(255, 255, 255)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 436.140625,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 449.140625,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 436.140625,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 449.140625,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(96, 97, 107)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2713\nHandover accepted\n\nPriya is now responsible for Platform Primary.\n\nPR\nPriya Raman\n\nOn call until 18:00 UTC\n\nYou\u2019re off call for this rotation.\n\nBack to schedule\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 444.078125,
+          "bottom": 464.078125,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Back to schedule",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 364.140625,
+              "width": 318,
+              "height": 38,
+              "bottom": 402.140625,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Back to schedule",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 364.140625,
+              "width": 318,
+              "height": 38,
+              "bottom": 402.140625,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "Handover accepted",
+            "rect": {
+              "x": 41,
+              "y": 153.1875,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 183.859375,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 25
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 11
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "11px",
+            "count": 4
+          },
+          {
+            "value": "12px",
+            "count": 3
+          },
+          {
+            "value": "22px",
+            "count": 1
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 16
+          },
+          {
+            "value": "rgb(96, 97, 107)",
+            "count": 7
+          },
+          {
+            "value": "rgb(33, 100, 64)",
+            "count": 1
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 18
+          },
+          {
+            "value": "rgb(32, 33, 39)",
+            "count": 3
+          },
+          {
+            "value": "rgb(245, 245, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgb(234, 244, 237)",
+            "count": 1
+          },
+          {
+            "value": "rgb(237, 237, 240)",
+            "count": 1
+          },
+          {
+            "value": "rgb(24, 91, 197)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 18
+          },
+          {
+            "value": "6px",
+            "count": 4
+          },
+          {
+            "value": "50%",
+            "count": 2
+          },
+          {
+            "value": "14px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 25
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": false
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 444.078125
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        444
+      ],
+      "maxChannelVariance": 4022.6759243851907,
+      "nonUniform": true,
+      "sha256": "fc1da9b1681e7ce2ba66c14d237c7a70999098bddb1ed6c36256a4befba858d7",
+      "captureSucceeded": true
+    },
+    {
+      "id": "accepted__menu__dark",
+      "screen": "accepted",
+      "display": "menu",
+      "theme": "dark",
+      "viewport": [
+        400,
+        680
+      ],
+      "path": "shots/accepted__menu__dark.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "blockedRequests": [],
+      "failedRequests": [],
+      "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=accepted&theme=dark&display=menu",
+      "metrics": {
+        "title": "Rota \u00b7 On call",
+        "lang": "en",
+        "url": "file:///Users/joao.terroa/src/design-philosophy/evals/iteration-3/runs/oncall-menubar/revision/run-2/outputs/app/index.html?screen=accepted&theme=dark&display=menu",
+        "textRuns": [
+          {
+            "text": "Rota",
+            "tag": "DIV",
+            "rect": {
+              "x": 67,
+              "y": 39,
+              "width": 34.34375,
+              "height": 18,
+              "bottom": 57,
+              "right": 101.34375
+            },
+            "fontSize": 16,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Sun, 18 Oct",
+            "tag": "SPAN",
+            "rect": {
+              "x": 293.34375,
+              "y": 40.890625,
+              "width": 65.65625,
+              "height": 15,
+              "bottom": 55.890625,
+              "right": 359
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "\u2713",
+            "tag": "DIV",
+            "rect": {
+              "x": 51.59375,
+              "y": 103.234375,
+              "width": 18.8125,
+              "height": 26,
+              "bottom": 129.234375,
+              "right": 70.40625
+            },
+            "fontSize": 22,
+            "fontWeight": "400",
+            "color": "rgb(158, 218, 180)",
+            "inViewport": true
+          },
+          {
+            "text": "Handover accepted",
+            "tag": "H1",
+            "rect": {
+              "x": 41,
+              "y": 153.1875,
+              "width": 226.9375,
+              "height": 30,
+              "bottom": 183.1875,
+              "right": 267.9375
+            },
+            "fontSize": 26,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Priya is now responsible for Platform Primary.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 192.859375,
+              "width": 291.625,
+              "height": 17,
+              "bottom": 209.859375,
+              "right": 332.625
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "PR",
+            "tag": "SPAN",
+            "rect": {
+              "x": 49.484375,
+              "y": 261.03125,
+              "width": 15.03125,
+              "height": 13,
+              "bottom": 274.03125,
+              "right": 64.515625
+            },
+            "fontSize": 11,
+            "fontWeight": "650",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "Priya Raman",
+            "tag": "STRONG",
+            "rect": {
+              "x": 85,
+              "y": 250.15625,
+              "width": 85.921875,
+              "height": 17,
+              "bottom": 267.15625,
+              "right": 170.921875
+            },
+            "fontSize": 14,
+            "fontWeight": "700",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "On call until 18:00 UTC",
+            "tag": "P",
+            "rect": {
+              "x": 85,
+              "y": 270.453125,
+              "width": 130.140625,
+              "height": 15,
+              "bottom": 285.453125,
+              "right": 215.140625
+            },
+            "fontSize": 12,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "You\u2019re off call for this rotation.",
+            "tag": "P",
+            "rect": {
+              "x": 41,
+              "y": 324.84375,
+              "width": 195.1875,
+              "height": 17,
+              "bottom": 341.84375,
+              "right": 236.1875
+            },
+            "fontSize": 14,
+            "fontWeight": "400",
+            "color": "rgb(243, 243, 245)",
+            "inViewport": true
+          },
+          {
+            "text": "Back to schedule",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 142.875,
+              "y": 373.984375,
+              "width": 114.25,
+              "height": 17,
+              "bottom": 390.984375,
+              "right": 257.125
+            },
+            "fontSize": 14,
+            "fontWeight": "550",
+            "color": "rgb(20, 42, 74)",
+            "inViewport": true
+          },
+          {
+            "text": "Schedule \u00b7 18 October 2026",
+            "tag": "SPAN",
+            "rect": {
+              "x": 41,
+              "y": 436.140625,
+              "width": 147.21875,
+              "height": 13,
+              "bottom": 449.140625,
+              "right": 188.21875
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          },
+          {
+            "text": "UTC",
+            "tag": "SPAN",
+            "rect": {
+              "x": 336.171875,
+              "y": 436.140625,
+              "width": 22.828125,
+              "height": 13,
+              "bottom": 449.140625,
+              "right": 359
+            },
+            "fontSize": 11,
+            "fontWeight": "400",
+            "color": "rgb(185, 186, 196)",
+            "inViewport": true
+          }
+        ],
+        "unlabeledFields": [],
+        "bodyText": "Rota\nSun, 18 Oct\n\u2713\nHandover accepted\n\nPriya is now responsible for Platform Primary.\n\nPR\nPriya Raman\n\nOn call until 18:00 UTC\n\nYou\u2019re off call for this rotation.\n\nBack to schedule\nSchedule \u00b7 18 October 2026\nUTC",
+        "viewport": {
+          "width": 400,
+          "height": 680,
+          "dpr": 1
+        },
+        "documentSize": {
+          "width": 400,
+          "height": 680
+        },
+        "horizontalOverflow": false,
+        "app": {
+          "x": 20,
+          "y": 20,
+          "width": 360,
+          "height": 444.078125,
+          "bottom": 464.078125,
+          "right": 380
+        },
+        "controls": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Back to schedule",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 364.140625,
+              "width": 318,
+              "height": 38,
+              "bottom": 402.140625,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "links": [],
+        "smallTargets": [
+          {
+            "tag": "button",
+            "role": null,
+            "label": "Back to schedule",
+            "href": null,
+            "type": "button",
+            "disabled": false,
+            "inViewport": true,
+            "rect": {
+              "x": 41,
+              "y": 364.140625,
+              "width": 318,
+              "height": 38,
+              "bottom": 402.140625,
+              "right": 359
+            },
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "fontSize": "14px",
+            "borderRadius": "6px",
+            "cornerShape": "superellipse(1)"
+          }
+        ],
+        "headings": [
+          {
+            "text": "Handover accepted",
+            "rect": {
+              "x": 41,
+              "y": 153.1875,
+              "width": 318,
+              "height": 30.671875,
+              "bottom": 183.859375,
+              "right": 359
+            },
+            "fontSize": "26px"
+          }
+        ],
+        "fonts": [
+          {
+            "value": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "count": 25
+          }
+        ],
+        "fontSizes": [
+          {
+            "value": "14px",
+            "count": 11
+          },
+          {
+            "value": "16px",
+            "count": 5
+          },
+          {
+            "value": "11px",
+            "count": 4
+          },
+          {
+            "value": "12px",
+            "count": 3
+          },
+          {
+            "value": "22px",
+            "count": 1
+          },
+          {
+            "value": "26px",
+            "count": 1
+          }
+        ],
+        "colors": [
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 16
+          },
+          {
+            "value": "rgb(185, 186, 196)",
+            "count": 7
+          },
+          {
+            "value": "rgb(158, 218, 180)",
+            "count": 1
+          },
+          {
+            "value": "rgb(20, 42, 74)",
+            "count": 1
+          }
+        ],
+        "backgrounds": [
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 18
+          },
+          {
+            "value": "rgb(243, 243, 245)",
+            "count": 3
+          },
+          {
+            "value": "rgb(38, 39, 44)",
+            "count": 1
+          },
+          {
+            "value": "rgb(41, 62, 50)",
+            "count": 1
+          },
+          {
+            "value": "rgb(58, 59, 66)",
+            "count": 1
+          },
+          {
+            "value": "rgb(149, 188, 255)",
+            "count": 1
+          }
+        ],
+        "radii": [
+          {
+            "value": "0px",
+            "count": 18
+          },
+          {
+            "value": "6px",
+            "count": 4
+          },
+          {
+            "value": "50%",
+            "count": 2
+          },
+          {
+            "value": "14px",
+            "count": 1
+          }
+        ],
+        "cornerShapes": [
+          {
+            "value": "superellipse(1)",
+            "count": 25
+          }
+        ],
+        "items": [],
+        "visibleItemCount": 0,
+        "fullyVisibleItemCount": 0,
+        "overflowElements": [],
+        "clock": "2026-10-18T10:00:00.000Z",
+        "prefersDark": true
+      },
+      "menuBounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 444.078125
+      },
+      "menuFitsViewport": true,
+      "menuExpectedWidth": true,
+      "dimensions": [
+        360,
+        444
+      ],
+      "maxChannelVariance": 3826.038558805576,
+      "nonUniform": true,
+      "sha256": "2b20c62a17950475abb298691e0fc9ef53caddad2ef8c8b3bb8e64f477ed397f",
+      "captureSucceeded": true
+    }
+  ],
+  "expectedShots": 12,
+  "outputSha256Before": "393b94d6c55a5b5a61a24ec84e29dc3ef20ad7696f32341d3d0a2a48c2de39c2",
+  "outputSha256After": "393b94d6c55a5b5a61a24ec84e29dc3ef20ad7696f32341d3d0a2a48c2de39c2",
+  "sourceUnchanged": true,
+  "capturedShots": 12,
+  "complete": true,
+  "identicalImageGroups": [],
+  "identicalTextGroups": [
+    [
+      "main__menu__light",
+      "main__menu__dark"
+    ],
+    [
+      "compose__menu__light",
+      "compose__menu__dark"
+    ],
+    [
+      "pending__menu__light",
+      "pending__menu__dark"
+    ],
+    [
+      "offline__menu__light",
+      "offline__menu__dark"
+    ],
+    [
+      "empty__menu__light",
+      "empty__menu__dark"
+    ],
+    [
+      "accepted__menu__light",
+      "accepted__menu__dark"
+    ]
+  ],
+  "issues": {
+    "consoleErrorShots": 0,
+    "pageErrorShots": 0,
+    "networkDependentShots": 0,
+    "horizontalOverflowShots": 0,
+    "menuClippedShots": 0
+  }
+}

@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing this prototype. Keep visual roles in app/tokens.css and run verification/design-guard.mjs plus verification/verify.py after changes. Do not modify the supplied fixtures or brand guide.

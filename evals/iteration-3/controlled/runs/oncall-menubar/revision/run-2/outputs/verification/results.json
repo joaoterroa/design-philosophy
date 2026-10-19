@@ -1,0 +1,277 @@
+{
+  "screens": [
+    {
+      "state": "main",
+      "theme": "light",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 602.234375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 590.375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 600.671875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 638.140625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 399.0625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 443.296875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "main",
+      "theme": "light",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 602.234375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 590.375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 600.671875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 638.140625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 399.0625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 443.296875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 602.234375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 590.375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 600.671875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 638.140625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 399.0625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "display": "laptop",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 443.296875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 602.234375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 590.375,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 600.671875,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 638.140625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 399.0625,
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "display": "tv",
+      "x": 20,
+      "y": 20,
+      "width": 360,
+      "height": 443.296875,
+      "overflow": false,
+      "horizontal": false
+    }
+  ],
+  "interactions": [
+    "Full keyboard choose \u2192 note \u2192 review \u2192 edit \u2192 send; pending remains; main/reload preserves pending; cancel request restores ownership",
+    "Escape returns from compose",
+    "Offline retry and empty refresh stay honest; retry retains focus",
+    "Explicit harness acceptance \u2192 accepted \u2192 main shows Priya responsible",
+    "System dark preference and reduced motion honored"
+  ],
+  "errors": [],
+  "external_requests": []
+}

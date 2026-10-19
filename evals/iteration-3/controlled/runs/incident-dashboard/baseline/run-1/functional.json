@@ -1,0 +1,166 @@
+{
+  "runId": "incident-dashboard__baseline__1",
+  "checks": [
+    {
+      "check": "complete run",
+      "status": "pass",
+      "evidence": "completed",
+      "severity": "critical"
+    },
+    {
+      "check": "all final states captured",
+      "status": "pass",
+      "evidence": "12/12",
+      "severity": "critical"
+    },
+    {
+      "check": "supplied inputs unchanged",
+      "status": "pass",
+      "evidence": [],
+      "severity": "integrity"
+    },
+    {
+      "check": "no console errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no runtime errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no network dependence",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no horizontal overflow",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no menu clipping",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes live",
+      "status": "pass",
+      "evidence": {
+        "light": "74c3f822f9803c5b109df5d150d7384a980322c4328f9f5c7ebe09bfe2488ff7",
+        "dark": "38e3d3722eb506ff950c178a4810cfabd0f193d78e171092792091041009a640"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes stale",
+      "status": "pass",
+      "evidence": {
+        "light": "a69cc2d28b75879e3576486f260a9c09f30f90e3623e0763c097a5149708712b",
+        "dark": "ddc4dae08cbe63f599f09e89dbd2140d17f4af18c7f24d0882273c7c69ad741a"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes surge",
+      "status": "pass",
+      "evidence": {
+        "light": "6f5117ed16f70c0c0e5899e1a915f572b42d530fd0d03b08205d3953d11a3bc5",
+        "dark": "54381ba0c07ab30fd8bea5b65e9fa8e676a73b067af719e669260a4f26e59d5c"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "SEV1 incident retained",
+      "status": "pass",
+      "evidence": "INC-2291 in rendered text",
+      "severity": "critical"
+    },
+    {
+      "check": "stale status explicit",
+      "status": "pass",
+      "evidence": "Skip to incidents\nnorthwind\nOperations / Incidents\nTV view\nLight\nIncident overview\nUpdates paused\nLast received 09:42 \u00b7 18 October 2026\n\nData is out of date. Status, counts and durations may have changed.\n\nOpen incidents\n7\n1 SEV1\n\u00b7 2 SEV2 \u00b7 4 SEV3\nMean time to resolve \u00b7 7d\n48m\n\n\u2193 12% lower vs last week\n\nPages today\n23\n\n\u2191 5\n\nSLO budget left\n61%\n\n\u2193 4 points lower\n\nOpen incidents\n7\nSearch incidents by title, ID or service\nFilter by severity\nAll severities\nSEV1\nSEV2\nSEV3\nSeverity\tIncident / service\tStatus\tCommander\tDuration / opened\nSEV1\t\nRoute optimiser timeouts for EU-West depots\nINC-2291\nRouting API\n\tInvestigating\tUnassigned\t1h 18m\n09:42\n\nSEV2\t\nDelayed tracking events from scanner fleet B\nINC-2290\nTracking Ingest\n\tMitigated\tPriya N.\t2h 55m\n08:05\n\nSEV2\t\nInvoice PDF generation failing for 3% ",
+      "severity": "critical"
+    }
+  ],
+  "observations": [
+    {
+      "check": "TV visible incident identifiers",
+      "screen": "live",
+      "count": 9,
+      "openCount": 7,
+      "resolvedCount": 2,
+      "ids": [
+        "INC-2283",
+        "INC-2284",
+        "INC-2285",
+        "INC-2286",
+        "INC-2287",
+        "INC-2288",
+        "INC-2289",
+        "INC-2290",
+        "INC-2291"
+      ],
+      "expectedOpen": 7,
+      "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+    },
+    {
+      "check": "TV visible incident identifiers",
+      "screen": "stale",
+      "count": 9,
+      "openCount": 7,
+      "resolvedCount": 2,
+      "ids": [
+        "INC-2283",
+        "INC-2284",
+        "INC-2285",
+        "INC-2286",
+        "INC-2287",
+        "INC-2288",
+        "INC-2289",
+        "INC-2290",
+        "INC-2291"
+      ],
+      "expectedOpen": 7,
+      "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+    },
+    {
+      "check": "TV visible incident identifiers",
+      "screen": "surge",
+      "count": 9,
+      "openCount": 7,
+      "resolvedCount": 2,
+      "ids": [
+        "INC-2283",
+        "INC-2284",
+        "INC-2285",
+        "INC-2286",
+        "INC-2287",
+        "INC-2288",
+        "INC-2289",
+        "INC-2290",
+        "INC-2291"
+      ],
+      "expectedOpen": 12,
+      "note": "Identifier visibility is a coverage aid; inspect title legibility, overflow summary and paging behavior too."
+    }
+  ],
+  "interaction": [
+    {
+      "check": "dashboard interaction scope",
+      "status": "not applicable",
+      "evidence": "Read-only display; inspect data, freshness, overflow and laptop access separately."
+    }
+  ],
+  "failures": 0,
+  "limitations": [
+    "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+    "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+  ]
+}

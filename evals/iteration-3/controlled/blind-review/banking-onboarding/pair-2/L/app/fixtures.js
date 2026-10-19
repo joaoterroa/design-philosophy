@@ -1,0 +1,17 @@
+/* Fixed offline fixture for the assigned product. */
+window.EVAL_FIXTURES = {
+  "now": "2026-10-18T10:00:00Z",
+  "bank": {
+    "name": "Harbour",
+    "customer": "Alex Morgan",
+    "mobileEnding": "482",
+    "testCode": "482913",
+    "codeLength": 6,
+    "accountName": "Everyday account",
+    "sortCode": "04-00-26",
+    "accountNumber": "12345678",
+    "balance": "£0.00",
+    "helpPhone": "0808 157 0192",
+    "warning": "We will never call you to ask for this code. Do not share it."
+  }
+};

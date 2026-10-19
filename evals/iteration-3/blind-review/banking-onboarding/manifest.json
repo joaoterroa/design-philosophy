@@ -1,0 +1,627 @@
+{
+  "task": "banking-onboarding",
+  "pairs": [
+    {
+      "id": "banking-onboarding-pair-1",
+      "repeat": 1,
+      "sides": {
+        "L": {
+          "shots": [
+            {
+              "id": "welcome__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/welcome__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "welcome__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/welcome__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "details-error__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/details-error__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "details-error__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/details-error__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code-error__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code-error__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code-error__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code-error__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "help__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/help__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "help__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/help__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "done__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/done__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "done__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/done__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "welcome__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/welcome__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "welcome__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/welcome__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "details-error__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/details-error__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "details-error__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/details-error__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code-error__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code-error__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code-error__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/code-error__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "help__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/help__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "help__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/help__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "done__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/done__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "done__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/shots/done__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/blind-review/banking-onboarding/pair-1/L/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        },
+        "R": {
+          "shots": [
+            {
+              "id": "welcome__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/welcome__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "welcome__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/welcome__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "details-error__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/details-error__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "details-error__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/details-error__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code-error__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code-error__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "code-error__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code-error__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "help__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/help__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "help__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/help__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "done__phone__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/done__phone__light.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "done__phone__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/done__phone__dark.png",
+              "pixels": [
+                390,
+                844
+              ],
+              "viewport": [
+                390,
+                844
+              ]
+            },
+            {
+              "id": "welcome__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/welcome__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "welcome__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/welcome__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "details-error__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/details-error__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "details-error__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/details-error__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code-error__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code-error__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "code-error__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/code-error__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "help__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/help__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "help__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/help__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "done__small__light",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/done__small__light.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            },
+            {
+              "id": "done__small__dark",
+              "file": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/shots/done__small__dark.png",
+              "pixels": [
+                320,
+                568
+              ],
+              "viewport": [
+                320,
+                568
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/blind-review/banking-onboarding/pair-1/R/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        }
+      },
+      "primaryComparisons": [
+        "evals/iteration-3/blind-review/banking-onboarding/pair-1/comparison-1.png",
+        "evals/iteration-3/blind-review/banking-onboarding/pair-1/comparison-2.png",
+        "evals/iteration-3/blind-review/banking-onboarding/pair-1/comparison-3.png",
+        "evals/iteration-3/blind-review/banking-onboarding/pair-1/comparison-4.png"
+      ],
+      "primaryStates": [
+        "welcome__phone__light",
+        "code__phone__light",
+        "code-error__phone__dark",
+        "help__small__light"
+      ]
+    }
+  ],
+  "rubric": [
+    "composition",
+    "hierarchy",
+    "task fit and usability",
+    "product-specific personality",
+    "craftsmanship",
+    "overall design quality"
+  ],
+  "scoreAnchors": {
+    "1": "weak",
+    "2": "material weaknesses",
+    "3": "competent",
+    "4": "strong",
+    "5": "exceptional"
+  },
+  "instructions": "Judge full screens at their actual scale before enlarged details. Consider state changes, labels, density, priority and character together. No credit for following an unseen process or resembling a brand. State uncertainty. Do not inspect any other task, the identity key, skill files, DESIGN.md or other study material."
+}

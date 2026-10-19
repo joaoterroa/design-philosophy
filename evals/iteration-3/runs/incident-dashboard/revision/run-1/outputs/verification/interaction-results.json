@@ -1,0 +1,87 @@
+[
+  {
+    "display": "tv",
+    "theme": "light",
+    "state": "live",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "tv",
+    "theme": "light",
+    "state": "stale",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "theme": "light",
+    "tvPagination": "PASS; all 12 reachable; stable footer; focus retained"
+  },
+  {
+    "display": "tv",
+    "theme": "light",
+    "state": "surge",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "tv",
+    "theme": "dark",
+    "state": "live",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "tv",
+    "theme": "dark",
+    "state": "stale",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "theme": "dark",
+    "tvPagination": "PASS; all 12 reachable; stable footer; focus retained"
+  },
+  {
+    "display": "tv",
+    "theme": "dark",
+    "state": "surge",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "laptop",
+    "theme": "light",
+    "state": "live",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "laptop",
+    "theme": "light",
+    "state": "stale",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "laptop",
+    "theme": "light",
+    "state": "surge",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "laptop",
+    "theme": "dark",
+    "state": "live",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "laptop",
+    "theme": "dark",
+    "state": "stale",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "display": "laptop",
+    "theme": "dark",
+    "state": "surge",
+    "detailsKeyboardCloseEscapeFocus": "PASS"
+  },
+  {
+    "systemTheme": "PASS initial, change, explicit override",
+    "reducedMotion": "PASS; data preserved; zero transition",
+    "skipLink": "PASS keyboard focus and target"
+  }
+]

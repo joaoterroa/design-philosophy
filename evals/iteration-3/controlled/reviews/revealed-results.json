@@ -1,0 +1,62 @@
+[
+  {
+    "pair": "oncall-menubar-pair-1",
+    "maskedChoice": "right",
+    "key": {
+      "L": "baseline",
+      "R": "revision"
+    },
+    "preferredCondition": "revision",
+    "confidence": "medium-low"
+  },
+  {
+    "pair": "incident-dashboard-pair-1",
+    "maskedChoice": "right",
+    "key": {
+      "L": "revision",
+      "R": "baseline"
+    },
+    "preferredCondition": "baseline",
+    "confidence": "medium-low"
+  },
+  {
+    "pair": "banking-onboarding-pair-1",
+    "maskedChoice": "same",
+    "key": {
+      "L": "baseline",
+      "R": "revision"
+    },
+    "preferredCondition": "same",
+    "confidence": "medium"
+  },
+  {
+    "pair": "oncall-menubar-pair-2",
+    "maskedChoice": "left",
+    "key": {
+      "L": "revision",
+      "R": "baseline"
+    },
+    "preferredCondition": "revision",
+    "confidence": "medium"
+  },
+  {
+    "pair": "incident-dashboard-pair-2",
+    "maskedChoice": "left",
+    "key": {
+      "L": "baseline",
+      "R": "revision"
+    },
+    "preferredCondition": "baseline",
+    "confidence": "medium-low"
+  },
+  {
+    "pair": "banking-onboarding-pair-2",
+    "maskedChoice": "left",
+    "key": {
+      "L": "revision",
+      "R": "baseline"
+    },
+    "preferredCondition": "revision",
+    "confidence": "medium-low"
+  }
+]

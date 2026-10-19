@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing the Harbour app. Use app/tokens.css and preserve the read-only fixture copy. Run verification/design-guard.cjs with Node and verification/verify.py with the supplied Playwright Python environment. Keep external requests and demo controls out of the product.

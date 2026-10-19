@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "referenceImages": 21,
+  "experimentPairs": 40,
+  "pngs": 80,
+  "consoleErrors": [],
+  "networkRequests": [],
+  "viewports": [
+    1440,
+    1280,
+    390
+  ],
+  "checks": [
+    "protected source hashes",
+    "reference image hashes/dimensions",
+    "nonuniform PNGs",
+    "offline file:// report",
+    "equal original/revision image scale",
+    "local links",
+    "label hiding and independent pair orders",
+    "theme-specific preferences",
+    "localStorage persistence",
+    "review JSON download",
+    "image dialog keyboard dismissal",
+    "three embedded videos decode",
+    "responsive layout"
+  ]
+}

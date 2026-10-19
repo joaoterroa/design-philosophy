@@ -1,0 +1,1 @@
+Read ../SYSTEM.md before changing this UI. Use tokens.css for design values. Preserve fixtures.js as an exact copy of the supplied root fixture. Run ../verification/tokens_guard.js and ../verification/check_ui.py after UI changes. Keep review-only simulation controls in ../review.html, outside #app.

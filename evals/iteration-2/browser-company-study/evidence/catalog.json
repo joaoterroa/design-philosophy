@@ -1,0 +1,317 @@
+[
+  {
+    "id": "dia-strategy-02",
+    "file": "assets/dia-strategy-02.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/7d0fe6d0-b69b-467c-a05d-f1ef02c7347c_1600x900.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published component closeup; not full application",
+    "title": "Tab and content share a field",
+    "sha256": "dc574fc0d7e317f9d994c4c564dcedb1ad562661a973b09cce93f13765ec5e6b",
+    "pixels": [
+      1600,
+      900
+    ]
+  },
+  {
+    "id": "dia-strategy-03",
+    "file": "assets/dia-strategy-03.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/9e8b8ca1-c290-4867-8703-d7ed8c93f1a9_3692x2077.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published process image; alternatives, not shipped UI",
+    "title": "Exploration board",
+    "sha256": "09ba06a7cf5ed5cf45f7a20170104a6e5a080848e1121e3aaaf9109a96fb0307",
+    "pixels": [
+      3692,
+      2077
+    ]
+  },
+  {
+    "id": "dia-strategy-04",
+    "file": "assets/dia-strategy-04.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/18a1ee39-e5ef-4b2d-a177-f44e15d27d33_1600x901.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published browser closeup",
+    "title": "Ordinary bookmarks",
+    "sha256": "1e8774e66b7b6c830d9629cafc8a3cf70b99f0a8e59c54a52528af6f592c30b8",
+    "pixels": [
+      1600,
+      901
+    ]
+  },
+  {
+    "id": "dia-strategy-05",
+    "file": "assets/dia-strategy-05.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/5619b358-2f84-42de-850a-152e85a08b43_1600x900.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published component closeup",
+    "title": "Context in the composer",
+    "sha256": "561f5e00c6c36b748a7bcd3d9ba800a0c8d54e0ab6448c3f375e1c6a4565c936",
+    "pixels": [
+      1600,
+      900
+    ]
+  },
+  {
+    "id": "dia-strategy-06",
+    "file": "assets/dia-strategy-06.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/32b92597-46dc-4ef0-b019-9abad72d1f88_1600x900.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Isolated presentation of a product component; not a full workflow",
+    "title": "Attachment pile",
+    "sha256": "7c623e1ef959ee47547c8b59103d4793d0c423c60ca17da12c740e3291933002",
+    "pixels": [
+      1600,
+      900
+    ]
+  },
+  {
+    "id": "dia-strategy-07",
+    "file": "assets/dia-strategy-07.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/b9cd04bd-4e34-4948-8778-77157033251a_1600x900.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Isolated component presentation, not a full interface",
+    "title": "Different Skill treatments",
+    "sha256": "78eb2c6f9f633663ed1f439b139220e7c98a74938c038589a10ba72faacaf9b1",
+    "pixels": [
+      1600,
+      900
+    ]
+  },
+  {
+    "id": "dia-strategy-08",
+    "file": "assets/dia-strategy-08.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6c6fb4d2-d741-46df-bc30-858457693a56_1600x899.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published full-window product image",
+    "title": "Code answer in the browser",
+    "sha256": "d3df0b75df16e7d83df0ebc23b10dbc0e73fb9a7a9c6dee8c1b86d576771f2ac",
+    "pixels": [
+      1600,
+      899
+    ]
+  },
+  {
+    "id": "dia-profile-form",
+    "file": "research-assets/dia-profile-colors-5s.png",
+    "title": "Create a Profile",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/kS1qBXHjLYEqMvaYU6dJbQONneVJweVbxxphjT5f4Wo/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 5s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "0a9595654b13f853936205e506652ec959cbc4afba184342ed50120f817a35dd",
+    "pixels": [
+      1532,
+      1080
+    ]
+  },
+  {
+    "id": "dia-profile-home",
+    "file": "research-assets/dia-profile-colors-0s.png",
+    "title": "Profile-colored new tab",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/kS1qBXHjLYEqMvaYU6dJbQONneVJweVbxxphjT5f4Wo/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 0s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "e6d22b3e35d9dd18c133543e309e803c8c3e03c65cfdbeba53a6bd5f1081aec6",
+    "pixels": [
+      1532,
+      1080
+    ]
+  },
+  {
+    "id": "dia-group-open",
+    "file": "research-assets/dia-close-groups-0s.png",
+    "title": "Expanded work group",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/01YUTPuLqZK00NhYiSzhKZFrlEfi8RsHftLE01UvwfVChM/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 0s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "c13b2c22341206814f732c0899492b1e0bf2e9700fefd3586445c95fad0f8d61",
+    "pixels": [
+      1084,
+      1080
+    ]
+  },
+  {
+    "id": "dia-group-stored",
+    "file": "research-assets/dia-close-groups-2s.png",
+    "title": "The same group, stored",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/01YUTPuLqZK00NhYiSzhKZFrlEfi8RsHftLE01UvwfVChM/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 2s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "b9e1e5ac07f63aac7d356da8566214081abb2c3e6241df8d366af734bcd7ad80",
+    "pixels": [
+      1084,
+      1080
+    ]
+  },
+  {
+    "id": "dia-icon-picker",
+    "file": "research-assets/dia-tab-icon-picker-6s.png",
+    "title": "Tab icon chooser",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/JdNhe14UfVhkyudx029rQ6qe018GyMEo00RInyocRQM7PE/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 6s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "995e41472c88d0558bfeb8b49d4edc99a42bfba7577f10e7806421c82a92b414",
+    "pixels": [
+      1536,
+      1080
+    ]
+  },
+  {
+    "id": "dia-signup",
+    "file": "research-assets/dia-onboarding.png",
+    "title": "Ordinary signup",
+    "source": "https://www.diabrowser.com/download/thanks",
+    "url": "https://cdn.sanity.io/images/e5fj2khm/production/3dedbdf2a554303eeee27d1257d85a5d757583f8-750x450.png",
+    "published": "Undated; accessed 2026-10-18",
+    "kind": "Official enlarged form crop; no full-flow inference",
+    "retrieved": "2026-10-18",
+    "sha256": "74b2cbb16824b4bf01d0ef600ee820251148cf0f2a906bd8f3d4dc046d6923b7",
+    "pixels": [
+      750,
+      450
+    ]
+  },
+  {
+    "id": "arc-recovery",
+    "file": "research-assets/arc-sync-recovery.png",
+    "title": "Recovery becomes an object",
+    "source": "https://resources.arc.net/hc/en-us/articles/22370005382167-Recovery-Cards",
+    "url": "https://resources.arc.net/hc/article_attachments/22369994728599",
+    "published": "Article updated 2024-11-05",
+    "kind": "Official help screenshot; example recovery text obscured by publisher",
+    "retrieved": "2026-10-18",
+    "sha256": "161766cfc6c90af3af01832f4721746bf5521bce938001f9299ea7fb494c1251",
+    "pixels": [
+      1112,
+      1010
+    ]
+  },
+  {
+    "id": "arc-sync",
+    "file": "research-assets/arc-sync-settings.png",
+    "title": "Routine sync status",
+    "source": "https://resources.arc.net/hc/en-us/articles/22370005382167-Recovery-Cards",
+    "url": "https://resources.arc.net/hc/article_attachments/22369994734999",
+    "published": "Article updated 2024-11-05",
+    "kind": "Official help screenshot; conventional settings crop",
+    "retrieved": "2026-10-18",
+    "sha256": "026dc027aa0b729014059cd7aac6de225ca5092033535006cc73ad70181192fb",
+    "pixels": [
+      746,
+      316
+    ]
+  },
+  {
+    "id": "arc-routing",
+    "file": "research-assets/arc-air-traffic-route.png",
+    "title": "Ordinary routing sheet",
+    "source": "https://resources.arc.net/hc/en-us/articles/22932014625431-Air-Traffic-Control-Automate-Your-Link-Routing",
+    "url": "https://resources.arc.net/hc/article_attachments/22932014616343",
+    "published": "Article updated 2024-11-05",
+    "kind": "Official help screenshot; native controls",
+    "retrieved": "2026-10-18",
+    "sha256": "e435b403a87de383010d64c3c692d734cd1ca96a0095983d44337b63ac9d5a78",
+    "pixels": [
+      1482,
+      1356
+    ]
+  },
+  {
+    "id": "dia-reports",
+    "file": "assets/dia-reports-2026.png",
+    "title": "Reports can have different aesthetics",
+    "source": "https://www.diabrowser.com/release-notes/1-39-1-reports",
+    "url": "https://cdn.sanity.io/images/e5fj2khm/production/6d58eeb202643e2e57bd35d1e5d147a1ead51234-1632x840.png",
+    "published": "2026-07-09",
+    "kind": "Staged montage of product output; not a default browser UI screenshot",
+    "retrieved": "2026-10-18",
+    "sha256": "2d9347dc81279dfca4e44c7f67fa4189ced589df4f0ceedee223a91db55ffa82",
+    "pixels": [
+      1632,
+      840
+    ]
+  },
+  {
+    "id": "dia-group-chat-demo-0s",
+    "file": "assets/dia-group-chat-demo-0s.png",
+    "title": "dia-group-chat-demo · 0s",
+    "source": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "url": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "published": "2026-01-15",
+    "kind": "Frame extracted at 0s from local excerpt of official product demo; source zoom/crop retained",
+    "retrieved": "2026-10-18",
+    "sha256": "11e49162e5a1f1d8ff5b743ba39fcbb52bf9ebe4d5fd6ac47d5e182913ac9ca8",
+    "pixels": [
+      1280,
+      720
+    ]
+  },
+  {
+    "id": "dia-group-chat-demo-4s",
+    "file": "assets/dia-group-chat-demo-4s.png",
+    "title": "dia-group-chat-demo · 4s",
+    "source": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "url": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "published": "2026-01-15",
+    "kind": "Frame extracted at 4s from local excerpt of official product demo; source zoom/crop retained",
+    "retrieved": "2026-10-18",
+    "sha256": "2cdc3f0aa77b14d970fc002a4ae2de9790b265c2a98b5213094334d2297dc5e3",
+    "pixels": [
+      1280,
+      720
+    ]
+  },
+  {
+    "id": "dia-profiles-demo-8s",
+    "file": "assets/dia-profiles-demo-8s.png",
+    "title": "dia-profiles-demo · 8s",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "published": "2026-01-23",
+    "kind": "Frame extracted at 8s from local excerpt of official product demo; source zoom/crop retained",
+    "retrieved": "2026-10-18",
+    "sha256": "29f0b89e28b13224a7677a80c40a904e64f364d5d21605aef4d74435e3b332bb",
+    "pixels": [
+      1280,
+      902
+    ]
+  },
+  {
+    "id": "dia-meeting-end-demo-2s",
+    "file": "assets/dia-meeting-end-demo-2s.png",
+    "title": "dia-meeting-end-demo · 2s",
+    "source": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "url": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "published": "2026-01-15",
+    "kind": "Frame extracted at 2s from local excerpt of official product demo; source zoom/crop retained",
+    "retrieved": "2026-10-18",
+    "sha256": "d4d62071e2c9a7b564d9c9f4fec4c30d8849bdbda2fdc7edff10e4f3ed4b3f13",
+    "pixels": [
+      1280,
+      652
+    ]
+  }
+]

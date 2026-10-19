@@ -1,0 +1,6 @@
+/* Corner-only research probe. Not a production style system or a Dia reconstruction. */
+.btn, .barbtn { border-radius: 12.000000px 12.000000px 12.000000px 12.000000px; corner-shape: squircle; }
+input, .togglebtn { border-radius: 10.000000px 10.000000px 10.000000px 10.000000px; corner-shape: squircle; }
+.preview, .panel { border-radius: 16.000000px 16.000000px 16.000000px 16.000000px; corner-shape: squircle; }
+.message { border-radius: 16.000000px 16.000000px 16.000000px 10.000000px; corner-shape: squircle; }
+.sheet { border-radius: 20.000000px 20.000000px 0.000000px 0.000000px; corner-shape: squircle; }

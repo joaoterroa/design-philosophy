@@ -1,0 +1,183 @@
+{
+  "runId": "banking-onboarding__baseline__1",
+  "checks": [
+    {
+      "check": "complete run",
+      "status": "pass",
+      "evidence": "completed",
+      "severity": "critical"
+    },
+    {
+      "check": "all final states captured",
+      "status": "pass",
+      "evidence": "24/24",
+      "severity": "critical"
+    },
+    {
+      "check": "supplied inputs unchanged",
+      "status": "pass",
+      "evidence": [],
+      "severity": "integrity"
+    },
+    {
+      "check": "no console errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no runtime errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no network dependence",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no horizontal overflow",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no menu clipping",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes code",
+      "status": "pass",
+      "evidence": {
+        "light": "a31d945536c5cf641e5cc9c0d231e07d739831514b880d580888ba0af2f760df",
+        "dark": "90d8cc0a4837dd0ddc278f8d53257931de91276551db73ab25d6150a0a6dbff8"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes code-error",
+      "status": "pass",
+      "evidence": {
+        "light": "f9ee4a79e20ee1c0a1d5efec9388ded4690169fd4204e4802366f48e7e9af944",
+        "dark": "0ae9bf643a92ceef62281c1731fefb87c0736e1cc9a5d576243decd3eec13543"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes details-error",
+      "status": "pass",
+      "evidence": {
+        "light": "a131e33dc36d4e99a87dcb79db38c5956eefed3b77224b68d7239318336c4f23",
+        "dark": "1eafdbdc830e01610867f1446f1208c1b718a0d3fb687334916c94e9f5612893"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes done",
+      "status": "pass",
+      "evidence": {
+        "light": "c36a8c7ae48e3f5b832143bdd07771af5fc50458ae8c3fcf2a8eed9da86abe4a",
+        "dark": "1773d2490555994f167555af775a77ceb70ea39bc1ade4a104818e5a71f3b049"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes help",
+      "status": "pass",
+      "evidence": {
+        "light": "d3c5499ed118a7fa6372b68c8c7ac7a8b7270f5e2a36c41668980b9b0819f174",
+        "dark": "c1923681aeb9ccacae9f0a1ca5fdadcf3754f26f0945271f74693aa0982ffeed"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes welcome",
+      "status": "pass",
+      "evidence": {
+        "light": "899db4685b31573ae7eef586de02bacad4e7a52f0832e288cf711b49f69267be",
+        "dark": "24bfca808ab3ffebf8e1d1ae9965416ff6f15ebc58bdd02060bba089866262fd"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "code preview has no usable test code",
+      "status": "pass",
+      "evidence": "Visible body text excludes482913",
+      "severity": "critical"
+    },
+    {
+      "check": "programmatic field labels",
+      "status": "pass",
+      "evidence": [],
+      "severity": "accessibility"
+    },
+    {
+      "check": "visible interactive targets at least44px",
+      "status": "pass",
+      "evidence": [],
+      "severity": "accessibility"
+    },
+    {
+      "check": "code screen visible text at least16px",
+      "status": "pass",
+      "evidence": [],
+      "severity": "accessibility"
+    }
+  ],
+  "observations": [],
+  "interaction": [
+    {
+      "check": "welcome advances",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\n\nStep 1 of 2\n\nYour details\n\nUse the details you gave us when you opened your account.\n\nFull name\nMobile number\n\nA UK mobile number, starting 07 or +44.\n\nWe\u2019ll use this number for your security code.\n\nContinue\n\nPreview only. No account changes."
+    },
+    {
+      "check": "valid details advance",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\n\nStep 2 of 2\n\nCheck your phone\n\nEnter the 6-digit code from the text message to your mobile ending 482.\n\nSecurity code\n\nEnter all 6 digits in this field. You can also paste the code.\n\nI haven\u2019t received a code\nKeep your code safe\nWe will never call you to ask for this code. Do not share it.\n\nIn this preview, no text message is sent.\n\nConfirm code"
+    },
+    {
+      "check": "wrong code rejected",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\n\nStep 2 of 2\n\nCheck your phone\n\nEnter the 6-digit code from the text message to your mobile ending 482.\n\nSecurity code\n\nEnter all 6 digits in this field. You can also paste the code.\n\nThat code doesn\u2019t match. Check the 6 digits and try again.\n\nI haven\u2019t received a code\nKeep your code safe\nWe will never call you to ask for this code. Do not share it.\n\nIn this preview, no text message is sent.\n\nConfirm code\nThat code doesn\u2019t match. Check the 6 digits and try again."
+    },
+    {
+      "check": "correct code advances",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nYou\u2019re all set,\nAlex.\n\nYour account, now a little closer.\n\nHarbour\n\nEveryday account\nAccount holder\nAlex Morgan\nSort code\n04-00-26\nAccount number\n12345678\nAvailable balance\n\u00a30.00\n\nNeed a hand finding your way?\nHelp is always at the top of the screen.\n\nPreview only. No account changes."
+    },
+    {
+      "check": "help provides human route",
+      "status": "pass",
+      "evidence": "Harbour\nHelp\nBack\n\nStep 2 of 2\n\nCheck your phone\n\nEnter the 6-digit code from the text message to your mobile ending 482.\n\nSecurity code\n\nEnter all 6 digits in this field. You can also paste the code.\n\nI haven\u2019t received a code\nKeep your code safe\nWe will never call you to ask for this code. Do not share it.\n\nIn this preview, no text message is sent.\n\nConfirm code\nTalk to us\n\nOur team can help you set up mobile banking.\n\nCall our team\n0808 157 0192\n\nKeep your security code private, even when speaking to us.\n\nBack to setup"
+    },
+    {
+      "check": "Escape restores Help focus",
+      "status": "pass",
+      "evidence": {
+        "tag": "BUTTON",
+        "text": "Help",
+        "outline": "solid"
+      }
+    },
+    {
+      "check": "keyboard focus indicator",
+      "status": "pass",
+      "evidence": {
+        "tag": "BUTTON",
+        "text": "I haven\u2019t received a code",
+        "outline": "solid",
+        "shadow": "none"
+      }
+    }
+  ],
+  "failures": 0,
+  "limitations": [
+    "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+    "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+  ]
+}

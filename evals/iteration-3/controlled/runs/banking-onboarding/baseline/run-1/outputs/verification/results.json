@@ -1,0 +1,203 @@
+{
+  "matrix": [
+    {
+      "state": "welcome",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "details-error",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_height": 1016,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code-error",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_height": 857,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "help",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "done",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_height": 876,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "welcome",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "details-error",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_height": 1016,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code-error",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_height": 857,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "help",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "done",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_height": 876,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "welcome",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "document_height": 760,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "details-error",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "document_height": 1094,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "document_height": 840,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code-error",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "document_height": 896,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "help",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "document_height": 840,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "done",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "document_height": 887,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "welcome",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "document_height": 760,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "details-error",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "document_height": 1094,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "document_height": 840,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "code-error",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "document_height": 896,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "help",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "document_height": 840,
+      "horizontal_overflow": false
+    },
+    {
+      "state": "done",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "document_height": 887,
+      "horizontal_overflow": false
+    }
+  ],
+  "interactions": [
+    "Welcome \u2192 invalid details \u2192 corrected details \u2192 code \u2192 Back retains details \u2192 wrong code blocked \u2192 Help Escape and button restore focus \u2192 fixture code completes \u2192 Finish resets",
+    "Direct Help overlays code; focus trapped and restored; safety visible; live system-theme response; keyboard-only form flow; reduced motion",
+    "200% text-size reflow without horizontal overflow at 390px"
+  ],
+  "console_errors": [],
+  "external_requests": []
+}

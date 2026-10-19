@@ -1,0 +1,151 @@
+/* Northwind Incident Board — design tokens.
+   The only file allowed to hold literal colours, sizes, radii and durations.
+   Reasons for each value live in design/SYSTEM.md. tests/design.test.js guards this file. */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("fonts/plex-sans-latin.woff2") format("woff2");
+  font-weight: 100 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/plex-mono-400-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/plex-mono-500-latin.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+
+  /* ---- Colour: light (laptops in a lit office). Fog ground, white panel, Slate ink. ---- */
+  --bg: #EEF1F4;            /* brand Fog: page ground */
+  --surface: #FFFFFF;       /* the one filled panel (on-call) */
+  --line: #D5DCE3;          /* hairlines, empty tracks */
+  --fg: #3D4852;            /* brand Slate: body text */
+  --fg-strong: #12355B;     /* brand Harbor Navy: headings, headline numbers */
+  --muted: #56626E;         /* secondary text: meta, labels, axis */
+  --brand: #12355B;         /* Harbor Navy: mark only */
+  --on-brand: #FFFFFF;
+  --data: #2A9D8F;          /* brand Tide Teal: chart marks (one series) */
+  --data-quiet: #BFCAD5;    /* de-emphasised chart marks (context, not the point) */
+  --critical: #CC2F36;      /* SEV1 fill. Not in the brand; a red that sits beside Navy */
+  --on-critical: #FFFFFF;
+  --critical-text: #B42318; /* SEV1 / missing-owner words on light grounds */
+  --attention: #F26B21;     /* brand Signal Orange: SEV2 fill, stale-data banner */
+  --on-attention: #0A1828;  /* ink on orange (white fails at 2.9:1) */
+  --attention-text: #A6410C;/* orange words: brand orange is 2.9:1 as text, so deepened */
+  --attention-tint: #FDE9DC;/* ground behind the stale-data sentence */
+  --critical-tint: #FBE4E4; /* ground behind a failed-source sentence */
+  --minor: #9AA7B4;         /* SEV3 bar on the timeline: neutral and light, so a long-running minor incident never outweighs a new SEV1. Its value is in the duration text. */
+  --focus: #12355B;
+  --shadow-colour: #0A182833;
+
+  /* ---- Type: IBM Plex per brand guide ---- */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --fs-xs: 0.8125rem;   /* axis ticks, captions */
+  --fs-sm: 0.875rem;    /* meta lines, labels */
+  --fs-md: 1rem;        /* body */
+  --fs-lg: 1.25rem;     /* incident titles: the thing read from across the room */
+  --fs-xl: 1.75rem;     /* stat values, clock */
+  --fs-hero: 3rem;      /* the open-incident count: one per view */
+  --lh-tight: 1.15;
+  --lh-body: 1.4;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* ---- Space: one gutter, a short scale ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --gutter: 2rem;
+
+  /* ---- Shape: freight-precise, nearly square ---- */
+  --radius-sm: 2px;     /* severity tags, bar ends, meter */
+  --radius-md: 4px;     /* the one panel, focus ring */
+  --hairline: 1px;
+  --bar-thin: 0.375rem; /* timeline bars */
+  --bar: 0.75rem;       /* horizontal chart bars */
+
+  /* ---- Layout: the incident row's columns, shared by the list head so the axis lines up ---- */
+  --col-sev: 4.25rem;   /* fits "SEV1" in Plex Mono with padding */
+  --col-lane: 19%;      /* the 24-hour timeline: wide enough to read, narrow enough that most titles fit one line */
+  --col-dur: 7rem;      /* "12h 50m" in Plex Mono at --fs-lg; "since Sat 22:10" at --fs-xs */
+  --col-svc: 9.5rem;    /* longest service name, "Driver App Backend", at --fs-sm */
+  --spark-w: 8.5rem;
+  --spark-h: 2.5rem;
+  --shadow-float: 0 4px 16px var(--shadow-colour); /* tooltips only: the one thing that floats */
+
+  /* ---- Motion: one easing, two durations ---- */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 150ms;    /* hover, press */
+  --dur-move: 250ms;    /* a bar growing, a row arriving */
+  --dur-flash: 1200ms;  /* a newly arrived incident is marked once */
+
+  /* ---- Display root: desk = 16px; wall scales to the screen height (see SYSTEM.md §6) ---- */
+  --root-desk: 16px;
+  --root-wall: calc(100vh / 48);  /* 22.5px at 1080p, 45px at 2160p */
+}
+
+/* ---- Colour: dark (the ops-room TV, and laptops that prefer dark). Navy-derived, not inverted. ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0A1828;
+    --surface: #11253C;
+    --line: #233B57;
+    --fg: #D9E1E9;
+    --fg-strong: #FFFFFF;
+    --muted: #9AACBF;
+    --brand: #12355B;
+    --on-brand: #FFFFFF;
+    --data: #2A9D8F;
+    --data-quiet: #34506E;
+    --critical: #CC2F36;
+    --on-critical: #FFFFFF;
+    --critical-text: #FF8A80;
+    --attention: #F26B21;
+    --on-attention: #0A1828;
+    --attention-text: #FF9A5C;
+    --attention-tint: #3A2516;
+    --critical-tint: #3A1C22;
+    --minor: #4F6884;
+    --focus: #8FB8E8;
+    --shadow-colour: #00000080;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0A1828;
+  --surface: #11253C;
+  --line: #233B57;
+  --fg: #D9E1E9;
+  --fg-strong: #FFFFFF;
+  --muted: #9AACBF;
+  --brand: #12355B;
+  --on-brand: #FFFFFF;
+  --data: #2A9D8F;
+  --data-quiet: #34506E;
+  --critical: #CC2F36;
+  --on-critical: #FFFFFF;
+  --critical-text: #FF8A80;
+  --attention: #F26B21;
+  --on-attention: #0A1828;
+  --attention-text: #FF9A5C;
+  --attention-tint: #3A2516;
+  --critical-tint: #3A1C22;
+  --minor: #4F6884;
+  --focus: #8FB8E8;
+  --shadow-colour: #00000080;
+}

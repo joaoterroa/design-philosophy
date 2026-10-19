@@ -1,0 +1,202 @@
+[
+  {
+    "theme": "light",
+    "pair": "fg/bg",
+    "ratio": 8.24
+  },
+  {
+    "theme": "light",
+    "pair": "fg/surface",
+    "ratio": 9.34
+  },
+  {
+    "theme": "light",
+    "pair": "muted/bg",
+    "ratio": 5.21
+  },
+  {
+    "theme": "light",
+    "pair": "muted/surface",
+    "ratio": 5.91
+  },
+  {
+    "theme": "light",
+    "pair": "brand/bg",
+    "ratio": 10.99
+  },
+  {
+    "theme": "light",
+    "pair": "brand/surface",
+    "ratio": 12.46
+  },
+  {
+    "theme": "light",
+    "pair": "critical/bg",
+    "ratio": 6.11
+  },
+  {
+    "theme": "light",
+    "pair": "critical/surface",
+    "ratio": 6.93
+  },
+  {
+    "theme": "light",
+    "pair": "caution/bg",
+    "ratio": 6.54
+  },
+  {
+    "theme": "light",
+    "pair": "caution/surface",
+    "ratio": 7.42
+  },
+  {
+    "theme": "light",
+    "pair": "healthy/bg",
+    "ratio": 5.82
+  },
+  {
+    "theme": "light",
+    "pair": "healthy/surface",
+    "ratio": 6.6
+  },
+  {
+    "theme": "light",
+    "pair": "critical/critical-bg",
+    "ratio": 6.26
+  },
+  {
+    "theme": "light",
+    "pair": "fg/critical-bg",
+    "ratio": 8.44
+  },
+  {
+    "theme": "light",
+    "pair": "muted/critical-bg",
+    "ratio": 5.34
+  },
+  {
+    "theme": "light",
+    "pair": "caution/caution-bg",
+    "ratio": 6.79
+  },
+  {
+    "theme": "light",
+    "pair": "muted/caution-bg",
+    "ratio": 5.41
+  },
+  {
+    "theme": "light",
+    "pair": "chart/bg",
+    "ratio": 3.56
+  },
+  {
+    "theme": "light",
+    "pair": "focus/bg",
+    "ratio": 10.99
+  },
+  {
+    "theme": "light",
+    "pair": "focus/surface",
+    "ratio": 12.46
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/bg",
+    "ratio": 14.33
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/surface",
+    "ratio": 12.81
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/bg",
+    "ratio": 8.21
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/surface",
+    "ratio": 7.35
+  },
+  {
+    "theme": "dark",
+    "pair": "brand/bg",
+    "ratio": 11.86
+  },
+  {
+    "theme": "dark",
+    "pair": "brand/surface",
+    "ratio": 10.61
+  },
+  {
+    "theme": "dark",
+    "pair": "critical/bg",
+    "ratio": 9.62
+  },
+  {
+    "theme": "dark",
+    "pair": "critical/surface",
+    "ratio": 8.6
+  },
+  {
+    "theme": "dark",
+    "pair": "caution/bg",
+    "ratio": 10.38
+  },
+  {
+    "theme": "dark",
+    "pair": "caution/surface",
+    "ratio": 9.28
+  },
+  {
+    "theme": "dark",
+    "pair": "healthy/bg",
+    "ratio": 9.83
+  },
+  {
+    "theme": "dark",
+    "pair": "healthy/surface",
+    "ratio": 8.8
+  },
+  {
+    "theme": "dark",
+    "pair": "critical/critical-bg",
+    "ratio": 8.08
+  },
+  {
+    "theme": "dark",
+    "pair": "fg/critical-bg",
+    "ratio": 12.04
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/critical-bg",
+    "ratio": 6.9
+  },
+  {
+    "theme": "dark",
+    "pair": "caution/caution-bg",
+    "ratio": 8.25
+  },
+  {
+    "theme": "dark",
+    "pair": "muted/caution-bg",
+    "ratio": 6.53
+  },
+  {
+    "theme": "dark",
+    "pair": "chart/bg",
+    "ratio": 5.19
+  },
+  {
+    "theme": "dark",
+    "pair": "focus/bg",
+    "ratio": 11.86
+  },
+  {
+    "theme": "dark",
+    "pair": "focus/surface",
+    "ratio": 10.61
+  }
+]

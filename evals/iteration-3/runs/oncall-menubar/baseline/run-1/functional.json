@@ -1,0 +1,134 @@
+{
+  "runId": "oncall-menubar__baseline__1",
+  "checks": [
+    {
+      "check": "complete run",
+      "status": "pass",
+      "evidence": "completed",
+      "severity": "critical"
+    },
+    {
+      "check": "all final states captured",
+      "status": "pass",
+      "evidence": "12/12",
+      "severity": "critical"
+    },
+    {
+      "check": "supplied inputs unchanged",
+      "status": "pass",
+      "evidence": [],
+      "severity": "integrity"
+    },
+    {
+      "check": "no console errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no runtime errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no network dependence",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no horizontal overflow",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no menu clipping",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes accepted",
+      "status": "pass",
+      "evidence": {
+        "light": "016dc11c1daee62a2d54844fe1a29ea17783d7c9b729455b746a52a7fe90b309",
+        "dark": "d99c9908a1e2e5aedcff979336a58114633296d34b93c70c56a64982ad8782e3"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes compose",
+      "status": "pass",
+      "evidence": {
+        "light": "e094592e3f3ba27ea4ea30c5dac0394884fa295e490dd9a33b21353f763a5dd6",
+        "dark": "092d4ea20cc8bc7facf6b20632c28eb96e33bd2fd9b21479d067f89dc55bc832"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes empty",
+      "status": "pass",
+      "evidence": {
+        "light": "336a20c022640917c5bcdf5ce80561f66f33e47c6955dadccfd8e40145dd5937",
+        "dark": "5366d7ea5140da0abcd197b9480fdcad8e6c8ace323ab4294456f646d03c2ea8"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes main",
+      "status": "pass",
+      "evidence": {
+        "light": "7a47bb7fbd5d22c3545e0f339d1d1dc6f791b5d79c4c98a93c7e9e08cac570e4",
+        "dark": "18bddf60347f3cd5b8a3e7762a1cab21d98e5019c9772208e7680f0e65c5482b"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes offline",
+      "status": "pass",
+      "evidence": {
+        "light": "7ad355620d80c923b5943f6791eb9e2d58e8b3017728e731ce1d906c4c754523",
+        "dark": "03e73332a93413456c4d5af107278701e346979d92a92c24ff25405adb5b4ae2"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes pending",
+      "status": "pass",
+      "evidence": {
+        "light": "edd016a08845d14bd95ef5c4ed41f7c12185f84b2c81142a5b96ef270fbddf79",
+        "dark": "a54be65b2930a52a5d41bb52d1152f60cf13e8ed979a9c5b6e0d9394b098b119"
+      },
+      "severity": "functional"
+    }
+  ],
+  "observations": [],
+  "interaction": [
+    {
+      "check": "open handover",
+      "status": "pass",
+      "evidence": "Rota\nOn call\n\u2039 Back\nHand over your shift\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nHand over to\nChoose a teammate\u2026\nPriya Raman\nHandover note (optional)\n\nYou stay responsible until Priya accepts.\n\nReview handover\nCurrent on-call roster\n18 Oct \u00b7 UTC"
+    },
+    {
+      "check": "send and retain responsibility while pending",
+      "status": "pass",
+      "evidence": {
+        "chosen": true,
+        "sent": true,
+        "text": "Rota\nOn call\nHANDOVER REQUESTED\nWaiting for Priya\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nJE\nJamie\n\nResponsible now\n\n\u2192\nPR\nPriya\n\nAfter acceptance\n\nYou\u2019re still on call.\nKeep responding to alerts until Priya accepts.\n\nYour request is for Priya Raman. Responsibility changes only when they accept.\n\nCancel request\nBack to schedule\nCurrent on-call roster\n18 Oct \u00b7 UTC"
+      }
+    },
+    {
+      "check": "no automatic acceptance",
+      "status": "pass",
+      "evidence": "Rota\nOn call\nHANDOVER REQUESTED\nWaiting for Priya\n\nPlatform Primary \u00b7 Until 18:00 UTC\n\nJE\nJamie\n\nResponsible now\n\n\u2192\nPR\nPriya\n\nAfter acceptance\n\nYou\u2019re still on call.\nKeep responding to alerts until Priya accepts.\n\nYour request is for Priya Raman. Responsibility changes only when they accept.\n\nCancel request\nBack to schedule\nCurrent on-call roster\n18 Oct \u00b7 UTC"
+    }
+  ],
+  "failures": 0,
+  "limitations": [
+    "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+    "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+  ]
+}

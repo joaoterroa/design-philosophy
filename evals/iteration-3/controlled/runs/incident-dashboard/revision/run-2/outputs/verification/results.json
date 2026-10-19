@@ -1,0 +1,134 @@
+[
+  {
+    "screen": "live",
+    "display": "laptop",
+    "theme": "light",
+    "rows": 7,
+    "panelY": 324.78125,
+    "footerBottom": 1071.375,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "stale",
+    "display": "laptop",
+    "theme": "light",
+    "rows": 7,
+    "panelY": 324.78125,
+    "footerBottom": 1071.375,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "surge",
+    "display": "laptop",
+    "theme": "light",
+    "rows": 12,
+    "panelY": 324.78125,
+    "footerBottom": 1466.375,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "live",
+    "display": "laptop",
+    "theme": "dark",
+    "rows": 7,
+    "panelY": 324.78125,
+    "footerBottom": 1071.375,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "stale",
+    "display": "laptop",
+    "theme": "dark",
+    "rows": 7,
+    "panelY": 324.78125,
+    "footerBottom": 1071.375,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "surge",
+    "display": "laptop",
+    "theme": "dark",
+    "rows": 12,
+    "panelY": 324.78125,
+    "footerBottom": 1466.375,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "live",
+    "display": "tv",
+    "theme": "light",
+    "rows": 7,
+    "panelY": 320.78125,
+    "footerBottom": 1030.640625,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "stale",
+    "display": "tv",
+    "theme": "light",
+    "rows": 7,
+    "panelY": 320.78125,
+    "footerBottom": 1030.640625,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "surge",
+    "display": "tv",
+    "theme": "light",
+    "rows": 7,
+    "panelY": 320.78125,
+    "footerBottom": 1030.640625,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "live",
+    "display": "tv",
+    "theme": "dark",
+    "rows": 7,
+    "panelY": 320.78125,
+    "footerBottom": 1030.640625,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "stale",
+    "display": "tv",
+    "theme": "dark",
+    "rows": 7,
+    "panelY": 320.78125,
+    "footerBottom": 1030.640625,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  },
+  {
+    "screen": "surge",
+    "display": "tv",
+    "theme": "dark",
+    "rows": 7,
+    "panelY": 320.78125,
+    "footerBottom": 1030.640625,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "networkRequests": 0
+  }
+]

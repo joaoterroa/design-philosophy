@@ -1,0 +1,146 @@
+[
+  {
+    "theme": "light",
+    "foreground": "fg",
+    "background": "bg",
+    "ratio": 13.05
+  },
+  {
+    "theme": "light",
+    "foreground": "fg",
+    "background": "surface",
+    "ratio": 13.86
+  },
+  {
+    "theme": "light",
+    "foreground": "fg",
+    "background": "warning",
+    "ratio": 11.56
+  },
+  {
+    "theme": "light",
+    "foreground": "muted",
+    "background": "bg",
+    "ratio": 6.44
+  },
+  {
+    "theme": "light",
+    "foreground": "muted",
+    "background": "surface",
+    "ratio": 6.84
+  },
+  {
+    "theme": "light",
+    "foreground": "error",
+    "background": "bg",
+    "ratio": 6.78
+  },
+  {
+    "theme": "light",
+    "foreground": "error",
+    "background": "error-bg",
+    "ratio": 6.48
+  },
+  {
+    "theme": "light",
+    "foreground": "success",
+    "background": "success-bg",
+    "ratio": 6.46
+  },
+  {
+    "theme": "light",
+    "foreground": "on-primary",
+    "background": "primary",
+    "ratio": 11.22
+  },
+  {
+    "theme": "light",
+    "foreground": "input-border",
+    "background": "surface",
+    "ratio": 3.93
+  },
+  {
+    "theme": "light",
+    "foreground": "focus",
+    "background": "bg",
+    "ratio": 5.48
+  },
+  {
+    "theme": "light",
+    "foreground": "focus",
+    "background": "surface",
+    "ratio": 5.81
+  },
+  {
+    "theme": "dark",
+    "foreground": "fg",
+    "background": "bg",
+    "ratio": 13.91
+  },
+  {
+    "theme": "dark",
+    "foreground": "fg",
+    "background": "surface",
+    "ratio": 11.96
+  },
+  {
+    "theme": "dark",
+    "foreground": "fg",
+    "background": "warning",
+    "ratio": 10.48
+  },
+  {
+    "theme": "dark",
+    "foreground": "muted",
+    "background": "bg",
+    "ratio": 9.68
+  },
+  {
+    "theme": "dark",
+    "foreground": "muted",
+    "background": "surface",
+    "ratio": 8.32
+  },
+  {
+    "theme": "dark",
+    "foreground": "error",
+    "background": "bg",
+    "ratio": 9.31
+  },
+  {
+    "theme": "dark",
+    "foreground": "error",
+    "background": "error-bg",
+    "ratio": 7.47
+  },
+  {
+    "theme": "dark",
+    "foreground": "success",
+    "background": "success-bg",
+    "ratio": 7.01
+  },
+  {
+    "theme": "dark",
+    "foreground": "on-primary",
+    "background": "primary",
+    "ratio": 10.04
+  },
+  {
+    "theme": "dark",
+    "foreground": "input-border",
+    "background": "surface",
+    "ratio": 5.62
+  },
+  {
+    "theme": "dark",
+    "foreground": "focus",
+    "background": "bg",
+    "ratio": 10.55
+  },
+  {
+    "theme": "dark",
+    "foreground": "focus",
+    "background": "surface",
+    "ratio": 9.07
+  }
+]

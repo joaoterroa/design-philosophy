@@ -1,0 +1,27 @@
+@font-face{font-family:'IBM Plex Sans';src:url('fonts/plex-sans-latin.woff2') format('woff2');font-weight:100 700;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('fonts/plex-mono-400-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('fonts/plex-mono-500-latin.woff2') format('woff2');font-weight:500;font-display:swap}
+:root{
+ color-scheme:light;
+ --bg:#eef1f4;--surface:#ffffff;--fg:#1c3042;--muted:#526271;--line:#ccd5dc;--soft:#e4eaef;
+ --navy:#12355b;--white:#ffffff;--header-muted:#ced9e5;--orange:#f26b21;
+ --critical:#b52e32;--critical-bg:#fff1ef;--caution:#865000;--caution-bg:#fff5e3;--teal:#18786e;--teal-fill:#2a9d8f;--teal-bg:#eaf5f2;
+ --focus:#12355b;--hover:#e8eef4;--bar-track:#e4eaef;
+ --font:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace;
+ --fs-xs:13px;--fs-sm:14px;--fs-base:16px;--fs-md:18px;--fs-lg:20px;--fs-xl:24px;--fs-title:30px;--fs-metric:48px;--fs-total:56px;
+ --s0:0px;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:20px;--s6:24px;--s7:32px;--s8:40px;--s9:48px;
+ --radius:6px;--round:50%;--hairline:1px;--heavy:3px;--focus-width:3px;--focus-offset:3px;
+ --control:44px;--header:68px;--sidebar:320px;--row:78px;--chart-bar:6px;--mark:28px;--icon:20px;--search:230px;
+ --lh:1.45;--tight:1.15;--wide:.08em;--metric-track:-.055em;--duration:0ms;--shadow:none;
+}
+:root[data-theme="dark"]{
+ color-scheme:dark;
+ --bg:#0d1925;--surface:#142434;--fg:#edf2f7;--muted:#b0bfcd;--line:#384c5d;--soft:#24384a;
+ --navy:#12355b;--white:#ffffff;--header-muted:#ced9e5;--orange:#f26b21;
+ --critical:#ffa9a7;--critical-bg:#382529;--caution:#f3c77b;--caution-bg:#352d22;--teal:#8cd5c7;--teal-fill:#56b7a7;--teal-bg:#1c3838;
+ --focus:#a8d7ff;--hover:#20394d;--bar-track:#2b4051;
+}
+:root[data-display="tv"]{
+ --fs-xs:17px;--fs-sm:18px;--fs-base:20px;--fs-md:22px;--fs-lg:24px;--fs-xl:26px;--fs-title:34px;--fs-metric:54px;--fs-total:64px;
+ --header:76px;--sidebar:370px;--row:78px;--search:280px;
+}

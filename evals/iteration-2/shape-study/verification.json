@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "primaryImages": 11,
+  "captures": 80,
+  "protectedFilesUnchanged": true,
+  "checks": [
+    "All 60 full-screen pair combinations load at identical scale",
+    "Blind labels and assessments hidden; both random orders; reveal; preference persistence; valid JSON export",
+    "Geometry diagram mode and settings JSON export",
+    "Keyboard/image zoom and Escape",
+    "Local evidence and prototype links resolve",
+    "No horizontal overflow at 1440, 1280 and 390 in both report themes",
+    "No console errors or network requests"
+  ],
+  "qaScreenshots": "/private/tmp/shape-study-qa"
+}

@@ -1,0 +1,288 @@
+[
+  {
+    "id": "dia-profile-home",
+    "file": "research-assets/dia-profile-colors-0s.png",
+    "title": "Composer and browser frame",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/kS1qBXHjLYEqMvaYU6dJbQONneVJweVbxxphjT5f4Wo/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 0s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "e6d22b3e35d9dd18c133543e309e803c8c3e03c65cfdbeba53a6bd5f1081aec6",
+    "pixels": [
+      1532,
+      1080
+    ],
+    "observation": "The broad composer, selected tab, small profile control and pill attachment action form different shape roles.",
+    "crop": [
+      558,
+      403,
+      678,
+      523
+    ],
+    "viewKind": "demo",
+    "image": "ref-dia-profile-home",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/dia-profile-colors-0s.png",
+    "cornerSha256": "4bd30aafa1a7104507d0c93163cf9b11ae72ef5f3d39a1841f1841745cf63259"
+  },
+  {
+    "id": "dia-profile-form",
+    "file": "research-assets/dia-profile-colors-5s.png",
+    "title": "Profile creation",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/kS1qBXHjLYEqMvaYU6dJbQONneVJweVbxxphjT5f4Wo/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 5s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "0a9595654b13f853936205e506652ec959cbc4afba184342ed50120f817a35dd",
+    "pixels": [
+      1532,
+      1080
+    ],
+    "observation": "The modal, input and buttons use modest corners. The larger composer behind them stays much softer.",
+    "crop": [
+      731,
+      345,
+      851,
+      465
+    ],
+    "viewKind": "demo",
+    "image": "ref-dia-profile-form",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/dia-profile-colors-5s.png",
+    "cornerSha256": "b456f057c46a7c0559607ff3329c828d40915503218e13b9559ed9b2c45144f6"
+  },
+  {
+    "id": "dia-icon-picker",
+    "file": "research-assets/dia-tab-icon-picker-6s.png",
+    "title": "Icon picker",
+    "source": "https://www.diabrowser.com/release-notes/1-15-1-polish-galore",
+    "url": "https://stream.mux.com/JdNhe14UfVhkyudx029rQ6qe018GyMEo00RInyocRQM7PE/highest.mp4",
+    "published": "2026-01-23",
+    "kind": "Official product demo frame at 6s; source crop",
+    "retrieved": "2026-10-18",
+    "sha256": "995e41472c88d0558bfeb8b49d4edc99a42bfba7577f10e7806421c82a92b414",
+    "pixels": [
+      1536,
+      1080
+    ],
+    "observation": "A rounded popover has an anchoring pointer. The tab, circular window controls and picker are different constructions.",
+    "crop": [
+      681,
+      265,
+      801,
+      385
+    ],
+    "viewKind": "demo",
+    "image": "ref-dia-icon-picker",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/dia-tab-icon-picker-6s.png",
+    "cornerSha256": "21e10c7b706ce85c2965169a5296714d3599f7b8a087c7790ad02dfdf9e65ee7"
+  },
+  {
+    "id": "dia-strategy-08",
+    "file": "assets/dia-strategy-08.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6c6fb4d2-d741-46df-bc30-858457693a56_1600x899.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published full-window product image",
+    "title": "Full browser and code answer",
+    "sha256": "d3df0b75df16e7d83df0ebc23b10dbc0e73fb9a7a9c6dee8c1b86d576771f2ac",
+    "pixels": [
+      1600,
+      899
+    ],
+    "observation": "A small window radius, rounder message/composer and compact toolbar control coexist. The sample code is page content, not implementation evidence.",
+    "crop": [
+      445,
+      706,
+      565,
+      826
+    ],
+    "viewKind": "published UI",
+    "image": "ref-dia-strategy-08",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/assets/dia-strategy-08.png",
+    "cornerSha256": "daa42d655a6b5e0abe4254b80b14e6ec2e4c3b2d62154627164d4daac42d01a1"
+  },
+  {
+    "id": "dia-signup",
+    "file": "research-assets/dia-onboarding.png",
+    "title": "Signup form",
+    "source": "https://www.diabrowser.com/download/thanks",
+    "url": "https://cdn.sanity.io/images/e5fj2khm/production/3dedbdf2a554303eeee27d1257d85a5d757583f8-750x450.png",
+    "published": "Undated; accessed 2026-10-18",
+    "kind": "Official enlarged form crop; no full-flow inference",
+    "retrieved": "2026-10-18",
+    "sha256": "74b2cbb16824b4bf01d0ef600ee820251148cf0f2a906bd8f3d4dc046d6923b7",
+    "pixels": [
+      750,
+      450
+    ],
+    "observation": "Plain fields and a compact rounded button. The brand does not require large-radius surfaces everywhere.",
+    "crop": [
+      51,
+      332,
+      171,
+      432
+    ],
+    "viewKind": "published UI crop",
+    "image": "ref-dia-signup",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/dia-onboarding.png",
+    "cornerSha256": "07a762fbd4ba39ab85b2341bca53749f00143837b652a3d54307663fbc61d9ba"
+  },
+  {
+    "id": "dia-group-chat-demo-4s",
+    "file": "assets/dia-group-chat-demo-4s.png",
+    "title": "Group becomes chat context",
+    "source": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "url": "https://www.diabrowser.com/release-notes/1-14-0-meeting-tab-groups",
+    "published": "2026-01-15",
+    "kind": "Frame extracted at 4s from local excerpt of official product demo; source zoom/crop retained",
+    "retrieved": "2026-10-18",
+    "sha256": "2cdc3f0aa77b14d970fc002a4ae2de9790b265c2a98b5213094334d2297dc5e3",
+    "pixels": [
+      1280,
+      720
+    ],
+    "observation": "The context tile repeats inside the composer. Contrast, inset and type hierarchy make it legible as an object.",
+    "crop": [
+      331,
+      486,
+      451,
+      606
+    ],
+    "viewKind": "demo",
+    "image": "ref-dia-group-chat-demo-4s",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/assets/dia-group-chat-demo-4s.png",
+    "cornerSha256": "a924a90f066c259f390b319186997bfec6a51d57a419d2ae447eaa0ef0da6c71"
+  },
+  {
+    "id": "arc-recovery",
+    "file": "research-assets/arc-sync-recovery.png",
+    "title": "Arc Recovery Card",
+    "source": "https://resources.arc.net/hc/en-us/articles/22370005382167-Recovery-Cards",
+    "url": "https://resources.arc.net/hc/article_attachments/22369994728599",
+    "published": "Article updated 2024-11-05",
+    "kind": "Official help screenshot; example recovery text obscured by publisher",
+    "retrieved": "2026-10-18",
+    "sha256": "161766cfc6c90af3af01832f4721746bf5521bce938001f9299ea7fb494c1251",
+    "pixels": [
+      1112,
+      1010
+    ],
+    "observation": "The black object has a rounded outer edge and inset border. Its silhouette works with strong contrast and a distinct information layout.",
+    "crop": [
+      123,
+      348,
+      243,
+      468
+    ],
+    "viewKind": "help screenshot",
+    "image": "ref-arc-recovery",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/arc-sync-recovery.png",
+    "cornerSha256": "e5cef25b1876f05015611697cd7c21688be276dc427ab67191e4c4f2b68d487c"
+  },
+  {
+    "id": "arc-sync",
+    "file": "research-assets/arc-sync-settings.png",
+    "title": "Arc sync settings",
+    "source": "https://resources.arc.net/hc/en-us/articles/22370005382167-Recovery-Cards",
+    "url": "https://resources.arc.net/hc/article_attachments/22369994734999",
+    "published": "Article updated 2024-11-05",
+    "kind": "Official help screenshot; conventional settings crop",
+    "retrieved": "2026-10-18",
+    "sha256": "026dc027aa0b729014059cd7aac6de225ca5092033535006cc73ad70181192fb",
+    "pixels": [
+      746,
+      316
+    ],
+    "observation": "A small-radius settings group sits next to a pill switch and circular thumb. Ordinary platform geometry remains visible.",
+    "crop": [
+      20,
+      16,
+      140,
+      136
+    ],
+    "viewKind": "help screenshot",
+    "image": "ref-arc-sync",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/arc-sync-settings.png",
+    "cornerSha256": "b81ca603351f372093090726ffae4662d60ebf1130650c60a6870e9df37675b6"
+  },
+  {
+    "id": "arc-routing",
+    "file": "research-assets/arc-air-traffic-route.png",
+    "title": "Arc routing sheet",
+    "source": "https://resources.arc.net/hc/en-us/articles/22932014625431-Air-Traffic-Control-Automate-Your-Link-Routing",
+    "url": "https://resources.arc.net/hc/article_attachments/22932014616343",
+    "published": "Article updated 2024-11-05",
+    "kind": "Official help screenshot; native controls",
+    "retrieved": "2026-10-18",
+    "sha256": "e435b403a87de383010d64c3c692d734cd1ca96a0095983d44337b63ac9d5a78",
+    "pixels": [
+      1482,
+      1356
+    ],
+    "observation": "Compact fields and dropdowns use modest radii. The large sheet and window retain a separate scale.",
+    "crop": [
+      217,
+      193,
+      337,
+      313
+    ],
+    "viewKind": "help screenshot",
+    "image": "ref-arc-routing",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/research-assets/arc-air-traffic-route.png",
+    "cornerSha256": "171bb6c452a87f249afdfa1cea68d914935745a00495356815aa49a4b3cf0bb8"
+  },
+  {
+    "id": "dia-strategy-05",
+    "file": "assets/dia-strategy-05.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/5619b358-2f84-42de-850a-152e85a08b43_1600x900.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published component closeup",
+    "title": "Composer closeup",
+    "sha256": "561f5e00c6c36b748a7bcd3d9ba800a0c8d54e0ab6448c3f375e1c6a4565c936",
+    "pixels": [
+      1600,
+      900
+    ],
+    "observation": "A soft outer shell encloses a smaller context tile and icon mount. The Chat action is a capsule, not proof of a squircle formula.",
+    "crop": [
+      201,
+      303,
+      321,
+      423
+    ],
+    "viewKind": "isolated component",
+    "image": "ref-dia-strategy-05",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/assets/dia-strategy-05.png",
+    "cornerSha256": "bd5310bbe33555a0df53895dcf1735d91b0fafa52f99433a35a63248ff9057c1"
+  },
+  {
+    "id": "dia-strategy-02",
+    "file": "assets/dia-strategy-02.png",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/7d0fe6d0-b69b-467c-a05d-f1ef02c7347c_1600x900.png",
+    "source": "https://browsercompany.substack.com/p/the-strategy-behind-dias-design",
+    "published": "2025-06-17",
+    "retrieved": "2026-10-18",
+    "kind": "Published component closeup; not full application",
+    "title": "Tab closeup",
+    "sha256": "dc574fc0d7e317f9d994c4c564dcedb1ad562661a973b09cce93f13765ec5e6b",
+    "pixels": [
+      1600,
+      900
+    ],
+    "observation": "Concave lower joins connect the selected tab to the content field. This is not a four-corner squircle.",
+    "crop": [
+      480,
+      261,
+      600,
+      381
+    ],
+    "viewKind": "isolated component",
+    "image": "ref-dia-strategy-02",
+    "localSource": "evals/iteration-2/browser-company-study/evidence/assets/dia-strategy-02.png",
+    "cornerSha256": "559cf2189f91b86eae164f4234eaba2b72b3512b7c32e7a4ed967a4932aed214"
+  }
+]

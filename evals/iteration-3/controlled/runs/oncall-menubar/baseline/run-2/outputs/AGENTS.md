@@ -1,0 +1,1 @@
+Read SYSTEM.md and DESIGN.md before changing the Rota prototype. Keep shared facts in the unchanged app/fixtures.js copy. Use app/tokens.css for visual values. Run verification/tokens.test.cjs and verification/check-ui.py after meaningful changes. Preserve offline file:// operation and keep simulation controls in review.html, outside the product.

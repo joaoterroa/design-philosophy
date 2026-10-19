@@ -1,0 +1,657 @@
+{
+  "task": "incident-dashboard",
+  "pairs": [
+    {
+      "id": "incident-dashboard-pair-1",
+      "repeat": 1,
+      "sides": {
+        "L": {
+          "shots": [
+            {
+              "id": "live__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/live__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/live__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/stale__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/stale__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/surge__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/surge__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/live__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "live__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/live__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/stale__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/stale__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/surge__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/shots/surge__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/L/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        },
+        "R": {
+          "shots": [
+            {
+              "id": "live__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/live__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/live__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/stale__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/stale__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/surge__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/surge__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/live__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "live__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/live__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/stale__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/stale__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/surge__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/shots/surge__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/R/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        }
+      },
+      "primaryComparisons": [
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/comparison-1.png",
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/comparison-2.png",
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/comparison-3.png",
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-1/comparison-4.png"
+      ],
+      "primaryStates": [
+        "live__tv__dark",
+        "surge__tv__dark",
+        "stale__tv__light",
+        "live__laptop__light"
+      ]
+    },
+    {
+      "id": "incident-dashboard-pair-2",
+      "repeat": 2,
+      "sides": {
+        "L": {
+          "shots": [
+            {
+              "id": "live__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/live__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/live__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/stale__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/stale__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/surge__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/surge__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/live__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "live__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/live__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/stale__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/stale__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/surge__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/shots/surge__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/L/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        },
+        "R": {
+          "shots": [
+            {
+              "id": "live__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/live__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/live__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/stale__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "stale__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/stale__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/surge__tv__light.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "surge__tv__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/surge__tv__dark.png",
+              "pixels": [
+                1920,
+                1080
+              ],
+              "viewport": [
+                1920,
+                1080
+              ]
+            },
+            {
+              "id": "live__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/live__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "live__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/live__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/stale__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "stale__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/stale__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__light",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/surge__laptop__light.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            },
+            {
+              "id": "surge__laptop__dark",
+              "file": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/shots/surge__laptop__dark.png",
+              "pixels": [
+                1440,
+                900
+              ],
+              "viewport": [
+                1440,
+                900
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/R/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        }
+      },
+      "primaryComparisons": [
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/comparison-1.png",
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/comparison-2.png",
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/comparison-3.png",
+        "evals/iteration-3/controlled/blind-review/incident-dashboard/pair-2/comparison-4.png"
+      ],
+      "primaryStates": [
+        "live__tv__dark",
+        "surge__tv__dark",
+        "stale__tv__light",
+        "live__laptop__light"
+      ]
+    }
+  ],
+  "rubric": [
+    "composition",
+    "hierarchy",
+    "task fit and usability",
+    "product-specific personality",
+    "craftsmanship",
+    "overall design quality"
+  ],
+  "scoreAnchors": {
+    "1": "weak",
+    "2": "material weaknesses",
+    "3": "competent",
+    "4": "strong",
+    "5": "exceptional"
+  },
+  "instructions": "Judge full screens at their actual scale before enlarged details. Consider state changes, labels, density, priority and character together. No credit for following an unseen process or resembling a brand. State uncertainty. Do not inspect any other task, the identity key, skill files, DESIGN.md or other study material."
+}

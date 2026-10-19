@@ -1,0 +1,14 @@
+{
+  "id": "banking-onboarding__baseline__2",
+  "task": "banking-onboarding",
+  "condition": "baseline",
+  "repeat": 2,
+  "state": "not-started-harness-error",
+  "elapsedSeconds": 0,
+  "completeArtifact": false,
+  "hasApp": false,
+  "hasDesign": false,
+  "stopReason": "Whole pilot excluded before this design began.",
+  "excludedFromPrimary": true,
+  "exclusionReason": "Whole pilot excluded for cross-task workload ambiguity, independent of outcome."
+}

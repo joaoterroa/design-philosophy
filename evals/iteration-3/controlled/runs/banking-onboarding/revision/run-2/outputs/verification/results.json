@@ -1,0 +1,180 @@
+{
+  "screens": [
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "welcome",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "details",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "details-error",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "code",
+      "height": 869
+    },
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "code-error",
+      "height": 925
+    },
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "help",
+      "height": 869
+    },
+    {
+      "size": "390x844",
+      "theme": "light",
+      "state": "done",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "welcome",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "details",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "details-error",
+      "height": 844
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "code",
+      "height": 869
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "code-error",
+      "height": 925
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "help",
+      "height": 869
+    },
+    {
+      "size": "390x844",
+      "theme": "dark",
+      "state": "done",
+      "height": 844
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "welcome",
+      "height": 726
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "details",
+      "height": 753
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "details-error",
+      "height": 865
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "code",
+      "height": 885
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "code-error",
+      "height": 941
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "help",
+      "height": 885
+    },
+    {
+      "size": "320x568",
+      "theme": "light",
+      "state": "done",
+      "height": 713
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "welcome",
+      "height": 726
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "details",
+      "height": 753
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "details-error",
+      "height": 865
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "code",
+      "height": 885
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "code-error",
+      "height": 941
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "help",
+      "height": 885
+    },
+    {
+      "size": "320x568",
+      "theme": "dark",
+      "state": "done",
+      "height": 713
+    }
+  ],
+  "checks": [
+    "Full flow, validation, wrong/correct code, back preservation, Help button dismissal and focus restoration",
+    "Keyboard-only welcome \u2192 details \u2192 code \u2192 completion, including +44 format",
+    "Native modal Tab containment, Escape dismissal, direct Help opens over code",
+    "System theme updates, URL theme override, reduced motion, 200% text, tv/laptop queries",
+    "Visible controls at least 44\u00d744 CSS px (buttons designed at 52\u201360 px)"
+  ],
+  "errors": []
+}

@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing these interfaces. Use app/tokens.css for color, typography, radii, shadow and motion. Run `node outputs/verification/tokens.cjs` from the workspace root and the Playwright verification script after changes. Keep shared facts sourced from the unchanged fixture copy.

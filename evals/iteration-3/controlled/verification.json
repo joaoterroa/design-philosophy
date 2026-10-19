@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "finalPNGs": 192,
+  "expectedPNGs": 192,
+  "incompleteRuns": [],
+  "checks": [
+    "PNG hashes, dimensions and nonuniform pixels",
+    "frozen skill snapshots and canonical files unchanged",
+    "offline page no console/network errors",
+    "six comparison pairs",
+    "equal source-pixel scale across all96 paired state/size/theme combinations",
+    "blind/reveal/random order",
+    "preference persistence and JSON export",
+    "image zoom and Escape",
+    "no horizontal overflow at1440/1280/390 in both themes"
+  ],
+  "qa": "/private/tmp/iteration-3-controlled-qa"
+}

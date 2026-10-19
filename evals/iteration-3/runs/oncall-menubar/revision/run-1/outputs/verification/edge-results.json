@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Keyboard-only handover and cancellation, with visible focus and focus after navigation",
+    "Browser Back does not resurrect a cancelled request",
+    "500-character unbroken note wraps; vertical scrolling keeps actions reachable; Escape retains draft",
+    "Notes are rendered as text, not HTML",
+    "Measured layout shift on loaded main screen: 0",
+    "No HTTP or HTTPS requests across checks; all assets load from disk"
+  ],
+  "remote_requests": []
+}

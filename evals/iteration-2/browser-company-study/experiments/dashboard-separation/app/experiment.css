@@ -1,0 +1,3 @@
+/* D: separation probe. Reject if it reduces the wall's seven-row budget. */
+#open-list > li { margin-bottom: 12px; }
+#open-list .row { background: var(--surface); border-radius: 12px; padding-left: 12px; padding-right: 12px; }

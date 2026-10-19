@@ -1,0 +1,23 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f7f2; --surface: #ffffff; --fg: #172f40; --muted: #495e69;
+  --primary: #19475c; --on-primary: #ffffff; --tint: #e8efee; --line: #ccd6d6;
+  --input-line: #6b7d86; --error: #a12b26; --error-bg: #fff0eb; --focus: #9a5100;
+  --backdrop: #102c40b8; --shadow: 0 12px 48px #071e3426;
+  --font: 'Harbour Sans', Arial, sans-serif;
+  --fs-base: 100%; --fs-small: 1rem; --fs-body: 1.125rem; --fs-label: 1.1875rem; --fs-brand: 1.5rem;
+  --fs-title: 2rem; --fs-hero: 2.5rem; --fs-code: 1.75rem;
+  --lh-body: 1.5; --lh-title: 1.15; --weight-normal: 400; --weight-medium: 500; --weight-bold: 600;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px; --s6: 24px; --s7: 32px; --s8: 40px; --s9: 48px;
+  --radius-control: 8px; --radius-panel: 16px; --radius-round: 50%;
+  --target: 52px; --field-height: 60px; --frame: 460px; --dialog: 420px;
+  --stroke: 1px; --focus-width: 3px; --focus-offset: 4px; --tracking: -.025em; --code-tracking: .28em;
+  --fast: 120ms; --ease: ease-out; --motion-off: 0s;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #101f29; --surface: #182d39; --fg: #f5f5ed; --muted: #bdcbd0;
+  --primary: #b5dce6; --on-primary: #112e3c; --tint: #203b47; --line: #405b67;
+  --input-line: #8ba2ad; --error: #ffb5aa; --error-bg: #442b2c; --focus: #ffd18a;
+  --backdrop: #030e19cf; --shadow: 0 12px 48px #0000004d;
+}

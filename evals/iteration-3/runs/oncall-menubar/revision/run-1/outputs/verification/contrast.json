@@ -1,0 +1,282 @@
+[
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "bg",
+    "ratio": 13.79,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "surface",
+    "ratio": 12.71,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "field",
+    "ratio": 14.31,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "health-bg",
+    "ratio": 12.54,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "bg",
+    "ratio": 5.34,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "surface",
+    "ratio": 4.92,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "field",
+    "ratio": 5.54,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "health-bg",
+    "ratio": 4.86,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "health",
+    "bg": "health-bg",
+    "ratio": 6.22,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "health",
+    "bg": "surface",
+    "ratio": 6.3,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "health",
+    "bg": "bg",
+    "ratio": 6.84,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "caution",
+    "bg": "caution-bg",
+    "ratio": 6.28,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "accent",
+    "bg": "health-bg",
+    "ratio": 6.92,
+    "minimum": 3
+  },
+  {
+    "theme": "light",
+    "fg": "on-accent",
+    "bg": "accent",
+    "ratio": 7.9,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "on-accent",
+    "bg": "accent-hover",
+    "ratio": 10.12,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "focus",
+    "bg": "bg",
+    "ratio": 5.65,
+    "minimum": 3
+  },
+  {
+    "theme": "light",
+    "fg": "focus",
+    "bg": "field",
+    "ratio": 5.87,
+    "minimum": 3
+  },
+  {
+    "theme": "light",
+    "fg": "line-strong",
+    "bg": "field",
+    "ratio": 3.74,
+    "minimum": 3
+  },
+  {
+    "theme": "light",
+    "fg": "line-strong",
+    "bg": "surface",
+    "ratio": 3.32,
+    "minimum": 3
+  },
+  {
+    "theme": "light",
+    "fg": "focus",
+    "bg": "health-bg",
+    "ratio": 5.14,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "bg",
+    "ratio": 12.57,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "surface",
+    "ratio": 10.95,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "field",
+    "ratio": 13.41,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "health-bg",
+    "ratio": 10.19,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "bg",
+    "ratio": 7.17,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "surface",
+    "ratio": 6.25,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "field",
+    "ratio": 7.65,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "health-bg",
+    "ratio": 5.82,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "health",
+    "bg": "health-bg",
+    "ratio": 7.42,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "health",
+    "bg": "surface",
+    "ratio": 7.97,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "health",
+    "bg": "bg",
+    "ratio": 9.15,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "caution",
+    "bg": "caution-bg",
+    "ratio": 7.2,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "accent",
+    "bg": "health-bg",
+    "ratio": 7.3,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "on-accent",
+    "bg": "accent",
+    "ratio": 7.81,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "on-accent",
+    "bg": "accent-hover",
+    "ratio": 9.07,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "focus",
+    "bg": "bg",
+    "ratio": 7.43,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "focus",
+    "bg": "field",
+    "ratio": 7.93,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "line-strong",
+    "bg": "field",
+    "ratio": 4.69,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "line-strong",
+    "bg": "surface",
+    "ratio": 3.83,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "focus",
+    "bg": "health-bg",
+    "ratio": 6.03,
+    "minimum": 3
+  }
+]

@@ -1,0 +1,220 @@
+{
+  "views": [
+    {
+      "theme": "light",
+      "state": "main",
+      "screen": "Rota \u00b7 On call",
+      "heading": 139.6875,
+      "buttons": [
+        {
+          "name": "Hand over shift\n\u2192",
+          "height": 36.84375,
+          "width": 286
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "light",
+      "state": "compose",
+      "screen": "Rota \u00b7 Hand over shift",
+      "heading": 119.6875,
+      "buttons": [
+        {
+          "name": "Choose a teammate\u2026\nPriya Raman",
+          "height": 36,
+          "width": 318
+        },
+        {
+          "name": "Cancel",
+          "height": 36.84375,
+          "width": 68.5
+        },
+        {
+          "name": "Review handover",
+          "height": 36.84375,
+          "width": 241.5
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "light",
+      "state": "pending",
+      "screen": "Rota \u00b7 pending",
+      "heading": 119.6875,
+      "buttons": [
+        {
+          "name": "Cancel request",
+          "height": 36.84375,
+          "width": 119.296875
+        },
+        {
+          "name": "Back to schedule",
+          "height": 36.84375,
+          "width": 190.703125
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "light",
+      "state": "offline",
+      "screen": "Rota \u00b7 offline",
+      "heading": 246.46875,
+      "buttons": [
+        {
+          "name": "Try again",
+          "height": 36,
+          "width": 59.78125
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "light",
+      "state": "empty",
+      "screen": "Rota \u00b7 empty",
+      "heading": 175.390625,
+      "buttons": [
+        {
+          "name": "\u2039\nSchedule",
+          "height": 36,
+          "width": 84.453125
+        },
+        {
+          "name": "Check again",
+          "height": 36.84375,
+          "width": 318
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "light",
+      "state": "accepted",
+      "screen": "Rota \u00b7 accepted",
+      "heading": 134.296875,
+      "buttons": [
+        {
+          "name": "Back to schedule",
+          "height": 36.84375,
+          "width": 318
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "dark",
+      "state": "main",
+      "screen": "Rota \u00b7 On call",
+      "heading": 139.6875,
+      "buttons": [
+        {
+          "name": "Hand over shift\n\u2192",
+          "height": 36.84375,
+          "width": 286
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "dark",
+      "state": "compose",
+      "screen": "Rota \u00b7 Hand over shift",
+      "heading": 119.6875,
+      "buttons": [
+        {
+          "name": "Choose a teammate\u2026\nPriya Raman",
+          "height": 36,
+          "width": 318
+        },
+        {
+          "name": "Cancel",
+          "height": 36.84375,
+          "width": 68.5
+        },
+        {
+          "name": "Review handover",
+          "height": 36.84375,
+          "width": 241.5
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "dark",
+      "state": "pending",
+      "screen": "Rota \u00b7 pending",
+      "heading": 119.6875,
+      "buttons": [
+        {
+          "name": "Cancel request",
+          "height": 36.84375,
+          "width": 119.296875
+        },
+        {
+          "name": "Back to schedule",
+          "height": 36.84375,
+          "width": 190.703125
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "dark",
+      "state": "offline",
+      "screen": "Rota \u00b7 offline",
+      "heading": 246.46875,
+      "buttons": [
+        {
+          "name": "Try again",
+          "height": 36,
+          "width": 59.78125
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "dark",
+      "state": "empty",
+      "screen": "Rota \u00b7 empty",
+      "heading": 175.390625,
+      "buttons": [
+        {
+          "name": "\u2039\nSchedule",
+          "height": 36,
+          "width": 84.453125
+        },
+        {
+          "name": "Check again",
+          "height": 36.84375,
+          "width": 318
+        }
+      ],
+      "shift": 0
+    },
+    {
+      "theme": "dark",
+      "state": "accepted",
+      "screen": "Rota \u00b7 accepted",
+      "heading": 134.296875,
+      "buttons": [
+        {
+          "name": "Back to schedule",
+          "height": 36.84375,
+          "width": 318
+        }
+      ],
+      "shift": 0
+    }
+  ],
+  "console_errors": [],
+  "focus_checks": [
+    "light: review heading focused",
+    "light: selected recipient and focus retained on Back",
+    "dark: review heading focused",
+    "dark: selected recipient and focus retained on Back"
+  ],
+  "layout_shift": []
+}

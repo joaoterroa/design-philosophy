@@ -1,0 +1,77 @@
+{
+  "reviewer": "Main agent; informed by study aims but condition key not opened before recording these preferences",
+  "pairs": [
+    {
+      "id": "banking-onboarding-pair-1",
+      "recordedAt": "2026-10-18T19:21:31.604368+00:00",
+      "preference": "same",
+      "confidence": "medium",
+      "left": {
+        "composition": 4,
+        "hierarchy": 3,
+        "taskFit": 3,
+        "personality": 4,
+        "craftsmanship": 4,
+        "overall": 3
+      },
+      "right": {
+        "composition": 3,
+        "hierarchy": 4,
+        "taskFit": 4,
+        "personality": 3,
+        "craftsmanship": 3,
+        "overall": 3
+      },
+      "evidence": [
+        "Left welcome has a branch illustration, a serif headline and a clearly grouped three-step preview; it feels more specific to customers moving from branches.",
+        "Right code screen gives the field more space above the fold and keeps the confirmation action anchored; left spends more height on header, back, progress and headline.",
+        "Left offers a branch route in Help and richer reassurance. Right makes Call our team the prominent filled action and Back secondary; left reverses that emphasis by filling Back to setup.",
+        "Both code error states keep a large input, a clear error and the safety message; left lower recovery link is less available within the captured viewport."
+      ],
+      "interpretation": "Character improves on one side while recovery emphasis improves on the other. No clear overall winner from these four states alone.",
+      "scope": [
+        "welcome390light",
+        "code390light",
+        "code-error390dark",
+        "help320light"
+      ]
+    },
+    {
+      "id": "oncall-menubar-pair-1",
+      "recordedAt": "2026-10-18T19:22:40.756580+00:00",
+      "preference": "R",
+      "confidence": "medium",
+      "left": {
+        "composition": 3,
+        "hierarchy": 4,
+        "taskFit": 3,
+        "personality": 3,
+        "craftsmanship": 3,
+        "overall": 3
+      },
+      "right": {
+        "composition": 4,
+        "hierarchy": 4,
+        "taskFit": 4,
+        "personality": 3,
+        "craftsmanship": 4,
+        "overall": 4
+      },
+      "evidence": [
+        "Right groups the active responsibility, remaining time and handover action in one surface. Left separates the action below the roster and repeats Jamie in the current roster.",
+        "Right pending screen emphasizes return to schedule while retaining a clear waiting/ownership warning and a secondary cancellation. Left repeats acceptance semantics in the diagram, warning and extra paragraph.",
+        "Left horizontal current-to-recipient diagram communicates transfer direction well. Right vertical From/To card is more conventional but remains readable.",
+        "Right adds an explicit last-known timestamp and retry affordance offline. Its composing layout is taller and approaches the640px limit, so the gain is grouping rather than compactness."
+      ],
+      "interpretation": "Right has a more coherent task grouping and state hierarchy. The character gain is modest; both remain familiar utility layouts.",
+      "scope": [
+        "mainlight",
+        "pendinglight",
+        "composedark",
+        "offlinedark"
+      ]
+    }
+  ],
+  "excludedPilot": true,
+  "exclusionReason": "Unequal cross-task workload induced by the shared contract; not primary evidence."
+}

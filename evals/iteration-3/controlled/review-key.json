@@ -1,0 +1,26 @@
+{
+  "oncall-menubar-pair-1": {
+    "L": "baseline",
+    "R": "revision"
+  },
+  "incident-dashboard-pair-1": {
+    "L": "revision",
+    "R": "baseline"
+  },
+  "banking-onboarding-pair-1": {
+    "L": "baseline",
+    "R": "revision"
+  },
+  "oncall-menubar-pair-2": {
+    "L": "revision",
+    "R": "baseline"
+  },
+  "incident-dashboard-pair-2": {
+    "L": "baseline",
+    "R": "revision"
+  },
+  "banking-onboarding-pair-2": {
+    "L": "revision",
+    "R": "baseline"
+  }
+}

@@ -59,3 +59,9 @@ Capture blocks network requests and reads the original run outputs without modif
 - Keep baseline runs away from any of the user's own design documents (iteration 1's baselines found one and used it; see its FINDINGS).
 - Give both configurations identical prompts, inputs, time budget and deliverables, including a fixed list of screens and states to screenshot at fixed sizes and names, so results can be compared side by side.
 - Grade with assertions that can fail for a good baseline, and add a blind preference judgement of paired screenshots.
+
+## Experimental skill comparison
+
+[Iteration 3](iteration-3/controlled/index.html) compares the preserved current skill with a separate experimental revision: three tasks, two runs per condition, twelve completed designs and 192 matched screenshots. The [findings](iteration-3/controlled/FINDINGS.md) recommend keeping the current baseline: menus improve consistently, dashboards favor the current skill, and banking is mixed. The canonical skill is unchanged. The earlier cross-task pilot is excluded in full.
+
+The [shape study](iteration-2/shape-study/index.html) preserves the Adjusted Squircle preference as an optional visual treatment; the controlled revision contains that reference, but none of its final apps implements continuous corners.

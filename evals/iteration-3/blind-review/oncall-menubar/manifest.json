@@ -1,0 +1,339 @@
+{
+  "task": "oncall-menubar",
+  "pairs": [
+    {
+      "id": "oncall-menubar-pair-1",
+      "repeat": 1,
+      "sides": {
+        "L": {
+          "shots": [
+            {
+              "id": "main__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/main__menu__light.png",
+              "pixels": [
+                360,
+                591
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "main__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/main__menu__dark.png",
+              "pixels": [
+                360,
+                591
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "compose__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/compose__menu__light.png",
+              "pixels": [
+                360,
+                546
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "compose__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/compose__menu__dark.png",
+              "pixels": [
+                360,
+                546
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "pending__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/pending__menu__light.png",
+              "pixels": [
+                360,
+                596
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "pending__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/pending__menu__dark.png",
+              "pixels": [
+                360,
+                596
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "offline__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/offline__menu__light.png",
+              "pixels": [
+                360,
+                640
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "offline__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/offline__menu__dark.png",
+              "pixels": [
+                360,
+                640
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "empty__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/empty__menu__light.png",
+              "pixels": [
+                360,
+                404
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "empty__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/empty__menu__dark.png",
+              "pixels": [
+                360,
+                404
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "accepted__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/accepted__menu__light.png",
+              "pixels": [
+                360,
+                501
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "accepted__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/shots/accepted__menu__dark.png",
+              "pixels": [
+                360,
+                501
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/blind-review/oncall-menubar/pair-1/L/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        },
+        "R": {
+          "shots": [
+            {
+              "id": "main__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/main__menu__light.png",
+              "pixels": [
+                360,
+                634
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "main__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/main__menu__dark.png",
+              "pixels": [
+                360,
+                634
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "compose__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/compose__menu__light.png",
+              "pixels": [
+                360,
+                635
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "compose__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/compose__menu__dark.png",
+              "pixels": [
+                360,
+                635
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "pending__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/pending__menu__light.png",
+              "pixels": [
+                360,
+                635
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "pending__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/pending__menu__dark.png",
+              "pixels": [
+                360,
+                635
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "offline__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/offline__menu__light.png",
+              "pixels": [
+                360,
+                639
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "offline__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/offline__menu__dark.png",
+              "pixels": [
+                360,
+                639
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "empty__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/empty__menu__light.png",
+              "pixels": [
+                360,
+                368
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "empty__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/empty__menu__dark.png",
+              "pixels": [
+                360,
+                368
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "accepted__menu__light",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/accepted__menu__light.png",
+              "pixels": [
+                360,
+                573
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            },
+            {
+              "id": "accepted__menu__dark",
+              "file": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/shots/accepted__menu__dark.png",
+              "pixels": [
+                360,
+                573
+              ],
+              "viewport": [
+                400,
+                680
+              ]
+            }
+          ],
+          "app": "evals/iteration-3/blind-review/oncall-menubar/pair-1/R/app/index.html",
+          "metadata": "Deliberately omitted condition, DESIGN.md, process artifacts and scores."
+        }
+      },
+      "primaryComparisons": [
+        "evals/iteration-3/blind-review/oncall-menubar/pair-1/comparison-1.png",
+        "evals/iteration-3/blind-review/oncall-menubar/pair-1/comparison-2.png",
+        "evals/iteration-3/blind-review/oncall-menubar/pair-1/comparison-3.png",
+        "evals/iteration-3/blind-review/oncall-menubar/pair-1/comparison-4.png"
+      ],
+      "primaryStates": [
+        "main__menu__light",
+        "pending__menu__light",
+        "compose__menu__dark",
+        "offline__menu__dark"
+      ]
+    }
+  ],
+  "rubric": [
+    "composition",
+    "hierarchy",
+    "task fit and usability",
+    "product-specific personality",
+    "craftsmanship",
+    "overall design quality"
+  ],
+  "scoreAnchors": {
+    "1": "weak",
+    "2": "material weaknesses",
+    "3": "competent",
+    "4": "strong",
+    "5": "exceptional"
+  },
+  "instructions": "Judge full screens at their actual scale before enlarged details. Consider state changes, labels, density, priority and character together. No credit for following an unseen process or resembling a brand. State uncertainty. Do not inspect any other task, the identity key, skill files, DESIGN.md or other study material."
+}

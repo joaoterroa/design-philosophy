@@ -1,0 +1,255 @@
+{
+  "screens": [
+    {
+      "state": "main",
+      "theme": "light",
+      "display": "laptop",
+      "height": 626,
+      "scrollHeight": 624,
+      "clientHeight": 624,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "display": "laptop",
+      "height": 569,
+      "scrollHeight": 567,
+      "clientHeight": 567,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "display": "laptop",
+      "height": 572,
+      "scrollHeight": 570,
+      "clientHeight": 570,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "display": "laptop",
+      "height": 636,
+      "scrollHeight": 634,
+      "clientHeight": 634,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "display": "laptop",
+      "height": 462,
+      "scrollHeight": 460,
+      "clientHeight": 460,
+      "headingY": 231.140625,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "display": "laptop",
+      "height": 539,
+      "scrollHeight": 537,
+      "clientHeight": 537,
+      "headingY": 174.296875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "main",
+      "theme": "light",
+      "display": "tv",
+      "height": 626,
+      "scrollHeight": 624,
+      "clientHeight": 624,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "display": "tv",
+      "height": 569,
+      "scrollHeight": 567,
+      "clientHeight": 567,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "display": "tv",
+      "height": 572,
+      "scrollHeight": 570,
+      "clientHeight": 570,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "display": "tv",
+      "height": 636,
+      "scrollHeight": 634,
+      "clientHeight": 634,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "display": "tv",
+      "height": 462,
+      "scrollHeight": 460,
+      "clientHeight": 460,
+      "headingY": 231.140625,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "display": "tv",
+      "height": 539,
+      "scrollHeight": 537,
+      "clientHeight": 537,
+      "headingY": 174.296875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "display": "laptop",
+      "height": 626,
+      "scrollHeight": 624,
+      "clientHeight": 624,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "display": "laptop",
+      "height": 569,
+      "scrollHeight": 567,
+      "clientHeight": 567,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "display": "laptop",
+      "height": 572,
+      "scrollHeight": 570,
+      "clientHeight": 570,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "display": "laptop",
+      "height": 636,
+      "scrollHeight": 634,
+      "clientHeight": 634,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "display": "laptop",
+      "height": 462,
+      "scrollHeight": 460,
+      "clientHeight": 460,
+      "headingY": 231.140625,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "display": "laptop",
+      "height": 539,
+      "scrollHeight": 537,
+      "clientHeight": 537,
+      "headingY": 174.296875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "display": "tv",
+      "height": 626,
+      "scrollHeight": 624,
+      "clientHeight": 624,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "display": "tv",
+      "height": 569,
+      "scrollHeight": 567,
+      "clientHeight": 567,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "display": "tv",
+      "height": 572,
+      "scrollHeight": 570,
+      "clientHeight": 570,
+      "headingY": 150.234375,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "display": "tv",
+      "height": 636,
+      "scrollHeight": 634,
+      "clientHeight": 634,
+      "headingY": 119.6875,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "display": "tv",
+      "height": 462,
+      "scrollHeight": 460,
+      "clientHeight": 460,
+      "headingY": 231.140625,
+      "settledHeadingShiftPx": 0.0
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "display": "tv",
+      "height": 539,
+      "scrollHeight": 537,
+      "clientHeight": 537,
+      "headingY": 174.296875,
+      "settledHeadingShiftPx": 0.0
+    }
+  ],
+  "interactions": [
+    "Keyboard choose \u2192 note \u2192 review \u2192 edit \u2192 send; pending stays pending; reload; return; cancel request",
+    "Escape cancels compose and returns to schedule",
+    "Offline retry retains saved data and announces failure",
+    "Empty refresh remains honestly empty",
+    "Explicit acceptance via separate harness updates responsibility and main schedule",
+    "300-character note is escaped and wraps without horizontal overflow; actions remain reachable by scrolling",
+    "System dark preference and explicit light override"
+  ],
+  "errors": [],
+  "network": []
+}

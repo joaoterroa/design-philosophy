@@ -1,0 +1,202 @@
+{
+  "screens": [
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "welcome",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "details",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "details-error",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "code",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "code-error",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "help",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "done",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "welcome",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "details",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "details-error",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "code",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "code-error",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "help",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "done",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "welcome",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "details",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "details-error",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "code",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "code-error",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "help",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "done",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "welcome",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "details",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "details-error",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "code",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "code-error",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "help",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "done",
+      "overflow": false
+    }
+  ],
+  "interaction_checks": "Passed: validation, wrong and fixture code, Back retention, Help button/Escape/focus trap/return, resend status, finish, keyboard-only happy path, system theme, URL override, reduced motion, display flag, 200% welcome reflow",
+  "page_errors": []
+}

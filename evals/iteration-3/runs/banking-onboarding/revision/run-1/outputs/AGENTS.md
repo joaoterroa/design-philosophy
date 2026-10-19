@@ -1,0 +1,1 @@
+Read SYSTEM.md before editing this prototype. All core visual values belong in app/tokens.css. Keep the fixed app/fixtures.js unchanged. Run verification/guard.cjs and verification/verify.py after meaningful changes. Keep review controls outside app/index.html.

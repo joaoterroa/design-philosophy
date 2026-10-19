@@ -1,0 +1,925 @@
+{
+  "checks": [
+    {
+      "state": "main",
+      "theme": "light",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 586.0625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 586.0625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 581.640625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 581.640625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 640
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 413.78125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 413.78125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 444.078125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "width": 400,
+      "height": 680,
+      "display": "laptop",
+      "app": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 444.078125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 680,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "live",
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "display": "tv",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1058.4375
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 1080,
+      "dialogOpen": false,
+      "table": {
+        "client": 613,
+        "scroll": 613
+      },
+      "incidents": 7
+    },
+    {
+      "state": "live",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 884.578125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 900,
+      "dialogOpen": false,
+      "table": {
+        "client": 470,
+        "scroll": 470
+      },
+      "incidents": 7
+    },
+    {
+      "state": "live",
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "display": "tv",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1058.4375
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 1080,
+      "dialogOpen": false,
+      "table": {
+        "client": 613,
+        "scroll": 613
+      },
+      "incidents": 7
+    },
+    {
+      "state": "live",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 884.578125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 900,
+      "dialogOpen": false,
+      "table": {
+        "client": 470,
+        "scroll": 470
+      },
+      "incidents": 7
+    },
+    {
+      "state": "stale",
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "display": "tv",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1118.734375
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 1119,
+      "dialogOpen": false,
+      "table": {
+        "client": 613,
+        "scroll": 613
+      },
+      "incidents": 7
+    },
+    {
+      "state": "stale",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 944.875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 945,
+      "dialogOpen": false,
+      "table": {
+        "client": 470,
+        "scroll": 470
+      },
+      "incidents": 7
+    },
+    {
+      "state": "stale",
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "display": "tv",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1118.734375
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 1119,
+      "dialogOpen": false,
+      "table": {
+        "client": 613,
+        "scroll": 613
+      },
+      "incidents": 7
+    },
+    {
+      "state": "stale",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 944.875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 945,
+      "dialogOpen": false,
+      "table": {
+        "client": 470,
+        "scroll": 470
+      },
+      "incidents": 7
+    },
+    {
+      "state": "surge",
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "display": "tv",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1108.125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 1108,
+      "dialogOpen": false,
+      "table": {
+        "client": 630,
+        "scroll": 1024
+      },
+      "incidents": 12
+    },
+    {
+      "state": "surge",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 998.078125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 998,
+      "dialogOpen": false,
+      "table": {
+        "client": 570,
+        "scroll": 782
+      },
+      "incidents": 12
+    },
+    {
+      "state": "surge",
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "display": "tv",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1108.125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 1108,
+      "dialogOpen": false,
+      "table": {
+        "client": 630,
+        "scroll": 1024
+      },
+      "incidents": 12
+    },
+    {
+      "state": "surge",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 998.078125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 998,
+      "dialogOpen": false,
+      "table": {
+        "client": 570,
+        "scroll": 782
+      },
+      "incidents": 12
+    },
+    {
+      "state": "welcome",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "welcome",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 746.296875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 746,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "welcome",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "welcome",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 746.296875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 746,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "details-error",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 892.078125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 892,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "details-error",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 853.171875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 853,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "details-error",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 892.078125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 892,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "details-error",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 853.171875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 853,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 754.640625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 755,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 754.640625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 755,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code-error",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 849.921875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 850,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code-error",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 811.015625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 811,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code-error",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 849.921875
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 850,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "code-error",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 811.015625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 811,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "help",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": true,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "help",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 754.640625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 755,
+      "dialogOpen": true,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "help",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": true,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "help",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 754.640625
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 755,
+      "dialogOpen": true,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "done",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "done",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 694.203125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 694,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "done",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 844,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "state": "done",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "display": "laptop",
+      "app": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 694.203125
+      },
+      "horizontalOverflow": false,
+      "bodyHeight": 694,
+      "dialogOpen": false,
+      "table": null,
+      "incidents": 0
+    },
+    {
+      "interaction": "Rota choose, note, review, send, pending responsibility, return, cancel",
+      "passed": true
+    },
+    {
+      "interaction": "Separate harness explicit acceptance",
+      "passed": true
+    },
+    {
+      "interaction": "Bank validation, wrong code, Help, Escape/button focus return, correct code, completion",
+      "passed": true
+    },
+    {
+      "interaction": "System dark preference and reduced motion",
+      "passed": true
+    },
+    {
+      "interaction": "Laptop surge keyboard scrolling",
+      "passed": true
+    }
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing the prototype. Keep fixture facts in app/fixtures.js unchanged. Use the design tokens and run verification/design-guard.cjs and verification/verify.py after changes. No build or network dependencies may be introduced.

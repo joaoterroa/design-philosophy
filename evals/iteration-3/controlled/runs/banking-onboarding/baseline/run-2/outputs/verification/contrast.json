@@ -1,0 +1,30 @@
+{
+  "light": {
+    "fg/bg": 12.88,
+    "fg/surface": 13.91,
+    "muted/bg": 5.95,
+    "muted/surface": 6.42,
+    "accent/bg": 10.36,
+    "accent/surface": 11.19,
+    "on-accent/accent": 11.29,
+    "error/bg": 6.46,
+    "error/error-bg": 6.35,
+    "success/success-bg": 6.32,
+    "focus/bg": 5.26,
+    "input-line/surface": 3.8
+  },
+  "dark": {
+    "fg/bg": 14.39,
+    "fg/surface": 12.23,
+    "muted/bg": 9.26,
+    "muted/surface": 7.86,
+    "accent/bg": 10.72,
+    "accent/surface": 9.11,
+    "on-accent/accent": 9.65,
+    "error/bg": 9.29,
+    "error/error-bg": 7.48,
+    "success/success-bg": 7.27,
+    "focus/bg": 9.57,
+    "input-line/surface": 4.94
+  }
+}

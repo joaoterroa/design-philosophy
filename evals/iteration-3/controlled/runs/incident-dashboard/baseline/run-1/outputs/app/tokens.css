@@ -1,0 +1,16 @@
+@font-face{font-family:Plex;src:url('fonts/plex-sans-latin.woff2') format('woff2');font-weight:100 700;font-display:swap}
+@font-face{font-family:PlexMono;src:url('fonts/plex-mono-400-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+:root{
+ color-scheme:light;
+ --control-line:#788796;--bg:#EEF1F4;--surface:#FFFFFF;--fg:#172D40;--muted:#536574;--line:#CCD5DC;--soft:#E4EAF0;--brand:#12355B;--brand-ink:#12355B;--white:#FFFFFF;--orange:#F26B21;--teal:#2A9D8F;--chart:#257E74;--good:#21695E;--critical:#A52E32;--critical-bg:#FCECEE;--warning:#8F4C0B;--warning-bg:#FFF1DF;--focus:#155CA2;--hover:#E7EDF3;--backdrop:#081A32B8;
+ --fs-xs:12px;--fs-sm:14px;--fs-base:16px;--fs-row:17px;--fs-md:20px;--fs-lg:24px;--fs-title:32px;--fs-number:48px;
+ --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;--sp-8:32px;--sp-10:40px;--sp-12:48px;
+ --heading-height:80px;--offscreen:-100px;--search-width:200px;--search-width-compact:180px;--col-severity:76px;--col-state:128px;--col-owner:145px;--col-age:135px;--modal-width:640px;--table-min-width:760px;--tracking-title:-.025em;--tracking-wordmark:-.02em;--tracking-label:.12em;--tracking-number:-.055em;--radius:4px;--radius-lg:8px;--hairline:1px;--heavy:3px;--target:44px;--page:32px;--sidebar:310px;--row:68px;--header:64px;--ease:ease-out;--duration:120ms;
+}
+:root[data-theme=dark]{
+ color-scheme:dark;
+ --control-line:#72889A;--bg:#0D1B28;--surface:#132534;--fg:#E7EDF2;--muted:#A9BAC8;--line:#344959;--soft:#213544;--brand:#12355B;--brand-ink:#BDDAF6;--white:#FFFFFF;--orange:#F26B21;--teal:#2A9D8F;--chart:#53B9AA;--good:#7ACCB5;--critical:#FFADB1;--critical-bg:#3B252E;--warning:#F4C587;--warning-bg:#3B3022;--focus:#8DC9FF;--hover:#22394C;--backdrop:#081A32B8;
+}
+:root[data-display=tv]{--search-width:240px;--col-severity:100px;--col-state:160px;--col-owner:175px;--col-age:160px;--fs-xs:15px;--fs-sm:17px;--fs-base:20px;--fs-row:22px;--fs-md:24px;--fs-lg:28px;--fs-title:40px;--fs-number:60px;--page:48px;--sidebar:390px;--row:72px;--header:64px}
+
+@media(max-width:700px){:root{--page:16px;--fs-title:28px;--fs-number:36px}}

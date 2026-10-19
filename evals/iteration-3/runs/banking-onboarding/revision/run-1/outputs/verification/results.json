@@ -1,0 +1,886 @@
+{
+  "states": [
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "welcome",
+      "overflow": false,
+      "title": "Welcome \u00b7 Harbour",
+      "heading": 249,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Let\u2019s get started",
+          "h": 56,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "details",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "details-error",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "code",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 68,
+          "w": 342
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "code-error",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 70,
+          "w": 342
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "help",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 205,
+      "dialog": true,
+      "targets": [
+        {
+          "label": "0808 157 0192",
+          "h": 56,
+          "w": 300
+        },
+        {
+          "label": "Back to setup",
+          "h": 56,
+          "w": 300
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "state": "done",
+      "overflow": false,
+      "title": "Setup complete \u00b7 Harbour",
+      "heading": 285,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "Keep your banking safe",
+          "h": 48,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "welcome",
+      "overflow": false,
+      "title": "Welcome \u00b7 Harbour",
+      "heading": 249,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Let\u2019s get started",
+          "h": 56,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "details",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "details-error",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "code",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 68,
+          "w": 342
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "code-error",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 205,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 70,
+          "w": 342
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 342
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "help",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 205,
+      "dialog": true,
+      "targets": [
+        {
+          "label": "0808 157 0192",
+          "h": 56,
+          "w": 300
+        },
+        {
+          "label": "Back to setup",
+          "h": 56,
+          "w": 300
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "state": "done",
+      "overflow": false,
+      "title": "Setup complete \u00b7 Harbour",
+      "heading": 285,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "Keep your banking safe",
+          "h": 48,
+          "w": 342
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "welcome",
+      "overflow": false,
+      "title": "Welcome \u00b7 Harbour",
+      "heading": 105,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Let\u2019s get started",
+          "h": 56,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "details",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 197,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "details-error",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 197,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "code",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 221,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 68,
+          "w": 280
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "code-error",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 221,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 70,
+          "w": 280
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "help",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 221,
+      "dialog": true,
+      "targets": [
+        {
+          "label": "0808 157 0192",
+          "h": 56,
+          "w": 246
+        },
+        {
+          "label": "Back to setup",
+          "h": 56,
+          "w": 246
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "state": "done",
+      "overflow": false,
+      "title": "Setup complete \u00b7 Harbour",
+      "heading": 277,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "Keep your banking safe",
+          "h": 48,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "welcome",
+      "overflow": false,
+      "title": "Welcome \u00b7 Harbour",
+      "heading": 105,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Let\u2019s get started",
+          "h": 56,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "details",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 197,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "details-error",
+      "overflow": false,
+      "title": "Your details \u00b7 Harbour",
+      "heading": 197,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "full-name",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "mobile",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Continue",
+          "h": 56,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "code",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 221,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 68,
+          "w": 280
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "code-error",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 221,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "code",
+          "h": 70,
+          "w": 280
+        },
+        {
+          "label": "Confirm code",
+          "h": 56,
+          "w": 280
+        },
+        {
+          "label": "Change mobile number",
+          "h": 48,
+          "w": 280
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "help",
+      "overflow": false,
+      "title": "Check your mobile \u00b7 Harbour",
+      "heading": 221,
+      "dialog": true,
+      "targets": [
+        {
+          "label": "0808 157 0192",
+          "h": 56,
+          "w": 246
+        },
+        {
+          "label": "Back to setup",
+          "h": 56,
+          "w": 246
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "state": "done",
+      "overflow": false,
+      "title": "Setup complete \u00b7 Harbour",
+      "heading": 277,
+      "dialog": false,
+      "targets": [
+        {
+          "label": "?Help",
+          "h": 48,
+          "w": 82.640625
+        },
+        {
+          "label": "Back",
+          "h": 48,
+          "w": 84.78125
+        },
+        {
+          "label": "Keep your banking safe",
+          "h": 48,
+          "w": 280
+        }
+      ]
+    }
+  ],
+  "javascriptErrors": [],
+  "interactionChecks": "passed",
+  "keyboardFlow": "passed",
+  "systemThemeAndReducedMotion": "passed",
+  "textEnlargement200Percent": "passed",
+  "externalNetworkRequests": []
+}

@@ -1,0 +1,134 @@
+{
+  "runId": "oncall-menubar__revision__1",
+  "checks": [
+    {
+      "check": "complete run",
+      "status": "pass",
+      "evidence": "completed",
+      "severity": "critical"
+    },
+    {
+      "check": "all final states captured",
+      "status": "pass",
+      "evidence": "12/12",
+      "severity": "critical"
+    },
+    {
+      "check": "supplied inputs unchanged",
+      "status": "pass",
+      "evidence": [],
+      "severity": "integrity"
+    },
+    {
+      "check": "no console errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no runtime errors",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no network dependence",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no horizontal overflow",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "no menu clipping",
+      "status": "pass",
+      "evidence": 0,
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes accepted",
+      "status": "pass",
+      "evidence": {
+        "light": "51926db36ac4b40d7666fce36ce715671bb2ec9fd8983fffa883d22b6422e57f",
+        "dark": "6d64f9f7994943845eb7ebd2bfe5dc96a7ee0c5ef278d8d02216b70e0d5c6ea6"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes compose",
+      "status": "pass",
+      "evidence": {
+        "light": "077475190821ce2fa07736c8d2f735e04274385e41af1723f69303b2efd46391",
+        "dark": "1c6de8450da9edfa979c47e4cf95748f72c4f77a45eea62a196756e8c66a9936"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes empty",
+      "status": "pass",
+      "evidence": {
+        "light": "6938d10a790946351e2b7bbb88545d2853c7dd009c94eca85fd90fcdabdc3478",
+        "dark": "666f8952a35a0af8e4cafa481251d2d2f77bbb48759224230c2f66cd3462b7ed"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes main",
+      "status": "pass",
+      "evidence": {
+        "light": "2d2567733f8ec45c7ff0c5066f39baedb47e335300e07eea65d33c584997da2b",
+        "dark": "67ac15518884dcbe1bb4a6c427dbc6846f3c298e776c3f0fcb62e6fef581681f"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes offline",
+      "status": "pass",
+      "evidence": {
+        "light": "c1294ad1d2315b91277e26d717e03cd4acf1dc20ea524e4dcb7be61fe0eb4954",
+        "dark": "7da7c957884946bb0f9f0fcf17b974abded07a348d01ed7c9ddafcf824a3bf48"
+      },
+      "severity": "functional"
+    },
+    {
+      "check": "theme changes pending",
+      "status": "pass",
+      "evidence": {
+        "light": "cad2d175f240445d2a60fd4c1b733150a150356af7b583bd015f66468cfa4bc4",
+        "dark": "a3b12bdf3f47dbbb48622b7e0d0aaa1f7e1d57ab1591df96782a1a8b50d466d1"
+      },
+      "severity": "functional"
+    }
+  ],
+  "observations": [],
+  "interaction": [
+    {
+      "check": "open handover",
+      "status": "pass",
+      "evidence": "Rota\nSun 18 Oct\nYour current shift\nHand over shift\n\nChoose who should take the rest of your shift.\n\nRotation\nPlatform Primary\nShift\n06:00\u201318:00 UTC\nHandover\nOn acceptance \u2192 18:00\nHand over to\nChoose a teammate\u2026\nPriya Raman\n\nPriya Raman is the handover contact for this shift.\n\nYou remain responsible until your teammate accepts.\n\nCancel\nReview handover\nAll times UTC\nAs of 10:00"
+    },
+    {
+      "check": "send and retain responsibility while pending",
+      "status": "pass",
+      "evidence": {
+        "chosen": true,
+        "sent": true,
+        "text": "Rota\nSun 18 Oct\nHandover request\nWaiting for Priya\n\nPriya Raman hasn\u2019t accepted yet.\n\nPlatform Primary \u00b7 until 18:00 UTC\nJE\nJamie Ellis\nYou\nResponsible now\nPR\nPriya Raman\nAcceptance required\nWaiting\n\nYou\u2019re still on call.\nKeep covering Platform Primary until Priya accepts. Sending a request does not transfer responsibility.\n\nCancel request\nBack to schedule\nAll times UTC\nAs of 10:00\nHandover request sent. You remain responsible until Priya accepts."
+      }
+    },
+    {
+      "check": "no automatic acceptance",
+      "status": "pass",
+      "evidence": "Rota\nSun 18 Oct\nHandover request\nWaiting for Priya\n\nPriya Raman hasn\u2019t accepted yet.\n\nPlatform Primary \u00b7 until 18:00 UTC\nJE\nJamie Ellis\nYou\nResponsible now\nPR\nPriya Raman\nAcceptance required\nWaiting\n\nYou\u2019re still on call.\nKeep covering Platform Primary until Priya accepts. Sending a request does not transfer responsibility.\n\nCancel request\nBack to schedule\nAll times UTC\nAs of 10:00\nHandover request sent. You remain responsible until Priya accepts."
+    }
+  ],
+  "failures": 0,
+  "limitations": [
+    "Target and text checks are scoped measurements, not full accessibility or usability conformance.",
+    "Unrecognized generic action selectors require manual review; do not count as an agent defect without checking."
+  ]
+}

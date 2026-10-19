@@ -1,0 +1,135 @@
+/* Harbour onboarding: design tokens ("Counter Service").
+   The only file allowed to hold literal colours, sizes, radii, shadows and durations.
+   Reasons for each value are in design/SYSTEM.md. tests/design.test.js guards this file. */
+
+:root {
+  /* Neutrals: warm paper and ink. Text targets 7:1 (WCAG AAA), not 4.5:1, because
+     contrast sensitivity falls with age and these users read in mixed light. */
+  --paper: #faf7f2;        /* page ground; warm so white fields read as "write here" */
+  --surface: #ffffff;      /* fields, the help sheet */
+  --sunk: #efe9df;         /* the one grouped fact per screen (the text-message preview, the account) */
+  --ink: #1b1a17;          /* all body text */
+  --ink-muted: #47433c;    /* secondary text; still AAA */
+  --line: #6f695f;         /* field borders, progress track: meaningful edges, >= 3:1 */
+  --hairline: #d9d1c4;     /* decorative separators only, never the only edge of a control */
+
+  /* Act: the one action colour (placeholder until the bank's brand arrives). */
+  --act: #1d3d6e;          /* primary button fill, links, progress fill, focus of selection */
+  --act-press: #142c52;
+  --act-on: #ffffff;       /* text on --act */
+
+  /* Meanings. Each always comes with words; colour is the second signal, never the only one. */
+  --danger: #8c1f15;       /* something is wrong and needs the user */
+  --danger-tint: #fbe8e4;
+  --caution: #6e4300;      /* scam and safety advice */
+  --caution-tint: #fbefd4;
+  --caution-edge: #a8690a;
+  --ok: #175a2e;           /* finished, confirmed */
+  --ok-tint: #e3f1e6;
+
+  --focus: #1b1a17;        /* focus ring; drawn with a --paper gap so it shows on any fill */
+  --scrim: #1b1a17b3;      /* behind the help sheet */
+  --shadow-sheet: 0 -8px 32px #1b1a1733;
+
+  /* Type: system faces (SF Pro on iOS, Roboto on Android) because they follow the phone's
+     own text-size setting and are what these users already read every day.
+     Sizes are rem so the OS text-size setting scales everything. Nothing is below 17px. */
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", Roboto, "Segoe UI", Inter, system-ui, sans-serif;
+  --fs-small: 1.0625rem;   /* 17px: hints, step counter, fine print */
+  --fs-body: 1.1875rem;    /* 19px: body, labels, buttons */
+  --fs-title: 1.75rem;     /* 28px: one per screen, the question being asked */
+  --fs-code: 1.875rem;     /* 30px: the code and passcode digits */
+  --lh-body: 1.5;
+  --lh-title: 1.2;
+  --fw-regular: 400;
+  --fw-strong: 600;
+  --fw-title: 700;
+  --tracking-code: 0.3em;
+
+  /* Space: 4px base, short scale. */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  /* Horizontal insets are px on purpose: when the phone's text size goes to 200%, rem gutters
+     would double too and squeeze a 390px screen to a 240px column. Text gets the width instead. */
+  --gutter: 20px;          /* page side margin */
+  --inset: 16px;           /* inside panels and the message bubble */
+  --measure: 34rem;        /* max text column on large phones / tablets */
+
+  /* Shape: soft but firm. Nested shapes take smaller radii. */
+  --r-field: 0.625rem;     /* 10px */
+  --r-button: 0.75rem;     /* 12px */
+  --r-panel: 1rem;         /* 16px */
+  --r-sheet: 1.25rem;      /* 20px */
+  --bw: 2px;               /* every control edge; 1px lines vanish for older eyes */
+  --focus-w: 3px;
+
+  /* Targets: well above WCAG 2.2's 24px floor and the 44/48pt platform minimums. */
+  --target: 3.5rem;        /* 56px: primary and secondary buttons, fields */
+  --target-min: 3rem;      /* 48px: text buttons such as Back and Help */
+
+  /* Motion: explains arrival only. Reduced motion removes it. */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-spin: 1100ms;      /* only while setup is genuinely working */
+
+  --bw-strong: 3px;        /* field edge when it has an error */
+  --fs-root: 100%;         /* follows the OS; the prototype's ?scale= hook overrides it */
+}
+
+/* Prototype hook to simulate the phone's larger-text setting (iOS Dynamic Type / Android font size). */
+:root[data-scale="150"] { --fs-root: 150%; }
+:root[data-scale="200"] { --fs-root: 200%; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #151412;
+    --surface: #1f1d1a;
+    --sunk: #2a2723;
+    --ink: #f4f0e9;
+    --ink-muted: #cfc8bc;
+    --line: #8f887d;
+    --hairline: #3a3631;
+    --act: #a9c4f0;
+    --act-press: #c4d7f6;
+    --act-on: #0e1a2e;
+    --danger: #ffaa9e;
+    --danger-tint: #3b1d18;
+    --caution: #f3c873;
+    --caution-tint: #33270f;
+    --caution-edge: #c8902a;
+    --ok: #96d8aa;
+    --ok-tint: #16301f;
+    --focus: #f4f0e9;
+    --scrim: #000000b3;
+    --shadow-sheet: 0 -8px 32px #00000080;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #151412;
+  --surface: #1f1d1a;
+  --sunk: #2a2723;
+  --ink: #f4f0e9;
+  --ink-muted: #cfc8bc;
+  --line: #8f887d;
+  --hairline: #3a3631;
+  --act: #a9c4f0;
+  --act-press: #c4d7f6;
+  --act-on: #0e1a2e;
+  --danger: #ffaa9e;
+  --danger-tint: #3b1d18;
+  --caution: #f3c873;
+  --caution-tint: #33270f;
+  --caution-edge: #c8902a;
+  --ok: #96d8aa;
+  --ok-tint: #16301f;
+  --focus: #f4f0e9;
+  --scrim: #000000b3;
+  --shadow-sheet: 0 -8px 32px #00000080;
+}

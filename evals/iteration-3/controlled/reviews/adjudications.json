@@ -1,0 +1,44 @@
+{
+  "recordedAt": "2026-10-19T08:07:03.490139+00:00",
+  "automatedFlags": [
+    {
+      "run": "banking-onboarding__baseline__1",
+      "check": "no console errors",
+      "adjudication": "Confirmed. Local WOFF2 is blocked by Chromium file-origin CORS in all24captures. A readable fallback renders. Source output is not repaired."
+    },
+    {
+      "run": "banking-onboarding__baseline__2",
+      "check": "code screen visible text at least16px",
+      "adjudication": "Confirmed. The practice footer is14px. This fails the declared scoped check; it is not a claim that WCAG mandates16px everywhere."
+    }
+  ],
+  "additionalVisualInspection": {
+    "phase": "after identity reveal; did not rewrite masked preferences",
+    "states": [
+      "allfour menu empty and accepted light captures",
+      "allfour banking details-error and done at320\u00d7568 light"
+    ],
+    "observations": [
+      "No wrong state pairing or menu clipping found.",
+      "Small-phone forms require ordinary vertical scrolling. Both revised banking runs retain honest practice-completion wording.",
+      "Accepted handovers name Priya as responsible and distinguish Jamie from the new owner."
+    ]
+  },
+  "process": {
+    "revisedRunsWithRetainedAlternatives": 6,
+    "strongestForks": [
+      "ownership-first vs roster-first menu",
+      "incident table vs status board",
+      "welcome-first vs immediate form banking"
+    ],
+    "weakestFork": "Banking revision1mostly changes surface grouping while retaining order and similar action positions.",
+    "timingLimit": "Banking revision2next-state comparisons are added in command23, after final implementation began in command10. Early initial-screen alternatives were rendered in commands8\u20139.",
+    "shape": "No production CSS corner-shape or documented continuous-corner implementation found in any final app. No visual benefit can be attributed to Adjusted Squircle."
+  },
+  "boundaries": {
+    "frozenInputsUnchanged": true,
+    "scope": "Workspace separation and logged path scans; not proof of filesystem confinement.",
+    "scannerNotes": "Parent-traversal matches occur in fixture integrity checks resolving from outputs/verification back to supplied workspace fixtures. Temporary reference collages are evaluator audit clues, not proof of contamination."
+  },
+  "independentPanel": false
+}

@@ -1,0 +1,446 @@
+{
+  "checks": [
+    {
+      "theme": "light",
+      "pair": "fg/bg",
+      "ratio": 14.01
+    },
+    {
+      "theme": "light",
+      "pair": "fg/surface",
+      "ratio": 15.41
+    },
+    {
+      "theme": "light",
+      "pair": "fg/soft",
+      "ratio": 13.74
+    },
+    {
+      "theme": "light",
+      "pair": "muted/bg",
+      "ratio": 5.69
+    },
+    {
+      "theme": "light",
+      "pair": "muted/surface",
+      "ratio": 6.26
+    },
+    {
+      "theme": "light",
+      "pair": "muted/soft",
+      "ratio": 5.58
+    },
+    {
+      "theme": "light",
+      "pair": "accent/bg",
+      "ratio": 5.92
+    },
+    {
+      "theme": "light",
+      "pair": "accent/surface",
+      "ratio": 6.51
+    },
+    {
+      "theme": "light",
+      "pair": "accent/soft",
+      "ratio": 5.81
+    },
+    {
+      "theme": "light",
+      "pair": "good/bg",
+      "ratio": 6.73
+    },
+    {
+      "theme": "light",
+      "pair": "good/surface",
+      "ratio": 7.41
+    },
+    {
+      "theme": "light",
+      "pair": "good/soft",
+      "ratio": 6.6
+    },
+    {
+      "theme": "light",
+      "pair": "warn/bg",
+      "ratio": 6.69
+    },
+    {
+      "theme": "light",
+      "pair": "warn/surface",
+      "ratio": 7.36
+    },
+    {
+      "theme": "light",
+      "pair": "warn/soft",
+      "ratio": 6.57
+    },
+    {
+      "theme": "light",
+      "pair": "danger/bg",
+      "ratio": 6.05
+    },
+    {
+      "theme": "light",
+      "pair": "danger/surface",
+      "ratio": 6.66
+    },
+    {
+      "theme": "light",
+      "pair": "danger/soft",
+      "ratio": 5.94
+    },
+    {
+      "theme": "light",
+      "pair": "on-accent/accent",
+      "ratio": 6.51
+    },
+    {
+      "theme": "light",
+      "pair": "good/good-soft",
+      "ratio": 6.65
+    },
+    {
+      "theme": "light",
+      "pair": "warn/warn-soft",
+      "ratio": 6.69
+    },
+    {
+      "theme": "light",
+      "pair": "danger/danger-soft",
+      "ratio": 5.86
+    },
+    {
+      "theme": "dark",
+      "pair": "fg/bg",
+      "ratio": 16.15
+    },
+    {
+      "theme": "dark",
+      "pair": "fg/surface",
+      "ratio": 13.6
+    },
+    {
+      "theme": "dark",
+      "pair": "fg/soft",
+      "ratio": 11.86
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/bg",
+      "ratio": 9.38
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/surface",
+      "ratio": 7.9
+    },
+    {
+      "theme": "dark",
+      "pair": "muted/soft",
+      "ratio": 6.89
+    },
+    {
+      "theme": "dark",
+      "pair": "accent/bg",
+      "ratio": 8.95
+    },
+    {
+      "theme": "dark",
+      "pair": "accent/surface",
+      "ratio": 7.54
+    },
+    {
+      "theme": "dark",
+      "pair": "accent/soft",
+      "ratio": 6.57
+    },
+    {
+      "theme": "dark",
+      "pair": "good/bg",
+      "ratio": 10.91
+    },
+    {
+      "theme": "dark",
+      "pair": "good/surface",
+      "ratio": 9.19
+    },
+    {
+      "theme": "dark",
+      "pair": "good/soft",
+      "ratio": 8.01
+    },
+    {
+      "theme": "dark",
+      "pair": "warn/bg",
+      "ratio": 11.13
+    },
+    {
+      "theme": "dark",
+      "pair": "warn/surface",
+      "ratio": 9.38
+    },
+    {
+      "theme": "dark",
+      "pair": "warn/soft",
+      "ratio": 8.17
+    },
+    {
+      "theme": "dark",
+      "pair": "danger/bg",
+      "ratio": 10.36
+    },
+    {
+      "theme": "dark",
+      "pair": "danger/surface",
+      "ratio": 8.73
+    },
+    {
+      "theme": "dark",
+      "pair": "danger/soft",
+      "ratio": 7.61
+    },
+    {
+      "theme": "dark",
+      "pair": "on-accent/accent",
+      "ratio": 8.36
+    },
+    {
+      "theme": "dark",
+      "pair": "good/good-soft",
+      "ratio": 7.3
+    },
+    {
+      "theme": "dark",
+      "pair": "warn/warn-soft",
+      "ratio": 7.74
+    },
+    {
+      "theme": "dark",
+      "pair": "danger/danger-soft",
+      "ratio": 7.48
+    },
+    {
+      "theme": "bankLight",
+      "pair": "fg/bg",
+      "ratio": 14.07
+    },
+    {
+      "theme": "bankLight",
+      "pair": "fg/surface",
+      "ratio": 15.41
+    },
+    {
+      "theme": "bankLight",
+      "pair": "fg/soft",
+      "ratio": 13.74
+    },
+    {
+      "theme": "bankLight",
+      "pair": "muted/bg",
+      "ratio": 5.71
+    },
+    {
+      "theme": "bankLight",
+      "pair": "muted/surface",
+      "ratio": 6.26
+    },
+    {
+      "theme": "bankLight",
+      "pair": "muted/soft",
+      "ratio": 5.58
+    },
+    {
+      "theme": "bankLight",
+      "pair": "accent/bg",
+      "ratio": 7.58
+    },
+    {
+      "theme": "bankLight",
+      "pair": "accent/surface",
+      "ratio": 8.3
+    },
+    {
+      "theme": "bankLight",
+      "pair": "accent/soft",
+      "ratio": 7.4
+    },
+    {
+      "theme": "bankLight",
+      "pair": "good/bg",
+      "ratio": 6.76
+    },
+    {
+      "theme": "bankLight",
+      "pair": "good/surface",
+      "ratio": 7.41
+    },
+    {
+      "theme": "bankLight",
+      "pair": "good/soft",
+      "ratio": 6.6
+    },
+    {
+      "theme": "bankLight",
+      "pair": "warn/bg",
+      "ratio": 6.72
+    },
+    {
+      "theme": "bankLight",
+      "pair": "warn/surface",
+      "ratio": 7.36
+    },
+    {
+      "theme": "bankLight",
+      "pair": "warn/soft",
+      "ratio": 6.57
+    },
+    {
+      "theme": "bankLight",
+      "pair": "danger/bg",
+      "ratio": 6.08
+    },
+    {
+      "theme": "bankLight",
+      "pair": "danger/surface",
+      "ratio": 6.66
+    },
+    {
+      "theme": "bankLight",
+      "pair": "danger/soft",
+      "ratio": 5.94
+    },
+    {
+      "theme": "bankLight",
+      "pair": "on-accent/accent",
+      "ratio": 8.3
+    },
+    {
+      "theme": "bankLight",
+      "pair": "good/good-soft",
+      "ratio": 6.65
+    },
+    {
+      "theme": "bankLight",
+      "pair": "warn/warn-soft",
+      "ratio": 6.69
+    },
+    {
+      "theme": "bankLight",
+      "pair": "danger/danger-soft",
+      "ratio": 5.86
+    },
+    {
+      "theme": "bankDark",
+      "pair": "fg/bg",
+      "ratio": 15.41
+    },
+    {
+      "theme": "bankDark",
+      "pair": "fg/surface",
+      "ratio": 13.1
+    },
+    {
+      "theme": "bankDark",
+      "pair": "fg/soft",
+      "ratio": 11.86
+    },
+    {
+      "theme": "bankDark",
+      "pair": "muted/bg",
+      "ratio": 8.95
+    },
+    {
+      "theme": "bankDark",
+      "pair": "muted/surface",
+      "ratio": 7.61
+    },
+    {
+      "theme": "bankDark",
+      "pair": "muted/soft",
+      "ratio": 6.89
+    },
+    {
+      "theme": "bankDark",
+      "pair": "accent/bg",
+      "ratio": 10.79
+    },
+    {
+      "theme": "bankDark",
+      "pair": "accent/surface",
+      "ratio": 9.17
+    },
+    {
+      "theme": "bankDark",
+      "pair": "accent/soft",
+      "ratio": 8.3
+    },
+    {
+      "theme": "bankDark",
+      "pair": "good/bg",
+      "ratio": 10.41
+    },
+    {
+      "theme": "bankDark",
+      "pair": "good/surface",
+      "ratio": 8.85
+    },
+    {
+      "theme": "bankDark",
+      "pair": "good/soft",
+      "ratio": 8.01
+    },
+    {
+      "theme": "bankDark",
+      "pair": "warn/bg",
+      "ratio": 10.62
+    },
+    {
+      "theme": "bankDark",
+      "pair": "warn/surface",
+      "ratio": 9.03
+    },
+    {
+      "theme": "bankDark",
+      "pair": "warn/soft",
+      "ratio": 8.17
+    },
+    {
+      "theme": "bankDark",
+      "pair": "danger/bg",
+      "ratio": 9.89
+    },
+    {
+      "theme": "bankDark",
+      "pair": "danger/surface",
+      "ratio": 8.41
+    },
+    {
+      "theme": "bankDark",
+      "pair": "danger/soft",
+      "ratio": 7.61
+    },
+    {
+      "theme": "bankDark",
+      "pair": "on-accent/accent",
+      "ratio": 9.93
+    },
+    {
+      "theme": "bankDark",
+      "pair": "good/good-soft",
+      "ratio": 7.3
+    },
+    {
+      "theme": "bankDark",
+      "pair": "warn/warn-soft",
+      "ratio": 7.74
+    },
+    {
+      "theme": "bankDark",
+      "pair": "danger/danger-soft",
+      "ratio": 7.48
+    }
+  ],
+  "minimum": 5.58,
+  "passed": true
+}

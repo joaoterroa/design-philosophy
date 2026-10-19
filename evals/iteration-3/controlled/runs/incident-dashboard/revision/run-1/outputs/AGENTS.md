@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing this prototype. Its design tokens live in app/tokens.css. Run the scripts under verification/ after changing layout, colour, or interaction. The supplied skill, brand guide and source fixture must remain untouched.

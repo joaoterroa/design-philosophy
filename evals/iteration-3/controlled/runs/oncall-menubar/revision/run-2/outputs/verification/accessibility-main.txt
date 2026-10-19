@@ -1,0 +1,22 @@
+- main "Rota on-call schedule":
+  - text: Rota Sun 18 Oct
+  - region "Your current shift":
+    - paragraph: Platform Primary
+    - heading "You’re on call" [level=1]
+    - paragraph: Jamie Ellis
+    - text: 06:00–18:00 UTC 8h remaining 06:00 10:00 now 18:00
+  - button "Hand over shift"
+  - region "Also on call":
+    - heading "Also on call" [level=2]
+    - text: Until · UTC
+    - list:
+      - listitem:
+        - strong: Sam Okafor
+        - text: Observability 18:00
+      - listitem:
+        - strong: Tomás Ortega
+        - text: Routing 18:00
+      - listitem:
+        - strong: Aiko Kimura
+        - text: Data 18:00
+  - text: All times in UTC Local preview

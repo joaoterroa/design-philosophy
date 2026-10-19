@@ -1,0 +1,10 @@
+{
+  "banking-onboarding-pair-1": {
+    "L": "revision",
+    "R": "baseline"
+  },
+  "oncall-menubar-pair-1": {
+    "L": "baseline",
+    "R": "revision"
+  }
+}

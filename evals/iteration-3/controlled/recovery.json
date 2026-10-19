@@ -1,0 +1,79 @@
+{
+  "reason": "Service quota; ordinaryUsageAllowed=true confirmed before launch",
+  "budget": "720 seconds cumulative active process time per run",
+  "preservedFrozenInputs": true,
+  "runs": [
+    {
+      "id": "oncall-menubar__baseline__1",
+      "remainingSeconds": 574,
+      "threadId": "01a1507c-4af9-7820-85f6-3e4aed4a6054",
+      "resumedAt": "2026-10-19T01:23:51.668536+00:00"
+    },
+    {
+      "id": "incident-dashboard__revision__1",
+      "remainingSeconds": 544,
+      "threadId": "01a1507c-4af9-7752-b341-ff9dcecfdc50",
+      "resumedAt": "2026-10-19T01:23:51.672017+00:00"
+    },
+    {
+      "id": "banking-onboarding__baseline__1",
+      "remainingSeconds": 568,
+      "threadId": "01a1507c-4af9-7190-93d4-7edb04719c3a",
+      "resumedAt": "2026-10-19T01:23:51.674542+00:00"
+    },
+    {
+      "id": "oncall-menubar__revision__1",
+      "remainingSeconds": 715,
+      "threadId": "01a1507e-8408-75c3-9f5a-285fd356fb16",
+      "resumedAt": "2026-10-19T01:28:38.194970+00:00"
+    },
+    {
+      "id": "incident-dashboard__baseline__1",
+      "remainingSeconds": 715,
+      "threadId": "01a1507e-932a-7652-ba72-c6e3aeaaa4c0",
+      "resumedAt": "2026-10-19T01:29:46.684200+00:00"
+    },
+    {
+      "id": "banking-onboarding__revision__1",
+      "remainingSeconds": 714,
+      "threadId": "01a1507e-9a93-7812-8a2c-424f855fd618",
+      "resumedAt": "2026-10-19T01:30:55.113254+00:00"
+    },
+    {
+      "id": "oncall-menubar__revision__2",
+      "remainingSeconds": 716,
+      "threadId": "01a1507e-a2d2-7341-a140-203558a8d834",
+      "resumedAt": "2026-10-19T01:38:05.075977+00:00"
+    },
+    {
+      "id": "incident-dashboard__baseline__2",
+      "remainingSeconds": 716,
+      "threadId": "01a1507e-ae3e-7711-ac82-c0446201ec4a",
+      "resumedAt": "2026-10-19T01:38:36.216485+00:00"
+    },
+    {
+      "id": "banking-onboarding__revision__2",
+      "remainingSeconds": 716,
+      "threadId": "01a1507e-ae3e-7591-b990-0658c679af7c",
+      "resumedAt": "2026-10-19T01:39:07.473679+00:00"
+    },
+    {
+      "id": "oncall-menubar__baseline__2",
+      "remainingSeconds": 716,
+      "threadId": "01a1507e-ba22-7e20-a73a-78e229169791",
+      "resumedAt": "2026-10-19T01:47:47.989224+00:00"
+    },
+    {
+      "id": "incident-dashboard__revision__2",
+      "remainingSeconds": 716,
+      "threadId": "01a1507e-ba22-7571-a786-6a453e24635c",
+      "resumedAt": "2026-10-19T01:47:56.907993+00:00"
+    },
+    {
+      "id": "banking-onboarding__baseline__2",
+      "remainingSeconds": 710,
+      "threadId": "01a1507e-c5df-7db0-bd6e-f1942912f274",
+      "resumedAt": "2026-10-19T01:48:45.519582+00:00"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "screens": [
+    {
+      "state": "main",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 634.328125
+      },
+      "overflow": {
+        "scrollHeight": 632,
+        "clientHeight": 632,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "compose",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 635.765625
+      },
+      "overflow": {
+        "scrollHeight": 634,
+        "clientHeight": 634,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "review",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 597.984375
+      },
+      "overflow": {
+        "scrollHeight": 596,
+        "clientHeight": 596,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "pending",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 635.4375
+      },
+      "overflow": {
+        "scrollHeight": 633,
+        "clientHeight": 633,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "offline",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 639.71875
+      },
+      "overflow": {
+        "scrollHeight": 638,
+        "clientHeight": 638,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "empty",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 368.21875
+      },
+      "overflow": {
+        "scrollHeight": 366,
+        "clientHeight": 366,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "accepted",
+      "theme": "light",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 573.984375
+      },
+      "overflow": {
+        "scrollHeight": 572,
+        "clientHeight": 572,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "main",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 634.328125
+      },
+      "overflow": {
+        "scrollHeight": 632,
+        "clientHeight": 632,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "compose",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 635.765625
+      },
+      "overflow": {
+        "scrollHeight": 634,
+        "clientHeight": 634,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "review",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 597.984375
+      },
+      "overflow": {
+        "scrollHeight": 596,
+        "clientHeight": 596,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "pending",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 635.4375
+      },
+      "overflow": {
+        "scrollHeight": 633,
+        "clientHeight": 633,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "offline",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 639.71875
+      },
+      "overflow": {
+        "scrollHeight": 638,
+        "clientHeight": 638,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "empty",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 368.21875
+      },
+      "overflow": {
+        "scrollHeight": 366,
+        "clientHeight": 366,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    },
+    {
+      "state": "accepted",
+      "theme": "dark",
+      "bounds": {
+        "x": 20,
+        "y": 20,
+        "width": 360,
+        "height": 573.984375
+      },
+      "overflow": {
+        "scrollHeight": 572,
+        "clientHeight": 572,
+        "scrollWidth": 358,
+        "clientWidth": 358
+      }
+    }
+  ],
+  "page_errors": [],
+  "interaction_checks": "passed"
+}

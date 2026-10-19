@@ -1,0 +1,52 @@
+(() => {
+'use strict';
+const F=window.EVAL_FIXTURES, M=F.menu, app=document.querySelector('#app');
+const params=new URLSearchParams(location.search), states=['main','compose','pending','offline','empty','accepted'];
+let screen=states.includes(params.get('screen'))?params.get('screen'):'main';
+let stage='choose', selected='', request=screen==='pending'?'pending':screen==='accepted'?'accepted':null;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const recipientFirst=esc(M.handoverTo.split(' ')[0]);
+const initials=s=>s.split(' ').map(x=>x[0]).join('');
+const date=new Date(F.now), day=new Intl.DateTimeFormat('en-GB',{weekday:'short',day:'numeric',month:'short',timeZone:'UTC'}).format(date).replace(',','');
+const minutes=s=>s.split(':').reduce((h,m)=>Number(h)*60+Number(m));
+const elapsed=(date.getUTCHours()*60+date.getUTCMinutes()-minutes(M.shiftStart))/(minutes(M.shiftEnd)-minutes(M.shiftStart));
+app.style.setProperty('--elapsed',Math.max(0,Math.min(1,elapsed))*100+'%');
+const now=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'UTC'}).format(date);
+function announce(s){document.querySelector('#announcer').textContent=s}
+function header(back=false){return `<header>${back?'<button class="back" data-action="back"><span class="chevron" aria-hidden="true">‹</span> Schedule</button>':`<div class="brand"><span class="mark" aria-hidden="true"></span>${esc(M.product)}</div>`}<span class="date">${esc(day)}</span></header>`}
+const footer=()=>`<footer><span>All times UTC</span><span>As of ${now}</span></footer>`;
+function roster(offline=false){return `<div class="section-heading"><h2>${offline?'Other saved assignments':'Also on call'}</h2><span>Until ${M.shiftEnd} UTC</span></div><ul class="roster">${M.roster.filter(x=>x.name!==M.user).map(x=>`<li class="person"><span class="avatar" aria-hidden="true">${initials(x.name)}</span><div><div class="person-name">${esc(x.name)}</div><div class="person-role">${esc(x.role)}</div></div></li>`).join('')}</ul>`}
+function shift(offline=false){const accepted=request==='accepted';return `<section class="shift" aria-label="Your shift"><div class="status"><span class="dot" aria-hidden="true"></span>${offline?'Last-known assignment':accepted?'Handover complete':'Your current shift'}</div><h1>${offline?esc(M.user):accepted?recipientFirst+' is on call':"You’re on call"}</h1><p class="rotation">${esc(M.rotation)}</p><div class="shift-times"><strong>${M.shiftStart}–${M.shiftEnd}</strong><span>UTC</span></div>${offline?'':`<div class="rail" aria-hidden="true"></div><div class="time-labels"><span>${M.shiftStart}</span><span>As of ${now}</span><span>${M.shiftEnd}</span></div>`}${offline?'<p class="quiet">Handover is unavailable while offline.</p>':request==='pending'?`<button class="btn request-link" data-action="pending">Waiting for ${esc(M.handoverTo.split(' ')[0])}<small>You remain responsible · View request →</small></button>`:accepted?'<p class="quiet">You’re no longer responsible for this shift.</p>':'<button class="btn primary wide" data-action="compose">Hand over shift <span aria-hidden="true">→</span></button>'}</section>`}
+function details(){return `<div class="details"><dl><div class="detail"><dt>Rotation</dt><dd>${esc(M.rotation)}</dd></div><div class="detail"><dt>Shift</dt><dd>${M.shiftStart}–${M.shiftEnd} UTC</dd></div><div class="detail"><dt>Handover</dt><dd>On acceptance → ${M.shiftEnd}</dd></div></dl></div>`}
+function people(pending=false){return `<div class="details"><div class="eyebrow">${esc(M.rotation)} · until ${M.shiftEnd} UTC</div><div class="flow-person"><span class="avatar" aria-hidden="true">${initials(M.user)}</span><div><div class="person-name">${esc(M.user)}</div><div class="person-role">You</div></div><span class="flow-label">${pending?'Responsible now':'From'}</span></div><div class="flow-person"><span class="avatar" aria-hidden="true">${initials(M.handoverTo)}</span><div><div class="person-name">${esc(M.handoverTo)}</div><div class="person-role">${pending?'Acceptance required':'Requested teammate'}</div></div><span class="flow-label">${pending?'Waiting':'To'}</span></div></div>`}
+function render(focus=false){
+let content='';
+if(screen==='main') content=header()+`<div class="body">${shift()}${roster()}</div>`+footer();
+if(screen==='offline') content=header()+`<div class="body offline"><div class="notice" style="margin-top:var(--s0)"><div class="offline-title"><strong>You’re offline</strong><button class="text-btn" data-action="retry">Try again</button></div><p id="offline-message">Showing the last-known schedule from ${now} UTC. Assignments may have changed.</p></div>${shift(true)}${roster(true)}</div>`+footer();
+if(screen==='compose') content=header()+`<div class="body"><div class="eyebrow">${stage==='review'?'Review handover':'Your current shift'}</div><h1>${stage==='review'?'Ready to hand over?':'Hand over shift'}</h1><p class="sub">${stage==='review'?`Send a request to ${esc(M.handoverTo.split(' ')[0])} for the rest of this shift.`:'Choose who should take the rest of your shift.'}</p>${stage==='review'?people():details()}${stage==='choose'?`<label for="recipient">Hand over to</label><select id="recipient" aria-describedby="recipient-hint"><option value="">Choose a teammate…</option><option value="${esc(M.handoverTo)}" ${selected?'selected':''}>${esc(M.handoverTo)}</option></select><p class="hint" id="recipient-hint">${esc(M.handoverTo)} is the handover contact for this shift.</p>`:''}<p class="notice">You remain responsible until ${stage==='review'?esc(M.handoverTo.split(' ')[0]):'your teammate'} accepts.</p><div class="actions"><button class="btn" data-action="${stage==='review'?'edit':'cancel'}">${stage==='review'?'Back':'Cancel'}</button><button class="btn primary" data-action="${stage==='review'?'send':'review'}" ${stage==='choose'&&!selected?'disabled':''}>${stage==='review'?'Send handover request':'Review handover'}</button></div></div>`+footer();
+if(screen==='pending') content=header()+`<div class="body"><div class="eyebrow">Handover request</div><h1>Waiting for ${recipientFirst}</h1><p class="sub">${esc(M.handoverTo)} hasn’t accepted yet.</p>${people(true)}<p class="notice"><strong>You’re still on call.</strong>Keep covering ${esc(M.rotation)} until ${recipientFirst} accepts. Sending a request does not transfer responsibility.</p><div class="actions"><button class="btn" data-action="cancel-request">Cancel request</button><button class="btn primary" data-action="back">Back to schedule</button></div></div>`+footer();
+if(screen==='accepted') content=header()+`<div class="body"><div class="success"><span class="success-icon" aria-hidden="true">✓</span> Handover accepted</div><h1>${recipientFirst} has the shift</h1><p class="sub">${esc(M.handoverTo)} is now responsible for ${esc(M.rotation)}.</p><div class="details"><div class="flow-person"><span class="avatar" aria-hidden="true">${initials(M.handoverTo)}</span><div><div class="person-name">${esc(M.handoverTo)}</div><div class="person-role">On call until ${M.shiftEnd} UTC</div></div></div></div><p>You’re no longer responsible for this shift.</p><button class="btn primary wide" data-action="back">Back to schedule</button></div>`+footer();
+if(screen==='empty') content=header(true)+`<div class="body empty"><div class="empty-symbol" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="22" rx="3"/><path d="M4 13h24M11 3v8M21 3v8M11 20h10"/></svg></div><div class="eyebrow">Team schedule</div><h1>No schedule yet</h1><p class="sub">No on-call assignments are available for ${esc(day)}.</p><p class="quiet">Ask your rotation owner to publish the schedule before arranging a handover.</p><button class="btn wide" data-action="check-empty">Check again</button><p id="empty-message" class="hint" role="status"></p></div>`+footer();
+app.innerHTML=content;
+if(focus){const heading=app.querySelector('h1');heading.tabIndex=-1;heading.focus({preventScroll:true})}
+document.title=`Rota · ${screen==='main'?'On call':screen==='compose'?'Hand over shift':screen}`;
+}
+function go(s){screen=s;const url=new URL(location.href);url.searchParams.set('screen',s);history.pushState({},'',url);render(true)}
+app.addEventListener('change',e=>{if(e.target.id==='recipient'){selected=e.target.value;const b=app.querySelector('[data-action="review"]');b.disabled=!selected}});
+app.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b)return;switch(b.dataset.action){
+case 'compose':stage='choose';selected='';go('compose');break;
+case 'review':if(selected){stage='review';render(true)}break;
+case 'edit':stage='choose';render(true);app.querySelector('select').focus();break;
+case 'send':request='pending';go('pending');announce(`Handover request sent. You remain responsible until ${M.handoverTo.split(' ')[0]} accepts.`);break;
+case 'pending':go('pending');break;
+case 'cancel':case 'back':go('main');break;
+case 'cancel-request':request=null;stage='choose';selected='';go('main');announce('Request cancelled. You are still on call.');break;
+case 'retry':document.querySelector('#offline-message').textContent=`Still offline. The last-known schedule is from ${now} UTC. Assignments may have changed.`;announce('Still offline. Last-known schedule shown.');break;
+case 'check-empty':document.querySelector('#empty-message').textContent='No schedule is available. Please check with your rotation owner.';break;
+}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&screen==='compose'){e.preventDefault();if(stage==='review'){stage='choose';render(true)}else go('main')}});
+window.addEventListener('popstate',()=>{const s=new URLSearchParams(location.search).get('screen');screen=states.includes(s)?s:'main';if(screen==='compose'&&request)screen=request;if(screen==='pending'&&request!=='pending')screen=request==='accepted'?'accepted':'main';const u=new URL(location.href);u.searchParams.set('screen',screen);history.replaceState({},'',u);render(true)});
+window.addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='rota-review-accept'&&request==='pending'){request='accepted';go('accepted');announce(`${M.handoverTo.split(' ')[0]} accepted. You are no longer responsible for this shift.`)}});
+if(!params.has('theme'))matchMedia('(prefers-color-scheme: dark)').addEventListener('change',e=>{document.documentElement.dataset.theme=e.matches?'dark':'light'});
+render();
+})();

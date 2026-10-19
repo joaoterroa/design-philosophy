@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing this prototype. Values belong in app/tokens.css. Preserve the supplied fixtures.js byte for byte and use EVAL_FIXTURES for banking facts. Run verification/design-guard.js, verification/verify.py and verification/visual-audit.py after a relevant change. Do not add network dependencies or expose the fixture verification code in the interface.

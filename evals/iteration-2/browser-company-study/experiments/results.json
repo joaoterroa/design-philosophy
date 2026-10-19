@@ -1,0 +1,3106 @@
+[
+  {
+    "experiment": "menu-type",
+    "screen": "oncall",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__oncall__light__original.png",
+        "pixels": [
+          340,
+          388
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 388,
+          "bottom": 434
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__oncall__light__revision.png",
+        "pixels": [
+          340,
+          396
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 396,
+          "bottom": 442
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "oncall",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__oncall__dark__original.png",
+        "pixels": [
+          340,
+          388
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 388,
+          "bottom": 434
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__oncall__dark__revision.png",
+        "pixels": [
+          340,
+          396
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 396,
+          "bottom": 442
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "pending",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__pending__light__original.png",
+        "pixels": [
+          340,
+          484
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 484,
+          "bottom": 530
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__pending__light__revision.png",
+        "pixels": [
+          340,
+          492
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 492,
+          "bottom": 538
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "pending",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__pending__dark__original.png",
+        "pixels": [
+          340,
+          484
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 484,
+          "bottom": 530
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__pending__dark__revision.png",
+        "pixels": [
+          340,
+          492
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 492,
+          "bottom": 538
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "accepted",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__accepted__light__original.png",
+        "pixels": [
+          340,
+          428
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 428,
+          "bottom": 474
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__accepted__light__revision.png",
+        "pixels": [
+          340,
+          436
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 436,
+          "bottom": 482
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "accepted",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__accepted__dark__original.png",
+        "pixels": [
+          340,
+          428
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 428,
+          "bottom": 474
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__accepted__dark__revision.png",
+        "pixels": [
+          340,
+          436
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 436,
+          "bottom": 482
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "offline",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__offline__light__original.png",
+        "pixels": [
+          340,
+          408
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 408,
+          "bottom": 454
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__offline__light__revision.png",
+        "pixels": [
+          340,
+          416
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 416,
+          "bottom": 462
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-type",
+    "screen": "offline",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-type__offline__dark__original.png",
+        "pixels": [
+          340,
+          408
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 408,
+          "bottom": 454
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-type__offline__dark__revision.png",
+        "pixels": [
+          340,
+          416
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 416,
+          "bottom": 462
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "oncall",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__oncall__light__original.png",
+        "pixels": [
+          340,
+          388
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 388,
+          "bottom": 434
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__oncall__light__revision.png",
+        "pixels": [
+          340,
+          405
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 405,
+          "bottom": 451
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "oncall",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__oncall__dark__original.png",
+        "pixels": [
+          340,
+          388
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 388,
+          "bottom": 434
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__oncall__dark__revision.png",
+        "pixels": [
+          340,
+          405
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 405,
+          "bottom": 451
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "pending",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__pending__light__original.png",
+        "pixels": [
+          340,
+          484
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 484,
+          "bottom": 530
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__pending__light__revision.png",
+        "pixels": [
+          340,
+          501
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 501,
+          "bottom": 547
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "pending",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__pending__dark__original.png",
+        "pixels": [
+          340,
+          484
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 484,
+          "bottom": 530
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__pending__dark__revision.png",
+        "pixels": [
+          340,
+          501
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 501,
+          "bottom": 547
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPR?YouOwenNowSunMon Waiting for Priya Raman to cover Sun 10:00\u2060\u2013\u206018:00. Asked 2 min ago. You\u2019re still on call until Priya accepts. Cancel request Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "accepted",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__accepted__light__original.png",
+        "pixels": [
+          340,
+          428
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 428,
+          "bottom": 474
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__accepted__light__revision.png",
+        "pixels": [
+          340,
+          445
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 445,
+          "bottom": 491
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "accepted",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__accepted__dark__original.png",
+        "pixels": [
+          340,
+          428
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 428,
+          "bottom": 474
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__accepted__dark__revision.png",
+        "pixels": [
+          340,
+          445
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 445,
+          "bottom": 491
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouPRYouOwenNowSunMon Priya Raman covers Sun 10:00\u2060\u2013\u206018:00. It\u2019s in PagerDuty as an override. Hand over\u2026 On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Synced from PagerDuty 1 min ago",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "offline",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__offline__light__original.png",
+        "pixels": [
+          340,
+          408
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 408,
+          "bottom": 454
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__offline__light__revision.png",
+        "pixels": [
+          340,
+          425
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 425,
+          "bottom": 471
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "menu-object",
+    "screen": "offline",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/menu-object__offline__dark__original.png",
+        "pixels": [
+          340,
+          408
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 408,
+          "bottom": 454
+        },
+        "dutyType": "15px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/menu-object__offline__dark__revision.png",
+        "pixels": [
+          340,
+          425
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1100,
+          800
+        ],
+        "pop": {
+          "x": 344,
+          "y": 46,
+          "width": 340,
+          "height": 425,
+          "bottom": 471
+        },
+        "dutyType": "22px",
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": "You\u2019re on call \u00b7 Platform Primary 1 day 19 hours left Until Mon 20 Oct, 09:00, then Owen Byrne YouOwenNowSunMon Hand over\u2026Handing over needs a connection to PagerDuty. On call now JE YouPlatform Primary until Mon 09:00 SO Sam OkaforPlatform Secondary \u00b7 @sam.okafor until Mon 09:00 TO Tom\u00e1s OrtegaData Primary \u00b7 @tomas until Tue 09:00 AK Aiko KimuraEdge Primary \u00b7 @aiko.k until Wed 09:00Offline. Showing the schedule as of 13:02; it may have changed since.",
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "390-code",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__390-code__light__original.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 350,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 817.1875,
+          "width": 303,
+          "height": 57,
+          "bottom": 874.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 596.1875,
+          "width": 302,
+          "height": 171.5,
+          "bottom": 767.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__390-code__light__revision.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 350,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 789.1875,
+          "width": 335,
+          "height": 28.5,
+          "bottom": 817.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 572.1875,
+          "width": 350,
+          "height": 171.5,
+          "bottom": 743.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "390-code",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__390-code__dark__original.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 350,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 817.1875,
+          "width": 303,
+          "height": 57,
+          "bottom": 874.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 596.1875,
+          "width": 302,
+          "height": 171.5,
+          "bottom": 767.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__390-code__dark__revision.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 350,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 789.1875,
+          "width": 335,
+          "height": 28.5,
+          "bottom": 817.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 572.1875,
+          "width": 350,
+          "height": 171.5,
+          "bottom": 743.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "390-code-wrong",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__390-code-wrong__light__original.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 547.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 603.1875
+        },
+        "safety": {
+          "x": 51,
+          "y": 912.6875,
+          "width": 303,
+          "height": 57,
+          "bottom": 969.6875
+        },
+        "message": {
+          "x": 36,
+          "y": 691.6875,
+          "width": 302,
+          "height": 171.5,
+          "bottom": 863.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__390-code-wrong__light__revision.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 547.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 603.1875
+        },
+        "safety": {
+          "x": 35,
+          "y": 884.6875,
+          "width": 335,
+          "height": 28.5,
+          "bottom": 913.1875
+        },
+        "message": {
+          "x": 20,
+          "y": 667.6875,
+          "width": 350,
+          "height": 171.5,
+          "bottom": 839.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "390-code-wrong",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__390-code-wrong__dark__original.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 547.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 603.1875
+        },
+        "safety": {
+          "x": 51,
+          "y": 912.6875,
+          "width": 303,
+          "height": 57,
+          "bottom": 969.6875
+        },
+        "message": {
+          "x": 36,
+          "y": 691.6875,
+          "width": 302,
+          "height": 171.5,
+          "bottom": 863.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__390-code-wrong__dark__revision.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 547.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 603.1875
+        },
+        "safety": {
+          "x": 35,
+          "y": 884.6875,
+          "width": 335,
+          "height": 28.5,
+          "bottom": 913.1875
+        },
+        "message": {
+          "x": 20,
+          "y": 667.6875,
+          "width": 350,
+          "height": 171.5,
+          "bottom": 839.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "390-code-help",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__390-code-help__light__original.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 585.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 641.1875
+        },
+        "safety": {
+          "x": 51,
+          "y": 950.6875,
+          "width": 303,
+          "height": 57,
+          "bottom": 1007.6875
+        },
+        "message": {
+          "x": 36,
+          "y": 729.6875,
+          "width": 302,
+          "height": 171.5,
+          "bottom": 901.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 56
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__390-code-help__light__revision.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 585.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 641.1875
+        },
+        "safety": {
+          "x": 35,
+          "y": 922.6875,
+          "width": 335,
+          "height": 28.5,
+          "bottom": 951.1875
+        },
+        "message": {
+          "x": 20,
+          "y": 705.6875,
+          "width": 350,
+          "height": 171.5,
+          "bottom": 877.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 56
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "390-code-help",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__390-code-help__dark__original.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 585.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 641.1875
+        },
+        "safety": {
+          "x": 51,
+          "y": 950.6875,
+          "width": 303,
+          "height": 57,
+          "bottom": 1007.6875
+        },
+        "message": {
+          "x": 36,
+          "y": 729.6875,
+          "width": 302,
+          "height": 171.5,
+          "bottom": 901.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 56
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__390-code-help__dark__revision.png",
+        "pixels": [
+          390,
+          844
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 585.1875,
+          "width": 350,
+          "height": 56,
+          "bottom": 641.1875
+        },
+        "safety": {
+          "x": 35,
+          "y": 922.6875,
+          "width": 335,
+          "height": 28.5,
+          "bottom": 951.1875
+        },
+        "message": {
+          "x": 20,
+          "y": 705.6875,
+          "width": 350,
+          "height": 171.5,
+          "bottom": 877.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 56
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "320-code",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__320-code__light__original.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 871.1875,
+          "width": 233,
+          "height": 57,
+          "bottom": 928.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 596.1875,
+          "width": 232,
+          "height": 200,
+          "bottom": 796.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__320-code__light__revision.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 814.6875,
+          "width": 265,
+          "height": 57,
+          "bottom": 871.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 572.1875,
+          "width": 280,
+          "height": 171.5,
+          "bottom": 743.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "320-code",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__320-code__dark__original.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 871.1875,
+          "width": 233,
+          "height": 57,
+          "bottom": 928.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 596.1875,
+          "width": 232,
+          "height": 200,
+          "bottom": 796.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__320-code__dark__revision.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 451.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 507.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 814.6875,
+          "width": 265,
+          "height": 57,
+          "bottom": 871.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 572.1875,
+          "width": 280,
+          "height": 171.5,
+          "bottom": 743.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "320-code-wrong",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__320-code-wrong__light__original.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 575.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 631.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 995.1875,
+          "width": 233,
+          "height": 57,
+          "bottom": 1052.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 720.1875,
+          "width": 232,
+          "height": 200,
+          "bottom": 920.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__320-code-wrong__light__revision.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 575.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 631.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 938.6875,
+          "width": 265,
+          "height": 57,
+          "bottom": 995.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 696.1875,
+          "width": 280,
+          "height": 171.5,
+          "bottom": 867.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "320-code-wrong",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__320-code-wrong__dark__original.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 575.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 631.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 995.1875,
+          "width": 233,
+          "height": 57,
+          "bottom": 1052.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 720.1875,
+          "width": 232,
+          "height": 200,
+          "bottom": 920.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__320-code-wrong__dark__revision.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 575.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 631.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 938.6875,
+          "width": 265,
+          "height": 57,
+          "bottom": 995.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 696.1875,
+          "width": 280,
+          "height": 171.5,
+          "bottom": 867.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text Error: That code doesn't match. Check you're using the newest text from Harbour. You can try 2 more times. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "320-code-help",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__320-code-help__light__original.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 613.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 669.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 1033.1875,
+          "width": 233,
+          "height": 57,
+          "bottom": 1090.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 758.1875,
+          "width": 232,
+          "height": 200,
+          "bottom": 958.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 73.59375
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__320-code-help__light__revision.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 613.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 669.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 976.6875,
+          "width": 265,
+          "height": 57,
+          "bottom": 1033.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 734.1875,
+          "width": 280,
+          "height": 171.5,
+          "bottom": 905.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 73.59375
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "bank-message",
+    "screen": "320-code-help",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/bank-message__320-code-help__dark__original.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 613.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 669.6875
+        },
+        "safety": {
+          "x": 51,
+          "y": 1033.1875,
+          "width": 233,
+          "height": 57,
+          "bottom": 1090.1875
+        },
+        "message": {
+          "x": 36,
+          "y": 758.1875,
+          "width": 232,
+          "height": 200,
+          "bottom": 958.1875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 73.59375
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      },
+      {
+        "variant": "revision",
+        "src": "figures/bank-message__320-code-help__dark__revision.png",
+        "pixels": [
+          320,
+          568
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          320,
+          568
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": {
+          "x": 20,
+          "y": 613.6875,
+          "width": 280,
+          "height": 56,
+          "bottom": 669.6875
+        },
+        "safety": {
+          "x": 35,
+          "y": 976.6875,
+          "width": 265,
+          "height": 57,
+          "bottom": 1033.6875
+        },
+        "message": {
+          "x": 20,
+          "y": 734.1875,
+          "width": 280,
+          "height": 171.5,
+          "bottom": 905.6875
+        },
+        "visibleOpen": 0,
+        "totalOpen": 0,
+        "hiddenSummary": "",
+        "phoneTargets": [
+          {
+            "text": "Continue",
+            "height": 56
+          },
+          {
+            "text": "I haven't had a text",
+            "height": 48
+          },
+          {
+            "text": "Send a new code",
+            "height": 56
+          },
+          {
+            "text": "Phone me with the code instead",
+            "height": 73.59375
+          }
+        ],
+        "menuText": null,
+        "bankText": "We've paused setup for 30 minutes The code was entered wrongly 3 times, so we've paused it to keep your account safe. Your details are saved on this phone. You can try again after 2:45pm, or call us free now on 0808 157 0192. Enter the code we've texted you We've sent a 6-number code to your mobile ending 482. It can take up to 2 minutes to arrive. Code from the text We sent a new code at 11:00am. Use the newest text; older codes won't work now. Continue The text will look like this From: Harbour Harbour: \u25ac\u25ac\u25ac \u25ac\u25ac\u25ac is your code to set up the app. We will never call you to ask for it. Don't share it with anyone. Sent at 11:00am. Check your messages. Never read this code out to anyone. If someone phones and asks for it, it's a scam, even if they say they're from Harbour. Hang up, and call the number on the back of your card. I haven't had a text Texts usually arrive within 2 minutes. If you're indoors, it can help to move nearer a window. Send a new code Phone me with the code instead Has your mobile number changed? For your safety we can't change it in the app. Call us free on 0808 157 0192 or visit a branch with photo ID."
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "tv-live",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__tv-live__light__original.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__tv-live__light__revision.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "tv-live",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__tv-live__dark__original.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__tv-live__dark__revision.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "tv-stale",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__tv-stale__light__original.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__tv-stale__light__revision.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "tv-stale",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__tv-stale__dark__original.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__tv-stale__dark__revision.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "tv-surge",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__tv-surge__light__original.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 8,
+        "totalOpen": 12,
+        "hiddenSummary": "4 more not shown: INC-2296 (SEV3), INC-2295 (SEV3), INC-2286 (SEV3), INC-2285 (SEV3).",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__tv-surge__light__revision.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 12,
+        "hiddenSummary": "5 more not shown: INC-2297 (SEV3), INC-2296 (SEV3), INC-2295 (SEV3), INC-2286 (SEV3), INC-2285 (SEV3).",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "tv-surge",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__tv-surge__dark__original.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 8,
+        "totalOpen": 12,
+        "hiddenSummary": "4 more not shown: INC-2296 (SEV3), INC-2295 (SEV3), INC-2286 (SEV3), INC-2285 (SEV3).",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__tv-surge__dark__revision.png",
+        "pixels": [
+          1920,
+          1080
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 12,
+        "hiddenSummary": "5 more not shown: INC-2297 (SEV3), INC-2296 (SEV3), INC-2295 (SEV3), INC-2286 (SEV3), INC-2285 (SEV3).",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "laptop-live",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__laptop-live__light__original.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__laptop-live__light__revision.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "laptop-live",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__laptop-live__dark__original.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__laptop-live__dark__revision.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "laptop-stale",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__laptop-stale__light__original.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__laptop-stale__light__revision.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "laptop-stale",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__laptop-stale__dark__original.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__laptop-stale__dark__revision.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 7,
+        "totalOpen": 7,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "laptop-surge",
+    "theme": "light",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__laptop-surge__light__original.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 12,
+        "totalOpen": 12,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__laptop-surge__light__revision.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 12,
+        "totalOpen": 12,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  },
+  {
+    "experiment": "dashboard-separation",
+    "screen": "laptop-surge",
+    "theme": "dark",
+    "records": [
+      {
+        "variant": "original",
+        "src": "figures/dashboard-separation__laptop-surge__dark__original.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 12,
+        "totalOpen": 12,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      },
+      {
+        "variant": "revision",
+        "src": "figures/dashboard-separation__laptop-surge__dark__revision.png",
+        "pixels": [
+          1440,
+          900
+        ],
+        "horizontalOverflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "pop": null,
+        "dutyType": null,
+        "action": null,
+        "safety": null,
+        "message": null,
+        "visibleOpen": 12,
+        "totalOpen": 12,
+        "hiddenSummary": "",
+        "phoneTargets": [],
+        "menuText": null,
+        "bankText": null
+      }
+    ]
+  }
+]

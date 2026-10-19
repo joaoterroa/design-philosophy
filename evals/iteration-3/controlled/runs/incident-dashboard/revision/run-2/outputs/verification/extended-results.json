@@ -1,0 +1,16 @@
+[
+  {
+    "display": "tv",
+    "measuredCLS": 0,
+    "targetHeightMinimum": 44,
+    "resolvedDetails": "passed",
+    "tvDocumentOverflow": false
+  },
+  {
+    "display": "laptop",
+    "measuredCLS": 0,
+    "targetHeightMinimum": 44,
+    "resolvedDetails": "passed",
+    "tvDocumentOverflow": "intentional page scroll"
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "run": "incident-dashboard__baseline__1",
+    "checks": [
+      {
+        "check": "TV surge all12 reachable by paging",
+        "pass": true,
+        "ids": [
+          "INC-2278",
+          "INC-2279",
+          "INC-2280",
+          "INC-2281",
+          "INC-2282",
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "laptop surge contains12",
+        "pass": true
+      },
+      {
+        "check": "last surge incident scrolls into view",
+        "pass": true
+      },
+      {
+        "check": "search isolates critical incident",
+        "pass": true,
+        "openIds": [
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "resolved history accessible",
+        "pass": true,
+        "ids": [
+          "INC-2287",
+          "INC-2288"
+        ]
+      }
+    ],
+    "sourceUnchanged": true
+  },
+  {
+    "run": "incident-dashboard__baseline__2",
+    "checks": [
+      {
+        "check": "TV surge all12 reachable by paging",
+        "pass": true,
+        "ids": [
+          "INC-2278",
+          "INC-2279",
+          "INC-2280",
+          "INC-2281",
+          "INC-2282",
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "laptop surge contains12",
+        "pass": true
+      },
+      {
+        "check": "last surge incident scrolls into view",
+        "pass": true
+      },
+      {
+        "check": "search isolates critical incident",
+        "pass": true,
+        "openIds": [
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "resolved history accessible",
+        "pass": true,
+        "ids": [
+          "INC-2287",
+          "INC-2288"
+        ]
+      }
+    ],
+    "sourceUnchanged": true
+  },
+  {
+    "run": "incident-dashboard__revision__1",
+    "checks": [
+      {
+        "check": "TV surge all12 reachable by paging",
+        "pass": true,
+        "ids": [
+          "INC-2278",
+          "INC-2279",
+          "INC-2280",
+          "INC-2281",
+          "INC-2282",
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "laptop surge contains12",
+        "pass": true
+      },
+      {
+        "check": "last surge incident scrolls into view",
+        "pass": true
+      },
+      {
+        "check": "search isolates critical incident",
+        "pass": true,
+        "openIds": [
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "resolved history accessible",
+        "pass": true,
+        "ids": [
+          "INC-2287",
+          "INC-2288"
+        ]
+      }
+    ],
+    "sourceUnchanged": true
+  },
+  {
+    "run": "incident-dashboard__revision__2",
+    "checks": [
+      {
+        "check": "TV surge all12 reachable by paging",
+        "pass": true,
+        "ids": [
+          "INC-2278",
+          "INC-2279",
+          "INC-2280",
+          "INC-2281",
+          "INC-2282",
+          "INC-2283",
+          "INC-2284",
+          "INC-2285",
+          "INC-2286",
+          "INC-2287",
+          "INC-2288",
+          "INC-2289",
+          "INC-2290",
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "laptop surge contains12",
+        "pass": true
+      },
+      {
+        "check": "last surge incident scrolls into view",
+        "pass": true
+      },
+      {
+        "check": "search isolates critical incident",
+        "pass": true,
+        "openIds": [
+          "INC-2291"
+        ]
+      },
+      {
+        "check": "resolved history accessible",
+        "pass": true,
+        "ids": [
+          "INC-2287",
+          "INC-2288"
+        ]
+      }
+    ],
+    "sourceUnchanged": true
+  }
+]

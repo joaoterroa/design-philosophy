@@ -1,0 +1,231 @@
+--- baseline/SKILL.md
++++ revision/SKILL.md
+@@ -7,7 +7,7 @@
+ 
+ A way of designing, not a look. Every project that uses this skill should end up with its own identity, derived from its users, its brand and its platform, and the same quality of thinking behind it.
+ 
+-The short version of the philosophy: **familiar patterns made exceptionally well; colour and novelty spent only where they carry meaning; nothing hidden that the user needs; every detail checked in the real thing, not imagined.** The rest of this skill is how to do that on purpose.
++The short version of the philosophy: **familiar patterns made exceptionally well; colour and novelty chosen for the product’s task and character; nothing hidden that the user needs; every detail checked in the real thing, not imagined.** The rest of this skill is how to do that on purpose.
+ 
+ ## How to use this skill
+ 
+@@ -18,6 +18,7 @@
+ | `references/philosophy.md` | Before forming a direction. The principles, the reasoning behind each, and the tensions between them. |
+ | `references/method.md` | At the start, for the full phase-by-phase method with exit criteria. |
+ | `references/identity.md` | Before choosing colour, type, shape or a mark. How to derive a project's own identity, and how to avoid every project looking alike. |
++| `references/shape-language.md` | When a soft, continuous-corner treatment fits the project. Optional visual reference, including the user’s preferred Adjusted Squircle. |
+ | `references/decisions.md` | Whenever you are deciding what to simplify, emphasize, remove, or redesign, or picking colour roles, type, layout, motion, copy. |
+ | `references/critique.md` | When reviewing your own rendered work, before calling it done. |
+ | `references/case-recall.md` | Once, to see the method applied end to end, including the mistakes. It is an illustration, never a template: do not reuse its palette, layout or components. |
+@@ -26,9 +27,9 @@
+ ## The method in brief
+ 
+ 1. **Understand the product before designing it.** Read the code, the docs, the open issues, the constraints that earlier work fixed. Find out who uses it, in what moment, and what they need first. Write the 3–5 priorities in order. If the brief names priorities, they are the tie-breakers for every later decision.
+-2. **Study references for their thinking, not their pixels.** When the user names an inspiration, research how that team reasons (their writing, release notes, real product screenshots), then name the principles you will borrow and the surface details you will not copy. If the network blocks a source, say so and work from what you can verify.
++2. **Study reasoning and real interfaces together.** Examine actual product screens and, where available, a short transition. Connect a visible relationship (composition, proportions, type, shape or state continuity) to this product’s needs. Separate shipped UI from marketing staging. Borrow the judgment, with attribution, rather than its branding. If access is blocked, record the evidence limit.
+ 3. **See the current state honestly.** Get the real thing rendering at realistic sizes with realistic data, in every state (empty, loading, streaming, success, partial failure, offline, no results), light and dark. Name its weaknesses in measurable terms ("the first result starts 608px down"), not adjectives.
+-4. **Choose a direction and the one place for novelty.** Decide the structure first (what goes where, what the user's eye does), then the identity. Pick the single moment that differentiates this product and spend the unusual treatment there. Everything else is familiar and plain.
++4. **Compare compositions, then choose a direction.** Render at least two meaningfully different compositions of a critical screen before committing the structure or tokens. Vary hierarchy, layout, grouping or interaction approach; colour and radius variants alone do not count. Compare at the real size against the ordered priorities, then recommend one and record its trade-off. Keep familiar mechanics where they help; give distinctive treatment as much room as the task and learning cost justify.
+ 5. **Write the system down, then build to it.** Tokens for every colour, size, radius, shadow and duration; a project `SYSTEM.md` that records the principles and the reason behind each value; a guardrail test that fails when code drifts from the tokens. Use `templates/`.
+ 6. **Implement the redesign, not a mockup.** Preserve existing behaviour and earlier fixes; restructure where it helps; keep every interaction keyboard- and screen-reader-sound.
+ 7. **Verify in the rendered product and refine.** Screenshot every state at the real sizes in both themes; measure layout shift, overflow, focus retention, contrast; click through the main paths. Fix what you see, then look again. Run `references/critique.md` before calling it done.
+--- baseline/references/critique.md
++++ revision/references/critique.md
+@@ -17,15 +17,15 @@
+ 
+ ## Restraint
+ 
+-- Count the colours. Name the meaning of each. Any without a meaning, or any meaning with two colours?
+-- Count the surfaces (cards, panels, filled boxes). Could a hairline or space do the job?
+-- Count the different sizes, weights and radii on screen. Could fewer do the job?
++- Do colour, surfaces and expression strengthen hierarchy and character without confusing operational signals?
++- Do grouping and depth make the task clearer at the required density? Compare a simpler treatment if they compete.
++- Do type, shape, proportions and insets form a convincing whole? Consistency alone does not establish that.
+ - Is there decoration that contributes nothing: gradients, icons beside every label, pills for plain values?
+ 
+ ## Novelty and personality
+ 
+-- Where is the one distinctive moment? Is it at the product's differentiator, and does it explain something?
+-- Is the personality quiet (mark, a phrase, a motion) and never at usability's expense?
++- What gives this product its own character? Does it emerge from the composition and task, or only a decorative flourish?
++- Is the amount of expression appropriate to its users and context, with familiar paths still easy to use?
+ - Swap test: could this stylesheet be dropped onto the last project without anyone noticing? If so, revisit `identity.md`.
+ 
+ ## Craft
+@@ -56,4 +56,4 @@
+ 
+ ## Verdict
+ 
+-Write down: the three weakest things you found, what you changed, and what still needs a human eye or the real environment. Then fix and look again.
++Judge composition and character separately from functional checks. Review the whole task across its initial, active, pending, completed and return states where relevant. Write down the three weakest things, what changed, and what still needs a human eye. A consistent system can still need a better composition. Fix and look again.
+--- baseline/references/decisions.md
++++ revision/references/decisions.md
+@@ -31,12 +31,12 @@
+ 
+ - Write down what must be visible without scrolling at the typical size, in priority order. Measure where the first useful content starts before and after.
+ - The user's own input often makes the best heading for the output: it reminds them what they asked and frames everything below as an answer.
+-- Group by meaning, separate with space and hairlines, and use one filled surface per screen at most for a grouped fact.
++- Group by meaning. Compare space, hairlines and surfaces for clarity and task fit; avoid arbitrary surface quotas.
+ 
+ ## Colour roles
+ 
+ - List the meanings the product needs. Typical: brand/act, follow/cite, caution, failure, health, data categories. Fewer is better.
+-- One colour per meaning, used for that meaning everywhere. When feedback changes "this link's colour", it changes the role.
++- Keep semantic colour roles consistent. Allow identity, context and atmosphere where they help without obscuring operational signals. Feedback about a colour may concern a role, so check its scope.
+ - Errors are never colour alone: words plus a tinted surface, so they can't be confused with a brand colour in the same hue family.
+ - If many things need telling apart (sources, categories), consider shape and name before colour; a coloured category is one more meaning to learn.
+ - Use exact brand values for fills and marks; adjust text uses only as far as contrast requires, and document it.
+@@ -79,7 +79,7 @@
+ 
+ - Plain and specific: what happened, what it means, what to do. "Jira timed out. Its results are missing from this search, not empty."
+ - Label inferred things as inferred; never claim more certainty than the data supports.
+-- No exclamation marks, filler or performed personality. Personality shows in precision and in a few well-chosen words.
++- Use a voice appropriate to the product and moment. Be precise about errors and commitments; give expressive copy room where it helps without patronizing or delaying the user.
+ - Examples in empty states should be real, typed by kind, and runnable in one click.
+ 
+ ## Platform constraints
+--- baseline/references/identity.md
++++ revision/references/identity.md
+@@ -13,13 +13,13 @@
+ 
+ ## Deciding each element
+ 
+-**Palette.** Start neutral, then add colour only for roles the product needs (act, follow/cite, caution, failure, health, data categories). Take each colour from the brand when it fits the role; if the brand lacks a role, choose a colour that sits naturally with the brand (often a related hue at a different lightness, or the brand's own secondary), not a fashionable accent. Design dark mode as its own palette with the same roles. Check contrast for every text use.
++**Palette.** Choose a palette for the product’s character and tasks. Keep operational signals clear; identity, context and atmosphere are also valid roles. Take each colour from the brand when it fits the role; if the brand lacks a role, choose a colour that sits naturally with the brand (often a related hue at a different lightness, or the brand's own secondary), not a fashionable accent. Design dark mode as its own palette with the same roles. Check contrast for every text use.
+ 
+-**Type.** System fonts when the product should feel native to its host or when speed and rendering matter; a brand or characterful face when the product is a destination or a brand surface. One scale, few sizes, weight before size for hierarchy, tabular numerals where numbers align.
++**Type.** System fonts when the product should feel native to its host or when speed and rendering matter; a brand or characterful face when the product is a destination or a brand surface. Choose size, weight and measure together to make the hierarchy clear; use tabular numerals where numbers align.
+ 
+-**Shape and space.** Pick a corner and spacing language that suits the character (tight and precise, soft and friendly) and apply it consistently: nested shapes take smaller radii than their containers; one gutter; a short spacing scale.
++**Shape and space.** Choose a related family of shapes and insets for the component roles. Judge curve, corner extent, dimensions and padding together at actual size. Nested shapes need a convincing gap, not simply the same token or an automatic smaller radius. For a soft continuous treatment, consult the optional `shape-language.md`; it is one visual choice, not the philosophy’s default.
+ 
+-**Elevation and surfaces.** Flat by default; elevation only for what floats over content (popovers, a docked input, a dragged item). Hairlines before cards; a filled panel only for a genuinely grouped fact.
++**Elevation and surfaces.** Use surfaces, borders, space and elevation to make grouping and depth clear. A flat list may fit dense data; an inset object may help a person recognize and act on a meaningful thing. Judge the hierarchy and density rather than counting cards.
+ 
+ **Motion.** Decide one easing and two or three durations. Motion explains change (arrival, growth, focus moving); loops only while work is happening.
+ 
+--- baseline/references/method.md
++++ revision/references/method.md
+@@ -6,7 +6,7 @@
+ 1. Understand the product
+ 2. Study references for their thinking
+ 3. See the current state honestly
+-4. Choose a direction and the place for novelty
++4. Compare compositions and choose a direction
+ 5. Write the system down
+ 6. Implement
+ 7. Verify and refine
+@@ -28,7 +28,7 @@
+ 
+ ## 2. Study references for their thinking
+ 
+-If the user names an inspiration, research the team's reasoning (essays, interviews, release notes, the real product and its interactions), not only its marketing site. If you have no inspiration, find two or three products that do the core task exceptionally well and study those.
++Study the team’s reasoning beside actual product screens and a short task transition where available. Identify a visible relationship among elements and explain what it achieves. Distinguish shipped UI from staged component art. If no inspiration is named, study products that do the core task well.
+ 
+ For each reference, write:
+ - the principles it embodies, in your own words;
+@@ -52,18 +52,15 @@
+ 
+ **Exit:** a baseline (screenshots and numbers) and a ranked list of the biggest weaknesses.
+ 
+-## 4. Choose a direction and the place for novelty
++## 4. Compare compositions and choose a direction
+ 
+-Decide structure before style. Ask: if this product were designed by a team that cared about every detail, where would each thing live? Challenge the existing layout where a different structure serves the priorities better (for example, moving input to where the hand already is, or turning a heading into the user's own question so the answer reads like a reply).
++Render at least two small alternatives for a critical screen at its actual size, before fixing the style system. Make a meaningful change to hierarchy, layout, grouping or interaction; a palette or corner change alone is not an alternative. Keep the content and task comparable. For a stateful task, also inspect what happens after the main action in each alternative.
+ 
+-Then decide:
+-- **The novelty moment:** the one place that gets distinctive treatment, and why that place.
+-- **The identity** (read `identity.md`): derived palette, type, shape language, mark; each choice with a product-specific reason.
+-- **What to remove, merge, move, or keep** (read `decisions.md`).
++Compare where attention lands, what can be understood and done, what fits, and what gives this product its own character. Choose one against the ordered priorities. Preserve the alternatives and record the strongest reason to reject the other; an unusual alternative does not win by being unusual.
+ 
+-State the direction in a few sentences someone else could check work against. Give it a short name if that helps the team talk about it.
++Then derive the identity (read `identity.md`) and decide what to remove, merge, move or keep (read `decisions.md`). Novelty is a learning cost, not a quota on distinctive details. Present one recommendation after exploration.
+ 
+-**Exit:** a direction statement, the novelty moment, the identity with reasons, and the list of structural changes.
++**Exit:** two rendered compositions, their comparison, a chosen direction with identity reasons, and the trade-off it accepts. Freeze tokens after this choice, then revise them when rendered evidence warrants it.
+ 
+ ## 5. Write the system down
+ 
+--- baseline/references/philosophy.md
++++ revision/references/philosophy.md
+@@ -4,7 +4,7 @@
+ 
+ ## Where it comes from
+ 
+-The starting influence is The Browser Company, particularly Dia. Not its look, its reasoning:
++The starting influence is The Browser Company, particularly Dia. Its reasoning informs the core; visual treatments remain choices for each project:
+ 
+ - **"Familiar, but elevated."** Dia was designed so anyone could switch to it on an ordinary Tuesday morning without learning anything. Core mechanics stay where people expect them; the craft goes into how well they are made. Arc, the company's earlier browser, reinvented the core and paid for it in adoption.
+ - **Minimalism in the core UI, even when it is hard.** No duplicate controls, no update banners; secondary things appear when they are relevant.
+@@ -26,9 +26,9 @@
+ *Goes wrong when:* "one way" becomes hiding the way. One control, clearly visible.
+ 
+ ### 3. Spend novelty where it pays
+-Choose the single moment that differentiates the product (the answer arriving, the first result, the thing only this product does) and give it the distinctive treatment: a considered animation, a layout that fills in place, a small piece of personality. Everything else stays plain so that moment can be felt.
+-*Why:* novelty is a budget. Spread everywhere it becomes noise; concentrated, it becomes the product's character.
+-*Goes wrong when:* the "special" moment is decorative rather than informative. The novelty should explain what is happening.
++Put unfamiliar mechanics where they earn their learning cost. Distinctive composition, typography, shape and expression can work together across a product without requiring new mechanics. Decide how much expression the task and context can support.
++*Why:* people need a clear path to value and a coherent product character. A fixed count of distinctive moments measures neither.
++*Goes wrong when:* novelty obstructs the task, or a novelty quota turns useful familiarity into generic execution.
+ 
+ ### 4. Minimal is not hidden
+ Remove decoration, never information. For a tool, density, discoverability and precise detail (dates, sources, states, counts, caveats) are features. Hierarchy, not deletion, is how you make dense information calm.
+@@ -36,8 +36,8 @@
+ *Goes wrong when:* a clean screen is achieved by pushing needed information behind clicks.
+ 
+ ### 5. Colour is meaning
+-Neutrals carry the interface. Each colour that remains has one job and keeps it everywhere (act, follow, caution, failure, health). A colour that means nothing is removed; a meaning with two colours is merged. Brand colours come from the brand, then are assigned roles.
+-*Why:* when colour is reserved, the eye learns the meanings within minutes and scans faster. Decorative colour competes with meaningful colour.
++Keep operational meanings consistent and distinguishable. Colour can also support identity, context or atmosphere when it strengthens the product without confusing status or weakening contrast. Derive brand uses from the brand and judge their combined visual weight.
++*Why:* stable signals help scanning; considered expression can help orientation and attachment. Both must serve this product.
+ *Goes wrong when:* colour alone carries a meaning (an error must also be words), or when a brand colour is used for a job it fails at (contrast, confusion with errors).
+ 
+ ### 6. Words over widgets
+@@ -65,9 +65,9 @@
+ *Why:* taste decays under deadline pressure unless it is cheap to follow and visible when broken.
+ *Goes wrong when:* the system documents values without reasons. Values without reasons get changed casually.
+ 
+-### 11. Personality, quietly
+-Personality lives in a few considered places: a mark that says what the product does, a phrase of copy, a moment of motion, a small detail done better than necessary. It never costs usability and never shouts.
+-*Why:* people warm to tools that feel cared for. They tire of tools that perform.
++### 11. Personality in proportion
++Let personality come from the whole composition and the task: its rhythm, proportions, words, objects and transitions. Quiet precision can suit an operational tool; a consumer destination can support more expression. Preserve usability and judge the complete result.
++*Why:* a coherent character feels cared for. Isolated flourishes cannot rescue a weak composition.
+ 
+ ## Tensions and how to resolve them
+ 
+@@ -77,6 +77,6 @@
+ | Stability vs. no wasted space | Reserve only what will certainly arrive; put uncertain arrivals at the end; grow containers away from the reading point. |
+ | Brand fidelity vs. accessibility | Use the exact brand value for fills and marks; adjust the minimum needed for text contrast and say so. |
+ | Polish vs. speed | Motion and animation never delay the user; content first, choreography second. |
+-| Familiar vs. distinctive | Familiar mechanics, distinctive execution and one distinctive moment. |
++| Familiar vs. distinctive | Familiar mechanics where useful; distinctive execution with a justified learning cost. |
+ | Explaining vs. trusting | Explain the unusual and the risky; trust the conventional; always expose hints to assistive tech. |
+ | User's literal request vs. its intent | Map the request to the role it touches; confirm the mapping when ambiguous; then apply it consistently everywhere that role appears. |
+--- baseline/references/shape-comparison.svg
++++ revision/references/shape-comparison.svg
+@@ -0,0 +1 @@
++<svg xmlns="http://www.w3.org/2000/svg" width="720" height="190" viewBox="0 0 720 190"><rect width="720" height="190" fill="#f5f5f2"/><path d="M196.000,20.000 L196.942,20.019 L197.883,20.074 L198.821,20.166 L199.754,20.295 L200.682,20.461 L201.603,20.663 L202.515,20.901 L203.416,21.175 L204.307,21.483 L205.184,21.827 L206.048,22.205 L206.896,22.616 L207.727,23.060 L208.540,23.537 L209.334,24.045 L210.107,24.584 L210.858,25.152 L211.587,25.750 L212.291,26.376 L212.971,27.029 L213.624,27.709 L214.250,28.413 L214.848,29.142 L215.416,29.893 L215.955,30.666 L216.463,31.460 L216.940,32.273 L217.384,33.104 L217.795,33.952 L218.173,34.816 L218.517,35.693 L218.825,36.584 L219.099,37.485 L219.337,38.397 L219.539,39.318 L219.705,40.246 L219.834,41.179 L219.926,42.117 L219.981,43.058 L220.000,44.000 L220.000,96.000 L219.981,96.942 L219.926,97.883 L219.834,98.821 L219.705,99.754 L219.539,100.682 L219.337,101.603 L219.099,102.515 L218.825,103.416 L218.517,104.307 L218.173,105.184 L217.795,106.048 L217.384,106.896 L216.940,107.727 L216.463,108.540 L215.955,109.334 L215.416,110.107 L214.848,110.858 L214.250,111.587 L213.624,112.291 L212.971,112.971 L212.291,113.624 L211.587,114.250 L210.858,114.848 L210.107,115.416 L209.334,115.955 L208.540,116.463 L207.727,116.940 L206.896,117.384 L206.048,117.795 L205.184,118.173 L204.307,118.517 L203.416,118.825 L202.515,119.099 L201.603,119.337 L200.682,119.539 L199.754,119.705 L198.821,119.834 L197.883,119.926 L196.942,119.981 L196.000,120.000 L44.000,120.000 L43.058,119.981 L42.117,119.926 L41.179,119.834 L40.246,119.705 L39.318,119.539 L38.397,119.337 L37.485,119.099 L36.584,118.825 L35.693,118.517 L34.816,118.173 L33.952,117.795 L33.104,117.384 L32.273,116.940 L31.460,116.463 L30.666,115.955 L29.893,115.416 L29.142,114.848 L28.413,114.250 L27.709,113.624 L27.029,112.971 L26.376,112.291 L25.750,111.587 L25.152,110.858 L24.584,110.107 L24.045,109.334 L23.537,108.540 L23.060,107.727 L22.616,106.896 L22.205,106.048 L21.827,105.184 L21.483,104.307 L21.175,103.416 L20.901,102.515 L20.663,101.603 L20.461,100.682 L20.295,99.754 L20.166,98.821 L20.074,97.883 L20.019,96.942 L20.000,96.000 L20.000,44.000 L20.019,43.058 L20.074,42.117 L20.166,41.179 L20.295,40.246 L20.461,39.318 L20.663,38.397 L20.901,37.485 L21.175,36.584 L21.483,35.693 L21.827,34.816 L22.205,33.952 L22.616,33.104 L23.060,32.273 L23.537,31.460 L24.045,30.666 L24.584,29.893 L25.152,29.142 L25.750,28.413 L26.376,27.709 L27.029,27.029 L27.709,26.376 L28.413,25.750 L29.142,25.152 L29.893,24.584 L30.666,24.045 L31.460,23.537 L32.273,23.060 L33.104,22.616 L33.952,22.205 L34.816,21.827 L35.693,21.483 L36.584,21.175 L37.485,20.901 L38.397,20.663 L39.318,20.461 L40.246,20.295 L41.179,20.166 L42.117,20.074 L43.058,20.019 L44.000,20.000 Z" fill="#d8e1db" stroke="#33463a"/><text x="120" y="150" text-anchor="middle" font-family="sans-serif" font-size="16">Ordinary</text><path d="M436.000,20.000 L440.755,20.009 L442.723,20.037 L444.228,20.083 L445.492,20.148 L446.601,20.232 L447.596,20.334 L448.504,20.455 L449.341,20.595 L450.120,20.754 L450.847,20.932 L451.529,21.129 L452.171,21.346 L452.776,21.582 L453.348,21.839 L453.889,22.116 L454.400,22.413 L454.884,22.732 L455.341,23.072 L455.773,23.434 L456.182,23.818 L456.566,24.227 L456.928,24.659 L457.268,25.116 L457.587,25.600 L457.884,26.111 L458.161,26.652 L458.418,27.224 L458.654,27.829 L458.871,28.471 L459.068,29.153 L459.246,29.880 L459.405,30.659 L459.545,31.496 L459.666,32.404 L459.768,33.399 L459.852,34.508 L459.917,35.772 L459.963,37.277 L459.991,39.245 L460.000,44.000 L460.000,96.000 L459.991,100.755 L459.963,102.723 L459.917,104.228 L459.852,105.492 L459.768,106.601 L459.666,107.596 L459.545,108.504 L459.405,109.341 L459.246,110.120 L459.068,110.847 L458.871,111.529 L458.654,112.171 L458.418,112.776 L458.161,113.348 L457.884,113.889 L457.587,114.400 L457.268,114.884 L456.928,115.341 L456.566,115.773 L456.182,116.182 L455.773,116.566 L455.341,116.928 L454.884,117.268 L454.400,117.587 L453.889,117.884 L453.348,118.161 L452.776,118.418 L452.171,118.654 L451.529,118.871 L450.847,119.068 L450.120,119.246 L449.341,119.405 L448.504,119.545 L447.596,119.666 L446.601,119.768 L445.492,119.852 L444.228,119.917 L442.723,119.963 L440.755,119.991 L436.000,120.000 L284.000,120.000 L279.245,119.991 L277.277,119.963 L275.772,119.917 L274.508,119.852 L273.399,119.768 L272.404,119.666 L271.496,119.545 L270.659,119.405 L269.880,119.246 L269.153,119.068 L268.471,118.871 L267.829,118.654 L267.224,118.418 L266.652,118.161 L266.111,117.884 L265.600,117.587 L265.116,117.268 L264.659,116.928 L264.227,116.566 L263.818,116.182 L263.434,115.773 L263.072,115.341 L262.732,114.884 L262.413,114.400 L262.116,113.889 L261.839,113.348 L261.582,112.776 L261.346,112.171 L261.129,111.529 L260.932,110.847 L260.754,110.120 L260.595,109.341 L260.455,108.504 L260.334,107.596 L260.232,106.601 L260.148,105.492 L260.083,104.228 L260.037,102.723 L260.009,100.755 L260.000,96.000 L260.000,44.000 L260.009,39.245 L260.037,37.277 L260.083,35.772 L260.148,34.508 L260.232,33.399 L260.334,32.404 L260.455,31.496 L260.595,30.659 L260.754,29.880 L260.932,29.153 L261.129,28.471 L261.346,27.829 L261.582,27.224 L261.839,26.652 L262.116,26.111 L262.413,25.600 L262.732,25.116 L263.072,24.659 L263.434,24.227 L263.818,23.818 L264.227,23.434 L264.659,23.072 L265.116,22.732 L265.600,22.413 L266.111,22.116 L266.652,21.839 L267.224,21.582 L267.829,21.346 L268.471,21.129 L269.153,20.932 L269.880,20.754 L270.659,20.595 L271.496,20.455 L272.404,20.334 L273.399,20.232 L274.508,20.148 L275.772,20.083 L277.277,20.037 L279.245,20.009 L284.000,20.000 Z" fill="#d8e1db" stroke="#33463a"/><text x="360" y="150" text-anchor="middle" font-family="sans-serif" font-size="16">Same extent</text><path d="M655.818,20.000 L664.573,20.017 L668.194,20.068 L670.966,20.153 L673.293,20.273 L675.333,20.427 L677.165,20.615 L678.837,20.837 L680.379,21.095 L681.811,21.387 L683.150,21.715 L684.406,22.078 L685.587,22.477 L686.702,22.913 L687.755,23.385 L688.750,23.895 L689.691,24.442 L690.582,25.029 L691.424,25.655 L692.219,26.321 L692.971,27.029 L693.679,27.781 L694.345,28.576 L694.971,29.418 L695.558,30.309 L696.105,31.250 L696.615,32.245 L697.087,33.298 L697.523,34.413 L697.922,35.594 L698.285,36.850 L698.613,38.189 L698.905,39.621 L699.163,41.163 L699.385,42.835 L699.573,44.667 L699.727,46.707 L699.847,49.034 L699.932,51.806 L699.983,55.427 L700.000,64.182 L700.000,75.818 L699.983,84.573 L699.932,88.194 L699.847,90.966 L699.727,93.293 L699.573,95.333 L699.385,97.165 L699.163,98.837 L698.905,100.379 L698.613,101.811 L698.285,103.150 L697.922,104.406 L697.523,105.587 L697.087,106.702 L696.615,107.755 L696.105,108.750 L695.558,109.691 L694.971,110.582 L694.345,111.424 L693.679,112.219 L692.971,112.971 L692.219,113.679 L691.424,114.345 L690.582,114.971 L689.691,115.558 L688.750,116.105 L687.755,116.615 L686.702,117.087 L685.587,117.523 L684.406,117.922 L683.150,118.285 L681.811,118.613 L680.379,118.905 L678.837,119.163 L677.165,119.385 L675.333,119.573 L673.293,119.727 L670.966,119.847 L668.194,119.932 L664.573,119.983 L655.818,120.000 L544.182,120.000 L535.427,119.983 L531.806,119.932 L529.034,119.847 L526.707,119.727 L524.667,119.573 L522.835,119.385 L521.163,119.163 L519.621,118.905 L518.189,118.613 L516.850,118.285 L515.594,117.922 L514.413,117.523 L513.298,117.087 L512.245,116.615 L511.250,116.105 L510.309,115.558 L509.418,114.971 L508.576,114.345 L507.781,113.679 L507.029,112.971 L506.321,112.219 L505.655,111.424 L505.029,110.582 L504.442,109.691 L503.895,108.750 L503.385,107.755 L502.913,106.702 L502.477,105.587 L502.078,104.406 L501.715,103.150 L501.387,101.811 L501.095,100.379 L500.837,98.837 L500.615,97.165 L500.427,95.333 L500.273,93.293 L500.153,90.966 L500.068,88.194 L500.017,84.573 L500.000,75.818 L500.000,64.182 L500.017,55.427 L500.068,51.806 L500.153,49.034 L500.273,46.707 L500.427,44.667 L500.615,42.835 L500.837,41.163 L501.095,39.621 L501.387,38.189 L501.715,36.850 L502.078,35.594 L502.477,34.413 L502.913,33.298 L503.385,32.245 L503.895,31.250 L504.442,30.309 L505.029,29.418 L505.655,28.576 L506.321,27.781 L507.029,27.029 L507.781,26.321 L508.576,25.655 L509.418,25.029 L510.309,24.442 L511.250,23.895 L512.245,23.385 L513.298,22.913 L514.413,22.477 L515.594,22.078 L516.850,21.715 L518.189,21.387 L519.621,21.095 L521.163,20.837 L522.835,20.615 L524.667,20.427 L526.707,20.273 L529.034,20.153 L531.806,20.068 L535.427,20.017 L544.182,20.000 Z" fill="#d8e1db" stroke="#33463a"/><text x="600" y="150" text-anchor="middle" font-family="sans-serif" font-size="16">Adjusted Squircle</text></svg>--- baseline/references/shape-language.md
++++ revision/references/shape-language.md
+@@ -0,0 +1,19 @@
++# Optional soft continuous shape language
++
++Read when a softer treatment suits this product, its platform and users. This is a visual option, not a required style. The user prefers **Adjusted Squircle** among the tested treatments: a larger corner extent with continuous-looking curves, balancing softness and structure. Preserve that preference when choosing this aesthetic; compact or conventional geometry can fit other contexts better.
++
++## Choose relationships, not one radius
++
++Judge curve family, corner extent, component proportions and surrounding insets together. Give outer panels, compact controls, data marks, capsules and circles roles of their own. Nested forms need a convincing, even-looking gap. An inner radius is not automatically the outer radius or a fixed percentage of it; inspect the actual silhouette and content clearance.
++
++The accompanying `shape-comparison.svg` illustrates an ordinary corner, a same-extent exponent-four corner and an adjusted exponent-four corner. It is an explanatory drawing, not a Dia asset. In the shared reference pack, the composer shows a soft shell with smaller inset context objects; profile settings and Arc routing show useful compact counterexamples. Their exact curve implementations are unconfirmed. A capsule or compound tab outline is not a four-corner squircle.
++
++## Adjusted Squircle as a starting treatment
++
++In a browser with support, CSS `corner-shape: squircle` uses exponent four, whereas ordinary `border-radius` uses quarter-ellipse corners. At the same numerical radius it can look squarer. In the controlled experiment, increasing the extent by about 1.841 matched one diagonal inset to the ordinary corner. That multiplier is a comparison control, not a mandatory scale, an optical guarantee or an exact Apple/Dia formula.
++
++Start from the intended silhouette, then tune extent for the component’s dimensions, label inset and neighboring shapes. Preserve circular avatars, semantic clipped data ends and compact platform controls where appropriate. Inspect focus rings, borders, shadows, clipping, resizing, large text and both themes. Use a normal rounded fallback when the platform cannot render the selected curve; do not clip away focus or text to simulate it.
++
++The reusable decision is whether this shape family helps this product. Record why it fits or why a different family serves the task better. Soft curves alone do not establish hierarchy, personality or overall design quality.
++
++Sources: [Apple continuous corners](https://developer.apple.com/documentation/swiftui/roundedcornerstyle/continuous), [CSS corner shaping](https://www.w3.org/TR/css-borders-4/#corner-shaping), [Dia’s platform-specific radius refinements](https://www.diabrowser.com/release-notes/1-15-1-polish-galore). The study does not establish Dia’s formula.

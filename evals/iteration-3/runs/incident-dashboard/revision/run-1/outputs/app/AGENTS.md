@@ -1,0 +1,1 @@
+Read SYSTEM.md and ../DESIGN.md before changing this prototype. Use tokens.css for visual values. Run ../scripts/guard.mjs and ../scripts/verify.py from the workspace root as documented in DESIGN.md. Do not modify the supplied inputs.

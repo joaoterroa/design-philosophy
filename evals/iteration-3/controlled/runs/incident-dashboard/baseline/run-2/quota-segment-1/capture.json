@@ -1,0 +1,14 @@
+{
+  "runId": "incident-dashboard__baseline__2",
+  "task": "incident-dashboard",
+  "fixedTime": "2026-10-18T10:00:00+00:00",
+  "locale": "en-GB",
+  "timezone": "Europe/London",
+  "DPR": 1,
+  "reducedMotion": "reduce",
+  "source": "/Users/joao.terroa/src/design-philosophy/evals/iteration-3/controlled/runs/incident-dashboard/baseline/run-2/outputs/app/index.html",
+  "shots": [],
+  "expectedShots": 12,
+  "complete": false,
+  "error": "Missing outputs/app/index.html"
+}

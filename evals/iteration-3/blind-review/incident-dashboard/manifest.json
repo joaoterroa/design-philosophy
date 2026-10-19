@@ -1,0 +1,20 @@
+{
+  "task": "incident-dashboard",
+  "pairs": [],
+  "rubric": [
+    "composition",
+    "hierarchy",
+    "task fit and usability",
+    "product-specific personality",
+    "craftsmanship",
+    "overall design quality"
+  ],
+  "scoreAnchors": {
+    "1": "weak",
+    "2": "material weaknesses",
+    "3": "competent",
+    "4": "strong",
+    "5": "exceptional"
+  },
+  "instructions": "Judge full screens at their actual scale before enlarged details. Consider state changes, labels, density, priority and character together. No credit for following an unseen process or resembling a brand. State uncertainty. Do not inspect any other task, the identity key, skill files, DESIGN.md or other study material."
+}

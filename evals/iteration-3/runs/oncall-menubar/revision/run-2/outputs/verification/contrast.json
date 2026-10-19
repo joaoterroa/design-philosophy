@@ -1,0 +1,278 @@
+[
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "bg",
+    "ratio": 14.74
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "surface",
+    "ratio": 16.05
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "soft",
+    "ratio": 13.74
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "bank-bg",
+    "ratio": 14.83
+  },
+  {
+    "theme": "light",
+    "fg": "fg",
+    "bg": "bank-soft",
+    "ratio": 14.27
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "bg",
+    "ratio": 5.64
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "surface",
+    "ratio": 6.14
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "soft",
+    "ratio": 5.26
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "bank-bg",
+    "ratio": 5.67
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "bank-soft",
+    "ratio": 5.46
+  },
+  {
+    "theme": "light",
+    "fg": "accent",
+    "bg": "accent-soft",
+    "ratio": 5.53
+  },
+  {
+    "theme": "light",
+    "fg": "on-accent",
+    "bg": "accent",
+    "ratio": 6.28
+  },
+  {
+    "theme": "light",
+    "fg": "good",
+    "bg": "good-soft",
+    "ratio": 6.3
+  },
+  {
+    "theme": "light",
+    "fg": "warn",
+    "bg": "warn-soft",
+    "ratio": 5.99
+  },
+  {
+    "theme": "light",
+    "fg": "danger",
+    "bg": "danger-soft",
+    "ratio": 5.81
+  },
+  {
+    "theme": "light",
+    "fg": "bank-on",
+    "bg": "bank-accent",
+    "ratio": 9.03
+  },
+  {
+    "theme": "light",
+    "fg": "bank-accent",
+    "bg": "bank-bg",
+    "ratio": 8.34
+  },
+  {
+    "theme": "light",
+    "fg": "bank-accent",
+    "bg": "bank-soft",
+    "ratio": 8.03
+  },
+  {
+    "theme": "light",
+    "fg": "dash-fg",
+    "bg": "dash-bg",
+    "ratio": 13.56
+  },
+  {
+    "theme": "light",
+    "fg": "dash-muted",
+    "bg": "dash-bg",
+    "ratio": 5.68
+  },
+  {
+    "theme": "light",
+    "fg": "danger",
+    "bg": "dash-bg",
+    "ratio": 5.86
+  },
+  {
+    "theme": "light",
+    "fg": "warn",
+    "bg": "dash-bg",
+    "ratio": 6.03
+  },
+  {
+    "theme": "light",
+    "fg": "good",
+    "bg": "dash-bg",
+    "ratio": 6.44
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "bg",
+    "ratio": 13.45
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "surface",
+    "ratio": 11.7
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "soft",
+    "ratio": 10.06
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "bank-bg",
+    "ratio": 14.04
+  },
+  {
+    "theme": "dark",
+    "fg": "fg",
+    "bg": "bank-soft",
+    "ratio": 10.54
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "bg",
+    "ratio": 7.72
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "surface",
+    "ratio": 6.72
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "soft",
+    "ratio": 5.78
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "bank-bg",
+    "ratio": 8.06
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "bank-soft",
+    "ratio": 6.05
+  },
+  {
+    "theme": "dark",
+    "fg": "accent",
+    "bg": "accent-soft",
+    "ratio": 5.87
+  },
+  {
+    "theme": "dark",
+    "fg": "on-accent",
+    "bg": "accent",
+    "ratio": 7.48
+  },
+  {
+    "theme": "dark",
+    "fg": "good",
+    "bg": "good-soft",
+    "ratio": 7.18
+  },
+  {
+    "theme": "dark",
+    "fg": "warn",
+    "bg": "warn-soft",
+    "ratio": 7.09
+  },
+  {
+    "theme": "dark",
+    "fg": "danger",
+    "bg": "danger-soft",
+    "ratio": 6.86
+  },
+  {
+    "theme": "dark",
+    "fg": "bank-on",
+    "bg": "bank-accent",
+    "ratio": 8.32
+  },
+  {
+    "theme": "dark",
+    "fg": "bank-accent",
+    "bg": "bank-bg",
+    "ratio": 9.74
+  },
+  {
+    "theme": "dark",
+    "fg": "bank-accent",
+    "bg": "bank-soft",
+    "ratio": 7.31
+  },
+  {
+    "theme": "dark",
+    "fg": "dash-fg",
+    "bg": "dash-bg",
+    "ratio": 15.9
+  },
+  {
+    "theme": "dark",
+    "fg": "dash-muted",
+    "bg": "dash-bg",
+    "ratio": 9.11
+  },
+  {
+    "theme": "dark",
+    "fg": "danger",
+    "bg": "dash-bg",
+    "ratio": 10.3
+  },
+  {
+    "theme": "dark",
+    "fg": "warn",
+    "bg": "dash-bg",
+    "ratio": 11.13
+  },
+  {
+    "theme": "dark",
+    "fg": "good",
+    "bg": "dash-bg",
+    "ratio": 11.2
+  }
+]

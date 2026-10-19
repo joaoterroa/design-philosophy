@@ -1,0 +1,3 @@
+/* Corner-only research probe. Not a production style system or a Dia reconstruction. */
+.sev, .bar, .meter { border-radius: 2.000000px 2.000000px 2.000000px 2.000000px; corner-shape: squircle; }
+.bar.is-clipped {border-top-left-radius:0; border-bottom-left-radius:0;}

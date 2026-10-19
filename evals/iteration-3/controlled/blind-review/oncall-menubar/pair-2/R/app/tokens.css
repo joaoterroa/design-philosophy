@@ -1,0 +1,15 @@
+:root {
+ color-scheme: light;
+ --scene:#e7e9ec; --bg:#fafafa; --surface:#f0f1f3; --field:#ffffff; --fg:#202124; --muted:#60636b; --line:#dcdde1; --control-line:#858994; --accent:#135fc5; --on-accent:#ffffff; --accent-tint:#e8f0fd; --caution:#845100; --caution-tint:#fff1d9; --focus:#135fc5; --shadow:0 14px 44px #00000026,0 2px 6px #00000012;
+ --font:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+ --fs-xs:11px; --fs-sm:12px; --fs-body:13px; --fs-control:14px; --fs-title:22px; --fs-name:25px;
+ --weight-normal:400; --weight-medium:500; --weight-strong:600; --weight-bold:700;
+ --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:24px; --s7:28px; --s8:32px; --s9:40px;
+ --radius-sm:6px; --radius-control:8px; --radius-card:10px; --radius-popover:14px; --radius-circle:50%;
+ --border:1px; --focus-width:3px; --focus-offset:3px; --popover-width:360px; --popover-max:640px; --scene-inset:20px; --target:36px; --primary-height:38px; --avatar:30px; --track:2px; --marker:9px; --rail-height:30px; --rail-offset:5px; --hover-brightness:.94; --mark-size:21px; --min-state:310px;
+ --lh:1.45; --lh-tight:1.2; --tracking:-0.5px; --fast:120ms; --ease:ease-out;
+}
+:root[data-theme="dark"] {
+ color-scheme:dark;
+ --scene:#17181b; --bg:#292a2e; --surface:#333439; --field:#222327; --fg:#f2f2f4; --muted:#b3b5bd; --line:#494a51; --control-line:#818590; --accent:#8dbaff; --on-accent:#13263e; --accent-tint:#303e54; --caution:#f1c681; --caution-tint:#433a2b; --focus:#8dbaff; --shadow:0 14px 44px #00000055,0 2px 6px #00000033;
+}

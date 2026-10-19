@@ -1,0 +1,11 @@
+{
+  "headline": "Excluded pilot: not a valid controlled comparison",
+  "summary": "The shared contract listed allthree application requirements. Multiple generators implemented the whole suite, so work allocation differed. This entire cohort is excluded from the adoption decision.",
+  "recommendation": "Use the corrected task-only cohort in controlled/. Do not adopt or reject the experimental skill based on this pilot.",
+  "taskResults": [],
+  "limitations": [
+    "Whole-cohort harness error; outputs retained without quality selection.",
+    "Three early jobs also needed quota recovery; hidden context could not be restored.",
+    "Early anonymous notes are retained as pilot observations only, not primary results."
+  ]
+}

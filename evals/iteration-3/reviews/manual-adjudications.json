@@ -1,0 +1,10 @@
+[
+  {
+    "runId": "banking-onboarding__revision__1",
+    "automaticCheck": "code screen visible text at least16px",
+    "flagRetained": true,
+    "assessment": "Measurement false positive for body text; not a critical accessibility regression",
+    "evidence": "The14px question-mark glyph is inside span.help-icon with aria-hidden=true, next to the visible Help label. It is a decorative graphic, not body text or the only control label. All tested task paths and programmatic labels passed. The raw automatic result is retained.",
+    "source": "runs/banking-onboarding/revision/run-1/outputs/app/app.js:33"
+  }
+]

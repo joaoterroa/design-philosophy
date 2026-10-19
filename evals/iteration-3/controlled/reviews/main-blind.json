@@ -1,0 +1,253 @@
+{
+  "reviewer": "Main agent, informed by study design and functional logs; image order masked. Not an independent human review.",
+  "reviewKeyRead": false,
+  "pairs": [
+    {
+      "id": "oncall-menubar-pair-1",
+      "overallPreference": "right",
+      "confidence": "medium-low",
+      "scores": {
+        "left": {
+          "composition": 3,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 3
+        },
+        "right": {
+          "composition": 4,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        }
+      },
+      "evidence": [
+        "Right groups assignment, shift and handover in one tinted region; left separates the same action below an outlined assignment card.",
+        "Right pending state offers Back to schedule as the filled action and Cancel request as secondary; left gives Cancel request the only large action and uses a small Schedule link.",
+        "Left makes 18:00 the largest datum, clearer for an end-time glance; right uses the whole 06:00\u201318:00 range.",
+        "Left offline has a prominent Try reconnecting button; right reduces retry to a small link. Left compose also uses a directly visible recipient radio and offers a note; right adds a select for a single named contact.",
+        "Right is more cohesive and slightly softer, but neither establishes a substantially different product character. This is a modest composition preference, not evidence that more rounding is better."
+      ],
+      "inspected": [
+        "main light",
+        "pending light",
+        "compose dark",
+        "offline dark"
+      ],
+      "risks": [
+        "Offline retry discoverability on right needs live/keyboard review.",
+        "Neither is a native host-integration or team-user test."
+      ]
+    },
+    {
+      "id": "incident-dashboard-pair-1",
+      "overallPreference": "right",
+      "confidence": "medium-low",
+      "scores": {
+        "left": {
+          "composition": 3,
+          "hierarchy": 3,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 3
+        },
+        "right": {
+          "composition": 4,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        }
+      },
+      "evidence": [
+        "Right integrates KPIs and sidebar with rules and spacing rather than framing each group; the main incident table reads as the focal object.",
+        "Right includes both recently resolved summaries alongside the live table on TV; left puts resolved history behind a tab. Both preserve seven visible open incidents and explain the extra five in surge using pagination.",
+        "Right keeps the open count neutral and localizes red to SEV1; left colors the entire open count red. Right also gives the SEV1 row a strong left border with Unassigned in its commander column.",
+        "Left stale mode more carefully relabels Last known open incidents and On call - last known. Right retains On call now beneath a stale header, which weakens snapshot honesty.",
+        "Both are competent conventional operational dashboards. No large personality gain is visible; TV distance readability is not established by inspecting desktop pixels. Both need vertical scrolling on laptop to see all sidebar content."
+      ],
+      "inspected": [
+        "live TV dark",
+        "surge TV dark",
+        "stale TV light",
+        "live laptop light",
+        "right laptop native-size capture"
+      ],
+      "risks": [
+        "Right stale mode freshness wording deserves manual state inspection.",
+        "Neither shows all twelve surge incidents simultaneously on TV; overflow is explicit, not silently missing.",
+        "No actual ops-room viewing-distance test."
+      ]
+    },
+    {
+      "id": "banking-onboarding-pair-1",
+      "overallPreference": "same",
+      "confidence": "medium",
+      "scores": {
+        "left": {
+          "composition": 4,
+          "hierarchy": 3,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        },
+        "right": {
+          "composition": 3,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        }
+      },
+      "evidence": [
+        "Right Help makes Call 0808 157 0192 the filled action and keeps Back to setup secondary; left fills Back and leaves the human route as a phone link. This is a concrete hierarchy improvement on right.",
+        "Left welcome puts Get started above its two-action explanation; at 320\u00d7568 the action remains visible. Right lists three stages before Get started, leaving the action entirely below the initial small-phone viewport.",
+        "Left code page puts the short safety warning before Confirm code; right moves a larger warning panel after the action and recovery link. Both retain readable labels and single code fields.",
+        "Left describes two actions and Step 2 of 2; right includes completion as stage three and Step 2 of 3. The left sequence is more compact, though neither necessarily confuses a person.",
+        "Both use restrained cream/ink/teal banking forms and reassuring copy. The right arch mark and copy create only a modest difference in character. The changes trade strengths rather than establish a clear overall winner."
+      ],
+      "inspected": [
+        "welcome phone light",
+        "code phone light",
+        "code-error phone dark",
+        "help small light",
+        "both welcome small light"
+      ],
+      "risks": [
+        "Offscreen primary action is observed; its effect on older users needs testing, not assumption.",
+        "Help call links were not used to make a real call.",
+        "Small-screen keyboard and large system text remain separate device concerns."
+      ]
+    },
+    {
+      "id": "oncall-menubar-pair-2",
+      "overallPreference": "left",
+      "confidence": "medium",
+      "scores": {
+        "left": {
+          "composition": 4,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        },
+        "right": {
+          "composition": 3,
+          "hierarchy": 4,
+          "taskFit": 3,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 3
+        }
+      },
+      "evidence": [
+        "Left uses a filled Back to schedule action while pending and a secondary Cancel request link. Right makes Cancel the large action and return to the schedule a small top link.",
+        "Left retains the other three cached responders offline, while right replaces that roster with a disabled handover and reconnect action. Both explicitly warn that cached ownership may have changed.",
+        "Left current-shift card combines a timeline and eight hours remaining; right gives more emphasis to Jamie Ellis and Ends at 18:00. Both support the glance, using different hierarchies.",
+        "Right compose puts the responsibility-until-acceptance warning before Review. Left uses a compact context card and note but only describes coverage there. Both require live-path validation for the final handover semantics.",
+        "Both remain clean, familiar menu utilities. The more expressive handover connector on right is useful status notation, but does not outweigh the pending action hierarchy and lost offline roster."
+      ],
+      "inspected": [
+        "main light",
+        "pending light",
+        "compose dark",
+        "offline dark"
+      ],
+      "risks": [
+        "Preference concerns the displayed journey, not a native macOS integration test.",
+        "Offline retries cannot verify a real server in these static prototypes."
+      ]
+    },
+    {
+      "id": "incident-dashboard-pair-2",
+      "overallPreference": "left",
+      "confidence": "medium-low",
+      "scores": {
+        "left": {
+          "composition": 4,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        },
+        "right": {
+          "composition": 3,
+          "hierarchy": 3,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 3
+        }
+      },
+      "evidence": [
+        "Left reserves a full-width bottom region for the two resolved summaries, giving them more width than the right sidebar. Both retain seven open rows and the missing commander at TV size.",
+        "Left stale mode replaces a full-width snapshot strip with an explicit warning including the age; right places its warning in a narrower area beside Incident overview. Left gives the change more reliable prominence across the composition.",
+        "Left keeps the SEV1 commander problem consistently red in the row and associated on-call note. Right adds an amber sidebar warning despite the red SEV1 row; the extra signal is not obviously clearer.",
+        "Right gives Opened and Duration separate columns, which is a useful improvement over the stacked Duration/opened cell on left. Its surge Page 1 of 2 control is also more explicit.",
+        "The preference is modest and based on available space and state hierarchy. Neither result establishes a substantially more distinctive visual character. Laptop screens need scrolling to reach lower rows and sidebar content."
+      ],
+      "inspected": [
+        "live TV dark",
+        "surge TV dark",
+        "stale TV light",
+        "live laptop light"
+      ],
+      "risks": [
+        "TV distance readability is untested.",
+        "Both retain On call now under a stale global warning, an unresolved wording weakness.",
+        "Filter, history and full surge reachability need live checks separate from the images."
+      ]
+    },
+    {
+      "id": "banking-onboarding-pair-2",
+      "overallPreference": "left",
+      "confidence": "medium-low",
+      "scores": {
+        "left": {
+          "composition": 4,
+          "hierarchy": 4,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        },
+        "right": {
+          "composition": 4,
+          "hierarchy": 3,
+          "taskFit": 4,
+          "personality": 3,
+          "craftsmanship": 4,
+          "overall": 4
+        }
+      },
+      "evidence": [
+        "Left Help makes Call Harbour and its number the filled action, with Back secondary. Right fills Back to setup and leaves calling as a link, reversing the help task hierarchy.",
+        "Left describes the two actions the person must complete; right adds Ready to bank as a third stage. Left keeps this short sequence coherent with Step 2 of 2 on the code screen.",
+        "Both keep a fully visible primary welcome action at 320\u00d7568. Right places it earlier, while left fits it after the two-step explanation by reducing vertical spacing at the smaller size.",
+        "Left keeps the safety warning before Confirm code. Right gives code errors a stronger filled banner and icon, but its full safety warning is near the lower edge after the action and recovery link.",
+        "Right has a more distinctive serif wordmark and progress bars. That is a useful difference in character, but the overall preference is a small task-hierarchy advantage for left, not a rejection of expressive type or shapes."
+      ],
+      "inspected": [
+        "welcome phone light",
+        "code phone light",
+        "code-error phone dark",
+        "help small light",
+        "both welcome small light"
+      ],
+      "risks": [
+        "The preference is modest; actual older-user comprehension, keyboard occlusion and assistive technology remain untested.",
+        "The left compact Help omits the full warning inside that dialog; it remains on the underlying code screen."
+      ]
+    }
+  ],
+  "maskedReviewCompletedAt": "2026-10-19T07:58:34.128302+00:00"
+}

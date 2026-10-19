@@ -1,0 +1,874 @@
+[
+  {
+    "state": "welcome",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 157,
+    "scrollHeight": 897,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Let\u2019s get started ",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 212,
+    "scrollHeight": 844,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details-error",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 212,
+    "scrollHeight": 947,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "code",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 212,
+    "scrollHeight": 876,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 342,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "code-error",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 212,
+    "scrollHeight": 948,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 342,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "help",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 212,
+    "scrollHeight": 876,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 342,
+        "height": 52
+      },
+      {
+        "name": "0808 157 0192",
+        "width": 300,
+        "height": 52
+      },
+      {
+        "name": "Back to setup",
+        "width": 308,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "done",
+    "width": 390,
+    "theme": "light",
+    "h1Y": 233,
+    "scrollHeight": 878,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Finish",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "welcome",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 157,
+    "scrollHeight": 897,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Let\u2019s get started ",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 212,
+    "scrollHeight": 844,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details-error",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 212,
+    "scrollHeight": 947,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "code",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 212,
+    "scrollHeight": 876,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 342,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "code-error",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 212,
+    "scrollHeight": 948,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 342,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "help",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 212,
+    "scrollHeight": 876,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 342,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 342,
+        "height": 52
+      },
+      {
+        "name": "0808 157 0192",
+        "width": 300,
+        "height": 52
+      },
+      {
+        "name": "Back to setup",
+        "width": 308,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "done",
+    "width": 390,
+    "theme": "dark",
+    "h1Y": 233,
+    "scrollHeight": 878,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 92.34375,
+        "height": 52
+      },
+      {
+        "name": "Finish",
+        "width": 342,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "welcome",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 142,
+    "scrollHeight": 849,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Let\u2019s get started ",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 197,
+    "scrollHeight": 885,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details-error",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 197,
+    "scrollHeight": 1029,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "code",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 197,
+    "scrollHeight": 906,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 280,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "code-error",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 197,
+    "scrollHeight": 978,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 280,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "help",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 197,
+    "scrollHeight": 906,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 280,
+        "height": 52
+      },
+      {
+        "name": "0808 157 0192",
+        "width": 238,
+        "height": 52
+      },
+      {
+        "name": "Back to setup",
+        "width": 246,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "done",
+    "width": 320,
+    "theme": "light",
+    "h1Y": 218,
+    "scrollHeight": 981,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Finish",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "welcome",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 142,
+    "scrollHeight": 849,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Let\u2019s get started ",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 197,
+    "scrollHeight": 885,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "details-error",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 197,
+    "scrollHeight": 1029,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "full-name",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "mobile",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Continue ",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "code",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 197,
+    "scrollHeight": 906,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 280,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "code-error",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 197,
+    "scrollHeight": 978,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 280,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "state": "help",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 197,
+    "scrollHeight": 906,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Back",
+        "width": 71.484375,
+        "height": 52
+      },
+      {
+        "name": "code",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Confirm code ",
+        "width": 280,
+        "height": 60
+      },
+      {
+        "name": "Request a new code",
+        "width": 280,
+        "height": 52
+      },
+      {
+        "name": "0808 157 0192",
+        "width": 238,
+        "height": 52
+      },
+      {
+        "name": "Back to setup",
+        "width": 246,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "state": "done",
+    "width": 320,
+    "theme": "dark",
+    "h1Y": 218,
+    "scrollHeight": 981,
+    "targets": [
+      {
+        "name": "Help",
+        "width": 84.34375,
+        "height": 52
+      },
+      {
+        "name": "Finish",
+        "width": 280,
+        "height": 60
+      }
+    ]
+  }
+]

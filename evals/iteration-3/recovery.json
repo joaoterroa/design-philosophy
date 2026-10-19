@@ -1,0 +1,72 @@
+{
+  "reason": "service quota interruption, reset confirmed by ordinaryUsageAllowed=true",
+  "preservedFrozenInputs": true,
+  "budget": "1200seconds cumulative active process time, interrupted segments retained",
+  "limitations": [
+    "Three sessions restore visible trace and workspace but not hidden ephemeral context.",
+    "Nine sessions had no prior design work.",
+    "Offline reference and model settings remain fixed."
+  ],
+  "runs": [
+    {
+      "id": "oncall-menubar__baseline__1",
+      "remainingSeconds": 942,
+      "contextRecovery": "existing workspace plus own visible trace; hidden context unavailable"
+    },
+    {
+      "id": "incident-dashboard__revision__1",
+      "remainingSeconds": 894,
+      "contextRecovery": "existing workspace plus own visible trace; hidden context unavailable"
+    },
+    {
+      "id": "banking-onboarding__baseline__1",
+      "remainingSeconds": 928,
+      "contextRecovery": "existing workspace plus own visible trace; hidden context unavailable"
+    },
+    {
+      "id": "oncall-menubar__revision__1",
+      "remainingSeconds": 1195,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "incident-dashboard__baseline__1",
+      "remainingSeconds": 1196,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "banking-onboarding__revision__1",
+      "remainingSeconds": 1196,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "oncall-menubar__revision__2",
+      "remainingSeconds": 1195,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "incident-dashboard__baseline__2",
+      "remainingSeconds": 1196,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "banking-onboarding__revision__2",
+      "remainingSeconds": 1196,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "oncall-menubar__baseline__2",
+      "remainingSeconds": 1195,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "incident-dashboard__revision__2",
+      "remainingSeconds": 1196,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    },
+    {
+      "id": "banking-onboarding__baseline__2",
+      "remainingSeconds": 1194,
+      "contextRecovery": "fresh; prior segment failed before design work"
+    }
+  ]
+}

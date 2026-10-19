@@ -1,0 +1,157 @@
+{
+  "headline": "Useful menu improvements; insufficient evidence to adopt the full revision",
+  "summary": [
+    "Twelve completed runs produced 192 matched screenshots. The main agent recorded condition-masked preferences before opening the key: the revision won both menu comparisons, the current skill won both dashboard comparisons, and banking tied once and slightly favored the revision once.",
+    "The clearest gains concern ownership and the action to take next. There is no consistent increase in product personality or overall craftsmanship across the three tasks. More rendered alternatives did not guarantee a better selected composition."
+  ],
+  "recommendation": "Keep the current skill as the baseline. Do not promote this experimental bundle: only one of three tasks has a stable preference for it across both repeats, below the agreed two-task threshold. Review these six pairs blind, then test a smaller process-only change that compares viable directions in their hardest relevant state before selection. Keep Adjusted Squircle as an optional reference; this cohort did not test a continuous-corner implementation.",
+  "adoptionGate": {
+    "requiredStableTasks": 2,
+    "observedStableRevisionTasks": 1,
+    "met": false,
+    "newCriticalRevisionRegressionObserved": false,
+    "scope": "Main-agent editorial judgment and scoped prototype checks; no independent human panel."
+  },
+  "taskResults": [
+    {
+      "task": "oncall-menubar",
+      "verdict": "Experimental revision preferred in both repeats; modest, task-specific improvement.",
+      "improved": [
+        "The pending handover gives Back to schedule the filled action and keeps cancellation secondary in both revised runs. Both current-skill runs give cancellation the large action and a small link back.",
+        "The revised first run groups assignment, shift and handover in one object; the second retains the other cached responders offline."
+      ],
+      "regressed": [
+        "The revised first run reduces offline retry to a small link and uses a select for one named recipient.",
+        "Both versions remain familiar menu utilities; the gain is in grouping and ownership, not a dramatic change of character."
+      ],
+      "limitations": [
+        "Both conditions pass the scripted pending-ownership paths. Native macOS integration and a real receiving teammate are untested."
+      ]
+    },
+    {
+      "task": "incident-dashboard",
+      "verdict": "Current skill preferred in both repeats; the revision does not improve this task reliably.",
+      "improved": [
+        "Revised repeat two gives Opened and Duration separate columns and an explicit Page 1 of 2 control.",
+        "All four dashboards retain the critical incident and identify the missing commander."
+      ],
+      "regressed": [
+        "Revised repeat one hides resolved history behind a tab; the current version keeps both resolved summaries beside the table on TV.",
+        "Revised repeat two compresses resolved history into the sidebar; the current version gives it a full-width bottom region. The current version also gives stale data a full-width warning strip.",
+        "In repeat one the current skill is more open and integrated, while the revision uses more framed regions. Relaxing surface quotas did not determine a better result."
+      ],
+      "limitations": [
+        "All four show seven open rows initially in TV surge and explicitly acknowledge overflow. A static TV still requires someone to page for the remaining five.",
+        "Some stale screens retain On call now under a global stale warning. Physical ops-room viewing distance is untested."
+      ]
+    },
+    {
+      "task": "banking-onboarding",
+      "verdict": "Tie in repeat one; small preference for the revision in repeat two.",
+      "improved": [
+        "Revised repeat two makes the human call route primary in Help and Back secondary; it keeps its two-action setup explanation coherent.",
+        "Both revised runs pass the scoped field-label, target-size, visible-code-text and task-path checks."
+      ],
+      "regressed": [
+        "Revised repeat one improves the Help call action but places Get started entirely below the initial 320\u00d7568 welcome viewport. The current run keeps it visible.",
+        "The Help improvement is inconsistent: current repeat one fills Back instead of Call; current repeat two repeats that weakness.",
+        "The current first run has a real file-origin font error; its second uses 14px practice-footer text on the code screen. These execution defects are separate from visual preference."
+      ],
+      "limitations": [
+        "At 320\u00d7568 the second revised run fits its welcome action at approximately y501\u2013561. This is a measured layout improvement over its own earlier draft.",
+        "No older-user, screen-reader, physical keyboard or actual banking/calling test establishes usability."
+      ]
+    }
+  ],
+  "pairResults": [
+    {
+      "id": "oncall-menubar__1",
+      "verdict": "Revision preferred \u00b7 medium-low confidence",
+      "improved": [
+        "Revision groups the shift and handover action together, and makes Back to schedule primary while waiting for Priya."
+      ],
+      "regressed": [
+        "Current skill makes the 18:00 end time more prominent and gives offline retry a larger action."
+      ],
+      "limitations": [
+        "A modest composition advantage, with both handover paths passing."
+      ]
+    },
+    {
+      "id": "oncall-menubar__2",
+      "verdict": "Revision preferred \u00b7 medium confidence",
+      "improved": [
+        "Revision prioritizes Back to schedule while pending and retains three other saved responders offline."
+      ],
+      "regressed": [
+        "Current skill puts the responsibility warning directly in the compose screen and makes the named owner visually prominent."
+      ],
+      "limitations": [
+        "Both keep familiar controls; no large personality advantage is established."
+      ]
+    },
+    {
+      "id": "incident-dashboard__1",
+      "verdict": "Current skill preferred \u00b7 medium-low confidence",
+      "improved": [
+        "Current skill keeps both resolved summaries visible beside the table on TV and uses a more integrated metric/sidebar composition."
+      ],
+      "regressed": [
+        "Revision labels stale on-call data more carefully as last known; current skill retains On call now."
+      ],
+      "limitations": [
+        "Both show seven of twelve surge incidents and provide working TV pagination."
+      ]
+    },
+    {
+      "id": "incident-dashboard__2",
+      "verdict": "Current skill preferred \u00b7 medium-low confidence",
+      "improved": [
+        "Current skill gives resolved summaries a wide bottom region and makes stale data a full-width status change."
+      ],
+      "regressed": [
+        "Revision separates Opened and Duration, improving comparison of those fields."
+      ],
+      "limitations": [
+        "Both preserve the missing commander. The preference is modest; TV distance remains untested."
+      ]
+    },
+    {
+      "id": "banking-onboarding__1",
+      "verdict": "Overall tie \u00b7 medium confidence",
+      "improved": [
+        "Revision makes Call the primary Help action."
+      ],
+      "regressed": [
+        "Revision moves Get started below the initial small-phone viewport; current skill keeps it visible. Current skill has a file-origin font error."
+      ],
+      "limitations": [
+        "Different strengths across states; no justified overall winner."
+      ]
+    },
+    {
+      "id": "banking-onboarding__2",
+      "verdict": "Revision slightly preferred \u00b7 medium-low confidence",
+      "improved": [
+        "Revision makes Call primary in Help, describes two actions consistently, and keeps the small-phone welcome action fully visible."
+      ],
+      "regressed": [
+        "Current skill offers an earlier welcome action, a stronger error banner and a distinctive serif wordmark. Its code-screen practice footer is 14px."
+      ],
+      "limitations": [
+        "Both remain conventional, reassuring banking forms. Older-user outcomes need testing."
+      ]
+    }
+  ],
+  "limitations": [
+    "One informed main-agent reviewer, with image order masked and notes saved before the identity key; no independent model or human preference panel. Confidence is mostly medium-low. The evaluator knew the intervention and some functional results.",
+    "Only two repeats and one generator model. The intervention bundles exploration, rule changes and a shape reference; individual causes cannot be isolated.",
+    "Both conditions received the same offline primary-source references, fixtures and task-specific production contract. These are controlled static prototypes, not a reproduction of the unconstrained first iteration or a test of Dia itself.",
+    "All attempts were interrupted by service usage limits and resumed in their exact saved sessions with unchanged inputs and their original cumulative twelve-minute allowance. Earlier segments remain available.",
+    "An earlier cross-task pilot was excluded in full for unequal workloads. Its outputs and judgments do not enter these results.",
+    "The frozen experimental system template retains some legacy restrictive language. That contradiction was noticed after freeze and was not repaired during the study.",
+    "All six revised runs retained composition studies, but their depth varies. Banking repeat one largely changes the surface grouping while preserving order and similar action positions. Later-state comparison was not consistently completed before selection.",
+    "No final app implements CSS corner-shape or a documented continuous-corner treatment. The optional Adjusted Squircle preference is preserved, but its visual effect is not evaluated by this cohort.",
+    "Automated labels, dimensions and scripted paths do not prove full accessibility, older-user usability, TV viewing-distance legibility or native integration."
+  ]
+}

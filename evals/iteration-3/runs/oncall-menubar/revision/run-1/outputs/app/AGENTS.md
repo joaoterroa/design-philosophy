@@ -1,0 +1,1 @@
+Read ../SYSTEM.md before changing this UI. Use tokens.css for visual values. Run ../verification/design-guard.mjs, ../verification/verify.py, and ../verification/edge-checks.py after relevant changes. fixtures.js is an exact supplied fixture copy: do not modify it. Keep simulation controls in ../review.html, outside the product canvas.

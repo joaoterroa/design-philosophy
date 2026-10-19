@@ -1,0 +1,60 @@
+[
+  {
+    "id": "menu-type",
+    "evaluation": "oncall-menubar",
+    "hypothesis": "A stronger type hierarchy can give duty status a focal point without new mechanics or branding.",
+    "change": "Only the answer's type size, line height and tracking change. Same text, color, panel width and controls.",
+    "source": "evals/iteration-1/oncall-menubar/with_skill/outputs/app",
+    "sourceHashes": {
+      "index.html": "bc4500235c75a37e0b63c784ee3a117e767bf0f995f48202e09f04688cb2d7ac",
+      "tokens.css": "0229c88a220702729a243f7a22cfb5404fa893c19d76d1ec17020c81c00dae43",
+      "app.css": "11b9ea7d306142cdf511edaab06c94dcfe85b4967fa39563fee341287f83062a",
+      "data.js": "1e65f4e1314eea73c47523d31dda539a2710be3919b4e30d859d07d5a74311a1",
+      "app.js": "783314bbcbaafa04516345f736f1219e405ee5de6ee0991cc1090b9827968463"
+    }
+  },
+  {
+    "id": "menu-object",
+    "evaluation": "oncall-menubar",
+    "hypothesis": "A persistent responsibility object can distinguish personal duty from the roster without tinting every person or weakening pending status.",
+    "change": "The same type intervention as menu-type, plus a neutral inset surface grouping existing shift information; no content or controls added or removed.",
+    "source": "evals/iteration-1/oncall-menubar/with_skill/outputs/app",
+    "sourceHashes": {
+      "index.html": "bc4500235c75a37e0b63c784ee3a117e767bf0f995f48202e09f04688cb2d7ac",
+      "tokens.css": "0229c88a220702729a243f7a22cfb5404fa893c19d76d1ec17020c81c00dae43",
+      "app.css": "11b9ea7d306142cdf511edaab06c94dcfe85b4967fa39563fee341287f83062a",
+      "data.js": "1e65f4e1314eea73c47523d31dda539a2710be3919b4e30d859d07d5a74311a1",
+      "app.js": "783314bbcbaafa04516345f736f1219e405ee5de6ee0991cc1090b9827968463"
+    }
+  },
+  {
+    "id": "bank-message",
+    "evaluation": "banking-onboarding",
+    "hypothesis": "Removing the redundant wrapper around an already useful message object can improve rhythm and expose safety advice sooner without shrinking type or removing help.",
+    "change": "Remove the outer filled preview panel and its padding; retain the actual SMS bubble, all words, controls, field order and type sizes. Tighten only preview spacing and widen its existing message object.",
+    "source": "evals/iteration-1/banking-onboarding/with_skill/outputs/app",
+    "sourceHashes": {
+      "index.html": "4cbd72130090e44a86fddee2511d138565c18c1158db22e06d9b8f9f8146adb3",
+      "styles.css": "9984cfedddaea000222688b4ba4303f1ad1c577146d1637d7e63b1323105afc8",
+      "tokens.css": "d205eab6c95fc207f8ef5c55a765eccd5d25d0879dbab607b6bd16a4f32e7e85",
+      "app.js": "8e14ab35b5aeeb7c8d1de55eff11cc022b4e7a10fa25f2eb2e840548e8e17ecc"
+    }
+  },
+  {
+    "id": "dashboard-separation",
+    "evaluation": "incident-dashboard",
+    "hypothesis": "Giving incident rows more independent object-like separation may improve perceived grouping, but must not cost TV coverage.",
+    "change": "Add rounded surfaces, horizontal inset and 12px inter-row gaps to the existing incident rows. Brand colors, fonts, information, row sorting and overflow logic are unchanged. Deliberately tests the cost of exporting object treatment to a dense wall board.",
+    "source": "evals/iteration-1/incident-dashboard/with_skill/outputs/app",
+    "sourceHashes": {
+      "index.html": "e32d0c7abceacab57b8238dc61dd05b4dbfb5452d3035e79a7e6989f2646993a",
+      "tokens.css": "23ea4713516da2d0acc1d47ff92b2a1d0e3d668c46eace6992f416ee7866bfca",
+      "app.css": "4d2473dbbe6c32acdd1303a6fa8c30debc18aa01adb5d15ab253a5241f08b1d9",
+      "data.js": "73e51832ca0f9737bfe743b27d48556209cc26020d31b471223b406c43529767",
+      "app.js": "5d50f8a0664cbd0709e57d51108a48886cea752cbae80218a0a23c2c02f17c69",
+      "fonts/plex-mono-500-latin.woff2": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+      "fonts/plex-sans-latin.woff2": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470",
+      "fonts/plex-mono-400-latin.woff2": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    }
+  }
+]

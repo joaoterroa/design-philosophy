@@ -1,0 +1,5 @@
+/* C: the SMS is the object. It does not need another card around it. */
+.preview { background: transparent; border-radius: 0; padding: 0; margin-top: 20px; }
+.preview-title { margin-bottom: 12px; }
+.message { margin-right: 0; }
+.message-status { margin-bottom: 12px; }

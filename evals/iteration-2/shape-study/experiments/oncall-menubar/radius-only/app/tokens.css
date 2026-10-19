@@ -1,0 +1,149 @@
+/* Rota design tokens. The only file allowed to hold literal colours, sizes, radii,
+   shadows and durations. Reasons for each value are in design/SYSTEM.md.
+   Units are CSS px rendered 1:1 with macOS points. */
+
+:root {
+  /* ---- Neutrals: carry the whole interface ---- */
+  --window: #f4f4f6;          /* popover ground (solid stand-in for the .popover material) */
+  --window-glass: #f4f4f6eb;  /* same ground at 92% for the vibrancy approximation */
+  --fg: #1d1d1f;              /* primary text (labelColor) */
+  --fg-2: #66666c;            /* secondary text: times, handles, reasons */
+  --fg-3: #a8a8ae;            /* decoration only (ticks, disabled glyphs); never text */
+  --separator: #dcdce0;       /* hairlines between groups */
+  --fill-hover: #e7e7eb;      /* row hover / pressed */
+  --fill-quiet: #e0e0e5;      /* someone else's time on the shift strip; avatars */
+  --fill-you: #3a3a3f;        /* your time on the shift strip */
+  --on-you: #ffffff;
+
+  /* ---- Colour roles: one meaning each ---- */
+  --accent: #0068d6;          /* act + selection (stands in for the user's system accent) */
+  --on-accent: #ffffff;
+  --accent-line: #0068d6;    /* selection outline, focus ring (graphic, 3:1) */
+  --accent-text: #0062c9;     /* links and selected text on the window */
+  --accent-soft: #dfeafa;     /* selected row ground */
+  --pending: #a85300;         /* waiting for a reply: still yours, not yet covered */
+  --pending-soft: #f8e9da;
+  --danger: #c0001a;          /* nobody covering / something failed */
+  --danger-soft: #fae3e5;
+
+  /* ---- Desktop scene (prototype only, not part of the app) ---- */
+  --scene-wall: #c9ced6;
+  --scene-wall-2: #aeb6c2;
+  --menubar-bg: #eef0f3d9;
+  --menubar-fg: #1d1d1f;
+  --lab-bg: #ffffff;
+  --lab-fg: #1d1d1f;
+  --lab-fg-2: #66666c;
+
+  /* ---- Type (system font; SF Pro on macOS) ---- */
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", sans-serif;
+  --fs-body: 13px;      /* macOS body */
+  --fs-emph: 15px;      /* the one answer: time left on your shift */
+  --fs-caption: 11px;   /* secondary lines */
+  --fs-mini: 10px;      /* strip day labels only */
+  --lh-body: 16px;
+  --lh-caption: 14px;
+  --fw-regular: 400;
+  --fw-strong: 600;
+
+  /* ---- Space and shape ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --popover-w: 340px;
+  --popover-max-h: 640px;
+  --menubar-h: 24px;
+  --row-h: 36px;
+  --control-h: 22px;    /* macOS regular push button */
+  --strip-h: 22px;
+  --strip-h-lg: 30px;
+  --avatar: 22px;
+  --r-window: 12px;
+  --r-control: 6px;
+  --r-row: 6px;
+  --r-segment: 3px;
+  --r-round: 999px;
+  --hairline: 1px;
+  --focus-ring: 3px;
+
+  /* ---- Elevation: only the popover floats ---- */
+  --shadow-window: 0 0 0 0.5px #0000002e, 0 10px 30px #00000033;
+  --shadow-control: 0 0.5px 1px #00000026;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 120ms;    /* hover, press */
+  --dur-move: 220ms;    /* a segment changing hands; popover appearing */
+  --dur-spin: 800ms;    /* spinner revolution; only while a sync is running */
+  --dur-spin-reduced: 2400ms;
+  --glass-blur: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --window: #2a2a2d;
+    --window-glass: #2a2a2deb;
+    --fg: #f2f2f5;
+    --fg-2: #a3a3aa;
+    --fg-3: #66666c;
+    --separator: #3f3f44;
+    --fill-hover: #3a3a3f;
+    --fill-quiet: #45454b;
+    --fill-you: #e6e6eb;
+    --on-you: #1d1d1f;
+    --accent: #0a6bd4;
+    --on-accent: #ffffff;
+    --accent-line: #4f9bf7;
+    --accent-text: #5aa9ff;
+    --accent-soft: #1d3452;
+    --pending: #ffad5c;
+    --pending-soft: #47321e;
+    --danger: #ff7b80;
+    --danger-soft: #4b2427;
+    --scene-wall: #2d3440;
+    --scene-wall-2: #1b2029;
+    --menubar-bg: #1e1e21d9;
+    --menubar-fg: #f2f2f5;
+    --lab-bg: #161618;
+    --lab-fg: #f2f2f5;
+    --lab-fg-2: #a3a3aa;
+    --shadow-window: 0 0 0 0.5px #ffffff26, 0 10px 30px #00000080;
+    --shadow-control: 0 0.5px 1px #00000066;
+  }
+}
+
+:root[data-theme="dark"] {
+  --window: #2a2a2d;
+  --window-glass: #2a2a2deb;
+  --fg: #f2f2f5;
+  --fg-2: #a3a3aa;
+  --fg-3: #66666c;
+  --separator: #3f3f44;
+  --fill-hover: #3a3a3f;
+  --fill-quiet: #45454b;
+  --fill-you: #e6e6eb;
+  --on-you: #1d1d1f;
+  --accent: #0a6bd4;
+  --on-accent: #ffffff;
+  --accent-line: #4f9bf7;
+  --accent-text: #5aa9ff;
+  --accent-soft: #1d3452;
+  --pending: #ffad5c;
+  --pending-soft: #47321e;
+  --danger: #ff7b80;
+  --danger-soft: #4b2427;
+  --scene-wall: #2d3440;
+  --scene-wall-2: #1b2029;
+  --menubar-bg: #1e1e21d9;
+  --menubar-fg: #f2f2f5;
+  --lab-bg: #161618;
+  --lab-fg: #f2f2f5;
+  --lab-fg-2: #a3a3aa;
+  --shadow-window: 0 0 0 0.5px #ffffff26, 0 10px 30px #00000080;
+  --shadow-control: 0 0.5px 1px #00000066;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-move: 0ms; }
+}

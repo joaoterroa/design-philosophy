@@ -1,0 +1,10 @@
+{
+  "excluded": true,
+  "reason": "Shared production contract enumerated allthree task requirements; multiple generators implemented allthree despite task-only sentence. Unequal workload confounds the skill comparison.",
+  "decisionTime": "2026-10-18T19:28:51.194086+00:00",
+  "selection": "Whole cohort, not individual designs; no outcomes promoted or selectively replaced.",
+  "frozenSkillsUnchanged": true,
+  "approximateGenerationActiveMinutes": 84.5,
+  "nextCohort": "controlled/",
+  "nextBudgetPerRunSeconds": 720
+}

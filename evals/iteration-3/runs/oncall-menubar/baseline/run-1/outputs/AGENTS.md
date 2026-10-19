@@ -1,0 +1,1 @@
+Read `SYSTEM.md` before changing the prototype. Visual values live in `app/tokens.css`. Run `node outputs/verification/tokens_guard.cjs` from the workspace root, then the browser checks documented in `DESIGN.md`. Preserve the fixture file and responsibility-before-acceptance rule. Keep simulation controls in the separate review harness.

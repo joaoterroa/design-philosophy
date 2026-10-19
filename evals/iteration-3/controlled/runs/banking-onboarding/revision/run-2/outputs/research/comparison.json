@@ -1,0 +1,14 @@
+[
+  {
+    "variant": "a",
+    "initialHeading": "Your bank.\nAt your pace.",
+    "nextHeading": "Let\u2019s start with you.",
+    "nextURL": "screen=details"
+  },
+  {
+    "variant": "b",
+    "initialHeading": "Your bank.\nAt your pace.",
+    "nextHeading": "Check your text messages.",
+    "nextURL": "screen=code"
+  }
+]

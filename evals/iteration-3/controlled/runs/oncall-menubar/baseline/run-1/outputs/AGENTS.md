@@ -1,0 +1,1 @@
+Read SYSTEM.md before changing this prototype. Keep presentation values in app/tokens.css. Run verification/design-guard.cjs and verification/verify.py from the workspace root as documented in DESIGN.md. Do not modify the supplied source fixtures or skill. Keep acceptance separate from sending and preserve Jamie’s responsibility until acceptance.

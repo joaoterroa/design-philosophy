@@ -1,0 +1,19 @@
+{
+  "welcome_CLS": 0,
+  "welcome_action": {
+    "x": 20,
+    "y": 500.59375,
+    "width": 280,
+    "height": 60
+  },
+  "edge_checks": [
+    "Numeric-only name and malformed mobile rejected",
+    "Unicode one-character name accepted",
+    "Non-digit code rejected with a repair instruction",
+    "Safety warning scrolls into view on narrow screen",
+    "Long unbroken name wraps on completion",
+    "Help remains dismissible with 200% text",
+    "Welcome CTA wholly visible at 320×568"
+  ],
+  "semantics": "- banner:\n  - text: Harbour\n  - button \"Help\"\n- main:\n  - button \"Back\"\n  - paragraph: Step 2 of 2 · Check your mobile\n  - heading \"Check your text messages.\" [level=1]\n  - paragraph:\n    - text: Enter the 6-digit code for your mobile number ending\n    - strong: \"482\"\n    - text: .\n  - paragraph: This practice setup does not send a text.\n  - text: 6-digit code\n  - textbox \"6-digit code\"\n  - strong: Keep your code private\n  - text: We will never call you to ask for this code. Do not share it.\n  - button \"Confirm code\"\n  - button \"I haven’t received a code\"\n- contentinfo:\n  - paragraph: Practice setup · No account changes"
+}
